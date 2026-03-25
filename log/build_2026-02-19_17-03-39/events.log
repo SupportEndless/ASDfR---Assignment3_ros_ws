@@ -1,0 +1,288 @@
+[0.000000] (-) TimerEvent: {}
+[0.000572] (-) JobUnselected: {'identifier': 'cpp_pubsub'}
+[0.000729] (cam2image_vm2ros) JobQueued: {'identifier': 'cam2image_vm2ros', 'dependencies': OrderedDict()}
+[0.000758] (cam2image_vm2ros) JobStarted: {'identifier': 'cam2image_vm2ros'}
+[0.090440] (cam2image_vm2ros) JobProgress: {'identifier': 'cam2image_vm2ros', 'progress': 'cmake'}
+[0.099368] (-) TimerEvent: {}
+[0.109803] (cam2image_vm2ros) JobProgress: {'identifier': 'cam2image_vm2ros', 'progress': 'build'}
+[0.109894] (cam2image_vm2ros) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ubuntu/Robotics/ros2_ws/build/cam2image_vm2ros', '--', '-j12', '-l12'], 'cwd': '/home/ubuntu/Robotics/ros2_ws/build/cam2image_vm2ros', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ubuntu', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/ubuntu/Robotics/ros2_ws/install/cam2image_vm2ros/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'WT_PROFILE_ID': '{61c54bbd-c2c6-5271-96e7-009a87ff44bf}', 'HOME': '/home/ubuntu', 'OLDPWD': '/home/ubuntu/Robotics', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'WSL_DISTRO_NAME': 'Ubuntu-24.04', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/ubuntu/Robotics/ros2_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ubuntu', 'NAME': 'Laptop-Rogier', 'WSL_INTEROP': '/run/WSL/9507_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/java8path:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/110/Tools/Binn/:/mnt/c/Program Files (x86)/Microsoft SQL Server/120/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/120/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/120/DTS/Binn/:/mnt/c/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/MATLAB/R2025b/bin:/mnt/c/Program Files (x86)/IVI Foundation/VISA/WinNT/Bin/:/mnt/c/Program Files/IVI Foundation/VISA/Win64/Bin/:/mnt/c/Program Files (x86)/IVI Foundation/VISA/WinNT/Bin:/mnt/d/PuTTy/:/mnt/d/Program Files/Git/cmd:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Program Files/NVIDIA Corporation/Nsight Compute 2024.3.2/:/mnt/c/Users/rogie/AppData/Local/Muse Hub/lib:/mnt/c/Users/rogie/AppData/Local/Programs/Python/Python39/:/mnt/c/Users/rogie/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/rogie/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/rogie/AppData/Local/GitHubDesktop/bin:/mnt/c/Users/rogie/AppData/Local/Muse Hub/lib:/mnt/c/Users/rogie/AppData/Local/Programs/Python/protoc/bin:/mnt/c/Users/rogie/AppData/Local/Programs/Python/Python39/Scripts:/mnt/c/msys64/ucrt64/bin:/mnt/c/xampp/php:/snap/bin', 'WT_SESSION': '5c9da074-ec5d-4d27-9c1d-bffbaf210566', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/ubuntu/Robotics/ros2_ws/install/cam2image_vm2ros:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/ubuntu/Robotics/ros2_ws/build/cam2image_vm2ros', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/home/ubuntu/Robotics/ros2_ws/install/cam2image_vm2ros:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy', 'WSLENV': 'WT_SESSION:WT_PROFILE_ID:'}), 'shell': False}
+[0.199561] (-) TimerEvent: {}
+[0.299918] (-) TimerEvent: {}
+[0.400210] (-) TimerEvent: {}
+[0.501050] (-) TimerEvent: {}
+[0.601426] (-) TimerEvent: {}
+[0.701749] (-) TimerEvent: {}
+[0.802095] (-) TimerEvent: {}
+[0.902455] (-) TimerEvent: {}
+[0.936978] (cam2image_vm2ros) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.5 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[1.002575] (-) TimerEvent: {}
+[1.102961] (-) TimerEvent: {}
+[1.203274] (-) TimerEvent: {}
+[1.303598] (-) TimerEvent: {}
+[1.381853] (cam2image_vm2ros) StdoutLine: {'line': b'-- Found rclcpp: 28.1.16 (/opt/ros/jazzy/share/rclcpp/cmake)\n'}
+[1.403761] (-) TimerEvent: {}
+[1.504071] (-) TimerEvent: {}
+[1.604414] (-) TimerEvent: {}
+[1.704704] (-) TimerEvent: {}
+[1.804999] (-) TimerEvent: {}
+[1.905883] (-) TimerEvent: {}
+[1.952448] (cam2image_vm2ros) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[2.006072] (-) TimerEvent: {}
+[2.013996] (cam2image_vm2ros) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[2.062742] (cam2image_vm2ros) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.106206] (-) TimerEvent: {}
+[2.138271] (cam2image_vm2ros) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.206944] (-) TimerEvent: {}
+[2.307254] (-) TimerEvent: {}
+[2.391740] (cam2image_vm2ros) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)\n'}
+[2.407486] (cam2image_vm2ros) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)\n'}
+[2.407675] (-) TimerEvent: {}
+[2.507896] (-) TimerEvent: {}
+[2.608169] (-) TimerEvent: {}
+[2.708469] (-) TimerEvent: {}
+[2.808702] (-) TimerEvent: {}
+[2.909003] (-) TimerEvent: {}
+[2.936117] (cam2image_vm2ros) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[3.009111] (-) TimerEvent: {}
+[3.109489] (-) TimerEvent: {}
+[3.209934] (-) TimerEvent: {}
+[3.310225] (-) TimerEvent: {}
+[3.410978] (-) TimerEvent: {}
+[3.426916] (cam2image_vm2ros) StdoutLine: {'line': b'-- Found rclcpp_components: 28.1.16 (/opt/ros/jazzy/share/rclcpp_components/cmake)\n'}
+[3.511057] (-) TimerEvent: {}
+[3.557057] (cam2image_vm2ros) StdoutLine: {'line': b'-- Found sensor_msgs: 5.3.6 (/opt/ros/jazzy/share/sensor_msgs/cmake)\n'}
+[3.611199] (-) TimerEvent: {}
+[3.711514] (-) TimerEvent: {}
+[3.731184] (cam2image_vm2ros) StdoutLine: {'line': b'-- Found cv_bridge: 4.1.0 (/opt/ros/jazzy/share/cv_bridge/cmake)\n'}
+[3.811627] (-) TimerEvent: {}
+[3.911954] (-) TimerEvent: {}
+[3.988726] (cam2image_vm2ros) StdoutLine: {'line': b'-- Configuring done (3.2s)\n'}
+[4.012072] (-) TimerEvent: {}
+[4.112447] (-) TimerEvent: {}
+[4.141864] (cam2image_vm2ros) StdoutLine: {'line': b'-- Generating done (0.1s)\n'}
+[4.165064] (cam2image_vm2ros) StdoutLine: {'line': b'-- Build files have been written to: /home/ubuntu/Robotics/ros2_ws/build/cam2image_vm2ros\n'}
+[4.212559] (-) TimerEvent: {}
+[4.295623] (cam2image_vm2ros) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding CXX object CMakeFiles/brightness_receiver.dir/src/brightness_receiver.cpp.o\x1b[0m\n'}
+[4.297350] (cam2image_vm2ros) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object CMakeFiles/image_brightness.dir/src/image_brightness.cpp.o\x1b[0m\n'}
+[4.310444] (cam2image_vm2ros) StdoutLine: {'line': b'[ 44%] Built target cam2image\n'}
+[4.312634] (-) TimerEvent: {}
+[4.360870] (cam2image_vm2ros) StdoutLine: {'line': b'[ 77%] Built target cam2image_vm2ros\n'}
+[4.412814] (-) TimerEvent: {}
+[4.513527] (-) TimerEvent: {}
+[4.614902] (-) TimerEvent: {}
+[4.715203] (-) TimerEvent: {}
+[4.815518] (-) TimerEvent: {}
+[4.915881] (-) TimerEvent: {}
+[5.016729] (-) TimerEvent: {}
+[5.117338] (-) TimerEvent: {}
+[5.217676] (-) TimerEvent: {}
+[5.317918] (-) TimerEvent: {}
+[5.418174] (-) TimerEvent: {}
+[5.518557] (-) TimerEvent: {}
+[5.618840] (-) TimerEvent: {}
+[5.719101] (-) TimerEvent: {}
+[5.819422] (-) TimerEvent: {}
+[5.919820] (-) TimerEvent: {}
+[6.020573] (-) TimerEvent: {}
+[6.120835] (-) TimerEvent: {}
+[6.221092] (-) TimerEvent: {}
+[6.321348] (-) TimerEvent: {}
+[6.421670] (-) TimerEvent: {}
+[6.521950] (-) TimerEvent: {}
+[6.622279] (-) TimerEvent: {}
+[6.722563] (-) TimerEvent: {}
+[6.822874] (-) TimerEvent: {}
+[6.923269] (-) TimerEvent: {}
+[7.023798] (-) TimerEvent: {}
+[7.124157] (-) TimerEvent: {}
+[7.224536] (-) TimerEvent: {}
+[7.324909] (-) TimerEvent: {}
+[7.425210] (-) TimerEvent: {}
+[7.525598] (-) TimerEvent: {}
+[7.625869] (-) TimerEvent: {}
+[7.726223] (-) TimerEvent: {}
+[7.826573] (-) TimerEvent: {}
+[7.927079] (-) TimerEvent: {}
+[8.027399] (-) TimerEvent: {}
+[8.127719] (-) TimerEvent: {}
+[8.228039] (-) TimerEvent: {}
+[8.328540] (-) TimerEvent: {}
+[8.428884] (-) TimerEvent: {}
+[8.529163] (-) TimerEvent: {}
+[8.629481] (-) TimerEvent: {}
+[8.641247] (cam2image_vm2ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Robotics/ros2_ws/src/cam2image_vm2ros/src/brightness_receiver.cpp:14:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[KISO C++ forbids declaration of \xe2\x80\x98\x1b[01m\x1b[KBrightnessReceiver\x1b[m\x1b[K\xe2\x80\x99 with no type [\x1b[01;31m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive\x07-fpermissive\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[8.641897] (cam2image_vm2ros) StderrLine: {'line': b'   14 |     \x1b[01;31m\x1b[KBrightnessReceiver\x1b[m\x1b[K() : Node("brightness_receiver")\n'}
+[8.642014] (cam2image_vm2ros) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.679300] (cam2image_vm2ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Robotics/ros2_ws/src/cam2image_vm2ros/src/brightness_receiver.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kint ImageBrightness::\x1b[01;32m\x1b[KBrightnessReceiver\x1b[m\x1b[K()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[8.679750] (cam2image_vm2ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Robotics/ros2_ws/src/cam2image_vm2ros/src/brightness_receiver.cpp:14:28:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Konly constructors take member initializers\n'}
+[8.679870] (cam2image_vm2ros) StderrLine: {'line': b'   14 |     BrightnessReceiver() : \x1b[01;31m\x1b[KNode\x1b[m\x1b[K("brightness_receiver")\n'}
+[8.679963] (cam2image_vm2ros) StderrLine: {'line': b'      |                            \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[8.690556] (cam2image_vm2ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Robotics/ros2_ws/src/cam2image_vm2ros/src/brightness_receiver.cpp:22:5:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kno return statement in function returning non-void [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type\x07-Wreturn-type\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[8.690830] (cam2image_vm2ros) StderrLine: {'line': b'   22 |     \x1b[01;35m\x1b[K}\x1b[m\x1b[K\n'}
+[8.690932] (cam2image_vm2ros) StderrLine: {'line': b'      |     \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[8.729593] (-) TimerEvent: {}
+[8.829904] (-) TimerEvent: {}
+[8.930458] (-) TimerEvent: {}
+[9.030835] (-) TimerEvent: {}
+[9.131255] (-) TimerEvent: {}
+[9.231603] (-) TimerEvent: {}
+[9.331939] (-) TimerEvent: {}
+[9.432249] (-) TimerEvent: {}
+[9.532510] (-) TimerEvent: {}
+[9.632792] (-) TimerEvent: {}
+[9.665720] (cam2image_vm2ros) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/13/bits/alloc_traits.h:33\x1b[m\x1b[K,\n'}
+[9.666569] (cam2image_vm2ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/13/ext/alloc_traits.h:34\x1b[m\x1b[K,\n'}
+[9.666659] (cam2image_vm2ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/13/bits/basic_string.h:39\x1b[m\x1b[K,\n'}
+[9.666738] (cam2image_vm2ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/13/string:54\x1b[m\x1b[K,\n'}
+[9.666930] (cam2image_vm2ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ubuntu/Robotics/ros2_ws/src/cam2image_vm2ros/src/brightness_receiver.cpp:1\x1b[m\x1b[K:\n'}
+[9.667060] (cam2image_vm2ros) StderrLine: {'line': b'/usr/include/c++/13/bits/stl_construct.h: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kvoid std::\x1b[01;32m\x1b[K_Construct\x1b[m\x1b[K(_Tp*, _Args&& ...) \x1b[35m\x1b[K[with _Tp = ImageBrightness; _Args = {}]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[9.667347] (cam2image_vm2ros) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/alloc_traits.h:661:19:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstatic void std::allocator_traits<std::allocator<void> >::\x1b[01;32m\x1b[Kconstruct\x1b[m\x1b[K(allocator_type&, _Up*, _Args&& ...) \x1b[35m\x1b[K[with _Up = ImageBrightness; _Args = {}; allocator_type = std::allocator<void>]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99\n'}
+[9.667613] (cam2image_vm2ros) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/shared_ptr_base.h:604:39:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::_Sp_counted_ptr_inplace<_Tp, _Alloc, _Lp>::\x1b[01;32m\x1b[K_Sp_counted_ptr_inplace\x1b[m\x1b[K(_Alloc, _Args&& ...) \x1b[35m\x1b[K[with _Args = {}; _Tp = ImageBrightness; _Alloc = std::allocator<void>; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99\n'}
+[9.667876] (cam2image_vm2ros) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/shared_ptr_base.h:971:16:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::__shared_count<_Lp>::\x1b[01;32m\x1b[K__shared_count\x1b[m\x1b[K(_Tp*&, std::_Sp_alloc_shared_tag<_Alloc>, _Args&& ...) \x1b[35m\x1b[K[with _Tp = ImageBrightness; _Alloc = std::allocator<void>; _Args = {}; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99\n'}
+[9.667991] (cam2image_vm2ros) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/shared_ptr_base.h:1712:14:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::__shared_ptr<_Tp, _Lp>::\x1b[01;32m\x1b[K__shared_ptr\x1b[m\x1b[K(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) \x1b[35m\x1b[K[with _Alloc = std::allocator<void>; _Args = {}; _Tp = ImageBrightness; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99\n'}
+[9.668078] (cam2image_vm2ros) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/shared_ptr.h:464:59:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<_Tp>::\x1b[01;32m\x1b[Kshared_ptr\x1b[m\x1b[K(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) \x1b[35m\x1b[K[with _Alloc = std::allocator<void>; _Args = {}; _Tp = ImageBrightness]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99\n'}
+[9.668155] (cam2image_vm2ros) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/shared_ptr.h:1009:14:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<typename std::enable_if<(! std::is_array< <template-parameter-1-1> >::value), _Tp>::type> std::\x1b[01;32m\x1b[Kmake_shared\x1b[m\x1b[K(_Args&& ...) \x1b[35m\x1b[K[with _Tp = ImageBrightness; _Args = {}; typename enable_if<(! is_array< <template-parameter-1-1> >::value), _Tp>::type = ImageBrightness]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99\n'}
+[9.668238] (cam2image_vm2ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Robotics/ros2_ws/src/cam2image_vm2ros/src/brightness_receiver.cpp:40:49:\x1b[m\x1b[K   required from here\n'}
+[9.668309] (cam2image_vm2ros) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_construct.h:119:7:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kuse of deleted function \xe2\x80\x98\x1b[01m\x1b[KImageBrightness::\x1b[01;32m\x1b[KImageBrightness\x1b[m\x1b[K()\x1b[m\x1b[K\xe2\x80\x99\n'}
+[9.668390] (cam2image_vm2ros) StderrLine: {'line': b'  119 |       \x1b[01;31m\x1b[K::new((void*)__p) _Tp(std::forward<_Args>(__args)...)\x1b[m\x1b[K;\n'}
+[9.668461] (cam2image_vm2ros) StderrLine: {'line': b'      |       \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.668531] (cam2image_vm2ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Robotics/ros2_ws/src/cam2image_vm2ros/src/brightness_receiver.cpp:10:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KImageBrightness::\x1b[01;32m\x1b[KImageBrightness\x1b[m\x1b[K()\x1b[m\x1b[K\xe2\x80\x99 is implicitly deleted because the default definition would be ill-formed:\n'}
+[9.668604] (cam2image_vm2ros) StderrLine: {'line': b'   10 | class \x1b[01;36m\x1b[KImageBrightness\x1b[m\x1b[K : public rclcpp::Node\n'}
+[9.668674] (cam2image_vm2ros) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.668743] (cam2image_vm2ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Robotics/ros2_ws/src/cam2image_vm2ros/src/brightness_receiver.cpp:10:7:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Krclcpp::Node::Node()\x1b[m\x1b[K\xe2\x80\x99\n'}
+[9.668815] (cam2image_vm2ros) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[9.668887] (cam2image_vm2ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[9.668958] (cam2image_vm2ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:172\x1b[m\x1b[K,\n'}
+[9.669030] (cam2image_vm2ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ubuntu/Robotics/ros2_ws/src/cam2image_vm2ros/src/brightness_receiver.cpp:4\x1b[m\x1b[K:\n'}
+[9.669181] (cam2image_vm2ros) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/node.hpp:1629:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Krclcpp::Node::\x1b[01;32m\x1b[KNode\x1b[m\x1b[K(const rclcpp::Node&, const std::string&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[9.669373] (cam2image_vm2ros) StderrLine: {'line': b' 1629 |   \x1b[01;36m\x1b[KNode\x1b[m\x1b[K(\n'}
+[9.669591] (cam2image_vm2ros) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[9.669844] (cam2image_vm2ros) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/node.hpp:1629:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 2 arguments, 0 provided\n'}
+[9.669925] (cam2image_vm2ros) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/node.hpp:103:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Krclcpp::Node::\x1b[01;32m\x1b[KNode\x1b[m\x1b[K(const std::string&, const std::string&, const rclcpp::NodeOptions&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[9.670003] (cam2image_vm2ros) StderrLine: {'line': b'  103 |   explicit \x1b[01;36m\x1b[KNode\x1b[m\x1b[K(\n'}
+[9.670087] (cam2image_vm2ros) StderrLine: {'line': b'      |            \x1b[01;36m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[9.670161] (cam2image_vm2ros) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/node.hpp:103:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 3 arguments, 0 provided\n'}
+[9.670232] (cam2image_vm2ros) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/node.hpp:91:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Krclcpp::Node::\x1b[01;32m\x1b[KNode\x1b[m\x1b[K(const std::string&, const rclcpp::NodeOptions&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[9.670304] (cam2image_vm2ros) StderrLine: {'line': b'   91 |   explicit \x1b[01;36m\x1b[KNode\x1b[m\x1b[K(\n'}
+[9.670375] (cam2image_vm2ros) StderrLine: {'line': b'      |            \x1b[01;36m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[9.670444] (cam2image_vm2ros) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/node.hpp:91:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 2 arguments, 0 provided\n'}
+[9.732876] (-) TimerEvent: {}
+[9.833245] (-) TimerEvent: {}
+[9.933607] (-) TimerEvent: {}
+[10.033854] (-) TimerEvent: {}
+[10.134184] (-) TimerEvent: {}
+[10.234487] (-) TimerEvent: {}
+[10.334835] (-) TimerEvent: {}
+[10.435185] (-) TimerEvent: {}
+[10.535701] (-) TimerEvent: {}
+[10.636022] (-) TimerEvent: {}
+[10.736320] (-) TimerEvent: {}
+[10.836619] (-) TimerEvent: {}
+[10.936884] (-) TimerEvent: {}
+[11.037220] (-) TimerEvent: {}
+[11.104190] (cam2image_vm2ros) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/brightness_receiver.dir/build.make:76: CMakeFiles/brightness_receiver.dir/src/brightness_receiver.cpp.o] Error 1\n'}
+[11.104561] (cam2image_vm2ros) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:221: CMakeFiles/brightness_receiver.dir/all] Error 2\n'}
+[11.104647] (cam2image_vm2ros) StderrLine: {'line': b'gmake[1]: *** Waiting for unfinished jobs....\n'}
+[11.137310] (-) TimerEvent: {}
+[11.237646] (-) TimerEvent: {}
+[11.337963] (-) TimerEvent: {}
+[11.438259] (-) TimerEvent: {}
+[11.538568] (-) TimerEvent: {}
+[11.638860] (-) TimerEvent: {}
+[11.739147] (-) TimerEvent: {}
+[11.839493] (-) TimerEvent: {}
+[11.939840] (-) TimerEvent: {}
+[12.040935] (-) TimerEvent: {}
+[12.141225] (-) TimerEvent: {}
+[12.241657] (-) TimerEvent: {}
+[12.341967] (-) TimerEvent: {}
+[12.442285] (-) TimerEvent: {}
+[12.542979] (-) TimerEvent: {}
+[12.643602] (-) TimerEvent: {}
+[12.743931] (-) TimerEvent: {}
+[12.844237] (-) TimerEvent: {}
+[12.944538] (-) TimerEvent: {}
+[13.044859] (-) TimerEvent: {}
+[13.145168] (-) TimerEvent: {}
+[13.245484] (-) TimerEvent: {}
+[13.345780] (-) TimerEvent: {}
+[13.446095] (-) TimerEvent: {}
+[13.546453] (-) TimerEvent: {}
+[13.646748] (-) TimerEvent: {}
+[13.747065] (-) TimerEvent: {}
+[13.847473] (-) TimerEvent: {}
+[13.947814] (-) TimerEvent: {}
+[14.048081] (-) TimerEvent: {}
+[14.148441] (-) TimerEvent: {}
+[14.248766] (-) TimerEvent: {}
+[14.349029] (-) TimerEvent: {}
+[14.449269] (-) TimerEvent: {}
+[14.549580] (-) TimerEvent: {}
+[14.649866] (-) TimerEvent: {}
+[14.750136] (-) TimerEvent: {}
+[14.850397] (-) TimerEvent: {}
+[14.950701] (-) TimerEvent: {}
+[15.051004] (-) TimerEvent: {}
+[15.151313] (-) TimerEvent: {}
+[15.251578] (-) TimerEvent: {}
+[15.351891] (-) TimerEvent: {}
+[15.452213] (-) TimerEvent: {}
+[15.552542] (-) TimerEvent: {}
+[15.652837] (-) TimerEvent: {}
+[15.753174] (-) TimerEvent: {}
+[15.853883] (-) TimerEvent: {}
+[15.954257] (-) TimerEvent: {}
+[16.055127] (-) TimerEvent: {}
+[16.155429] (-) TimerEvent: {}
+[16.255776] (-) TimerEvent: {}
+[16.356110] (-) TimerEvent: {}
+[16.456455] (-) TimerEvent: {}
+[16.556769] (-) TimerEvent: {}
+[16.657131] (-) TimerEvent: {}
+[16.757495] (-) TimerEvent: {}
+[16.857866] (-) TimerEvent: {}
+[16.958191] (-) TimerEvent: {}
+[17.058503] (-) TimerEvent: {}
+[17.100848] (cam2image_vm2ros) StdoutLine: {'line': b'[ 88%] \x1b[32m\x1b[1mLinking CXX executable image_brightness\x1b[0m\n'}
+[17.158606] (-) TimerEvent: {}
+[17.258905] (-) TimerEvent: {}
+[17.359344] (-) TimerEvent: {}
+[17.459828] (-) TimerEvent: {}
+[17.560193] (-) TimerEvent: {}
+[17.660628] (-) TimerEvent: {}
+[17.760939] (-) TimerEvent: {}
+[17.861488] (-) TimerEvent: {}
+[17.962461] (-) TimerEvent: {}
+[18.063428] (-) TimerEvent: {}
+[18.164046] (-) TimerEvent: {}
+[18.264422] (-) TimerEvent: {}
+[18.364820] (-) TimerEvent: {}
+[18.465078] (-) TimerEvent: {}
+[18.565653] (-) TimerEvent: {}
+[18.665928] (-) TimerEvent: {}
+[18.766279] (-) TimerEvent: {}
+[18.866657] (-) TimerEvent: {}
+[18.966974] (-) TimerEvent: {}
+[19.067315] (-) TimerEvent: {}
+[19.167825] (-) TimerEvent: {}
+[19.268583] (-) TimerEvent: {}
+[19.369118] (-) TimerEvent: {}
+[19.469831] (-) TimerEvent: {}
+[19.570559] (-) TimerEvent: {}
+[19.671340] (-) TimerEvent: {}
+[19.771757] (-) TimerEvent: {}
+[19.872084] (-) TimerEvent: {}
+[19.962686] (cam2image_vm2ros) StdoutLine: {'line': b'[ 88%] Built target image_brightness\n'}
+[19.964322] (cam2image_vm2ros) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[19.967240] (cam2image_vm2ros) CommandEnded: {'returncode': 2}
+[19.972199] (-) TimerEvent: {}
+[20.072793] (-) TimerEvent: {}
+[20.173090] (-) TimerEvent: {}
+[20.273421] (-) TimerEvent: {}
+[20.373690] (-) TimerEvent: {}
+[20.473977] (-) TimerEvent: {}
+[20.574332] (-) TimerEvent: {}
+[20.674670] (-) TimerEvent: {}
+[20.774959] (-) TimerEvent: {}
+[20.846528] (cam2image_vm2ros) JobEnded: {'identifier': 'cam2image_vm2ros', 'rc': 2}
+[20.857499] (-) EventReactorShutdown: {}

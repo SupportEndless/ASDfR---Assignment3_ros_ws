@@ -1,0 +1,19 @@
+[ 36%] [32mBuilding CXX object CMakeFiles/image_brightness.dir/src/image_brightness.cpp.o[0m
+[ 36%] [32mBuilding CXX object CMakeFiles/object_position_indicator.dir/src/object_position_indicator.cpp.o[0m
+[ 45%] Built target cam2image
+[ 36%] [32mBuilding CXX object CMakeFiles/brightness_receiver.dir/src/brightness_receiver.cpp.o[0m
+[01m[Kcc1plus:[m[K [01;31m[Kfatal error: [m[K/home/ubuntu/Robotics/ros2_ws/src/cam2image_vm2ros/src/brightness_receiver.cpp: No such file or directory
+compilation terminated.
+[01m[Kcc1plus:[m[K [01;31m[Kfatal error: [m[K/home/ubuntu/Robotics/ros2_ws/src/cam2image_vm2ros/src/image_brightness.cpp: No such file or directory
+compilation terminated.
+[01m[Kcc1plus:[m[K [01;31m[Kfatal error: [m[K/home/ubuntu/Robotics/ros2_ws/src/cam2image_vm2ros/src/object_position_indicator.cpp: No such file or directory
+compilation terminated.
+gmake[2]: *** [CMakeFiles/object_position_indicator.dir/build.make:76: CMakeFiles/object_position_indicator.dir/src/object_position_indicator.cpp.o] Error 1
+gmake[2]: *** [CMakeFiles/image_brightness.dir/build.make:76: CMakeFiles/image_brightness.dir/src/image_brightness.cpp.o] Error 1
+gmake[2]: *** [CMakeFiles/brightness_receiver.dir/build.make:76: CMakeFiles/brightness_receiver.dir/src/brightness_receiver.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:249: CMakeFiles/object_position_indicator.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+gmake[1]: *** [CMakeFiles/Makefile2:223: CMakeFiles/brightness_receiver.dir/all] Error 2
+gmake[1]: *** [CMakeFiles/Makefile2:197: CMakeFiles/image_brightness.dir/all] Error 2
+[ 72%] Built target cam2image_vm2ros
+gmake: *** [Makefile:146: all] Error 2

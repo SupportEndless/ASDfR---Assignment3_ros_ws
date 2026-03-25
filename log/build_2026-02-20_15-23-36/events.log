@@ -1,0 +1,9 @@
+[0.000000] (-) TimerEvent: {}
+[0.000147] (-) JobUnselected: {'identifier': 'cam2image_vm2ros'}
+[0.000606] (-) JobUnselected: {'identifier': 'cpp_pubsub'}
+[0.000694] (-) JobUnselected: {'identifier': 'relbot_adapter'}
+[0.000906] (-) JobUnselected: {'identifier': 'relbot_msgs'}
+[0.000993] (relbot_simulator) JobQueued: {'identifier': 'relbot_simulator', 'dependencies': OrderedDict({'relbot_msgs': '/home/ubuntu/Robotics/ros2_ws/install/relbot_msgs'})}
+[0.001021] (relbot_simulator) JobStarted: {'identifier': 'relbot_simulator'}
+[0.013263] (relbot_simulator) JobEnded: {'identifier': 'relbot_simulator', 'rc': 1}
+[0.023787] (-) EventReactorShutdown: {}

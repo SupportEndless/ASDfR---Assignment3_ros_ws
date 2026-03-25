@@ -1,0 +1,17 @@
+[ 28%] Built target cam2image
+[ 42%] [32mBuilding CXX object CMakeFiles/talker_listener_node.dir/src/image_brightness.cpp.o[0m
+[ 85%] Built target cam2image_vm2ros
+[01m[K/home/ubuntu/Robotics/ros2_ws/src/cam2image_vm2ros/src/image_brightness.cpp:[m[K In constructor ‘[01m[KImageBrightness::[01;32m[KImageBrightness[m[K()[m[K’:
+[01m[K/home/ubuntu/Robotics/ros2_ws/src/cam2image_vm2ros/src/image_brightness.cpp:23:77:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static member function ‘[01m[Kvoid ImageBrightness::[01;32m[Ktopic_callback[m[K(sensor_msgs::msg::Image_<std::allocator<void> >::SharedPtr)[m[K’
+   23 |             this->create_subscription<sensor_msgs::msg::Image>("Image", 10, [01;31m[Ktopic_callback[m[K);
+      |                                                                             [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Robotics/ros2_ws/src/cam2image_vm2ros/src/image_brightness.cpp:39:10:[m[K [01;36m[Knote: [m[Kdeclared here
+   39 |     void [01;36m[Ktopic_callback[m[K(sensor_msgs::msg::Image::SharedPtr img) {
+      |          [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Robotics/ros2_ws/src/cam2image_vm2ros/src/image_brightness.cpp:[m[K In member function ‘[01m[Kvoid ImageBrightness::[01;32m[Ktopic_callback[m[K(sensor_msgs::msg::Image_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/ubuntu/Robotics/ros2_ws/src/cam2image_vm2ros/src/image_brightness.cpp:39:60:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kimg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   39 |     void topic_callback([01;35m[Ksensor_msgs::msg::Image::SharedPtr img[m[K) {
+      |                         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+gmake[2]: *** [CMakeFiles/talker_listener_node.dir/build.make:76: CMakeFiles/talker_listener_node.dir/src/image_brightness.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/talker_listener_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

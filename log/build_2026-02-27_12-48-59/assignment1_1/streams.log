@@ -1,0 +1,6 @@
+[0.102s] Invoking command in '/home/ubuntu/Robotics/ros2_ws/build/assignment1_1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/Robotics/ros2_ws/build/assignment1_1 -- -j12 -l12
+[2.456s] [ 33%] Built target brightness_receiver
+[2.583s] [ 83%] Built target image_brightness
+[2.583s] [ 66%] [32mBuilding CXX object CMakeFiles/object_position_indicator.dir/src/object_position_indicator.cpp.o[0m
+[22.032s] [100%] [32m[1mLinking CXX executable object_position_indicator[0m
+[25.059s] [100%] Built target object_position_indicator

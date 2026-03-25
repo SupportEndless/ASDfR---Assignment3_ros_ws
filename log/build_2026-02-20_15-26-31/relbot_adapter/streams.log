@@ -1,0 +1,51 @@
+[0.010s] Invoking command in '/home/ubuntu/Robotics/ros2_ws/build/relbot_adapter': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/ubuntu/Robotics/ros2_ws/src/relbot_adapter -DCMAKE_INSTALL_PREFIX=/home/ubuntu/Robotics/ros2_ws/install/relbot_adapter
+[0.025s] -- Found ament_cmake: 2.5.5 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.238s] -- Found rclcpp: 28.1.16 (/opt/ros/jazzy/share/rclcpp/cmake)
+[0.498s] -- Found rosidl_generator_c: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.508s] -- Found rosidl_generator_cpp: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.520s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.534s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.605s] -- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.607s] -- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[0.982s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.272s] -- Found example_interfaces: 0.12.0 (/opt/ros/jazzy/share/example_interfaces/cmake)
+[1.343s] -- Found geometry_msgs: 5.3.6 (/opt/ros/jazzy/share/geometry_msgs/cmake)
+[1.381s] -- Found relbot_msgs: 2025.2.0 (/home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/share/relbot_msgs/cmake)
+[3.113s] -- xrf2_msgs not found, building without xrf2 support.
+[3.117s] -- Found ament_lint_auto: 0.17.4 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[3.221s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[3.221s] -- Configured cppcheck include dirs: /home/ubuntu/Robotics/ros2_ws/src/relbot_adapter/include;$<BUILD_INTERFACE:/home/ubuntu/Robotics/ros2_ws/src/relbot_adapter/include>
+[3.221s] -- Configured cppcheck exclude dirs and/or files: 
+[3.222s] -- Added test 'lint_cmake' to check CMake code style
+[3.224s] -- Added test 'uncrustify' to check C / C++ code style
+[3.224s] -- Configured uncrustify additional arguments: 
+[3.225s] -- Added test 'xmllint' to check XML markup files
+[3.227s] -- Configuring done (3.2s)
+[3.244s] -- Generating done (0.0s)
+[3.250s] -- Build files have been written to: /home/ubuntu/Robotics/ros2_ws/build/relbot_adapter
+[3.259s] Invoked command in '/home/ubuntu/Robotics/ros2_ws/build/relbot_adapter' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/ubuntu/Robotics/ros2_ws/src/relbot_adapter -DCMAKE_INSTALL_PREFIX=/home/ubuntu/Robotics/ros2_ws/install/relbot_adapter
+[3.261s] Invoking command in '/home/ubuntu/Robotics/ros2_ws/build/relbot_adapter': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/Robotics/ros2_ws/build/relbot_adapter -- -j12 -l12
+[3.318s] [ 50%] [32mBuilding CXX object CMakeFiles/relbot_adapter.dir/src/relbot_adapter.cpp.o[0m
+[15.020s] [100%] [32m[1mLinking CXX executable relbot_adapter[0m
+[16.439s] [100%] Built target relbot_adapter
+[16.456s] Invoked command in '/home/ubuntu/Robotics/ros2_ws/build/relbot_adapter' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/Robotics/ros2_ws/build/relbot_adapter -- -j12 -l12
+[16.469s] Invoking command in '/home/ubuntu/Robotics/ros2_ws/build/relbot_adapter': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/ubuntu/Robotics/ros2_ws/build/relbot_adapter
+[16.479s] -- Install configuration: ""
+[16.480s] -- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_adapter/lib/relbot_adapter/relbot_adapter
+[16.491s] -- Set non-toolchain portion of runtime path of "/home/ubuntu/Robotics/ros2_ws/install/relbot_adapter/lib/relbot_adapter/relbot_adapter" to ""
+[16.492s] -- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_adapter/share/ament_index/resource_index/package_run_dependencies/relbot_adapter
+[16.493s] -- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_adapter/share/ament_index/resource_index/parent_prefix_path/relbot_adapter
+[16.494s] -- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_adapter/share/relbot_adapter/environment/ament_prefix_path.sh
+[16.494s] -- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_adapter/share/relbot_adapter/environment/ament_prefix_path.dsv
+[16.495s] -- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_adapter/share/relbot_adapter/environment/path.sh
+[16.495s] -- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_adapter/share/relbot_adapter/environment/path.dsv
+[16.495s] -- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_adapter/share/relbot_adapter/local_setup.bash
+[16.496s] -- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_adapter/share/relbot_adapter/local_setup.sh
+[16.496s] -- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_adapter/share/relbot_adapter/local_setup.zsh
+[16.497s] -- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_adapter/share/relbot_adapter/local_setup.dsv
+[16.497s] -- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_adapter/share/relbot_adapter/package.dsv
+[16.498s] -- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_adapter/share/ament_index/resource_index/packages/relbot_adapter
+[16.499s] -- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_adapter/share/relbot_adapter/cmake/relbot_adapterConfig.cmake
+[16.499s] -- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_adapter/share/relbot_adapter/cmake/relbot_adapterConfig-version.cmake
+[16.499s] -- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_adapter/share/relbot_adapter/package.xml
+[16.503s] Invoked command in '/home/ubuntu/Robotics/ros2_ws/build/relbot_adapter' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/ubuntu/Robotics/ros2_ws/build/relbot_adapter

@@ -1,0 +1,37 @@
+[0.136s] Invoking command in '/home/ubuntu/Robotics/ros2_ws/build/relbot_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/ubuntu/Robotics/ros2_ws/src/relbot_msgs -DCMAKE_INSTALL_PREFIX=/home/ubuntu/Robotics/ros2_ws/install/relbot_msgs
+[3.504s] -- The C compiler identification is GNU 13.3.0
+[4.941s] -- The CXX compiler identification is GNU 13.3.0
+[6.091s] -- Detecting C compiler ABI info
+[6.635s] -- Detecting C compiler ABI info - done
+[6.649s] -- Check for working C compiler: /usr/bin/cc - skipped
+[6.649s] -- Detecting C compile features
+[6.650s] -- Detecting C compile features - done
+[6.858s] -- Detecting CXX compiler ABI info
+[7.370s] -- Detecting CXX compiler ABI info - done
+[7.383s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[7.384s] -- Detecting CXX compile features
+[7.385s] -- Detecting CXX compile features - done
+[7.388s] -- Found ament_cmake: 2.5.5 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[7.605s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[7.856s] -- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+[7.924s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[8.499s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[8.655s] -- Found rosidl_adapter: 4.6.7 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[8.710s] -- Found std_msgs: 5.3.6 (/opt/ros/jazzy/share/std_msgs/cmake)
+[9.800s] -- Found ament_cmake_cppcheck: 0.17.4 (/opt/ros/jazzy/share/ament_cmake_cppcheck/cmake)
+[9.812s] -- Found ament_cmake_cpplint: 0.17.4 (/opt/ros/jazzy/share/ament_cmake_cpplint/cmake)
+[9.824s] -- Found ament_cmake_uncrustify: 0.17.4 (/opt/ros/jazzy/share/ament_cmake_uncrustify/cmake)
+[9.841s] -- Found ament_cmake_ros: 0.12.0 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)
+[10.566s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[11.489s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[11.515s] -- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)
+[11.724s] -- Found PythonExtra: /usr/bin/python3  
+[13.448s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed 
+[13.550s] -- Found ament_cmake_flake8: 0.17.4 (/opt/ros/jazzy/share/ament_cmake_flake8/cmake)
+[13.553s] -- Found ament_cmake_pep257: 0.17.4 (/opt/ros/jazzy/share/ament_cmake_pep257/cmake)
+[13.556s] -- Found ament_lint_auto: 0.17.4 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[13.635s] -- Added test 'lint_cmake' to check CMake code style
+[13.636s] -- Added test 'xmllint' to check XML markup files
+[13.641s] -- Configuring done (12.9s)
+[13.759s] -- Generating done (0.1s)
+[13.773s] -- Build files have been written to: /home/ubuntu/Robotics/ros2_ws/build/relbot_msgs

@@ -1,0 +1,9 @@
+[0.000000] (-) TimerEvent: {}
+[0.000253] (-) JobUnselected: {'identifier': 'Assignment1_1'}
+[0.000350] (-) JobUnselected: {'identifier': 'Assignment1_2'}
+[0.000733] (-) JobUnselected: {'identifier': 'cam2image_vm2ros'}
+[0.000819] (-) JobUnselected: {'identifier': 'cpp_pubsub'}
+[0.000875] (-) JobUnselected: {'identifier': 'relbot_adapter'}
+[0.000894] (-) JobUnselected: {'identifier': 'relbot_msgs'}
+[0.000909] (-) JobUnselected: {'identifier': 'relbot_simulator'}
+[0.001399] (-) EventReactorShutdown: {}

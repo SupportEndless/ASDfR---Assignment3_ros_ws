@@ -1,0 +1,66 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/setpoint_generator.dir/src/setpoint_generator.cpp.o[0m
+In file included from [01m[K/home/ubuntu/Robotics/ros2_ws/src/assignment1_2/src/setpoint_generator.cpp:1[m[K:
+[01m[K/home/ubuntu/Robotics/ros2_ws/src/assignment1_2/include/setpoint_generator.hpp:29:50:[m[K [01;31m[Kerror: [m[K‘[01m[KPoseStamped[m[K’ is not a member of ‘[01m[Kgeometry_msgs::msg[m[K’
+   29 |         rclcpp::Subscription<geometry_msgs::msg::[01;31m[KPoseStamped[m[K>::SharedPtr pose_subscriber_;      // Subscriber for current location
+      |                                                  [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Robotics/ros2_ws/src/assignment1_2/include/setpoint_generator.hpp:29:61:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   29 |         rclcpp::Subscription<geometry_msgs::msg::PoseStamped[01;31m[K>[m[K::SharedPtr pose_subscriber_;      // Subscriber for current location
+      |                                                             [01;31m[K^[m[K
+[01m[K/home/ubuntu/Robotics/ros2_ws/src/assignment1_2/include/setpoint_generator.hpp:29:61:[m[K [01;31m[Kerror: [m[Ktemplate argument 3 is invalid
+[01m[K/home/ubuntu/Robotics/ros2_ws/src/assignment1_2/include/setpoint_generator.hpp:29:61:[m[K [01;31m[Kerror: [m[Ktemplate argument 4 is invalid
+[01m[K/home/ubuntu/Robotics/ros2_ws/src/assignment1_2/include/setpoint_generator.hpp:29:61:[m[K [01;31m[Kerror: [m[Ktemplate argument 5 is invalid
+[01m[K/home/ubuntu/Robotics/ros2_ws/src/assignment1_2/include/setpoint_generator.hpp:29:64:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+   29 |         rclcpp::Subscription<geometry_msgs::msg::PoseStamped>::[01;31m[KSharedPtr[m[K pose_subscriber_;      // Subscriber for current location
+      |                                                                [01;31m[K^~~~~~~~~[m[K
+      |                                                                         [32m[K;[m[K
+[01m[K/home/ubuntu/Robotics/ros2_ws/src/assignment1_2/include/setpoint_generator.hpp:29:74:[m[K [01;31m[Kerror: [m[K‘[01m[Kpose_subscriber_[m[K’ does not name a type
+   29 |         rclcpp::Subscription<geometry_msgs::msg::PoseStamped>::SharedPtr [01;31m[Kpose_subscriber_[m[K;      // Subscriber for current location
+      |                                                                          [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Robotics/ros2_ws/src/assignment1_2/include/setpoint_generator.hpp:32:9:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on function return type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wignored-qualifiers-Wignored-qualifiers]8;;[m[K]
+   32 |         [01;35m[Kdouble[m[K const get_right_wheel_control(double);
+      |         [01;35m[K^~~~~~[m[K
+[01m[K/home/ubuntu/Robotics/ros2_ws/src/assignment1_2/include/setpoint_generator.hpp:33:9:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on function return type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wignored-qualifiers-Wignored-qualifiers]8;;[m[K]
+   33 |         [01;35m[Kdouble[m[K const get_left_wheel_control(double);
+      |         [01;35m[K^~~~~~[m[K
+[01m[K/home/ubuntu/Robotics/ros2_ws/src/assignment1_2/include/setpoint_generator.hpp:34:49:[m[K [01;31m[Kerror: [m[K‘[01m[Kgeometry_msgs::msg::PoseStamped[m[K’ has not been declared
+   34 |         void topic_callback(geometry_msgs::msg::[01;31m[KPoseStamped[m[K::SharedPtr msg);     // Sends out control input to both left and right wheel, depending on parameters
+      |                                                 [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Robotics/ros2_ws/src/assignment1_2/include/setpoint_generator.hpp:34:72:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K...[m[K’ before ‘[01m[Kmsg[m[K’
+   34 |         void topic_callback(geometry_msgs::msg::PoseStamped::SharedPtr [01;31m[Kmsg[m[K);     // Sends out control input to both left and right wheel, depending on parameters
+      |                                                                        [01;31m[K^~~[m[K
+[01m[K/home/ubuntu/Robotics/ros2_ws/src/assignment1_2/include/setpoint_generator.hpp:23:22:[m[K [01;35m[Kwarning: [m[Knon-static const member ‘[01m[Kconst double SetpointGenerator::omega_right_wheel_[m[K’ in class without a constructor [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wuninitialized-Wuninitialized]8;;[m[K]
+   23 |         double const [01;35m[Komega_right_wheel_[m[K;          // Angular frequency of right wheel
+      |                      [01;35m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Robotics/ros2_ws/src/assignment1_2/include/setpoint_generator.hpp:24:22:[m[K [01;35m[Kwarning: [m[Knon-static const member ‘[01m[Kconst double SetpointGenerator::omega_left_wheel_[m[K’ in class without a constructor [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wuninitialized-Wuninitialized]8;;[m[K]
+   24 |         double const [01;35m[Komega_left_wheel_[m[K;            // Angular frequency of left wheel
+      |                      [01;35m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Robotics/ros2_ws/src/assignment1_2/src/setpoint_generator.cpp:4:38:[m[K [01;31m[Kerror: [m[Kdefinition of implicitly-declared ‘[01m[KSetpointGenerator::[01;32m[KSetpointGenerator[m[K()[m[K’
+    4 | SetpointGenerator::SetpointGenerator([01;31m[K)[m[K : Node("setpoint_generator"){
+      |                                      [01;31m[K^[m[K
+[01m[K/home/ubuntu/Robotics/ros2_ws/src/assignment1_2/src/setpoint_generator.cpp:19:8:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kdouble SetpointGenerator::[01;32m[Kget_right_wheel_control[m[K(double) const[m[K’
+   19 | double [01;31m[KSetpointGenerator[m[K::get_right_wheel_control(double t) const {
+      |        [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Robotics/ros2_ws/src/assignment1_2/include/setpoint_generator.hpp:32:22:[m[K [01;36m[Knote: [m[Kcandidate is: ‘[01m[Kconst double SetpointGenerator::[01;32m[Kget_right_wheel_control[m[K(double)[m[K’
+   32 |         double const [01;36m[Kget_right_wheel_control[m[K(double);
+      |                      [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Robotics/ros2_ws/src/assignment1_2/include/setpoint_generator.hpp:17:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass SetpointGenerator[m[K’ defined here
+   17 | class [01;36m[KSetpointGenerator[m[K : public rclcpp::Node
+      |       [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Robotics/ros2_ws/src/assignment1_2/src/setpoint_generator.cpp:23:8:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kdouble SetpointGenerator::[01;32m[Kget_left_wheel_control[m[K(double) const[m[K’
+   23 | double [01;31m[KSetpointGenerator[m[K::get_left_wheel_control(double t) const {
+      |        [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Robotics/ros2_ws/src/assignment1_2/include/setpoint_generator.hpp:33:22:[m[K [01;36m[Knote: [m[Kcandidate is: ‘[01m[Kconst double SetpointGenerator::[01;32m[Kget_left_wheel_control[m[K(double)[m[K’
+   33 |         double const [01;36m[Kget_left_wheel_control[m[K(double);
+      |                      [01;36m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Robotics/ros2_ws/src/assignment1_2/include/setpoint_generator.hpp:17:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass SetpointGenerator[m[K’ defined here
+   17 | class [01;36m[KSetpointGenerator[m[K : public rclcpp::Node
+      |       [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Robotics/ros2_ws/src/assignment1_2/src/setpoint_generator.cpp:27:6:[m[K [01;31m[Kerror: [m[Kvariable or field ‘[01m[Ksend_control_output[m[K’ declared void
+   27 | void [01;31m[KSetpointGenerator[m[K::send_control_output(geometry_msgs::msg::PoseStamped::SharedPtr msg) {
+      |      [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Robotics/ros2_ws/src/assignment1_2/src/setpoint_generator.cpp:27:65:[m[K [01;31m[Kerror: [m[K‘[01m[Kgeometry_msgs::msg::PoseStamped[m[K’ has not been declared
+   27 | void SetpointGenerator::send_control_output(geometry_msgs::msg::[01;31m[KPoseStamped[m[K::SharedPtr msg) {
+      |                                                                 [01;31m[K^~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/setpoint_generator.dir/build.make:76: CMakeFiles/setpoint_generator.dir/src/setpoint_generator.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/setpoint_generator.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

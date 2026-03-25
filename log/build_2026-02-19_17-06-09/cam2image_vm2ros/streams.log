@@ -1,0 +1,49 @@
+[0.011s] Invoking command in '/home/ubuntu/Robotics/ros2_ws/build/cam2image_vm2ros': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/Robotics/ros2_ws/build/cam2image_vm2ros -- -j12 -l12
+[0.079s] [ 22%] Built target cam2image
+[0.082s] [ 44%] Built target image_brightness
+[0.088s] [ 55%] [32mBuilding CXX object CMakeFiles/brightness_receiver.dir/src/brightness_receiver.cpp.o[0m
+[0.094s] [ 88%] Built target cam2image_vm2ros
+[7.921s] [100%] [32m[1mLinking CXX executable brightness_receiver[0m
+[8.329s] [100%] Built target brightness_receiver
+[8.343s] Invoked command in '/home/ubuntu/Robotics/ros2_ws/build/cam2image_vm2ros' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/Robotics/ros2_ws/build/cam2image_vm2ros -- -j12 -l12
+[8.354s] Invoking command in '/home/ubuntu/Robotics/ros2_ws/build/cam2image_vm2ros': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/ubuntu/Robotics/ros2_ws/build/cam2image_vm2ros
+[8.362s] -- Install configuration: ""
+[8.733s] -- Up-to-date: /home/ubuntu/Robotics/ros2_ws/install/cam2image_vm2ros/lib/cam2image_vm2ros/cam2image
+[8.919s] -- Up-to-date: /home/ubuntu/Robotics/ros2_ws/install/cam2image_vm2ros/lib/libcam2image_vm2ros.so
+[8.920s] -- Up-to-date: /home/ubuntu/Robotics/ros2_ws/install/cam2image_vm2ros/include/cam2image_vm2ros
+[8.920s] -- Up-to-date: /home/ubuntu/Robotics/ros2_ws/install/cam2image_vm2ros/include/cam2image_vm2ros/cam2image.hpp:Zone.Identifier
+[8.920s] -- Up-to-date: /home/ubuntu/Robotics/ros2_ws/install/cam2image_vm2ros/include/cam2image_vm2ros/visibility_control.h
+[8.920s] -- Up-to-date: /home/ubuntu/Robotics/ros2_ws/install/cam2image_vm2ros/include/cam2image_vm2ros/base64.hpp:Zone.Identifier
+[8.921s] -- Up-to-date: /home/ubuntu/Robotics/ros2_ws/install/cam2image_vm2ros/include/cam2image_vm2ros/visibility_control.h:Zone.Identifier
+[8.921s] -- Up-to-date: /home/ubuntu/Robotics/ros2_ws/install/cam2image_vm2ros/include/cam2image_vm2ros/remote_capture.hpp
+[8.921s] -- Up-to-date: /home/ubuntu/Robotics/ros2_ws/install/cam2image_vm2ros/include/cam2image_vm2ros/base64.hpp
+[8.921s] -- Up-to-date: /home/ubuntu/Robotics/ros2_ws/install/cam2image_vm2ros/include/cam2image_vm2ros/cam2image.hpp
+[8.921s] -- Up-to-date: /home/ubuntu/Robotics/ros2_ws/install/cam2image_vm2ros/include/cam2image_vm2ros/remote_capture.hpp:Zone.Identifier
+[8.921s] -- Installing: /home/ubuntu/Robotics/ros2_ws/install/cam2image_vm2ros/lib/cam2image_vm2ros/image_brightness
+[8.928s] -- Set non-toolchain portion of runtime path of "/home/ubuntu/Robotics/ros2_ws/install/cam2image_vm2ros/lib/cam2image_vm2ros/image_brightness" to ""
+[8.928s] -- Installing: /home/ubuntu/Robotics/ros2_ws/install/cam2image_vm2ros/lib/cam2image_vm2ros/brightness_receiver
+[8.933s] -- Set non-toolchain portion of runtime path of "/home/ubuntu/Robotics/ros2_ws/install/cam2image_vm2ros/lib/cam2image_vm2ros/brightness_receiver" to ""
+[8.933s] -- Up-to-date: /home/ubuntu/Robotics/ros2_ws/install/cam2image_vm2ros/share/cam2image_vm2ros/environment/library_path.sh
+[8.934s] -- Up-to-date: /home/ubuntu/Robotics/ros2_ws/install/cam2image_vm2ros/share/cam2image_vm2ros/environment/library_path.dsv
+[8.934s] -- Up-to-date: /home/ubuntu/Robotics/ros2_ws/install/cam2image_vm2ros/share/ament_index/resource_index/package_run_dependencies/cam2image_vm2ros
+[8.934s] -- Up-to-date: /home/ubuntu/Robotics/ros2_ws/install/cam2image_vm2ros/share/ament_index/resource_index/parent_prefix_path/cam2image_vm2ros
+[8.935s] -- Up-to-date: /home/ubuntu/Robotics/ros2_ws/install/cam2image_vm2ros/share/cam2image_vm2ros/environment/ament_prefix_path.sh
+[8.935s] -- Up-to-date: /home/ubuntu/Robotics/ros2_ws/install/cam2image_vm2ros/share/cam2image_vm2ros/environment/ament_prefix_path.dsv
+[8.935s] -- Up-to-date: /home/ubuntu/Robotics/ros2_ws/install/cam2image_vm2ros/share/cam2image_vm2ros/environment/path.sh
+[8.935s] -- Up-to-date: /home/ubuntu/Robotics/ros2_ws/install/cam2image_vm2ros/share/cam2image_vm2ros/environment/path.dsv
+[8.935s] -- Up-to-date: /home/ubuntu/Robotics/ros2_ws/install/cam2image_vm2ros/share/cam2image_vm2ros/local_setup.bash
+[8.935s] -- Up-to-date: /home/ubuntu/Robotics/ros2_ws/install/cam2image_vm2ros/share/cam2image_vm2ros/local_setup.sh
+[8.935s] -- Up-to-date: /home/ubuntu/Robotics/ros2_ws/install/cam2image_vm2ros/share/cam2image_vm2ros/local_setup.zsh
+[8.935s] -- Up-to-date: /home/ubuntu/Robotics/ros2_ws/install/cam2image_vm2ros/share/cam2image_vm2ros/local_setup.dsv
+[8.935s] -- Installing: /home/ubuntu/Robotics/ros2_ws/install/cam2image_vm2ros/share/cam2image_vm2ros/package.dsv
+[8.935s] -- Up-to-date: /home/ubuntu/Robotics/ros2_ws/install/cam2image_vm2ros/share/ament_index/resource_index/packages/cam2image_vm2ros
+[8.935s] -- Up-to-date: /home/ubuntu/Robotics/ros2_ws/install/cam2image_vm2ros/share/ament_index/resource_index/rclcpp_components/cam2image_vm2ros
+[8.946s] -- Up-to-date: /home/ubuntu/Robotics/ros2_ws/install/cam2image_vm2ros/share/cam2image_vm2ros/cmake/cam2image_vm2rosExport.cmake
+[8.947s] -- Up-to-date: /home/ubuntu/Robotics/ros2_ws/install/cam2image_vm2ros/share/cam2image_vm2ros/cmake/cam2image_vm2rosExport-noconfig.cmake
+[8.947s] -- Up-to-date: /home/ubuntu/Robotics/ros2_ws/install/cam2image_vm2ros/share/cam2image_vm2ros/cmake/ament_cmake_export_libraries-extras.cmake
+[8.947s] -- Up-to-date: /home/ubuntu/Robotics/ros2_ws/install/cam2image_vm2ros/share/cam2image_vm2ros/cmake/ament_cmake_export_targets-extras.cmake
+[8.947s] -- Up-to-date: /home/ubuntu/Robotics/ros2_ws/install/cam2image_vm2ros/share/cam2image_vm2ros/cmake/ament_cmake_export_dependencies-extras.cmake
+[8.947s] -- Up-to-date: /home/ubuntu/Robotics/ros2_ws/install/cam2image_vm2ros/share/cam2image_vm2ros/cmake/cam2image_vm2rosConfig.cmake
+[8.947s] -- Up-to-date: /home/ubuntu/Robotics/ros2_ws/install/cam2image_vm2ros/share/cam2image_vm2ros/cmake/cam2image_vm2rosConfig-version.cmake
+[8.947s] -- Up-to-date: /home/ubuntu/Robotics/ros2_ws/install/cam2image_vm2ros/share/cam2image_vm2ros/package.xml
+[8.949s] Invoked command in '/home/ubuntu/Robotics/ros2_ws/build/cam2image_vm2ros' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/ubuntu/Robotics/ros2_ws/build/cam2image_vm2ros

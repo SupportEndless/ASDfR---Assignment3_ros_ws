@@ -1,0 +1,141 @@
+[0.000000] (-) TimerEvent: {}
+[0.000142] (-) JobUnselected: {'identifier': 'cpp_pubsub'}
+[0.000722] (cam2image_vm2ros) JobQueued: {'identifier': 'cam2image_vm2ros', 'dependencies': OrderedDict()}
+[0.000893] (cam2image_vm2ros) JobStarted: {'identifier': 'cam2image_vm2ros'}
+[0.086571] (cam2image_vm2ros) JobProgress: {'identifier': 'cam2image_vm2ros', 'progress': 'cmake'}
+[0.100063] (-) TimerEvent: {}
+[0.102563] (cam2image_vm2ros) JobProgress: {'identifier': 'cam2image_vm2ros', 'progress': 'build'}
+[0.103190] (cam2image_vm2ros) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ubuntu/Robotics/ros2_ws/build/cam2image_vm2ros', '--', '-j12', '-l12'], 'cwd': '/home/ubuntu/Robotics/ros2_ws/build/cam2image_vm2ros', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ubuntu', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/ubuntu/Robotics/ros2_ws/install/cam2image_vm2ros/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'WT_PROFILE_ID': '{61c54bbd-c2c6-5271-96e7-009a87ff44bf}', 'HOME': '/home/ubuntu', 'OLDPWD': '/home/ubuntu/Robotics', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'WSL_DISTRO_NAME': 'Ubuntu-24.04', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/ubuntu/Robotics/ros2_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ubuntu', 'NAME': 'Laptop-Rogier', 'WSL_INTEROP': '/run/WSL/9507_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/java8path:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/110/Tools/Binn/:/mnt/c/Program Files (x86)/Microsoft SQL Server/120/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/120/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/120/DTS/Binn/:/mnt/c/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/MATLAB/R2025b/bin:/mnt/c/Program Files (x86)/IVI Foundation/VISA/WinNT/Bin/:/mnt/c/Program Files/IVI Foundation/VISA/Win64/Bin/:/mnt/c/Program Files (x86)/IVI Foundation/VISA/WinNT/Bin:/mnt/d/PuTTy/:/mnt/d/Program Files/Git/cmd:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Program Files/NVIDIA Corporation/Nsight Compute 2024.3.2/:/mnt/c/Users/rogie/AppData/Local/Muse Hub/lib:/mnt/c/Users/rogie/AppData/Local/Programs/Python/Python39/:/mnt/c/Users/rogie/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/rogie/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/rogie/AppData/Local/GitHubDesktop/bin:/mnt/c/Users/rogie/AppData/Local/Muse Hub/lib:/mnt/c/Users/rogie/AppData/Local/Programs/Python/protoc/bin:/mnt/c/Users/rogie/AppData/Local/Programs/Python/Python39/Scripts:/mnt/c/msys64/ucrt64/bin:/mnt/c/xampp/php:/snap/bin', 'WT_SESSION': '5c9da074-ec5d-4d27-9c1d-bffbaf210566', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/ubuntu/Robotics/ros2_ws/install/cam2image_vm2ros:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/ubuntu/Robotics/ros2_ws/build/cam2image_vm2ros', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/home/ubuntu/Robotics/ros2_ws/install/cam2image_vm2ros:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy', 'WSLENV': 'WT_SESSION:WT_PROFILE_ID:'}), 'shell': False}
+[0.200185] (-) TimerEvent: {}
+[0.300753] (-) TimerEvent: {}
+[0.401366] (-) TimerEvent: {}
+[0.501638] (-) TimerEvent: {}
+[0.602069] (-) TimerEvent: {}
+[0.702473] (-) TimerEvent: {}
+[0.803493] (-) TimerEvent: {}
+[0.903829] (-) TimerEvent: {}
+[1.004249] (-) TimerEvent: {}
+[1.005696] (cam2image_vm2ros) StdoutLine: {'line': b'[ 28%] Built target cam2image\n'}
+[1.022266] (cam2image_vm2ros) StdoutLine: {'line': b'[ 71%] Built target cam2image_vm2ros\n'}
+[1.063528] (cam2image_vm2ros) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding CXX object CMakeFiles/talker_listener_node.dir/src/image_brightness.cpp.o\x1b[0m\n'}
+[1.104704] (-) TimerEvent: {}
+[1.205037] (-) TimerEvent: {}
+[1.305582] (-) TimerEvent: {}
+[1.405926] (-) TimerEvent: {}
+[1.506288] (-) TimerEvent: {}
+[1.606610] (-) TimerEvent: {}
+[1.706998] (-) TimerEvent: {}
+[1.807788] (-) TimerEvent: {}
+[1.908408] (-) TimerEvent: {}
+[2.009436] (-) TimerEvent: {}
+[2.109731] (-) TimerEvent: {}
+[2.210208] (-) TimerEvent: {}
+[2.310824] (-) TimerEvent: {}
+[2.411445] (-) TimerEvent: {}
+[2.511907] (-) TimerEvent: {}
+[2.612778] (-) TimerEvent: {}
+[2.713280] (-) TimerEvent: {}
+[2.813666] (-) TimerEvent: {}
+[2.914106] (-) TimerEvent: {}
+[3.014362] (-) TimerEvent: {}
+[3.115434] (-) TimerEvent: {}
+[3.215712] (-) TimerEvent: {}
+[3.315994] (-) TimerEvent: {}
+[3.416291] (-) TimerEvent: {}
+[3.516632] (-) TimerEvent: {}
+[3.616951] (-) TimerEvent: {}
+[3.717327] (-) TimerEvent: {}
+[3.817633] (-) TimerEvent: {}
+[3.917985] (-) TimerEvent: {}
+[4.018270] (-) TimerEvent: {}
+[4.118519] (-) TimerEvent: {}
+[4.218847] (-) TimerEvent: {}
+[4.319447] (-) TimerEvent: {}
+[4.419745] (-) TimerEvent: {}
+[4.520048] (-) TimerEvent: {}
+[4.621136] (-) TimerEvent: {}
+[4.721465] (-) TimerEvent: {}
+[4.821816] (-) TimerEvent: {}
+[4.922284] (-) TimerEvent: {}
+[5.022576] (-) TimerEvent: {}
+[5.122886] (-) TimerEvent: {}
+[5.223224] (-) TimerEvent: {}
+[5.323499] (-) TimerEvent: {}
+[5.423861] (-) TimerEvent: {}
+[5.524168] (-) TimerEvent: {}
+[5.609869] (cam2image_vm2ros) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:27\x1b[m\x1b[K,\n'}
+[5.610115] (cam2image_vm2ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:171\x1b[m\x1b[K,\n'}
+[5.610197] (cam2image_vm2ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ubuntu/Robotics/ros2_ws/src/cam2image_vm2ros/src/image_brightness.cpp:5\x1b[m\x1b[K:\n'}
+[5.610283] (cam2image_vm2ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Robotics/ros2_ws/src/cam2image_vm2ros/src/image_brightness.cpp:\x1b[m\x1b[K In static member function \xe2\x80\x98\x1b[01m\x1b[Kstatic void ImageBrightness::\x1b[01;32m\x1b[Ktopic_callback\x1b[m\x1b[K(sensor_msgs::msg::Image_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[5.610355] (cam2image_vm2ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Robotics/ros2_ws/src/cam2image_vm2ros/src/image_brightness.cpp:41:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 is unavailable for static member functions\n'}
+[5.610422] (cam2image_vm2ros) StderrLine: {'line': b'   41 |         RCLCPP_INFO(\x1b[01;31m\x1b[Kthis\x1b[m\x1b[K->get_logger(), "Message received!");\n'}
+[5.610489] (cam2image_vm2ros) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[5.610554] (cam2image_vm2ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Robotics/ros2_ws/src/cam2image_vm2ros/src/image_brightness.cpp:41:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 is unavailable for static member functions\n'}
+[5.610824] (cam2image_vm2ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Robotics/ros2_ws/src/cam2image_vm2ros/src/image_brightness.cpp:41:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[5.610932] (cam2image_vm2ros) StderrLine: {'line': b'   41 |         \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(this->get_logger(), "Message received!");\n'}
+[5.611074] (cam2image_vm2ros) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.611746] (cam2image_vm2ros) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K:\n'}
+[5.611847] (cam2image_vm2ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Robotics/ros2_ws/src/cam2image_vm2ros/src/image_brightness.cpp:41:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 is unavailable for static member functions\n'}
+[5.611921] (cam2image_vm2ros) StderrLine: {'line': b'   41 |         RCLCPP_INFO(\x1b[01;31m\x1b[Kthis\x1b[m\x1b[K->get_logger(), "Message received!");\n'}
+[5.611988] (cam2image_vm2ros) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[5.612053] (cam2image_vm2ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Robotics/ros2_ws/src/cam2image_vm2ros/src/image_brightness.cpp:41:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 is unavailable for static member functions\n'}
+[5.612119] (cam2image_vm2ros) StderrLine: {'line': b'   41 |         RCLCPP_INFO(\x1b[01;31m\x1b[Kthis\x1b[m\x1b[K->get_logger(), "Message received!");\n'}
+[5.612183] (cam2image_vm2ros) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[5.612287] (cam2image_vm2ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Robotics/ros2_ws/src/cam2image_vm2ros/src/image_brightness.cpp:45:24:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 is unavailable for static member functions\n'}
+[5.612356] (cam2image_vm2ros) StderrLine: {'line': b'   45 |         message.data = \x1b[01;31m\x1b[Kthis\x1b[m\x1b[K->get_brightness();\n'}
+[5.612422] (cam2image_vm2ros) StderrLine: {'line': b'      |                        \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[5.612488] (cam2image_vm2ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Robotics/ros2_ws/src/cam2image_vm2ros/src/image_brightness.cpp:46:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 is unavailable for static member functions\n'}
+[5.612562] (cam2image_vm2ros) StderrLine: {'line': b'   46 |         RCLCPP_INFO(\x1b[01;31m\x1b[Kthis\x1b[m\x1b[K->get_logger(), "Publishing brightness of \'%s\'", message.data.c_str());\n'}
+[5.612692] (cam2image_vm2ros) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[5.612908] (cam2image_vm2ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Robotics/ros2_ws/src/cam2image_vm2ros/src/image_brightness.cpp:46:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 is unavailable for static member functions\n'}
+[5.612988] (cam2image_vm2ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Robotics/ros2_ws/src/cam2image_vm2ros/src/image_brightness.cpp:46:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[5.613057] (cam2image_vm2ros) StderrLine: {'line': b'   46 |         \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(this->get_logger(), "Publishing brightness of \'%s\'", message.data.c_str());\n'}
+[5.613123] (cam2image_vm2ros) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.613189] (cam2image_vm2ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Robotics/ros2_ws/src/cam2image_vm2ros/src/image_brightness.cpp:46:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 is unavailable for static member functions\n'}
+[5.613263] (cam2image_vm2ros) StderrLine: {'line': b'   46 |         RCLCPP_INFO(\x1b[01;31m\x1b[Kthis\x1b[m\x1b[K->get_logger(), "Publishing brightness of \'%s\'", message.data.c_str());\n'}
+[5.613329] (cam2image_vm2ros) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[5.613391] (cam2image_vm2ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Robotics/ros2_ws/src/cam2image_vm2ros/src/image_brightness.cpp:46:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 is unavailable for static member functions\n'}
+[5.613454] (cam2image_vm2ros) StderrLine: {'line': b'   46 |         RCLCPP_INFO(\x1b[01;31m\x1b[Kthis\x1b[m\x1b[K->get_logger(), "Publishing brightness of \'%s\'", message.data.c_str());\n'}
+[5.613522] (cam2image_vm2ros) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[5.613581] (cam2image_vm2ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Robotics/ros2_ws/src/cam2image_vm2ros/src/image_brightness.cpp:47:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 is unavailable for static member functions\n'}
+[5.613646] (cam2image_vm2ros) StderrLine: {'line': b'   47 |         \x1b[01;31m\x1b[Kthis\x1b[m\x1b[K->publisher_->publish(message);\n'}
+[5.613706] (cam2image_vm2ros) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[5.613765] (cam2image_vm2ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Robotics/ros2_ws/src/cam2image_vm2ros/src/image_brightness.cpp:39:67:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kimg\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[5.613828] (cam2image_vm2ros) StderrLine: {'line': b'   39 |     static void topic_callback(\x1b[01;35m\x1b[Ksensor_msgs::msg::Image::SharedPtr img\x1b[m\x1b[K) {\n'}
+[5.613889] (cam2image_vm2ros) StderrLine: {'line': b'      |                                \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[5.624327] (-) TimerEvent: {}
+[5.724625] (-) TimerEvent: {}
+[5.825086] (-) TimerEvent: {}
+[5.925919] (-) TimerEvent: {}
+[6.026864] (-) TimerEvent: {}
+[6.127861] (-) TimerEvent: {}
+[6.228515] (-) TimerEvent: {}
+[6.328858] (-) TimerEvent: {}
+[6.429191] (-) TimerEvent: {}
+[6.529532] (-) TimerEvent: {}
+[6.629831] (-) TimerEvent: {}
+[6.730140] (-) TimerEvent: {}
+[6.830440] (-) TimerEvent: {}
+[6.930719] (-) TimerEvent: {}
+[7.031005] (-) TimerEvent: {}
+[7.131359] (-) TimerEvent: {}
+[7.231673] (-) TimerEvent: {}
+[7.331954] (-) TimerEvent: {}
+[7.432306] (-) TimerEvent: {}
+[7.532679] (-) TimerEvent: {}
+[7.633037] (-) TimerEvent: {}
+[7.733276] (-) TimerEvent: {}
+[7.833608] (-) TimerEvent: {}
+[7.933929] (-) TimerEvent: {}
+[8.034325] (-) TimerEvent: {}
+[8.134683] (-) TimerEvent: {}
+[8.235126] (-) TimerEvent: {}
+[8.335434] (-) TimerEvent: {}
+[8.403864] (cam2image_vm2ros) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/talker_listener_node.dir/build.make:76: CMakeFiles/talker_listener_node.dir/src/image_brightness.cpp.o] Error 1\n'}
+[8.404333] (cam2image_vm2ros) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/talker_listener_node.dir/all] Error 2\n'}
+[8.404698] (cam2image_vm2ros) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[8.407504] (cam2image_vm2ros) CommandEnded: {'returncode': 2}
+[8.435510] (-) TimerEvent: {}
+[8.535921] (-) TimerEvent: {}
+[8.574125] (cam2image_vm2ros) JobEnded: {'identifier': 'cam2image_vm2ros', 'rc': 2}
+[8.585740] (-) EventReactorShutdown: {}

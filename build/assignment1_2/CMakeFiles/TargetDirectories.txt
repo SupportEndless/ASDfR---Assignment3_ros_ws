@@ -1,0 +1,10 @@
+/home/ubuntu/Robotics/ros2_ws/build/assignment1_2/CMakeFiles/uninstall.dir
+/home/ubuntu/Robotics/ros2_ws/build/assignment1_2/CMakeFiles/assignment1_2_uninstall.dir
+/home/ubuntu/Robotics/ros2_ws/build/assignment1_2/CMakeFiles/setpoint_generator.dir
+/home/ubuntu/Robotics/ros2_ws/build/assignment1_2/CMakeFiles/test.dir
+/home/ubuntu/Robotics/ros2_ws/build/assignment1_2/CMakeFiles/edit_cache.dir
+/home/ubuntu/Robotics/ros2_ws/build/assignment1_2/CMakeFiles/rebuild_cache.dir
+/home/ubuntu/Robotics/ros2_ws/build/assignment1_2/CMakeFiles/list_install_components.dir
+/home/ubuntu/Robotics/ros2_ws/build/assignment1_2/CMakeFiles/install.dir
+/home/ubuntu/Robotics/ros2_ws/build/assignment1_2/CMakeFiles/install/local.dir
+/home/ubuntu/Robotics/ros2_ws/build/assignment1_2/CMakeFiles/install/strip.dir

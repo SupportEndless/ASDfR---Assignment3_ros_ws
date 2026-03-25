@@ -1,0 +1,97 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-dd278fdfb5cb6c7d8e23.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "assignment1_1",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "assignment1_1_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-assignment1_1_uninstall-a71518dfe7f2f25c4db3.json",
+					"name" : "assignment1_1_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "brightness_receiver::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-brightness_receiver-44c501b61b9ff0bfafd2.json",
+					"name" : "brightness_receiver",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "image_brightness::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-image_brightness-9d7dbb81556b7d5fc177.json",
+					"name" : "image_brightness",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "object_position_indicator::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-object_position_indicator-4621acb01e2d63b2ce6a.json",
+					"name" : "object_position_indicator",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-0d339fbf230b2b9bec43.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/ubuntu/Robotics/ros2_ws/build/assignment1_1",
+		"source" : "/home/ubuntu/Robotics/ros2_ws/src/assignment1_1"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

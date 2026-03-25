@@ -1,0 +1,18 @@
+[0.162s] Invoking command in '/home/ubuntu/Robotics/ros2_ws/build/cam2image_vm2ros': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/Robotics/ros2_ws/build/cam2image_vm2ros -- -j12 -l12
+[2.774s] [ 36%] Built target brightness_receiver
+[2.775s] [ 36%] Built target cam2image
+[2.811s] [ 54%] [32mBuilding CXX object CMakeFiles/image_brightness.dir/src/image_brightness.cpp.o[0m
+[2.811s] [ 54%] [32mBuilding CXX object CMakeFiles/object_position_indicator.dir/src/object_position_indicator.cpp.o[0m
+[3.636s] [ 81%] Built target cam2image_vm2ros
+[9.201s] [01m[K/home/ubuntu/Robotics/ros2_ws/src/cam2image_vm2ros/src/image_brightness.cpp:[m[K In member function ‘[01m[Kvoid ImageBrightness::[01;32m[Ktopic_callback[m[K(sensor_msgs::msg::Image_<std::allocator<void> >::SharedPtr)[m[K’:
+[9.202s] [01m[K/home/ubuntu/Robotics/ros2_ws/src/cam2image_vm2ros/src/image_brightness.cpp:55:39:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator<[m[K’ (operand types are ‘[01m[Kfloat[m[K’ and ‘[01m[Krclcpp::Parameter[m[K’)
+[9.202s]    55 |         if ([32m[Kthis->get_brightness(img)[m[K [01;31m[K<[m[K [34m[Kthis->get_parameter("brightness_threshold")[m[K) {
+[9.202s]       |             [32m[K~~~~~~~~~~~~~~~~~~~~~~~~~[m[K [01;31m[K^[m[K [34m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[9.202s]       |                                 [32m[K|[m[K                          [34m[K|[m[K
+[9.202s]       |                                 [32m[Kfloat[m[K                      [34m[Krclcpp::Parameter[m[K
+[13.295s] gmake[2]: *** [CMakeFiles/image_brightness.dir/build.make:76: CMakeFiles/image_brightness.dir/src/image_brightness.cpp.o] Error 1
+[13.296s] gmake[1]: *** [CMakeFiles/Makefile2:197: CMakeFiles/image_brightness.dir/all] Error 2
+[13.296s] gmake[1]: *** Waiting for unfinished jobs....
+[21.828s] [ 90%] [32m[1mLinking CXX executable object_position_indicator[0m
+[24.277s] [ 90%] Built target object_position_indicator
+[24.278s] gmake: *** [Makefile:146: all] Error 2

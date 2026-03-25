@@ -1,0 +1,27 @@
+[0.013s] Invoking command in '/home/ubuntu/Robotics/ros2_ws/build/assignment1_2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/Robotics/ros2_ws/build/assignment1_2 -- -j12 -l12
+[0.083s] [ 50%] [32mBuilding CXX object CMakeFiles/setpoint_generator.dir/src/setpoint_generator.cpp.o[0m
+[9.787s] [100%] [32m[1mLinking CXX executable setpoint_generator[0m
+[10.744s] [100%] Built target setpoint_generator
+[10.757s] Invoked command in '/home/ubuntu/Robotics/ros2_ws/build/assignment1_2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/Robotics/ros2_ws/build/assignment1_2 -- -j12 -l12
+[10.794s] Invoking command in '/home/ubuntu/Robotics/ros2_ws/build/assignment1_2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/ubuntu/Robotics/ros2_ws/build/assignment1_2
+[10.822s] -- Install configuration: ""
+[10.832s] -- Installing: /home/ubuntu/Robotics/ros2_ws/install/assignment1_2/lib/assignment1_2/setpoint_generator
+[10.839s] -- Set non-toolchain portion of runtime path of "/home/ubuntu/Robotics/ros2_ws/install/assignment1_2/lib/assignment1_2/setpoint_generator" to ""
+[10.839s] -- Up-to-date: /home/ubuntu/Robotics/ros2_ws/install/assignment1_2/include/
+[10.839s] -- Installing: /home/ubuntu/Robotics/ros2_ws/install/assignment1_2/include//setpoint_generator.hpp
+[10.840s] -- Up-to-date: /home/ubuntu/Robotics/ros2_ws/install/assignment1_2/share/ament_index/resource_index/package_run_dependencies/assignment1_2
+[10.840s] -- Up-to-date: /home/ubuntu/Robotics/ros2_ws/install/assignment1_2/share/ament_index/resource_index/parent_prefix_path/assignment1_2
+[10.841s] -- Up-to-date: /home/ubuntu/Robotics/ros2_ws/install/assignment1_2/share/assignment1_2/environment/ament_prefix_path.sh
+[10.841s] -- Up-to-date: /home/ubuntu/Robotics/ros2_ws/install/assignment1_2/share/assignment1_2/environment/ament_prefix_path.dsv
+[10.841s] -- Up-to-date: /home/ubuntu/Robotics/ros2_ws/install/assignment1_2/share/assignment1_2/environment/path.sh
+[10.841s] -- Up-to-date: /home/ubuntu/Robotics/ros2_ws/install/assignment1_2/share/assignment1_2/environment/path.dsv
+[10.841s] -- Up-to-date: /home/ubuntu/Robotics/ros2_ws/install/assignment1_2/share/assignment1_2/local_setup.bash
+[10.841s] -- Up-to-date: /home/ubuntu/Robotics/ros2_ws/install/assignment1_2/share/assignment1_2/local_setup.sh
+[10.841s] -- Up-to-date: /home/ubuntu/Robotics/ros2_ws/install/assignment1_2/share/assignment1_2/local_setup.zsh
+[10.841s] -- Up-to-date: /home/ubuntu/Robotics/ros2_ws/install/assignment1_2/share/assignment1_2/local_setup.dsv
+[10.841s] -- Installing: /home/ubuntu/Robotics/ros2_ws/install/assignment1_2/share/assignment1_2/package.dsv
+[10.848s] -- Up-to-date: /home/ubuntu/Robotics/ros2_ws/install/assignment1_2/share/ament_index/resource_index/packages/assignment1_2
+[10.848s] -- Up-to-date: /home/ubuntu/Robotics/ros2_ws/install/assignment1_2/share/assignment1_2/cmake/assignment1_2Config.cmake
+[10.848s] -- Up-to-date: /home/ubuntu/Robotics/ros2_ws/install/assignment1_2/share/assignment1_2/cmake/assignment1_2Config-version.cmake
+[10.848s] -- Up-to-date: /home/ubuntu/Robotics/ros2_ws/install/assignment1_2/share/assignment1_2/package.xml
+[10.857s] Invoked command in '/home/ubuntu/Robotics/ros2_ws/build/assignment1_2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/ubuntu/Robotics/ros2_ws/build/assignment1_2

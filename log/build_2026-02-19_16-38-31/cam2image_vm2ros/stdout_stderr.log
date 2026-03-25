@@ -1,0 +1,47 @@
+-- Found ament_cmake: 2.5.5 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Found rclcpp: 28.1.16 (/opt/ros/jazzy/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+-- Found rosidl_generator_cpp: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found rclcpp_components: 28.1.16 (/opt/ros/jazzy/share/rclcpp_components/cmake)
+-- Found sensor_msgs: 5.3.6 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+-- Found cv_bridge: 4.1.0 (/opt/ros/jazzy/share/cv_bridge/cmake)
+-- Configuring done (1.5s)
+-- Generating done (0.1s)
+-- Build files have been written to: /home/ubuntu/Robotics/ros2_ws/build/cam2image_vm2ros
+[ 28%] Built target cam2image
+[ 42%] [32mBuilding CXX object CMakeFiles/talker_listener_node.dir/src/image_brightness.cpp.o[0m
+[ 85%] Built target cam2image_vm2ros
+[01m[K/home/ubuntu/Robotics/ros2_ws/src/cam2image_vm2ros/src/image_brightness.cpp:[m[K In member function ‘[01m[Kstd::string ImageBrightness::[01;32m[Kget_brightness[m[K(sensor_msgs::msg::Image_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/ubuntu/Robotics/ros2_ws/src/cam2image_vm2ros/src/image_brightness.cpp:38:34:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kmean_val[m[K’
+   38 |         return string(cv::Scalar [01;31m[Kmean_val[m[K = cv::mean(img));
+      |                                  [01;31m[K^~~~~~~~[m[K
+[01m[K/home/ubuntu/Robotics/ros2_ws/src/cam2image_vm2ros/src/image_brightness.cpp:38:16:[m[K [01;31m[Kerror: [m[K‘[01m[Kstring[m[K’ was not declared in this scope
+   38 |         return [01;31m[Kstring[m[K(cv::Scalar mean_val = cv::mean(img));
+      |                [01;31m[K^~~~~~[m[K
+[01m[K/home/ubuntu/Robotics/ros2_ws/src/cam2image_vm2ros/src/image_brightness.cpp:38:16:[m[K [01;36m[Knote: [m[Ksuggested alternatives:
+In file included from [01m[K/usr/include/c++/13/string:41[m[K,
+                 from [01m[K/home/ubuntu/Robotics/ros2_ws/src/cam2image_vm2ros/src/image_brightness.cpp:2[m[K:
+[01m[K/usr/include/c++/13/bits/stringfwd.h:77:33:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::string[m[K’
+   77 |   typedef basic_string<char>    [01;36m[Kstring[m[K;
+      |                                 [01;36m[K^~~~~~[m[K
+[01m[K/usr/include/c++/13/string:66:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::pmr::string[m[K’
+   66 |     using [01;36m[Kstring[m[K    = basic_string<char>;
+      |           [01;36m[K^~~~~~[m[K
+[01m[K/home/ubuntu/Robotics/ros2_ws/src/cam2image_vm2ros/src/image_brightness.cpp:37:67:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kimg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   37 |     std::string get_brightness([01;35m[Ksensor_msgs::msg::Image::SharedPtr img[m[K) {
+      |                                [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[01m[K/home/ubuntu/Robotics/ros2_ws/src/cam2image_vm2ros/src/image_brightness.cpp:[m[K In member function ‘[01m[Kvoid ImageBrightness::[01;32m[Ktopic_callback[m[K(sensor_msgs::msg::Image_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/ubuntu/Robotics/ros2_ws/src/cam2image_vm2ros/src/image_brightness.cpp:50:80:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kimg[m[K’
+   50 |         message.data = this->get_brightness(sensor_msgs::msg::Image::SharedPtr [01;31m[Kimg[m[K);
+      |                                                                                [01;31m[K^~~[m[K
+[01m[K/home/ubuntu/Robotics/ros2_ws/src/cam2image_vm2ros/src/image_brightness.cpp:44:60:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kimg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   44 |     void topic_callback([01;35m[Ksensor_msgs::msg::Image::SharedPtr img[m[K) {
+      |                         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+gmake[2]: *** [CMakeFiles/talker_listener_node.dir/build.make:76: CMakeFiles/talker_listener_node.dir/src/image_brightness.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/talker_listener_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

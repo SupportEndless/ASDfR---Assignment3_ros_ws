@@ -1,0 +1,125 @@
+[0.000000] (-) TimerEvent: {}
+[0.000160] (-) JobUnselected: {'identifier': 'assignment1_1'}
+[0.000250] (-) JobUnselected: {'identifier': 'cam2image_vm2ros'}
+[0.000283] (-) JobUnselected: {'identifier': 'cpp_pubsub'}
+[0.000298] (-) JobUnselected: {'identifier': 'relbot_adapter'}
+[0.000310] (-) JobUnselected: {'identifier': 'relbot_msgs'}
+[0.000322] (-) JobUnselected: {'identifier': 'relbot_simulator'}
+[0.000336] (assignment1_2) JobQueued: {'identifier': 'assignment1_2', 'dependencies': OrderedDict()}
+[0.000352] (assignment1_2) JobStarted: {'identifier': 'assignment1_2'}
+[0.098979] (-) TimerEvent: {}
+[0.100980] (assignment1_2) JobProgress: {'identifier': 'assignment1_2', 'progress': 'cmake'}
+[0.115922] (assignment1_2) JobProgress: {'identifier': 'assignment1_2', 'progress': 'build'}
+[0.116093] (assignment1_2) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ubuntu/Robotics/ros2_ws/build/assignment1_2', '--', '-j12', '-l12'], 'cwd': '/home/ubuntu/Robotics/ros2_ws/build/assignment1_2', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ubuntu', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/lib:/home/ubuntu/Robotics/ros2_ws/install/cam2image_vm2ros/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/ubuntu', 'OLDPWD': '/mnt/c/Users/rogie', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'WSL_DISTRO_NAME': 'Ubuntu-24.04', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/ubuntu/Robotics/ros2_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ubuntu', 'NAME': 'Laptop-Rogier', 'WSL_INTEROP': '/run/WSL/365_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/java8path:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/110/Tools/Binn/:/mnt/c/Program Files (x86)/Microsoft SQL Server/120/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/120/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/120/DTS/Binn/:/mnt/c/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/MATLAB/R2025b/bin:/mnt/c/Program Files (x86)/IVI Foundation/VISA/WinNT/Bin/:/mnt/c/Program Files/IVI Foundation/VISA/Win64/Bin/:/mnt/c/Program Files (x86)/IVI Foundation/VISA/WinNT/Bin:/mnt/d/PuTTy/:/mnt/d/Program Files/Git/cmd:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Program Files/NVIDIA Corporation/Nsight Compute 2024.3.2/:/mnt/c/WINDOWS/system32/config/systemprofile/AppData/Local/Muse Hub/lib:/mnt/c/Users/rogie/AppData/Local/Programs/Python/Python39/:/mnt/c/Users/rogie/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/rogie/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/rogie/AppData/Local/GitHubDesktop/bin:/mnt/c/Users/rogie/AppData/Local/Muse Hub/lib:/mnt/c/Users/rogie/AppData/Local/Programs/Python/protoc/bin:/mnt/c/Users/rogie/AppData/Local/Programs/Python/Python39/Scripts:/mnt/c/msys64/ucrt64/bin:/mnt/c/xampp/php:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/ubuntu/Robotics/ros2_ws/install/relbot_simulator:/home/ubuntu/Robotics/ros2_ws/install/relbot_msgs:/home/ubuntu/Robotics/ros2_ws/install/relbot_adapter:/home/ubuntu/Robotics/ros2_ws/install/cpp_pubsub:/home/ubuntu/Robotics/ros2_ws/install/cam2image_vm2ros:/home/ubuntu/Robotics/ros2_ws/install/assignment1_2:/home/ubuntu/Robotics/ros2_ws/install/assignment1_1:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/ubuntu/Robotics/ros2_ws/build/assignment1_2', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/home/ubuntu/Robotics/ros2_ws/install/relbot_simulator:/home/ubuntu/Robotics/ros2_ws/install/relbot_msgs:/home/ubuntu/Robotics/ros2_ws/install/relbot_adapter:/home/ubuntu/Robotics/ros2_ws/install/cpp_pubsub:/home/ubuntu/Robotics/ros2_ws/install/cam2image_vm2ros:/home/ubuntu/Robotics/ros2_ws/install/assignment1_2:/home/ubuntu/Robotics/ros2_ws/install/assignment1_1:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy', 'WSLENV': ''}), 'shell': False}
+[0.199064] (-) TimerEvent: {}
+[0.299462] (-) TimerEvent: {}
+[0.400257] (-) TimerEvent: {}
+[0.500539] (-) TimerEvent: {}
+[0.600916] (-) TimerEvent: {}
+[0.701171] (-) TimerEvent: {}
+[0.801500] (-) TimerEvent: {}
+[0.901895] (-) TimerEvent: {}
+[1.002419] (-) TimerEvent: {}
+[1.102809] (-) TimerEvent: {}
+[1.203156] (-) TimerEvent: {}
+[1.303427] (-) TimerEvent: {}
+[1.404161] (-) TimerEvent: {}
+[1.459856] (assignment1_2) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/setpoint_generator.dir/src/setpoint_generator.cpp.o\x1b[0m\n'}
+[1.504516] (-) TimerEvent: {}
+[1.605056] (-) TimerEvent: {}
+[1.705481] (-) TimerEvent: {}
+[1.805795] (-) TimerEvent: {}
+[1.906074] (-) TimerEvent: {}
+[2.006713] (-) TimerEvent: {}
+[2.107685] (-) TimerEvent: {}
+[2.208051] (-) TimerEvent: {}
+[2.308551] (-) TimerEvent: {}
+[2.408961] (-) TimerEvent: {}
+[2.509712] (-) TimerEvent: {}
+[2.610091] (-) TimerEvent: {}
+[2.710556] (-) TimerEvent: {}
+[2.810966] (-) TimerEvent: {}
+[2.911349] (-) TimerEvent: {}
+[3.011711] (-) TimerEvent: {}
+[3.112087] (-) TimerEvent: {}
+[3.212447] (-) TimerEvent: {}
+[3.312760] (-) TimerEvent: {}
+[3.413044] (-) TimerEvent: {}
+[3.513380] (-) TimerEvent: {}
+[3.614226] (-) TimerEvent: {}
+[3.714560] (-) TimerEvent: {}
+[3.814950] (-) TimerEvent: {}
+[3.915269] (-) TimerEvent: {}
+[4.015628] (-) TimerEvent: {}
+[4.116000] (-) TimerEvent: {}
+[4.216352] (-) TimerEvent: {}
+[4.316702] (-) TimerEvent: {}
+[4.417218] (-) TimerEvent: {}
+[4.517569] (-) TimerEvent: {}
+[4.617936] (-) TimerEvent: {}
+[4.718297] (-) TimerEvent: {}
+[4.818649] (-) TimerEvent: {}
+[4.918997] (-) TimerEvent: {}
+[5.019674] (-) TimerEvent: {}
+[5.120048] (-) TimerEvent: {}
+[5.220426] (-) TimerEvent: {}
+[5.321176] (-) TimerEvent: {}
+[5.421514] (-) TimerEvent: {}
+[5.522166] (-) TimerEvent: {}
+[5.622642] (-) TimerEvent: {}
+[5.723047] (-) TimerEvent: {}
+[5.823520] (-) TimerEvent: {}
+[5.924011] (-) TimerEvent: {}
+[6.024337] (-) TimerEvent: {}
+[6.124735] (-) TimerEvent: {}
+[6.225085] (-) TimerEvent: {}
+[6.325520] (-) TimerEvent: {}
+[6.334653] (assignment1_2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Robotics/ros2_ws/src/assignment1_2/src/setpoint_generator.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KSetpointGenerator::\x1b[01;32m\x1b[KSetpointGenerator\x1b[m\x1b[K()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.335254] (assignment1_2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Robotics/ros2_ws/src/assignment1_2/src/setpoint_generator.cpp:8:54:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.335341] (assignment1_2) StderrLine: {'line': b'    8 |     this->declare_parameter("left_wheel_offset", 0.0)\n'}
+[6.335413] (assignment1_2) StderrLine: {'line': b'      |                                                      \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[6.335483] (assignment1_2) StderrLine: {'line': b'      |                                                      \x1b[32m\x1b[K;\x1b[m\x1b[K\n'}
+[6.335550] (assignment1_2) StderrLine: {'line': b'    9 | \n'}
+[6.335632] (assignment1_2) StderrLine: {'line': b'   10 |     \x1b[32m\x1b[Kthis\x1b[m\x1b[K->omega_right_wheel_ = this->get_parameter("omega_right_wheel").as_double();\n'}
+[6.335699] (assignment1_2) StderrLine: {'line': b'      |     \x1b[32m\x1b[K~~~~\x1b[m\x1b[K                                              \n'}
+[6.335765] (assignment1_2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Robotics/ros2_ws/src/assignment1_2/src/setpoint_generator.cpp:12:51:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kcannot convert \xe2\x80\x98\x1b[01m\x1b[Krclcpp::Parameter\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kdouble\x1b[m\x1b[K\xe2\x80\x99 in assignment\n'}
+[6.335833] (assignment1_2) StderrLine: {'line': b'   12 |     this->left_wheel_offset_ = \x1b[01;31m\x1b[Kthis->get_parameter("left_wheel_offset")\x1b[m\x1b[K;     // radians\n'}
+[6.335900] (assignment1_2) StderrLine: {'line': b'      |                                \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.335966] (assignment1_2) StderrLine: {'line': b'      |                                                   \x1b[01;31m\x1b[K|\x1b[m\x1b[K\n'}
+[6.336046] (assignment1_2) StderrLine: {'line': b'      |                                                   \x1b[01;31m\x1b[Krclcpp::Parameter\x1b[m\x1b[K\n'}
+[6.425669] (-) TimerEvent: {}
+[6.526151] (-) TimerEvent: {}
+[6.626655] (-) TimerEvent: {}
+[6.727658] (-) TimerEvent: {}
+[6.828024] (-) TimerEvent: {}
+[6.928351] (-) TimerEvent: {}
+[7.028699] (-) TimerEvent: {}
+[7.129014] (-) TimerEvent: {}
+[7.229380] (-) TimerEvent: {}
+[7.329742] (-) TimerEvent: {}
+[7.430101] (-) TimerEvent: {}
+[7.530442] (-) TimerEvent: {}
+[7.630798] (-) TimerEvent: {}
+[7.731158] (-) TimerEvent: {}
+[7.831512] (-) TimerEvent: {}
+[7.931797] (-) TimerEvent: {}
+[8.032151] (-) TimerEvent: {}
+[8.132516] (-) TimerEvent: {}
+[8.232846] (-) TimerEvent: {}
+[8.333231] (-) TimerEvent: {}
+[8.434423] (-) TimerEvent: {}
+[8.534840] (-) TimerEvent: {}
+[8.635171] (-) TimerEvent: {}
+[8.735504] (-) TimerEvent: {}
+[8.835878] (-) TimerEvent: {}
+[8.936168] (-) TimerEvent: {}
+[9.036587] (-) TimerEvent: {}
+[9.122117] (assignment1_2) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/setpoint_generator.dir/build.make:76: CMakeFiles/setpoint_generator.dir/src/setpoint_generator.cpp.o] Error 1\n'}
+[9.122656] (assignment1_2) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/setpoint_generator.dir/all] Error 2\n'}
+[9.123166] (assignment1_2) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[9.126409] (assignment1_2) CommandEnded: {'returncode': 2}
+[9.136966] (-) TimerEvent: {}
+[9.237965] (-) TimerEvent: {}
+[9.327098] (assignment1_2) JobEnded: {'identifier': 'assignment1_2', 'rc': 2}
+[9.338016] (-) TimerEvent: {}
+[9.339452] (-) EventReactorShutdown: {}

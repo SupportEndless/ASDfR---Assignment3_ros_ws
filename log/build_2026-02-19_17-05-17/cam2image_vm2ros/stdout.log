@@ -1,0 +1,4 @@
+[ 22%] Built target cam2image
+[ 33%] [32mBuilding CXX object CMakeFiles/brightness_receiver.dir/src/brightness_receiver.cpp.o[0m
+[ 66%] Built target cam2image_vm2ros
+[ 88%] Built target image_brightness

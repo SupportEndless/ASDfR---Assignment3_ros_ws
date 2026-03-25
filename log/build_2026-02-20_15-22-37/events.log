@@ -1,0 +1,179 @@
+[0.000000] (-) TimerEvent: {}
+[0.000423] (-) JobUnselected: {'identifier': 'cpp_pubsub'}
+[0.001092] (-) JobUnselected: {'identifier': 'relbot_adapter'}
+[0.001189] (-) JobUnselected: {'identifier': 'relbot_msgs'}
+[0.001208] (-) JobUnselected: {'identifier': 'relbot_simulator'}
+[0.001255] (cam2image_vm2ros) JobQueued: {'identifier': 'cam2image_vm2ros', 'dependencies': OrderedDict()}
+[0.001277] (cam2image_vm2ros) JobStarted: {'identifier': 'cam2image_vm2ros'}
+[0.010087] (cam2image_vm2ros) JobProgress: {'identifier': 'cam2image_vm2ros', 'progress': 'cmake'}
+[0.012059] (cam2image_vm2ros) JobProgress: {'identifier': 'cam2image_vm2ros', 'progress': 'build'}
+[0.012176] (cam2image_vm2ros) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ubuntu/Robotics/ros2_ws/build/cam2image_vm2ros', '--', '-j12', '-l12'], 'cwd': '/home/ubuntu/Robotics/ros2_ws/build/cam2image_vm2ros', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ubuntu', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/ubuntu', 'OLDPWD': '/home/ubuntu', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'WSL_DISTRO_NAME': 'Ubuntu-24.04', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ubuntu', 'NAME': 'Laptop-Rogier', 'WSL_INTEROP': '/run/WSL/5004_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/java8path:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/110/Tools/Binn/:/mnt/c/Program Files (x86)/Microsoft SQL Server/120/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/120/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/120/DTS/Binn/:/mnt/c/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/MATLAB/R2025b/bin:/mnt/c/Program Files (x86)/IVI Foundation/VISA/WinNT/Bin/:/mnt/c/Program Files/IVI Foundation/VISA/Win64/Bin/:/mnt/c/Program Files (x86)/IVI Foundation/VISA/WinNT/Bin:/mnt/d/PuTTy/:/mnt/d/Program Files/Git/cmd:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Program Files/NVIDIA Corporation/Nsight Compute 2024.3.2/:/mnt/c/WINDOWS/system32/config/systemprofile/AppData/Local/Muse Hub/lib:/mnt/c/Users/rogie/AppData/Local/Programs/Python/Python39/:/mnt/c/Users/rogie/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/rogie/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/rogie/AppData/Local/GitHubDesktop/bin:/mnt/c/Users/rogie/AppData/Local/Muse Hub/lib:/mnt/c/Users/rogie/AppData/Local/Programs/Python/protoc/bin:/mnt/c/Users/rogie/AppData/Local/Programs/Python/Python39/Scripts:/mnt/c/msys64/ucrt64/bin:/mnt/c/xampp/php:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/ubuntu/Robotics/ros2_ws/build/cam2image_vm2ros', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy', 'WSLENV': ''}), 'shell': False}
+[0.086890] (cam2image_vm2ros) StdoutLine: {'line': b'[ 18%] Built target object_position_indicator\n'}
+[0.089974] (cam2image_vm2ros) StdoutLine: {'line': b'[ 36%] Built target cam2image\n'}
+[0.093666] (cam2image_vm2ros) StdoutLine: {'line': b'[ 54%] Built target brightness_receiver\n'}
+[0.094395] (cam2image_vm2ros) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding CXX object CMakeFiles/image_brightness.dir/src/image_brightness.cpp.o\x1b[0m\n'}
+[0.099788] (-) TimerEvent: {}
+[0.100209] (cam2image_vm2ros) StdoutLine: {'line': b'[ 90%] Built target cam2image_vm2ros\n'}
+[0.200147] (-) TimerEvent: {}
+[0.300778] (-) TimerEvent: {}
+[0.401358] (-) TimerEvent: {}
+[0.501922] (-) TimerEvent: {}
+[0.602379] (-) TimerEvent: {}
+[0.702846] (-) TimerEvent: {}
+[0.803445] (-) TimerEvent: {}
+[0.904033] (-) TimerEvent: {}
+[1.004587] (-) TimerEvent: {}
+[1.105122] (-) TimerEvent: {}
+[1.205776] (-) TimerEvent: {}
+[1.306379] (-) TimerEvent: {}
+[1.406815] (-) TimerEvent: {}
+[1.507476] (-) TimerEvent: {}
+[1.608098] (-) TimerEvent: {}
+[1.708669] (-) TimerEvent: {}
+[1.809294] (-) TimerEvent: {}
+[1.909929] (-) TimerEvent: {}
+[2.010515] (-) TimerEvent: {}
+[2.110922] (-) TimerEvent: {}
+[2.211468] (-) TimerEvent: {}
+[2.312144] (-) TimerEvent: {}
+[2.412636] (-) TimerEvent: {}
+[2.513149] (-) TimerEvent: {}
+[2.613737] (-) TimerEvent: {}
+[2.714194] (-) TimerEvent: {}
+[2.814682] (-) TimerEvent: {}
+[2.915180] (-) TimerEvent: {}
+[3.015679] (-) TimerEvent: {}
+[3.116171] (-) TimerEvent: {}
+[3.216690] (-) TimerEvent: {}
+[3.317213] (-) TimerEvent: {}
+[3.417657] (-) TimerEvent: {}
+[3.518161] (-) TimerEvent: {}
+[3.618651] (-) TimerEvent: {}
+[3.719186] (-) TimerEvent: {}
+[3.819767] (-) TimerEvent: {}
+[3.920259] (-) TimerEvent: {}
+[4.020847] (-) TimerEvent: {}
+[4.121296] (-) TimerEvent: {}
+[4.221772] (-) TimerEvent: {}
+[4.322280] (-) TimerEvent: {}
+[4.422662] (-) TimerEvent: {}
+[4.523203] (-) TimerEvent: {}
+[4.623825] (-) TimerEvent: {}
+[4.724355] (-) TimerEvent: {}
+[4.824873] (-) TimerEvent: {}
+[4.925316] (-) TimerEvent: {}
+[5.026353] (-) TimerEvent: {}
+[5.126920] (-) TimerEvent: {}
+[5.227415] (-) TimerEvent: {}
+[5.327993] (-) TimerEvent: {}
+[5.428424] (-) TimerEvent: {}
+[5.528947] (-) TimerEvent: {}
+[5.629512] (-) TimerEvent: {}
+[5.730102] (-) TimerEvent: {}
+[5.830883] (-) TimerEvent: {}
+[5.931258] (-) TimerEvent: {}
+[6.031809] (-) TimerEvent: {}
+[6.132323] (-) TimerEvent: {}
+[6.232744] (-) TimerEvent: {}
+[6.333295] (-) TimerEvent: {}
+[6.433859] (-) TimerEvent: {}
+[6.534350] (-) TimerEvent: {}
+[6.634855] (-) TimerEvent: {}
+[6.735370] (-) TimerEvent: {}
+[6.835896] (-) TimerEvent: {}
+[6.936262] (-) TimerEvent: {}
+[7.036802] (-) TimerEvent: {}
+[7.137344] (-) TimerEvent: {}
+[7.237861] (-) TimerEvent: {}
+[7.338383] (-) TimerEvent: {}
+[7.438780] (-) TimerEvent: {}
+[7.539267] (-) TimerEvent: {}
+[7.639756] (-) TimerEvent: {}
+[7.740247] (-) TimerEvent: {}
+[7.840736] (-) TimerEvent: {}
+[7.941117] (-) TimerEvent: {}
+[8.041609] (-) TimerEvent: {}
+[8.142128] (-) TimerEvent: {}
+[8.242512] (-) TimerEvent: {}
+[8.342883] (-) TimerEvent: {}
+[8.443391] (-) TimerEvent: {}
+[8.543832] (-) TimerEvent: {}
+[8.644331] (-) TimerEvent: {}
+[8.744846] (-) TimerEvent: {}
+[8.845347] (-) TimerEvent: {}
+[8.945736] (-) TimerEvent: {}
+[9.046243] (-) TimerEvent: {}
+[9.146748] (-) TimerEvent: {}
+[9.247257] (-) TimerEvent: {}
+[9.347814] (-) TimerEvent: {}
+[9.448249] (-) TimerEvent: {}
+[9.548668] (-) TimerEvent: {}
+[9.649239] (-) TimerEvent: {}
+[9.749641] (-) TimerEvent: {}
+[9.850037] (-) TimerEvent: {}
+[9.950464] (-) TimerEvent: {}
+[10.050919] (-) TimerEvent: {}
+[10.151410] (-) TimerEvent: {}
+[10.251936] (-) TimerEvent: {}
+[10.346447] (cam2image_vm2ros) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable image_brightness\x1b[0m\n'}
+[10.352148] (-) TimerEvent: {}
+[10.452855] (-) TimerEvent: {}
+[10.555701] (-) TimerEvent: {}
+[10.656786] (-) TimerEvent: {}
+[10.757894] (-) TimerEvent: {}
+[10.858484] (-) TimerEvent: {}
+[10.959123] (-) TimerEvent: {}
+[11.059601] (-) TimerEvent: {}
+[11.160089] (-) TimerEvent: {}
+[11.260696] (-) TimerEvent: {}
+[11.361212] (-) TimerEvent: {}
+[11.408113] (cam2image_vm2ros) StdoutLine: {'line': b'[100%] Built target image_brightness\n'}
+[11.422951] (cam2image_vm2ros) CommandEnded: {'returncode': 0}
+[11.423807] (cam2image_vm2ros) JobProgress: {'identifier': 'cam2image_vm2ros', 'progress': 'install'}
+[11.436649] (cam2image_vm2ros) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ubuntu/Robotics/ros2_ws/build/cam2image_vm2ros'], 'cwd': '/home/ubuntu/Robotics/ros2_ws/build/cam2image_vm2ros', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ubuntu', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/ubuntu', 'OLDPWD': '/home/ubuntu', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'WSL_DISTRO_NAME': 'Ubuntu-24.04', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ubuntu', 'NAME': 'Laptop-Rogier', 'WSL_INTEROP': '/run/WSL/5004_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/java8path:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/110/Tools/Binn/:/mnt/c/Program Files (x86)/Microsoft SQL Server/120/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/120/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/120/DTS/Binn/:/mnt/c/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/MATLAB/R2025b/bin:/mnt/c/Program Files (x86)/IVI Foundation/VISA/WinNT/Bin/:/mnt/c/Program Files/IVI Foundation/VISA/Win64/Bin/:/mnt/c/Program Files (x86)/IVI Foundation/VISA/WinNT/Bin:/mnt/d/PuTTy/:/mnt/d/Program Files/Git/cmd:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Program Files/NVIDIA Corporation/Nsight Compute 2024.3.2/:/mnt/c/WINDOWS/system32/config/systemprofile/AppData/Local/Muse Hub/lib:/mnt/c/Users/rogie/AppData/Local/Programs/Python/Python39/:/mnt/c/Users/rogie/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/rogie/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/rogie/AppData/Local/GitHubDesktop/bin:/mnt/c/Users/rogie/AppData/Local/Muse Hub/lib:/mnt/c/Users/rogie/AppData/Local/Programs/Python/protoc/bin:/mnt/c/Users/rogie/AppData/Local/Programs/Python/Python39/Scripts:/mnt/c/msys64/ucrt64/bin:/mnt/c/xampp/php:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/ubuntu/Robotics/ros2_ws/build/cam2image_vm2ros', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy', 'WSLENV': ''}), 'shell': False}
+[11.461411] (-) TimerEvent: {}
+[11.484935] (cam2image_vm2ros) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[11.510490] (cam2image_vm2ros) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Robotics/ros2_ws/install/cam2image_vm2ros/lib/cam2image_vm2ros/cam2image\n'}
+[11.561676] (-) TimerEvent: {}
+[11.611553] (cam2image_vm2ros) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Robotics/ros2_ws/install/cam2image_vm2ros/lib/libcam2image_vm2ros.so\n'}
+[11.612005] (cam2image_vm2ros) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Robotics/ros2_ws/install/cam2image_vm2ros/include/cam2image_vm2ros\n'}
+[11.618893] (cam2image_vm2ros) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Robotics/ros2_ws/install/cam2image_vm2ros/include/cam2image_vm2ros/cam2image.hpp:Zone.Identifier\n'}
+[11.619183] (cam2image_vm2ros) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Robotics/ros2_ws/install/cam2image_vm2ros/include/cam2image_vm2ros/visibility_control.h\n'}
+[11.619431] (cam2image_vm2ros) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Robotics/ros2_ws/install/cam2image_vm2ros/include/cam2image_vm2ros/base64.hpp:Zone.Identifier\n'}
+[11.619545] (cam2image_vm2ros) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Robotics/ros2_ws/install/cam2image_vm2ros/include/cam2image_vm2ros/visibility_control.h:Zone.Identifier\n'}
+[11.619639] (cam2image_vm2ros) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Robotics/ros2_ws/install/cam2image_vm2ros/include/cam2image_vm2ros/remote_capture.hpp\n'}
+[11.619733] (cam2image_vm2ros) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Robotics/ros2_ws/install/cam2image_vm2ros/include/cam2image_vm2ros/base64.hpp\n'}
+[11.619809] (cam2image_vm2ros) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Robotics/ros2_ws/install/cam2image_vm2ros/include/cam2image_vm2ros/cam2image.hpp\n'}
+[11.619879] (cam2image_vm2ros) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Robotics/ros2_ws/install/cam2image_vm2ros/include/cam2image_vm2ros/remote_capture.hpp:Zone.Identifier\n'}
+[11.649667] (cam2image_vm2ros) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Robotics/ros2_ws/install/cam2image_vm2ros/lib/cam2image_vm2ros/image_brightness\n'}
+[11.657755] (cam2image_vm2ros) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/ubuntu/Robotics/ros2_ws/install/cam2image_vm2ros/lib/cam2image_vm2ros/image_brightness" to ""\n'}
+[11.661846] (-) TimerEvent: {}
+[11.681746] (cam2image_vm2ros) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Robotics/ros2_ws/install/cam2image_vm2ros/lib/cam2image_vm2ros/brightness_receiver\n'}
+[11.705535] (cam2image_vm2ros) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Robotics/ros2_ws/install/cam2image_vm2ros/lib/cam2image_vm2ros/object_position_indicator\n'}
+[11.716768] (cam2image_vm2ros) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/ubuntu/Robotics/ros2_ws/install/cam2image_vm2ros/lib/cam2image_vm2ros/object_position_indicator" to ""\n'}
+[11.717022] (cam2image_vm2ros) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Robotics/ros2_ws/install/cam2image_vm2ros/share/cam2image_vm2ros/environment/library_path.sh\n'}
+[11.717398] (cam2image_vm2ros) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Robotics/ros2_ws/install/cam2image_vm2ros/share/cam2image_vm2ros/environment/library_path.dsv\n'}
+[11.717525] (cam2image_vm2ros) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Robotics/ros2_ws/install/cam2image_vm2ros/share/ament_index/resource_index/package_run_dependencies/cam2image_vm2ros\n'}
+[11.717647] (cam2image_vm2ros) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Robotics/ros2_ws/install/cam2image_vm2ros/share/ament_index/resource_index/parent_prefix_path/cam2image_vm2ros\n'}
+[11.717785] (cam2image_vm2ros) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Robotics/ros2_ws/install/cam2image_vm2ros/share/cam2image_vm2ros/environment/ament_prefix_path.sh\n'}
+[11.717922] (cam2image_vm2ros) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Robotics/ros2_ws/install/cam2image_vm2ros/share/cam2image_vm2ros/environment/ament_prefix_path.dsv\n'}
+[11.718057] (cam2image_vm2ros) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Robotics/ros2_ws/install/cam2image_vm2ros/share/cam2image_vm2ros/environment/path.sh\n'}
+[11.718311] (cam2image_vm2ros) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Robotics/ros2_ws/install/cam2image_vm2ros/share/cam2image_vm2ros/environment/path.dsv\n'}
+[11.718401] (cam2image_vm2ros) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Robotics/ros2_ws/install/cam2image_vm2ros/share/cam2image_vm2ros/local_setup.bash\n'}
+[11.718477] (cam2image_vm2ros) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Robotics/ros2_ws/install/cam2image_vm2ros/share/cam2image_vm2ros/local_setup.sh\n'}
+[11.718547] (cam2image_vm2ros) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Robotics/ros2_ws/install/cam2image_vm2ros/share/cam2image_vm2ros/local_setup.zsh\n'}
+[11.718624] (cam2image_vm2ros) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Robotics/ros2_ws/install/cam2image_vm2ros/share/cam2image_vm2ros/local_setup.dsv\n'}
+[11.718693] (cam2image_vm2ros) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Robotics/ros2_ws/install/cam2image_vm2ros/share/cam2image_vm2ros/package.dsv\n'}
+[11.724354] (cam2image_vm2ros) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Robotics/ros2_ws/install/cam2image_vm2ros/share/ament_index/resource_index/packages/cam2image_vm2ros\n'}
+[11.724563] (cam2image_vm2ros) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Robotics/ros2_ws/install/cam2image_vm2ros/share/ament_index/resource_index/rclcpp_components/cam2image_vm2ros\n'}
+[11.732012] (cam2image_vm2ros) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Robotics/ros2_ws/install/cam2image_vm2ros/share/cam2image_vm2ros/cmake/cam2image_vm2rosExport.cmake\n'}
+[11.732247] (cam2image_vm2ros) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Robotics/ros2_ws/install/cam2image_vm2ros/share/cam2image_vm2ros/cmake/cam2image_vm2rosExport-noconfig.cmake\n'}
+[11.732499] (cam2image_vm2ros) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Robotics/ros2_ws/install/cam2image_vm2ros/share/cam2image_vm2ros/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[11.732584] (cam2image_vm2ros) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Robotics/ros2_ws/install/cam2image_vm2ros/share/cam2image_vm2ros/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[11.732654] (cam2image_vm2ros) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Robotics/ros2_ws/install/cam2image_vm2ros/share/cam2image_vm2ros/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[11.732720] (cam2image_vm2ros) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Robotics/ros2_ws/install/cam2image_vm2ros/share/cam2image_vm2ros/cmake/cam2image_vm2rosConfig.cmake\n'}
+[11.732785] (cam2image_vm2ros) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Robotics/ros2_ws/install/cam2image_vm2ros/share/cam2image_vm2ros/cmake/cam2image_vm2rosConfig-version.cmake\n'}
+[11.732849] (cam2image_vm2ros) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Robotics/ros2_ws/install/cam2image_vm2ros/share/cam2image_vm2ros/package.xml\n'}
+[11.735447] (cam2image_vm2ros) CommandEnded: {'returncode': 0}
+[11.755774] (cam2image_vm2ros) JobEnded: {'identifier': 'cam2image_vm2ros', 'rc': 0}
+[11.757255] (-) EventReactorShutdown: {}

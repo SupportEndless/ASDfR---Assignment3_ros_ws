@@ -1,0 +1,30 @@
+[0.017s] Invoking command in '/home/ubuntu/Robotics/ros2_ws/build/assignment1_2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/Robotics/ros2_ws/build/assignment1_2 -- -j12 -l12
+[0.100s] [ 50%] [32mBuilding CXX object CMakeFiles/setpoint_generator.dir/src/setpoint_generator.cpp.o[0m
+[2.720s] [01m[K/home/ubuntu/Robotics/ros2_ws/src/assignment1_2/src/setpoint_generator.cpp:[m[K In constructor ‘[01m[KSetpointGenerator::[01;32m[KSetpointGenerator[m[K()[m[K’:
+[2.720s] [01m[K/home/ubuntu/Robotics/ros2_ws/src/assignment1_2/src/setpoint_generator.cpp:6:10:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Komega_right_wheel_[m[K’ in ‘[01m[K(SetpointGenerator*)this[m[K’, which is of pointer type ‘[01m[KSetpointGenerator*[m[K’ (maybe you meant to use ‘[01m[K->[m[K’ ?)
+[2.720s]     6 |     this.[01;31m[Komega_right_wheel_[m[K = 3;
+[2.720s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[2.720s] [01m[K/home/ubuntu/Robotics/ros2_ws/src/assignment1_2/src/setpoint_generator.cpp:7:10:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Komega_left_wheel_[m[K’ in ‘[01m[K(SetpointGenerator*)this[m[K’, which is of pointer type ‘[01m[KSetpointGenerator*[m[K’ (maybe you meant to use ‘[01m[K->[m[K’ ?)
+[2.720s]     7 |     this.[01;31m[Komega_left_wheel_[m[K = 3;
+[2.720s]       |          [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[2.730s] [01m[K/home/ubuntu/Robotics/ros2_ws/src/assignment1_2/src/setpoint_generator.cpp:[m[K In member function ‘[01m[Kdouble SetpointGenerator::[01;32m[Kget_right_wheel_control[m[K(double) const[m[K’:
+[2.730s] [01m[K/home/ubuntu/Robotics/ros2_ws/src/assignment1_2/src/setpoint_generator.cpp:26:26:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Komega_right_wheel_[m[K’ in ‘[01m[K(const SetpointGenerator*)this[m[K’, which is of pointer type ‘[01m[Kconst SetpointGenerator*[m[K’ (maybe you meant to use ‘[01m[K->[m[K’ ?)
+[2.731s]    26 |     return std::sin(this.[01;31m[Komega_right_wheel_[m[K * t);
+[2.731s]       |                          [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[2.731s] [01m[K/home/ubuntu/Robotics/ros2_ws/src/assignment1_2/src/setpoint_generator.cpp:[m[K In member function ‘[01m[Kdouble SetpointGenerator::[01;32m[Kget_left_wheel_control[m[K(double) const[m[K’:
+[2.731s] [01m[K/home/ubuntu/Robotics/ros2_ws/src/assignment1_2/src/setpoint_generator.cpp:30:26:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Komega_left_wheel_[m[K’ in ‘[01m[K(const SetpointGenerator*)this[m[K’, which is of pointer type ‘[01m[Kconst SetpointGenerator*[m[K’ (maybe you meant to use ‘[01m[K->[m[K’ ?)
+[2.731s]    30 |     return std::sin(this.[01;31m[Komega_left_wheel_[m[K * t);
+[2.732s]       |                          [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[2.732s] [01m[K/home/ubuntu/Robotics/ros2_ws/src/assignment1_2/src/setpoint_generator.cpp:[m[K At global scope:
+[2.732s] [01m[K/home/ubuntu/Robotics/ros2_ws/src/assignment1_2/src/setpoint_generator.cpp:33:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid SetpointGenerator::[01;32m[Ksend_control_output[m[K(geometry_msgs::msg::PoseStamped_<std::allocator<void> >::SharedPtr)[m[K’
+[2.732s]    33 | void [01;31m[KSetpointGenerator[m[K::send_control_output(geometry_msgs::msg::PoseStamped::SharedPtr msg) {
+[2.732s]       |      [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[2.732s] [01m[K/home/ubuntu/Robotics/ros2_ws/src/assignment1_2/src/setpoint_generator.cpp:33:6:[m[K [01;36m[Knote: [m[Kno functions named ‘[01m[Kvoid SetpointGenerator::[01;32m[Ksend_control_output[m[K(geometry_msgs::msg::PoseStamped_<std::allocator<void> >::SharedPtr)[m[K’
+[2.732s] In file included from [01m[K/home/ubuntu/Robotics/ros2_ws/src/assignment1_2/src/setpoint_generator.cpp:1[m[K:
+[2.733s] [01m[K/home/ubuntu/Robotics/ros2_ws/src/assignment1_2/include/setpoint_generator.hpp:17:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass SetpointGenerator[m[K’ defined here
+[2.733s]    17 | class [01;36m[KSetpointGenerator[m[K : public rclcpp::Node
+[2.733s]       |       [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[5.121s] gmake[2]: *** [CMakeFiles/setpoint_generator.dir/build.make:76: CMakeFiles/setpoint_generator.dir/src/setpoint_generator.cpp.o] Error 1
+[5.121s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/setpoint_generator.dir/all] Error 2
+[5.122s] gmake: *** [Makefile:146: all] Error 2
+[5.126s] Invoked command in '/home/ubuntu/Robotics/ros2_ws/build/assignment1_2' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/Robotics/ros2_ws/build/assignment1_2 -- -j12 -l12

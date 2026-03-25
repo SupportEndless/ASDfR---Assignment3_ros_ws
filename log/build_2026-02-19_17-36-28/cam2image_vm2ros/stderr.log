@@ -1,0 +1,4 @@
+[01m[K/home/ubuntu/Robotics/ros2_ws/src/cam2image_vm2ros/src/image_brightness.cpp:[m[K In constructor ‘[01m[KImageBrightness::[01;32m[KImageBrightness[m[K()[m[K’:
+[01m[K/home/ubuntu/Robotics/ros2_ws/src/cam2image_vm2ros/src/image_brightness.cpp:32:16:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kthreshold[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   32 |         double [01;35m[Kthreshold[m[K = this->get_parameter("brightness_threshold").as_double();
+      |                [01;35m[K^~~~~~~~~[m[K

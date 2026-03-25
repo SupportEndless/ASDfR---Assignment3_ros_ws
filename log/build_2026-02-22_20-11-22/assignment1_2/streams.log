@@ -1,0 +1,34 @@
+[0.098s] Invoking command in '/home/ubuntu/Robotics/ros2_ws/build/assignment1_2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/ubuntu/Robotics/ros2_ws/src/assignment1_2 -DCMAKE_INSTALL_PREFIX=/home/ubuntu/Robotics/ros2_ws/install/assignment1_2
+[2.177s] -- The C compiler identification is GNU 13.3.0
+[3.865s] -- The CXX compiler identification is GNU 13.3.0
+[4.925s] -- Detecting C compiler ABI info
+[5.518s] -- Detecting C compiler ABI info - done
+[5.527s] -- Check for working C compiler: /usr/bin/cc - skipped
+[5.528s] -- Detecting C compile features
+[5.529s] -- Detecting C compile features - done
+[5.731s] -- Detecting CXX compiler ABI info
+[6.160s] -- Detecting CXX compiler ABI info - done
+[6.170s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[6.170s] -- Detecting CXX compile features
+[6.171s] -- Detecting CXX compile features - done
+[6.521s] -- Found ament_cmake: 2.5.5 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[6.734s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[9.349s] [31mCMake Error at CMakeLists.txt:10 (find_package):
+[9.349s]   By not providing "Findchrono.cmake" in CMAKE_MODULE_PATH this project has
+[9.349s]   asked CMake to find a package configuration file provided by "chrono", but
+[9.349s]   CMake did not find one.
+[9.349s] 
+[9.349s]   Could not find a package configuration file provided by "chrono" with any
+[9.350s]   of the following names:
+[9.350s] 
+[9.350s]     chronoConfig.cmake
+[9.350s]     chrono-config.cmake
+[9.350s] 
+[9.350s]   Add the installation prefix of "chrono" to CMAKE_PREFIX_PATH or set
+[9.350s]   "chrono_DIR" to a directory containing one of the above files.  If "chrono"
+[9.350s]   provides a separate development package or SDK, be sure it has been
+[9.350s]   installed.
+[9.350s] 
+[9.350s] [0m
+[9.350s] -- Configuring incomplete, errors occurred!
+[9.355s] Invoked command in '/home/ubuntu/Robotics/ros2_ws/build/assignment1_2' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/ubuntu/Robotics/ros2_ws/src/assignment1_2 -DCMAKE_INSTALL_PREFIX=/home/ubuntu/Robotics/ros2_ws/install/assignment1_2

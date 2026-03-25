@@ -1,0 +1,21 @@
+[0.060s] Invoking command in '/home/ubuntu/Robotics/ros2_ws/build/cam2image_vm2ros': /usr/bin/cmake --build /home/ubuntu/Robotics/ros2_ws/build/cam2image_vm2ros -- -j12 -l12
+[0.905s] -- Found ament_cmake: 2.5.5 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[14.524s] Traceback (most recent call last):
+[14.524s]   File "/opt/ros/jazzy/share/ament_cmake_core/cmake/package_templates/templates_2_cmake.py", line 21, in <module>
+[14.524s]     from ament_package.templates import get_environment_hook_template_path
+[14.524s] ModuleNotFoundError: No module named 'ament_package'
+[14.566s] [31mCMake Error at /opt/ros/jazzy/share/ament_cmake_core/cmake/ament_cmake_package_templates-extras.cmake:41 (message):
+[14.567s]   execute_process(/usr/bin/python3
+[14.567s]   /opt/ros/jazzy/share/ament_cmake_core/cmake/package_templates/templates_2_cmake.py
+[14.567s]   /home/ubuntu/Robotics/ros2_ws/build/cam2image_vm2ros/ament_cmake_package_templates/templates.cmake)
+[14.567s]   returned error code 1
+[14.567s] Call Stack (most recent call first):
+[14.567s]   /opt/ros/jazzy/share/ament_cmake_core/cmake/ament_cmake_coreConfig.cmake:41 (include)
+[14.567s]   /opt/ros/jazzy/share/ament_cmake/cmake/ament_cmake_export_dependencies-extras.cmake:15 (find_package)
+[14.567s]   /opt/ros/jazzy/share/ament_cmake/cmake/ament_cmakeConfig.cmake:41 (include)
+[14.567s]   CMakeLists.txt:14 (find_package)
+[14.568s] 
+[14.568s] [0m
+[14.568s] -- Configuring incomplete, errors occurred!
+[14.720s] gmake: *** [Makefile:335: cmake_check_build_system] Error 1
+[14.722s] Invoked command in '/home/ubuntu/Robotics/ros2_ws/build/cam2image_vm2ros' returned '2': /usr/bin/cmake --build /home/ubuntu/Robotics/ros2_ws/build/cam2image_vm2ros -- -j12 -l12

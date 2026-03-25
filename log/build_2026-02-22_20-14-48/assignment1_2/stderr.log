@@ -1,0 +1,24 @@
+[33mCMake Warning at CMakeLists.txt:11 (find_package):
+  By not providing "Findexample_msgs.cmake" in CMAKE_MODULE_PATH this project
+  has asked CMake to find a package configuration file provided by
+  "example_msgs", but CMake did not find one.
+
+  Could not find a package configuration file provided by "example_msgs" with
+  any of the following names:
+
+    example_msgsConfig.cmake
+    example_msgs-config.cmake
+
+  Add the installation prefix of "example_msgs" to CMAKE_PREFIX_PATH or set
+  "example_msgs_DIR" to a directory containing one of the above files.  If
+  "example_msgs" provides a separate development package or SDK, be sure it
+  has been installed.
+
+[0m
+[31mCMake Error at /opt/ros/jazzy/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:77 (message):
+  ament_target_dependencies() the passed package name 'example_msgs' was not
+  found before
+Call Stack (most recent call first):
+  CMakeLists.txt:19 (ament_target_dependencies)
+
+[0m

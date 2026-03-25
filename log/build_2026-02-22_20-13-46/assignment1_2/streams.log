@@ -1,0 +1,21 @@
+[0.015s] Invoking command in '/home/ubuntu/Robotics/ros2_ws/build/assignment1_2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/ubuntu/Robotics/ros2_ws/src/assignment1_2 -DCMAKE_INSTALL_PREFIX=/home/ubuntu/Robotics/ros2_ws/install/assignment1_2
+[0.033s] -- Found ament_cmake: 2.5.5 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[2.079s] [31mCMake Error at CMakeLists.txt:10 (find_package):
+[2.079s]   By not providing "Findchrono.cmake" in CMAKE_MODULE_PATH this project has
+[2.080s]   asked CMake to find a package configuration file provided by "chrono", but
+[2.080s]   CMake did not find one.
+[2.080s] 
+[2.080s]   Could not find a package configuration file provided by "chrono" with any
+[2.080s]   of the following names:
+[2.080s] 
+[2.080s]     chronoConfig.cmake
+[2.080s]     chrono-config.cmake
+[2.080s] 
+[2.080s]   Add the installation prefix of "chrono" to CMAKE_PREFIX_PATH or set
+[2.080s]   "chrono_DIR" to a directory containing one of the above files.  If "chrono"
+[2.080s]   provides a separate development package or SDK, be sure it has been
+[2.080s]   installed.
+[2.081s] 
+[2.081s] [0m
+[2.081s] -- Configuring incomplete, errors occurred!
+[2.085s] Invoked command in '/home/ubuntu/Robotics/ros2_ws/build/assignment1_2' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/ubuntu/Robotics/ros2_ws/src/assignment1_2 -DCMAKE_INSTALL_PREFIX=/home/ubuntu/Robotics/ros2_ws/install/assignment1_2

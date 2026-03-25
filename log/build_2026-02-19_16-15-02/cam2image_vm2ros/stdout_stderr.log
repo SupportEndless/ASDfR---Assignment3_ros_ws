@@ -1,0 +1,20 @@
+[ 28%] Built target cam2image
+[ 42%] [32mBuilding CXX object CMakeFiles/talker_listener_node.dir/src/image_brightness.cpp.o[0m
+[ 85%] Built target cam2image_vm2ros
+[01m[K/home/ubuntu/Robotics/ros2_ws/src/cam2image_vm2ros/src/image_brightness.cpp:39:63:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+   39 |     void topic_callback(sensor_msgs::msg::Image::SharedPtr img[01;31m[K)[m[K static {
+      |                                                               [01;31m[K^[m[K
+      |                                                                [32m[K;[m[K
+[01m[K/home/ubuntu/Robotics/ros2_ws/src/cam2image_vm2ros/src/image_brightness.cpp:39:72:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K{[m[K’ token
+   39 |     void topic_callback(sensor_msgs::msg::Image::SharedPtr img) static [01;31m[K{[m[K
+      |                                                                        [01;31m[K^[m[K
+[01m[K/home/ubuntu/Robotics/ros2_ws/src/cam2image_vm2ros/src/image_brightness.cpp:[m[K In constructor ‘[01m[KImageBrightness::[01;32m[KImageBrightness[m[K()[m[K’:
+[01m[K/home/ubuntu/Robotics/ros2_ws/src/cam2image_vm2ros/src/image_brightness.cpp:23:77:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static member function ‘[01m[Kvoid ImageBrightness::[01;32m[Ktopic_callback[m[K(sensor_msgs::msg::Image_<std::allocator<void> >::SharedPtr)[m[K’
+   23 |             this->create_subscription<sensor_msgs::msg::Image>("Image", 10, [01;31m[Ktopic_callback[m[K);
+      |                                                                             [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Robotics/ros2_ws/src/cam2image_vm2ros/src/image_brightness.cpp:39:10:[m[K [01;36m[Knote: [m[Kdeclared here
+   39 |     void [01;36m[Ktopic_callback[m[K(sensor_msgs::msg::Image::SharedPtr img) static {
+      |          [01;36m[K^~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/talker_listener_node.dir/build.make:76: CMakeFiles/talker_listener_node.dir/src/image_brightness.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/talker_listener_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

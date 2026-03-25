@@ -1,0 +1,69 @@
+[0.013s] Invoking command in '/home/ubuntu/Robotics/ros2_ws/build/assignment1_2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/Robotics/ros2_ws/build/assignment1_2 -- -j12 -l12
+[0.041s] -- Found ament_cmake: 2.5.5 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.264s] -- Found rclcpp: 28.1.16 (/opt/ros/jazzy/share/rclcpp/cmake)
+[0.531s] -- Found rosidl_generator_c: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.540s] -- Found rosidl_generator_cpp: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.553s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.567s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.632s] -- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.634s] -- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[1.007s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.284s] -- Found example_interfaces: 0.12.0 (/opt/ros/jazzy/share/example_interfaces/cmake)
+[1.348s] -- Found geometry_msgs: 5.3.6 (/opt/ros/jazzy/share/geometry_msgs/cmake)
+[1.388s] -- Found ament_lint_auto: 0.17.4 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[1.482s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.482s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/ubuntu/Robotics/ros2_ws/src/assignment1_2/include>
+[1.482s] -- Configured cppcheck exclude dirs and/or files: 
+[1.482s] -- Added test 'lint_cmake' to check CMake code style
+[1.483s] -- Added test 'uncrustify' to check C / C++ code style
+[1.483s] -- Configured uncrustify additional arguments: 
+[1.484s] -- Added test 'xmllint' to check XML markup files
+[1.485s] -- Configuring done (1.4s)
+[1.500s] -- Generating done (0.0s)
+[1.506s] -- Build files have been written to: /home/ubuntu/Robotics/ros2_ws/build/assignment1_2
+[1.560s] [ 50%] [32mBuilding CXX object CMakeFiles/setpoint_generator.dir/src/setpoint_generator.cpp.o[0m
+[4.304s] In file included from [01m[K/home/ubuntu/Robotics/ros2_ws/src/assignment1_2/src/setpoint_generator.cpp:1[m[K:
+[4.304s] [01m[K/home/ubuntu/Robotics/ros2_ws/src/assignment1_2/include/setpoint_generator.hpp:32:9:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on function return type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wignored-qualifiers-Wignored-qualifiers]8;;[m[K]
+[4.304s]    32 |         [01;35m[Kdouble[m[K const get_right_wheel_control(double);
+[4.304s]       |         [01;35m[K^~~~~~[m[K
+[4.305s] [01m[K/home/ubuntu/Robotics/ros2_ws/src/assignment1_2/include/setpoint_generator.hpp:33:9:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on function return type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wignored-qualifiers-Wignored-qualifiers]8;;[m[K]
+[4.305s]    33 |         [01;35m[Kdouble[m[K const get_left_wheel_control(double);
+[4.305s]       |         [01;35m[K^~~~~~[m[K
+[4.305s] [01m[K/home/ubuntu/Robotics/ros2_ws/src/assignment1_2/include/setpoint_generator.hpp:23:22:[m[K [01;35m[Kwarning: [m[Knon-static const member ‘[01m[Kconst double SetpointGenerator::omega_right_wheel_[m[K’ in class without a constructor [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wuninitialized-Wuninitialized]8;;[m[K]
+[4.305s]    23 |         double const [01;35m[Komega_right_wheel_[m[K;          // Angular frequency of right wheel
+[4.306s]       |                      [01;35m[K^~~~~~~~~~~~~~~~~~[m[K
+[4.306s] [01m[K/home/ubuntu/Robotics/ros2_ws/src/assignment1_2/include/setpoint_generator.hpp:24:22:[m[K [01;35m[Kwarning: [m[Knon-static const member ‘[01m[Kconst double SetpointGenerator::omega_left_wheel_[m[K’ in class without a constructor [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wuninitialized-Wuninitialized]8;;[m[K]
+[4.306s]    24 |         double const [01;35m[Komega_left_wheel_[m[K;            // Angular frequency of left wheel
+[4.307s]       |                      [01;35m[K^~~~~~~~~~~~~~~~~[m[K
+[4.307s] [01m[K/home/ubuntu/Robotics/ros2_ws/src/assignment1_2/src/setpoint_generator.cpp:4:38:[m[K [01;31m[Kerror: [m[Kdefinition of implicitly-declared ‘[01m[KSetpointGenerator::[01;32m[KSetpointGenerator[m[K()[m[K’
+[4.307s]     4 | SetpointGenerator::SetpointGenerator([01;31m[K)[m[K : Node("setpoint_generator"){
+[4.307s]       |                                      [01;31m[K^[m[K
+[4.307s] [01m[K/home/ubuntu/Robotics/ros2_ws/src/assignment1_2/src/setpoint_generator.cpp:19:8:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kdouble SetpointGenerator::[01;32m[Kget_right_wheel_control[m[K(double) const[m[K’
+[4.307s]    19 | double [01;31m[KSetpointGenerator[m[K::get_right_wheel_control(double t) const {
+[4.307s]       |        [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[4.307s] [01m[K/home/ubuntu/Robotics/ros2_ws/src/assignment1_2/include/setpoint_generator.hpp:32:22:[m[K [01;36m[Knote: [m[Kcandidate is: ‘[01m[Kconst double SetpointGenerator::[01;32m[Kget_right_wheel_control[m[K(double)[m[K’
+[4.307s]    32 |         double const [01;36m[Kget_right_wheel_control[m[K(double);
+[4.307s]       |                      [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.307s] [01m[K/home/ubuntu/Robotics/ros2_ws/src/assignment1_2/include/setpoint_generator.hpp:17:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass SetpointGenerator[m[K’ defined here
+[4.307s]    17 | class [01;36m[KSetpointGenerator[m[K : public rclcpp::Node
+[4.308s]       |       [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[4.308s] [01m[K/home/ubuntu/Robotics/ros2_ws/src/assignment1_2/src/setpoint_generator.cpp:23:8:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kdouble SetpointGenerator::[01;32m[Kget_left_wheel_control[m[K(double) const[m[K’
+[4.308s]    23 | double [01;31m[KSetpointGenerator[m[K::get_left_wheel_control(double t) const {
+[4.308s]       |        [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[4.308s] [01m[K/home/ubuntu/Robotics/ros2_ws/src/assignment1_2/include/setpoint_generator.hpp:33:22:[m[K [01;36m[Knote: [m[Kcandidate is: ‘[01m[Kconst double SetpointGenerator::[01;32m[Kget_left_wheel_control[m[K(double)[m[K’
+[4.308s]    33 |         double const [01;36m[Kget_left_wheel_control[m[K(double);
+[4.308s]       |                      [01;36m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.308s] [01m[K/home/ubuntu/Robotics/ros2_ws/src/assignment1_2/include/setpoint_generator.hpp:17:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass SetpointGenerator[m[K’ defined here
+[4.308s]    17 | class [01;36m[KSetpointGenerator[m[K : public rclcpp::Node
+[4.308s]       |       [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[4.308s] [01m[K/home/ubuntu/Robotics/ros2_ws/src/assignment1_2/src/setpoint_generator.cpp:27:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid SetpointGenerator::[01;32m[Ksend_control_output[m[K(geometry_msgs::msg::PoseStamped_<std::allocator<void> >::SharedPtr)[m[K’
+[4.308s]    27 | void [01;31m[KSetpointGenerator[m[K::send_control_output(geometry_msgs::msg::PoseStamped::SharedPtr msg) {
+[4.308s]       |      [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[4.309s] [01m[K/home/ubuntu/Robotics/ros2_ws/src/assignment1_2/src/setpoint_generator.cpp:27:6:[m[K [01;36m[Knote: [m[Kno functions named ‘[01m[Kvoid SetpointGenerator::[01;32m[Ksend_control_output[m[K(geometry_msgs::msg::PoseStamped_<std::allocator<void> >::SharedPtr)[m[K’
+[4.309s] [01m[K/home/ubuntu/Robotics/ros2_ws/src/assignment1_2/include/setpoint_generator.hpp:17:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass SetpointGenerator[m[K’ defined here
+[4.309s]    17 | class [01;36m[KSetpointGenerator[m[K : public rclcpp::Node
+[4.309s]       |       [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[4.997s] gmake[2]: *** [CMakeFiles/setpoint_generator.dir/build.make:76: CMakeFiles/setpoint_generator.dir/src/setpoint_generator.cpp.o] Error 1
+[4.997s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/setpoint_generator.dir/all] Error 2
+[4.998s] gmake: *** [Makefile:146: all] Error 2
+[5.003s] Invoked command in '/home/ubuntu/Robotics/ros2_ws/build/assignment1_2' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/Robotics/ros2_ws/build/assignment1_2 -- -j12 -l12

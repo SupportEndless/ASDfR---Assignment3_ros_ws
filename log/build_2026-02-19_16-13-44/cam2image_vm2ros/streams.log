@@ -1,0 +1,61 @@
+[0.120s] Invoking command in '/home/ubuntu/Robotics/ros2_ws/build/cam2image_vm2ros': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/Robotics/ros2_ws/build/cam2image_vm2ros -- -j12 -l12
+[1.793s] -- Found ament_cmake: 2.5.5 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[2.218s] -- Found rclcpp: 28.1.16 (/opt/ros/jazzy/share/rclcpp/cmake)
+[2.686s] -- Found rosidl_generator_c: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[2.720s] -- Found rosidl_generator_cpp: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[2.765s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.821s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.084s] -- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[3.094s] -- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[3.666s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[4.133s] -- Found rclcpp_components: 28.1.16 (/opt/ros/jazzy/share/rclcpp_components/cmake)
+[4.259s] -- Found sensor_msgs: 5.3.6 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+[4.418s] -- Found cv_bridge: 4.1.0 (/opt/ros/jazzy/share/cv_bridge/cmake)
+[4.647s] -- Configuring done (3.0s)
+[4.902s] -- Generating done (0.2s)
+[4.938s] -- Build files have been written to: /home/ubuntu/Robotics/ros2_ws/build/cam2image_vm2ros
+[5.390s] [ 42%] [32mBuilding CXX object CMakeFiles/talker_listener_node.dir/src/image_brightness.cpp.o[0m
+[5.390s] [ 42%] Built target cam2image
+[6.084s] [ 85%] Built target cam2image_vm2ros
+[10.951s] [01m[K/home/ubuntu/Robotics/ros2_ws/src/cam2image_vm2ros/src/image_brightness.cpp:58:2:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ at end of input
+[10.951s]    58 | }
+[10.952s]       |  [01;31m[K^[m[K
+[10.952s] [01m[K/home/ubuntu/Robotics/ros2_ws/src/cam2image_vm2ros/src/image_brightness.cpp:12:1:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+[10.952s]    12 | [01;36m[K{[m[K
+[10.952s]       | [01;36m[K^[m[K
+[10.962s] [01m[K/home/ubuntu/Robotics/ros2_ws/src/cam2image_vm2ros/src/image_brightness.cpp:[m[K In constructor ‘[01m[KImageBrightness::[01;32m[KImageBrightness[m[K()[m[K’:
+[10.962s] [01m[K/home/ubuntu/Robotics/ros2_ws/src/cam2image_vm2ros/src/image_brightness.cpp:18:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher_[m[K’ was not declared in this scope; did you mean ‘[01m[Krmw_publisher_t[m[K’?
+[10.962s]    18 |         [01;31m[Kpublisher_[m[K =
+[10.962s]       |         [01;31m[K^~~~~~~~~~[m[K
+[10.962s]       |         [32m[Krmw_publisher_t[m[K
+[10.972s] [01m[K/home/ubuntu/Robotics/ros2_ws/src/cam2image_vm2ros/src/image_brightness.cpp:22:9:[m[K [01;31m[Kerror: [m[K‘[01m[Ksubscription_[m[K’ was not declared in this scope; did you mean ‘[01m[Krmw_subscription_t[m[K’?
+[10.972s]    22 |         [01;31m[Ksubscription_[m[K =
+[10.972s]       |         [01;31m[K^~~~~~~~~~~~~[m[K
+[10.972s]       |         [32m[Krmw_subscription_t[m[K
+[10.981s] [01m[K/home/ubuntu/Robotics/ros2_ws/src/cam2image_vm2ros/src/image_brightness.cpp:23:77:[m[K [01;31m[Kerror: [m[K‘[01m[Ktopic_callback[m[K’ was not declared in this scope
+[10.981s]    23 |             this->create_subscription<sensor_msgs::msg::Image>("Image", 10, [01;31m[Ktopic_callback[m[K);
+[10.981s]       |                                                                             [01;31m[K^~~~~~~~~~~~~~[m[K
+[10.981s] [01m[K/home/ubuntu/Robotics/ros2_ws/src/cam2image_vm2ros/src/image_brightness.cpp:26:5:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kprivate[m[K’
+[10.981s]    26 |     [01;31m[Kprivate[m[K:
+[10.981s]       |     [01;31m[K^~~~~~~[m[K
+[11.006s] [01m[K/home/ubuntu/Robotics/ros2_ws/src/cam2image_vm2ros/src/image_brightness.cpp:32:31:[m[K [01;35m[Kwarning: [m[Kempty parentheses were disambiguated as a function declaration [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wvexing-parse-Wvexing-parse]8;;[m[K]
+[11.006s]    32 |     std::string get_brightness[01;35m[K()[m[K {
+[11.007s]       |                               [01;35m[K^~[m[K
+[11.007s] [01m[K/home/ubuntu/Robotics/ros2_ws/src/cam2image_vm2ros/src/image_brightness.cpp:32:31:[m[K [01;36m[Knote: [m[Kremove parentheses to default-initialize a variable
+[11.007s]    32 |     std::string get_brightness[01;36m[K()[m[K {
+[11.007s]       |                               [01;36m[K^~[m[K
+[11.007s]       |                               [31m[K--[m[K
+[11.007s] [01m[K/home/ubuntu/Robotics/ros2_ws/src/cam2image_vm2ros/src/image_brightness.cpp:32:34:[m[K [01;31m[Kerror: [m[Ka function-definition is not allowed here before ‘[01m[K{[m[K’ token
+[11.007s]    32 |     std::string get_brightness() [01;31m[K{[m[K
+[11.007s]       |                                  [01;31m[K^[m[K
+[11.007s] [01m[K/home/ubuntu/Robotics/ros2_ws/src/cam2image_vm2ros/src/image_brightness.cpp:39:65:[m[K [01;31m[Kerror: [m[Ka function-definition is not allowed here before ‘[01m[K{[m[K’ token
+[11.007s]    39 |     void topic_callback(sensor_msgs::msg::Image::SharedPtr img) [01;31m[K{[m[K
+[11.007s]       |                                                                 [01;31m[K^[m[K
+[11.009s] [01m[K/home/ubuntu/Robotics/ros2_ws/src/cam2image_vm2ros/src/image_brightness.cpp:[m[K At global scope:
+[11.009s] [01m[K/home/ubuntu/Robotics/ros2_ws/src/cam2image_vm2ros/src/image_brightness.cpp:58:2:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id at end of input
+[11.009s]    58 | }
+[11.009s]       |  [01;31m[K^[m[K
+[12.063s] gmake[2]: *** [CMakeFiles/talker_listener_node.dir/build.make:76: CMakeFiles/talker_listener_node.dir/src/image_brightness.cpp.o] Error 1
+[12.063s] gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/talker_listener_node.dir/all] Error 2
+[12.064s] gmake: *** [Makefile:146: all] Error 2
+[12.067s] Invoked command in '/home/ubuntu/Robotics/ros2_ws/build/cam2image_vm2ros' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/Robotics/ros2_ws/build/cam2image_vm2ros -- -j12 -l12

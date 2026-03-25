@@ -1,0 +1,33 @@
+[0.013s] Invoking command in '/home/ubuntu/Robotics/ros2_ws/build/assignment1_2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/Robotics/ros2_ws/build/assignment1_2 -- -j12 -l12
+[0.042s] -- Found ament_cmake: 2.5.5 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.266s] -- Found rclcpp: 28.1.16 (/opt/ros/jazzy/share/rclcpp/cmake)
+[0.547s] -- Found rosidl_generator_c: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.557s] -- Found rosidl_generator_cpp: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.569s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.583s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.650s] -- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.651s] -- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[1.006s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.278s] -- Found example_interfaces: 0.12.0 (/opt/ros/jazzy/share/example_interfaces/cmake)
+[1.339s] -- Found geometry_msgs: 5.3.6 (/opt/ros/jazzy/share/geometry_msgs/cmake)
+[1.373s] -- Found ament_lint_auto: 0.17.4 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[1.474s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.474s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/ubuntu/Robotics/ros2_ws/src/assignment1_2/include>
+[1.474s] -- Configured cppcheck exclude dirs and/or files: 
+[1.475s] -- Added test 'lint_cmake' to check CMake code style
+[1.476s] -- Added test 'uncrustify' to check C / C++ code style
+[1.476s] -- Configured uncrustify additional arguments: 
+[1.477s] -- Added test 'xmllint' to check XML markup files
+[1.477s] -- Configuring done (1.4s)
+[1.493s] -- Generating done (0.0s)
+[1.498s] -- Build files have been written to: /home/ubuntu/Robotics/ros2_ws/build/assignment1_2
+[1.541s] [ 50%] [32mBuilding CXX object CMakeFiles/setpoint_generator.dir/src/setpoint_generator.cpp.o[0m
+[2.754s] In file included from [01m[K/home/ubuntu/Robotics/ros2_ws/src/assignment1_2/src/setpoint_generator.cpp:1[m[K:
+[2.754s] [01m[K/home/ubuntu/Robotics/ros2_ws/src/assignment1_2/include/setpoint_generator.hpp:10:10:[m[K [01;31m[Kfatal error: [m[Kexample_interfaces/msg/float64: No such file or directory
+[2.754s]    10 | #include [01;31m[K"example_interfaces/msg/float64"[m[K
+[2.755s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.755s] compilation terminated.
+[2.758s] gmake[2]: *** [CMakeFiles/setpoint_generator.dir/build.make:76: CMakeFiles/setpoint_generator.dir/src/setpoint_generator.cpp.o] Error 1
+[2.758s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/setpoint_generator.dir/all] Error 2
+[2.759s] gmake: *** [Makefile:146: all] Error 2
+[2.761s] Invoked command in '/home/ubuntu/Robotics/ros2_ws/build/assignment1_2' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/Robotics/ros2_ws/build/assignment1_2 -- -j12 -l12

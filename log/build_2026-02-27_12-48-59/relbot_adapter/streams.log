@@ -1,0 +1,22 @@
+[0.215s] Invoking command in '/home/ubuntu/Robotics/ros2_ws/build/relbot_adapter': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/Robotics/ros2_ws/build/relbot_adapter -- -j12 -l12
+[2.434s] [100%] Built target relbot_adapter
+[2.448s] Invoked command in '/home/ubuntu/Robotics/ros2_ws/build/relbot_adapter' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/Robotics/ros2_ws/build/relbot_adapter -- -j12 -l12
+[2.739s] Invoking command in '/home/ubuntu/Robotics/ros2_ws/build/relbot_adapter': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/ubuntu/Robotics/ros2_ws/build/relbot_adapter
+[2.749s] -- Install configuration: ""
+[2.797s] -- Up-to-date: /home/ubuntu/Robotics/ros2_ws/install/relbot_adapter/lib/relbot_adapter/relbot_adapter
+[2.811s] -- Up-to-date: /home/ubuntu/Robotics/ros2_ws/install/relbot_adapter/share/ament_index/resource_index/package_run_dependencies/relbot_adapter
+[2.811s] -- Up-to-date: /home/ubuntu/Robotics/ros2_ws/install/relbot_adapter/share/ament_index/resource_index/parent_prefix_path/relbot_adapter
+[2.812s] -- Up-to-date: /home/ubuntu/Robotics/ros2_ws/install/relbot_adapter/share/relbot_adapter/environment/ament_prefix_path.sh
+[2.812s] -- Up-to-date: /home/ubuntu/Robotics/ros2_ws/install/relbot_adapter/share/relbot_adapter/environment/ament_prefix_path.dsv
+[2.812s] -- Up-to-date: /home/ubuntu/Robotics/ros2_ws/install/relbot_adapter/share/relbot_adapter/environment/path.sh
+[2.812s] -- Up-to-date: /home/ubuntu/Robotics/ros2_ws/install/relbot_adapter/share/relbot_adapter/environment/path.dsv
+[2.812s] -- Up-to-date: /home/ubuntu/Robotics/ros2_ws/install/relbot_adapter/share/relbot_adapter/local_setup.bash
+[2.812s] -- Up-to-date: /home/ubuntu/Robotics/ros2_ws/install/relbot_adapter/share/relbot_adapter/local_setup.sh
+[2.812s] -- Up-to-date: /home/ubuntu/Robotics/ros2_ws/install/relbot_adapter/share/relbot_adapter/local_setup.zsh
+[2.812s] -- Up-to-date: /home/ubuntu/Robotics/ros2_ws/install/relbot_adapter/share/relbot_adapter/local_setup.dsv
+[2.813s] -- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_adapter/share/relbot_adapter/package.dsv
+[2.824s] -- Up-to-date: /home/ubuntu/Robotics/ros2_ws/install/relbot_adapter/share/ament_index/resource_index/packages/relbot_adapter
+[2.824s] -- Up-to-date: /home/ubuntu/Robotics/ros2_ws/install/relbot_adapter/share/relbot_adapter/cmake/relbot_adapterConfig.cmake
+[2.824s] -- Up-to-date: /home/ubuntu/Robotics/ros2_ws/install/relbot_adapter/share/relbot_adapter/cmake/relbot_adapterConfig-version.cmake
+[2.824s] -- Up-to-date: /home/ubuntu/Robotics/ros2_ws/install/relbot_adapter/share/relbot_adapter/package.xml
+[2.827s] Invoked command in '/home/ubuntu/Robotics/ros2_ws/build/relbot_adapter' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/ubuntu/Robotics/ros2_ws/build/relbot_adapter

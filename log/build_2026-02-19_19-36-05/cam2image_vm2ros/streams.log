@@ -1,0 +1,22 @@
+[0.089s] Invoking command in '/home/ubuntu/Robotics/ros2_ws/build/cam2image_vm2ros': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/Robotics/ros2_ws/build/cam2image_vm2ros -- -j12 -l12
+[0.845s] [ 18%] Built target brightness_receiver
+[0.854s] [ 36%] Built target image_brightness
+[0.856s] [ 54%] Built target cam2image
+[0.863s] [ 81%] Built target cam2image_vm2ros
+[0.904s] [ 90%] [32mBuilding CXX object CMakeFiles/object_position_indicator.dir/src/object_position_indicator.cpp.o[0m
+[5.865s] [01m[K/home/ubuntu/Robotics/ros2_ws/src/cam2image_vm2ros/src/object_position_indicator.cpp:[m[K In constructor ‘[01m[KObjectPositionIndicator::[01;32m[KObjectPositionIndicator[m[K()[m[K’:
+[5.865s] [01m[K/home/ubuntu/Robotics/ros2_ws/src/cam2image_vm2ros/src/object_position_indicator.cpp:41:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kcb_handle[m[K’ was not declared in this scope; did you mean ‘[01m[Kcb_handle_[m[K’?
+[5.865s]    41 |         [01;31m[Kcb_handle[m[K = param_subscriber_->add_parameter_callback("threshold_", cb);
+[5.865s]       |         [01;31m[K^~~~~~~~~[m[K
+[5.865s]       |         [32m[Kcb_handle_[m[K
+[5.876s] [01m[K/home/ubuntu/Robotics/ros2_ws/src/cam2image_vm2ros/src/object_position_indicator.cpp:[m[K In member function ‘[01m[Kstd::array<int, 2> ObjectPositionIndicator::[01;32m[Kfind_CoG[m[K(cv_bridge::CvImagePtr)[m[K’:
+[5.876s] [01m[K/home/ubuntu/Robotics/ros2_ws/src/cam2image_vm2ros/src/object_position_indicator.cpp:77:41:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing std::__shared_ptr_access<cv_bridge::CvImage, __gnu_cxx::_S_atomic, false, false>::element_type = class cv_bridge::CvImage[m[K’ {aka ‘[01m[Kclass cv_bridge::CvImage[m[K’} has no member named ‘[01m[Kheight[m[K’
+[5.876s]    77 |         for (int y = 0; y < gscale_ptr->[01;31m[Kheight[m[K; y++) {
+[5.876s]       |                                         [01;31m[K^~~~~~[m[K
+[5.876s] [01m[K/home/ubuntu/Robotics/ros2_ws/src/cam2image_vm2ros/src/object_position_indicator.cpp:78:45:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing std::__shared_ptr_access<cv_bridge::CvImage, __gnu_cxx::_S_atomic, false, false>::element_type = class cv_bridge::CvImage[m[K’ {aka ‘[01m[Kclass cv_bridge::CvImage[m[K’} has no member named ‘[01m[Kwidth[m[K’
+[5.876s]    78 |             for (int x = 0; x < gscale_ptr->[01;31m[Kwidth[m[K; x++) {
+[5.876s]       |                                             [01;31m[K^~~~~[m[K
+[9.440s] gmake[2]: *** [CMakeFiles/object_position_indicator.dir/build.make:76: CMakeFiles/object_position_indicator.dir/src/object_position_indicator.cpp.o] Error 1
+[9.441s] gmake[1]: *** [CMakeFiles/Makefile2:249: CMakeFiles/object_position_indicator.dir/all] Error 2
+[9.441s] gmake: *** [Makefile:146: all] Error 2
+[9.445s] Invoked command in '/home/ubuntu/Robotics/ros2_ws/build/cam2image_vm2ros' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/Robotics/ros2_ws/build/cam2image_vm2ros -- -j12 -l12

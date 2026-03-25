@@ -1,0 +1,218 @@
+[0.000000] (-) TimerEvent: {}
+[0.000559] (-) JobUnselected: {'identifier': 'cpp_pubsub'}
+[0.000649] (cam2image_vm2ros) JobQueued: {'identifier': 'cam2image_vm2ros', 'dependencies': OrderedDict()}
+[0.000697] (cam2image_vm2ros) JobStarted: {'identifier': 'cam2image_vm2ros'}
+[0.008370] (cam2image_vm2ros) JobProgress: {'identifier': 'cam2image_vm2ros', 'progress': 'cmake'}
+[0.009993] (cam2image_vm2ros) JobProgress: {'identifier': 'cam2image_vm2ros', 'progress': 'build'}
+[0.010139] (cam2image_vm2ros) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ubuntu/Robotics/ros2_ws/build/cam2image_vm2ros', '--', '-j12', '-l12'], 'cwd': '/home/ubuntu/Robotics/ros2_ws/build/cam2image_vm2ros', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ubuntu', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/ubuntu/Robotics/ros2_ws/install/cam2image_vm2ros/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'WT_PROFILE_ID': '{61c54bbd-c2c6-5271-96e7-009a87ff44bf}', 'HOME': '/home/ubuntu', 'OLDPWD': '/mnt/c/Users/rogie', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'WSL_DISTRO_NAME': 'Ubuntu-24.04', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/ubuntu/Robotics/ros2_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ubuntu', 'NAME': 'Laptop-Rogier', 'WSL_INTEROP': '/run/WSL/57942_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/java8path:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/110/Tools/Binn/:/mnt/c/Program Files (x86)/Microsoft SQL Server/120/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/120/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/120/DTS/Binn/:/mnt/c/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/MATLAB/R2025b/bin:/mnt/c/Program Files (x86)/IVI Foundation/VISA/WinNT/Bin/:/mnt/c/Program Files/IVI Foundation/VISA/Win64/Bin/:/mnt/c/Program Files (x86)/IVI Foundation/VISA/WinNT/Bin:/mnt/d/PuTTy/:/mnt/d/Program Files/Git/cmd:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Program Files/NVIDIA Corporation/Nsight Compute 2024.3.2/:/mnt/c/Users/rogie/AppData/Local/Muse Hub/lib:/mnt/c/Users/rogie/AppData/Local/Programs/Python/Python39/:/mnt/c/Users/rogie/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/rogie/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/rogie/AppData/Local/GitHubDesktop/bin:/mnt/c/Users/rogie/AppData/Local/Muse Hub/lib:/mnt/c/Users/rogie/AppData/Local/Programs/Python/protoc/bin:/mnt/c/Users/rogie/AppData/Local/Programs/Python/Python39/Scripts:/mnt/c/msys64/ucrt64/bin:/mnt/c/xampp/php:/snap/bin', 'WT_SESSION': '5c9da074-ec5d-4d27-9c1d-bffbaf210566', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/ubuntu/Robotics/ros2_ws/install/cam2image_vm2ros:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/ubuntu/Robotics/ros2_ws/build/cam2image_vm2ros', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/home/ubuntu/Robotics/ros2_ws/install/cam2image_vm2ros:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy', 'WSLENV': 'WT_SESSION:WT_PROFILE_ID:'}), 'shell': False}
+[0.082885] (cam2image_vm2ros) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding CXX object CMakeFiles/object_position_indicator.dir/src/object_position_indicator.cpp.o\x1b[0m\n'}
+[0.091524] (cam2image_vm2ros) StdoutLine: {'line': b'[ 27%] Built target cam2image\n'}
+[0.092039] (cam2image_vm2ros) StdoutLine: {'line': b'[ 45%] Built target brightness_receiver\n'}
+[0.092307] (cam2image_vm2ros) StdoutLine: {'line': b'[ 63%] Built target image_brightness\n'}
+[0.099434] (-) TimerEvent: {}
+[0.109549] (cam2image_vm2ros) StdoutLine: {'line': b'[ 90%] Built target cam2image_vm2ros\n'}
+[0.199517] (-) TimerEvent: {}
+[0.299807] (-) TimerEvent: {}
+[0.400113] (-) TimerEvent: {}
+[0.500481] (-) TimerEvent: {}
+[0.600780] (-) TimerEvent: {}
+[0.701370] (-) TimerEvent: {}
+[0.802394] (-) TimerEvent: {}
+[0.902705] (-) TimerEvent: {}
+[1.003709] (-) TimerEvent: {}
+[1.104619] (-) TimerEvent: {}
+[1.205465] (-) TimerEvent: {}
+[1.305793] (-) TimerEvent: {}
+[1.406109] (-) TimerEvent: {}
+[1.506390] (-) TimerEvent: {}
+[1.606672] (-) TimerEvent: {}
+[1.707009] (-) TimerEvent: {}
+[1.807387] (-) TimerEvent: {}
+[1.907675] (-) TimerEvent: {}
+[2.007968] (-) TimerEvent: {}
+[2.108308] (-) TimerEvent: {}
+[2.208651] (-) TimerEvent: {}
+[2.308909] (-) TimerEvent: {}
+[2.409187] (-) TimerEvent: {}
+[2.509504] (-) TimerEvent: {}
+[2.609857] (-) TimerEvent: {}
+[2.710203] (-) TimerEvent: {}
+[2.810465] (-) TimerEvent: {}
+[2.910752] (-) TimerEvent: {}
+[3.010993] (-) TimerEvent: {}
+[3.111235] (-) TimerEvent: {}
+[3.211661] (-) TimerEvent: {}
+[3.311986] (-) TimerEvent: {}
+[3.412224] (-) TimerEvent: {}
+[3.512474] (-) TimerEvent: {}
+[3.612738] (-) TimerEvent: {}
+[3.713099] (-) TimerEvent: {}
+[3.724661] (cam2image_vm2ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Robotics/ros2_ws/src/cam2image_vm2ros/src/object_position_indicator.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KObjectPositionIndicator::\x1b[01;32m\x1b[KObjectPositionIndicator\x1b[m\x1b[K()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.724961] (cam2image_vm2ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Robotics/ros2_ws/src/cam2image_vm2ros/src/object_position_indicator.cpp:24:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[Ksubscription_\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.725081] (cam2image_vm2ros) StderrLine: {'line': b'   24 |         \x1b[01;31m\x1b[Ksubscription_\x1b[m\x1b[K = this->create_subscription<sensor_msgs::msg::Image>(\n'}
+[3.725145] (cam2image_vm2ros) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.733475] (cam2image_vm2ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Robotics/ros2_ws/src/cam2image_vm2ros/src/object_position_indicator.cpp:36:46:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Krclpp\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Krclcpp\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[3.733997] (cam2image_vm2ros) StderrLine: {'line': b'   36 |         param_subscriber_ = std::make_shared<\x1b[01;31m\x1b[Krclpp\x1b[m\x1b[K::ParameterEventHandler>(this);\n'}
+[3.734413] (cam2image_vm2ros) StderrLine: {'line': b'      |                                              \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[3.734489] (cam2image_vm2ros) StderrLine: {'line': b'      |                                              \x1b[32m\x1b[Krclcpp\x1b[m\x1b[K\n'}
+[3.734553] (cam2image_vm2ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Robotics/ros2_ws/src/cam2image_vm2ros/src/object_position_indicator.cpp:36:34:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kparse error in template argument list\n'}
+[3.734617] (cam2image_vm2ros) StderrLine: {'line': b'   36 |         param_subscriber_ = std::\x1b[01;31m\x1b[Kmake_shared<rclpp::ParameterEventHandler>\x1b[m\x1b[K(this);\n'}
+[3.734677] (cam2image_vm2ros) StderrLine: {'line': b'      |                                  \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.734737] (cam2image_vm2ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Robotics/ros2_ws/src/cam2image_vm2ros/src/object_position_indicator.cpp:36:75:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Kmake_shared<<expression error> >(ObjectPositionIndicator*)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.734798] (cam2image_vm2ros) StderrLine: {'line': b'   36 |         param_subscriber_ = \x1b[01;31m\x1b[Kstd::make_shared<rclpp::ParameterEventHandler>(this)\x1b[m\x1b[K;\n'}
+[3.734857] (cam2image_vm2ros) StderrLine: {'line': b'      |                             \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~\x1b[m\x1b[K\n'}
+[3.734916] (cam2image_vm2ros) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/13/memory:80\x1b[m\x1b[K,\n'}
+[3.734974] (cam2image_vm2ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ubuntu/Robotics/ros2_ws/src/cam2image_vm2ros/src/object_position_indicator.cpp:1\x1b[m\x1b[K:\n'}
+[3.735032] (cam2image_vm2ros) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/shared_ptr.h:1005:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, class ... _Args> std::shared_ptr<typename std::enable_if<(! std::is_array< <template-parameter-1-1> >::value), _Tp>::type> std::\x1b[01;32m\x1b[Kmake_shared\x1b[m\x1b[K(_Args&& ...)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.735094] (cam2image_vm2ros) StderrLine: {'line': b' 1005 |     \x1b[01;36m\x1b[Kmake_shared\x1b[m\x1b[K(_Args&&... __args)\n'}
+[3.735152] (cam2image_vm2ros) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.813683] (-) TimerEvent: {}
+[3.856959] (cam2image_vm2ros) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/shared_ptr.h:1005:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[3.857244] (cam2image_vm2ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Robotics/ros2_ws/src/cam2image_vm2ros/src/object_position_indicator.cpp:36:75:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[3.857606] (cam2image_vm2ros) StderrLine: {'line': b'   36 |         param_subscriber_ = \x1b[01;31m\x1b[Kstd::make_shared<rclpp::ParameterEventHandler>(this)\x1b[m\x1b[K;\n'}
+[3.857683] (cam2image_vm2ros) StderrLine: {'line': b'      |                             \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~\x1b[m\x1b[K\n'}
+[3.857748] (cam2image_vm2ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Robotics/ros2_ws/src/cam2image_vm2ros/src/object_position_indicator.cpp:41:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K,\x1b[m\x1b[K\xe2\x80\x99 or \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[Kcb_handle\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.857812] (cam2image_vm2ros) StderrLine: {'line': b'   41 |         \x1b[01;31m\x1b[Kcb_handle\x1b[m\x1b[K = param_subscriber_->add_parameter_callback("threshold_", cb);\n'}
+[3.857873] (cam2image_vm2ros) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[3.872802] (cam2image_vm2ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Robotics/ros2_ws/src/cam2image_vm2ros/src/object_position_indicator.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid ObjectPositionIndicator::\x1b[01;32m\x1b[Ktopic_callback\x1b[m\x1b[K(sensor_msgs::msg::Image_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.873048] (cam2image_vm2ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Robotics/ros2_ws/src/cam2image_vm2ros/src/object_position_indicator.cpp:60:57:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kgscale_ptr\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kgrayscale_ptr\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[3.873316] (cam2image_vm2ros) StderrLine: {'line': b'   60 |         std::array<int, 2> to_publish_ = this->find_CoG(\x1b[01;31m\x1b[Kgscale_ptr\x1b[m\x1b[K);\n'}
+[3.873401] (cam2image_vm2ros) StderrLine: {'line': b'      |                                                         \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.873467] (cam2image_vm2ros) StderrLine: {'line': b'      |                                                         \x1b[32m\x1b[Kgrayscale_ptr\x1b[m\x1b[K\n'}
+[3.873538] (cam2image_vm2ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Robotics/ros2_ws/src/cam2image_vm2ros/src/object_position_indicator.cpp:64:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstruct geometry_msgs::msg::Pose_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[Kx\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.873603] (cam2image_vm2ros) StderrLine: {'line': b'   64 |         message.\x1b[01;31m\x1b[Kx\x1b[m\x1b[K = to_publish_[0]; message.y = to_publish_[1]; message.z = 0.0;\n'}
+[3.873663] (cam2image_vm2ros) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[3.873723] (cam2image_vm2ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Robotics/ros2_ws/src/cam2image_vm2ros/src/object_position_indicator.cpp:64:45:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstruct geometry_msgs::msg::Pose_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[Ky\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.873783] (cam2image_vm2ros) StderrLine: {'line': b'   64 |         message.x = to_publish_[0]; message.\x1b[01;31m\x1b[Ky\x1b[m\x1b[K = to_publish_[1]; message.z = 0.0;\n'}
+[3.873843] (cam2image_vm2ros) StderrLine: {'line': b'      |                                             \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[3.873902] (cam2image_vm2ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Robotics/ros2_ws/src/cam2image_vm2ros/src/object_position_indicator.cpp:64:73:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstruct geometry_msgs::msg::Pose_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[Kz\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.873975] (cam2image_vm2ros) StderrLine: {'line': b'   64 |         message.x = to_publish_[0]; message.y = to_publish_[1]; message.\x1b[01;31m\x1b[Kz\x1b[m\x1b[K = 0.0;\n'}
+[3.874061] (cam2image_vm2ros) StderrLine: {'line': b'      |                                                                         \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[3.879457] (cam2image_vm2ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Robotics/ros2_ws/src/cam2image_vm2ros/src/object_position_indicator.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kstd::array<int, 2> ObjectPositionIndicator::\x1b[01;32m\x1b[Kfind_CoG\x1b[m\x1b[K(cv_bridge::CvImagePtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.879912] (cam2image_vm2ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Robotics/ros2_ws/src/cam2image_vm2ros/src/object_position_indicator.cpp:76:29:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kimg\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.880140] (cam2image_vm2ros) StderrLine: {'line': b'   76 |         for (int y = 0; y < \x1b[01;31m\x1b[Kimg\x1b[m\x1b[K->height; y++) {\n'}
+[3.880348] (cam2image_vm2ros) StderrLine: {'line': b'      |                             \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[3.880588] (cam2image_vm2ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Robotics/ros2_ws/src/cam2image_vm2ros/src/object_position_indicator.cpp:79:41:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Kcv::Mat::at(int&, int&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.880666] (cam2image_vm2ros) StderrLine: {'line': b'   79 |                 if (\x1b[01;31m\x1b[Kgscale_ptr->image.at(y, x)\x1b[m\x1b[K/255 < threshold_) {\n'}
+[3.880731] (cam2image_vm2ros) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~^~~~~~\x1b[m\x1b[K\n'}
+[3.880793] (cam2image_vm2ros) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:58\x1b[m\x1b[K,\n'}
+[3.880853] (cam2image_vm2ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/core.hpp:48\x1b[m\x1b[K,\n'}
+[3.880912] (cam2image_vm2ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/cv_bridge/cv_bridge/cv_bridge.hpp:43\x1b[m\x1b[K,\n'}
+[3.880970] (cam2image_vm2ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ubuntu/Robotics/ros2_ws/src/cam2image_vm2ros/src/object_position_indicator.cpp:4\x1b[m\x1b[K:\n'}
+[3.881030] (cam2image_vm2ros) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1930:33:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> _Tp& cv::Mat::\x1b[01;32m\x1b[Kat\x1b[m\x1b[K(int)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.881092] (cam2image_vm2ros) StderrLine: {'line': b' 1930 |     template<typename _Tp> _Tp& \x1b[01;36m\x1b[Kat\x1b[m\x1b[K(int i0=0);\n'}
+[3.881150] (cam2image_vm2ros) StderrLine: {'line': b'      |                                 \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[3.881208] (cam2image_vm2ros) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1930:33:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[3.886734] (cam2image_vm2ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Robotics/ros2_ws/src/cam2image_vm2ros/src/object_position_indicator.cpp:79:41:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 1 argument, 2 provided\n'}
+[3.887171] (cam2image_vm2ros) StderrLine: {'line': b'   79 |                 if (\x1b[01;36m\x1b[Kgscale_ptr->image.at(y, x)\x1b[m\x1b[K/255 < threshold_) {\n'}
+[3.887506] (cam2image_vm2ros) StderrLine: {'line': b'      |                     \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~^~~~~~\x1b[m\x1b[K\n'}
+[3.887745] (cam2image_vm2ros) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1934:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> const _Tp& cv::Mat::\x1b[01;32m\x1b[Kat\x1b[m\x1b[K(int) const\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.888040] (cam2image_vm2ros) StderrLine: {'line': b' 1934 |     template<typename _Tp> const _Tp& \x1b[01;36m\x1b[Kat\x1b[m\x1b[K(int i0=0) const;\n'}
+[3.888116] (cam2image_vm2ros) StderrLine: {'line': b'      |                                       \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[3.888180] (cam2image_vm2ros) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1934:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[3.888253] (cam2image_vm2ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Robotics/ros2_ws/src/cam2image_vm2ros/src/object_position_indicator.cpp:79:41:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 1 argument, 2 provided\n'}
+[3.888314] (cam2image_vm2ros) StderrLine: {'line': b'   79 |                 if (\x1b[01;36m\x1b[Kgscale_ptr->image.at(y, x)\x1b[m\x1b[K/255 < threshold_) {\n'}
+[3.888379] (cam2image_vm2ros) StderrLine: {'line': b'      |                     \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~^~~~~~\x1b[m\x1b[K\n'}
+[3.888439] (cam2image_vm2ros) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1939:33:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> _Tp& cv::Mat::\x1b[01;32m\x1b[Kat\x1b[m\x1b[K(int, int)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.888500] (cam2image_vm2ros) StderrLine: {'line': b' 1939 |     template<typename _Tp> _Tp& \x1b[01;36m\x1b[Kat\x1b[m\x1b[K(int row, int col);\n'}
+[3.888558] (cam2image_vm2ros) StderrLine: {'line': b'      |                                 \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[3.888616] (cam2image_vm2ros) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1939:33:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[3.888675] (cam2image_vm2ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Robotics/ros2_ws/src/cam2image_vm2ros/src/object_position_indicator.cpp:79:41:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  couldn\xe2\x80\x99t deduce template parameter \xe2\x80\x98\x1b[01m\x1b[K_Tp\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.888734] (cam2image_vm2ros) StderrLine: {'line': b'   79 |                 if (\x1b[01;36m\x1b[Kgscale_ptr->image.at(y, x)\x1b[m\x1b[K/255 < threshold_) {\n'}
+[3.888792] (cam2image_vm2ros) StderrLine: {'line': b'      |                     \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~^~~~~~\x1b[m\x1b[K\n'}
+[3.888850] (cam2image_vm2ros) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1944:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> const _Tp& cv::Mat::\x1b[01;32m\x1b[Kat\x1b[m\x1b[K(int, int) const\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.888908] (cam2image_vm2ros) StderrLine: {'line': b' 1944 |     template<typename _Tp> const _Tp& \x1b[01;36m\x1b[Kat\x1b[m\x1b[K(int row, int col) const;\n'}
+[3.888967] (cam2image_vm2ros) StderrLine: {'line': b'      |                                       \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[3.889025] (cam2image_vm2ros) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1944:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[3.889083] (cam2image_vm2ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Robotics/ros2_ws/src/cam2image_vm2ros/src/object_position_indicator.cpp:79:41:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  couldn\xe2\x80\x99t deduce template parameter \xe2\x80\x98\x1b[01m\x1b[K_Tp\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.889143] (cam2image_vm2ros) StderrLine: {'line': b'   79 |                 if (\x1b[01;36m\x1b[Kgscale_ptr->image.at(y, x)\x1b[m\x1b[K/255 < threshold_) {\n'}
+[3.889202] (cam2image_vm2ros) StderrLine: {'line': b'      |                     \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~^~~~~~\x1b[m\x1b[K\n'}
+[3.889261] (cam2image_vm2ros) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1951:33:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> _Tp& cv::Mat::\x1b[01;32m\x1b[Kat\x1b[m\x1b[K(int, int, int)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.889325] (cam2image_vm2ros) StderrLine: {'line': b' 1951 |     template<typename _Tp> _Tp& \x1b[01;36m\x1b[Kat\x1b[m\x1b[K(int i0, int i1, int i2);\n'}
+[3.889382] (cam2image_vm2ros) StderrLine: {'line': b'      |                                 \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[3.889466] (cam2image_vm2ros) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1951:33:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[3.889528] (cam2image_vm2ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Robotics/ros2_ws/src/cam2image_vm2ros/src/object_position_indicator.cpp:79:41:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 3 arguments, 2 provided\n'}
+[3.889617] (cam2image_vm2ros) StderrLine: {'line': b'   79 |                 if (\x1b[01;36m\x1b[Kgscale_ptr->image.at(y, x)\x1b[m\x1b[K/255 < threshold_) {\n'}
+[3.889680] (cam2image_vm2ros) StderrLine: {'line': b'      |                     \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~^~~~~~\x1b[m\x1b[K\n'}
+[3.889739] (cam2image_vm2ros) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1957:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> const _Tp& cv::Mat::\x1b[01;32m\x1b[Kat\x1b[m\x1b[K(int, int, int) const\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.889799] (cam2image_vm2ros) StderrLine: {'line': b' 1957 |     template<typename _Tp> const _Tp& \x1b[01;36m\x1b[Kat\x1b[m\x1b[K(int i0, int i1, int i2) const;\n'}
+[3.889881] (cam2image_vm2ros) StderrLine: {'line': b'      |                                       \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[3.889984] (cam2image_vm2ros) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1957:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[3.890048] (cam2image_vm2ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Robotics/ros2_ws/src/cam2image_vm2ros/src/object_position_indicator.cpp:79:41:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 3 arguments, 2 provided\n'}
+[3.890165] (cam2image_vm2ros) StderrLine: {'line': b'   79 |                 if (\x1b[01;36m\x1b[Kgscale_ptr->image.at(y, x)\x1b[m\x1b[K/255 < threshold_) {\n'}
+[3.890231] (cam2image_vm2ros) StderrLine: {'line': b'      |                     \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~^~~~~~\x1b[m\x1b[K\n'}
+[3.890292] (cam2image_vm2ros) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1962:33:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> _Tp& cv::Mat::\x1b[01;32m\x1b[Kat\x1b[m\x1b[K(const int*)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.890354] (cam2image_vm2ros) StderrLine: {'line': b' 1962 |     template<typename _Tp> _Tp& \x1b[01;36m\x1b[Kat\x1b[m\x1b[K(const int* idx);\n'}
+[3.890412] (cam2image_vm2ros) StderrLine: {'line': b'      |                                 \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[3.890470] (cam2image_vm2ros) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1962:33:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[3.890535] (cam2image_vm2ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Robotics/ros2_ws/src/cam2image_vm2ros/src/object_position_indicator.cpp:79:41:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 1 argument, 2 provided\n'}
+[3.890595] (cam2image_vm2ros) StderrLine: {'line': b'   79 |                 if (\x1b[01;36m\x1b[Kgscale_ptr->image.at(y, x)\x1b[m\x1b[K/255 < threshold_) {\n'}
+[3.890660] (cam2image_vm2ros) StderrLine: {'line': b'      |                     \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~^~~~~~\x1b[m\x1b[K\n'}
+[3.890719] (cam2image_vm2ros) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1966:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> const _Tp& cv::Mat::\x1b[01;32m\x1b[Kat\x1b[m\x1b[K(const int*) const\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.890783] (cam2image_vm2ros) StderrLine: {'line': b' 1966 |     template<typename _Tp> const _Tp& \x1b[01;36m\x1b[Kat\x1b[m\x1b[K(const int* idx) const;\n'}
+[3.890841] (cam2image_vm2ros) StderrLine: {'line': b'      |                                       \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[3.890899] (cam2image_vm2ros) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1966:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[3.890956] (cam2image_vm2ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Robotics/ros2_ws/src/cam2image_vm2ros/src/object_position_indicator.cpp:79:41:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 1 argument, 2 provided\n'}
+[3.891015] (cam2image_vm2ros) StderrLine: {'line': b'   79 |                 if (\x1b[01;36m\x1b[Kgscale_ptr->image.at(y, x)\x1b[m\x1b[K/255 < threshold_) {\n'}
+[3.891073] (cam2image_vm2ros) StderrLine: {'line': b'      |                     \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~^~~~~~\x1b[m\x1b[K\n'}
+[3.891130] (cam2image_vm2ros) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1969:40:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, int n> _Tp& cv::Mat::\x1b[01;32m\x1b[Kat\x1b[m\x1b[K(const cv::Vec<int, n>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.891190] (cam2image_vm2ros) StderrLine: {'line': b' 1969 |     template<typename _Tp, int n> _Tp& \x1b[01;36m\x1b[Kat\x1b[m\x1b[K(const Vec<int, n>& idx);\n'}
+[3.891249] (cam2image_vm2ros) StderrLine: {'line': b'      |                                        \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[3.891307] (cam2image_vm2ros) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1969:40:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[3.891366] (cam2image_vm2ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Robotics/ros2_ws/src/cam2image_vm2ros/src/object_position_indicator.cpp:79:41:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kconst cv::Vec<int, n>\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.891424] (cam2image_vm2ros) StderrLine: {'line': b'   79 |                 if (\x1b[01;36m\x1b[Kgscale_ptr->image.at(y, x)\x1b[m\x1b[K/255 < threshold_) {\n'}
+[3.891509] (cam2image_vm2ros) StderrLine: {'line': b'      |                     \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~^~~~~~\x1b[m\x1b[K\n'}
+[3.891574] (cam2image_vm2ros) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1971:46:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, int n> const _Tp& cv::Mat::\x1b[01;32m\x1b[Kat\x1b[m\x1b[K(const cv::Vec<int, n>&) const\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.891636] (cam2image_vm2ros) StderrLine: {'line': b' 1971 |     template<typename _Tp, int n> const _Tp& \x1b[01;36m\x1b[Kat\x1b[m\x1b[K(const Vec<int, n>& idx) const;\n'}
+[3.891696] (cam2image_vm2ros) StderrLine: {'line': b'      |                                              \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[3.891754] (cam2image_vm2ros) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1971:46:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[3.891812] (cam2image_vm2ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Robotics/ros2_ws/src/cam2image_vm2ros/src/object_position_indicator.cpp:79:41:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kconst cv::Vec<int, n>\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.891882] (cam2image_vm2ros) StderrLine: {'line': b'   79 |                 if (\x1b[01;36m\x1b[Kgscale_ptr->image.at(y, x)\x1b[m\x1b[K/255 < threshold_) {\n'}
+[3.891942] (cam2image_vm2ros) StderrLine: {'line': b'      |                     \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~^~~~~~\x1b[m\x1b[K\n'}
+[3.892001] (cam2image_vm2ros) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1977:33:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> _Tp& cv::Mat::\x1b[01;32m\x1b[Kat\x1b[m\x1b[K(cv::Point)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.892059] (cam2image_vm2ros) StderrLine: {'line': b' 1977 |     template<typename _Tp> _Tp& \x1b[01;36m\x1b[Kat\x1b[m\x1b[K(Point pt);\n'}
+[3.892117] (cam2image_vm2ros) StderrLine: {'line': b'      |                                 \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[3.892175] (cam2image_vm2ros) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1977:33:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[3.892233] (cam2image_vm2ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Robotics/ros2_ws/src/cam2image_vm2ros/src/object_position_indicator.cpp:79:41:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 1 argument, 2 provided\n'}
+[3.892291] (cam2image_vm2ros) StderrLine: {'line': b'   79 |                 if (\x1b[01;36m\x1b[Kgscale_ptr->image.at(y, x)\x1b[m\x1b[K/255 < threshold_) {\n'}
+[3.892349] (cam2image_vm2ros) StderrLine: {'line': b'      |                     \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~^~~~~~\x1b[m\x1b[K\n'}
+[3.892406] (cam2image_vm2ros) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1982:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> const _Tp& cv::Mat::\x1b[01;32m\x1b[Kat\x1b[m\x1b[K(cv::Point) const\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.892465] (cam2image_vm2ros) StderrLine: {'line': b' 1982 |     template<typename _Tp> const _Tp& \x1b[01;36m\x1b[Kat\x1b[m\x1b[K(Point pt) const;\n'}
+[3.892523] (cam2image_vm2ros) StderrLine: {'line': b'      |                                       \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[3.892586] (cam2image_vm2ros) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1982:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[3.892646] (cam2image_vm2ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Robotics/ros2_ws/src/cam2image_vm2ros/src/object_position_indicator.cpp:79:41:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 1 argument, 2 provided\n'}
+[3.892709] (cam2image_vm2ros) StderrLine: {'line': b'   79 |                 if (\x1b[01;36m\x1b[Kgscale_ptr->image.at(y, x)\x1b[m\x1b[K/255 < threshold_) {\n'}
+[3.892767] (cam2image_vm2ros) StderrLine: {'line': b'      |                     \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~^~~~~~\x1b[m\x1b[K\n'}
+[3.913854] (-) TimerEvent: {}
+[4.014125] (-) TimerEvent: {}
+[4.114681] (-) TimerEvent: {}
+[4.215012] (-) TimerEvent: {}
+[4.315323] (-) TimerEvent: {}
+[4.415604] (-) TimerEvent: {}
+[4.515955] (-) TimerEvent: {}
+[4.616996] (-) TimerEvent: {}
+[4.717877] (-) TimerEvent: {}
+[4.818406] (-) TimerEvent: {}
+[4.919181] (-) TimerEvent: {}
+[5.020141] (-) TimerEvent: {}
+[5.120390] (-) TimerEvent: {}
+[5.220749] (-) TimerEvent: {}
+[5.320992] (-) TimerEvent: {}
+[5.421333] (-) TimerEvent: {}
+[5.521711] (-) TimerEvent: {}
+[5.621967] (-) TimerEvent: {}
+[5.722292] (-) TimerEvent: {}
+[5.822618] (-) TimerEvent: {}
+[5.922907] (-) TimerEvent: {}
+[6.023367] (-) TimerEvent: {}
+[6.123682] (-) TimerEvent: {}
+[6.223975] (-) TimerEvent: {}
+[6.324262] (-) TimerEvent: {}
+[6.424588] (-) TimerEvent: {}
+[6.524876] (-) TimerEvent: {}
+[6.541991] (cam2image_vm2ros) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/object_position_indicator.dir/build.make:76: CMakeFiles/object_position_indicator.dir/src/object_position_indicator.cpp.o] Error 1\n'}
+[6.542528] (cam2image_vm2ros) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:249: CMakeFiles/object_position_indicator.dir/all] Error 2\n'}
+[6.542794] (cam2image_vm2ros) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[6.545075] (cam2image_vm2ros) CommandEnded: {'returncode': 2}
+[6.558641] (cam2image_vm2ros) JobEnded: {'identifier': 'cam2image_vm2ros', 'rc': 2}
+[6.569959] (-) EventReactorShutdown: {}
