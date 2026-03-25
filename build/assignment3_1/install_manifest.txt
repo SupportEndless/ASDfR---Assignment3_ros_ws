@@ -1,0 +1,15 @@
+/home/ubuntu/Robotics/ros2_ws/install/assignment3_1/share/ament_index/resource_index/package_run_dependencies/assignment3_1
+/home/ubuntu/Robotics/ros2_ws/install/assignment3_1/share/ament_index/resource_index/parent_prefix_path/assignment3_1
+/home/ubuntu/Robotics/ros2_ws/install/assignment3_1/share/assignment3_1/environment/ament_prefix_path.sh
+/home/ubuntu/Robotics/ros2_ws/install/assignment3_1/share/assignment3_1/environment/ament_prefix_path.dsv
+/home/ubuntu/Robotics/ros2_ws/install/assignment3_1/share/assignment3_1/environment/path.sh
+/home/ubuntu/Robotics/ros2_ws/install/assignment3_1/share/assignment3_1/environment/path.dsv
+/home/ubuntu/Robotics/ros2_ws/install/assignment3_1/share/assignment3_1/local_setup.bash
+/home/ubuntu/Robotics/ros2_ws/install/assignment3_1/share/assignment3_1/local_setup.sh
+/home/ubuntu/Robotics/ros2_ws/install/assignment3_1/share/assignment3_1/local_setup.zsh
+/home/ubuntu/Robotics/ros2_ws/install/assignment3_1/share/assignment3_1/local_setup.dsv
+/home/ubuntu/Robotics/ros2_ws/install/assignment3_1/share/assignment3_1/package.dsv
+/home/ubuntu/Robotics/ros2_ws/install/assignment3_1/share/ament_index/resource_index/packages/assignment3_1
+/home/ubuntu/Robotics/ros2_ws/install/assignment3_1/share/assignment3_1/cmake/assignment3_1Config.cmake
+/home/ubuntu/Robotics/ros2_ws/install/assignment3_1/share/assignment3_1/cmake/assignment3_1Config-version.cmake
+/home/ubuntu/Robotics/ros2_ws/install/assignment3_1/share/assignment3_1/package.xml
