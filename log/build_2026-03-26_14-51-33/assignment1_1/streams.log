@@ -1,0 +1,35 @@
+[0.069s] Invoking command in '/home/asdfr-33/ASDfR---Assignment3_ros_ws/build/assignment1_1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/asdfr-33/ASDfR---Assignment3_ros_ws/build/assignment1_1 -- -j3 -l3
+[0.299s] [ 16%] [32mBuilding CXX object CMakeFiles/object_position_indicator.dir/src/object_position_indicator.cpp.o[0m
+[0.307s] [ 33%] [32mBuilding CXX object CMakeFiles/image_brightness.dir/src/image_brightness.cpp.o[0m
+[0.357s] [ 50%] [32mBuilding CXX object CMakeFiles/brightness_receiver.dir/src/brightness_receiver.cpp.o[0m
+[86.475s] [ 66%] [32m[1mLinking CXX executable brightness_receiver[0m
+[92.078s] [ 66%] Built target brightness_receiver
+[101.725s] [ 83%] [32m[1mLinking CXX executable image_brightness[0m
+[108.427s] [ 83%] Built target image_brightness
+[123.135s] [100%] [32m[1mLinking CXX executable object_position_indicator[0m
+[128.102s] [100%] Built target object_position_indicator
+[128.137s] Invoked command in '/home/asdfr-33/ASDfR---Assignment3_ros_ws/build/assignment1_1' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/asdfr-33/ASDfR---Assignment3_ros_ws/build/assignment1_1 -- -j3 -l3
+[128.146s] Invoking command in '/home/asdfr-33/ASDfR---Assignment3_ros_ws/build/assignment1_1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/asdfr-33/ASDfR---Assignment3_ros_ws/build/assignment1_1
+[128.195s] -- Install configuration: ""
+[128.197s] -- Installing: /home/asdfr-33/ASDfR---Assignment3_ros_ws/install/assignment1_1/lib/assignment1_1/image_brightness
+[128.589s] -- Set runtime path of "/home/asdfr-33/ASDfR---Assignment3_ros_ws/install/assignment1_1/lib/assignment1_1/image_brightness" to ""
+[128.595s] -- Installing: /home/asdfr-33/ASDfR---Assignment3_ros_ws/install/assignment1_1/lib/assignment1_1/brightness_receiver
+[129.051s] -- Set runtime path of "/home/asdfr-33/ASDfR---Assignment3_ros_ws/install/assignment1_1/lib/assignment1_1/brightness_receiver" to ""
+[129.053s] -- Installing: /home/asdfr-33/ASDfR---Assignment3_ros_ws/install/assignment1_1/lib/assignment1_1/object_position_indicator
+[129.833s] -- Set runtime path of "/home/asdfr-33/ASDfR---Assignment3_ros_ws/install/assignment1_1/lib/assignment1_1/object_position_indicator" to ""
+[129.840s] -- Installing: /home/asdfr-33/ASDfR---Assignment3_ros_ws/install/assignment1_1/share/ament_index/resource_index/package_run_dependencies/assignment1_1
+[129.852s] -- Installing: /home/asdfr-33/ASDfR---Assignment3_ros_ws/install/assignment1_1/share/ament_index/resource_index/parent_prefix_path/assignment1_1
+[129.864s] -- Installing: /home/asdfr-33/ASDfR---Assignment3_ros_ws/install/assignment1_1/share/assignment1_1/environment/ament_prefix_path.sh
+[129.879s] -- Installing: /home/asdfr-33/ASDfR---Assignment3_ros_ws/install/assignment1_1/share/assignment1_1/environment/ament_prefix_path.dsv
+[129.891s] -- Installing: /home/asdfr-33/ASDfR---Assignment3_ros_ws/install/assignment1_1/share/assignment1_1/environment/path.sh
+[129.903s] -- Installing: /home/asdfr-33/ASDfR---Assignment3_ros_ws/install/assignment1_1/share/assignment1_1/environment/path.dsv
+[129.911s] -- Installing: /home/asdfr-33/ASDfR---Assignment3_ros_ws/install/assignment1_1/share/assignment1_1/local_setup.bash
+[129.920s] -- Installing: /home/asdfr-33/ASDfR---Assignment3_ros_ws/install/assignment1_1/share/assignment1_1/local_setup.sh
+[129.936s] -- Installing: /home/asdfr-33/ASDfR---Assignment3_ros_ws/install/assignment1_1/share/assignment1_1/local_setup.zsh
+[129.948s] -- Installing: /home/asdfr-33/ASDfR---Assignment3_ros_ws/install/assignment1_1/share/assignment1_1/local_setup.dsv
+[129.956s] -- Installing: /home/asdfr-33/ASDfR---Assignment3_ros_ws/install/assignment1_1/share/assignment1_1/package.dsv
+[129.968s] -- Installing: /home/asdfr-33/ASDfR---Assignment3_ros_ws/install/assignment1_1/share/ament_index/resource_index/packages/assignment1_1
+[129.985s] -- Installing: /home/asdfr-33/ASDfR---Assignment3_ros_ws/install/assignment1_1/share/assignment1_1/cmake/assignment1_1Config.cmake
+[129.993s] -- Installing: /home/asdfr-33/ASDfR---Assignment3_ros_ws/install/assignment1_1/share/assignment1_1/cmake/assignment1_1Config-version.cmake
+[130.004s] -- Installing: /home/asdfr-33/ASDfR---Assignment3_ros_ws/install/assignment1_1/share/assignment1_1/package.xml
+[130.020s] Invoked command in '/home/asdfr-33/ASDfR---Assignment3_ros_ws/build/assignment1_1' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/asdfr-33/ASDfR---Assignment3_ros_ws/build/assignment1_1

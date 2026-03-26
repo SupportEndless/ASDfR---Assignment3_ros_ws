@@ -1,8 +1,8 @@
-# Install script for directory: /home/ubuntu/Robotics/ros2_ws/build/relbot_msgs/relbot_msgs__py
+# Install script for directory: /home/asdfr-33/ASDfR---Assignment3_ros_ws/build/relbot_msgs/relbot_msgs__py
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/ubuntu/Robotics/ros2_ws/install/relbot_msgs")
+  set(CMAKE_INSTALL_PREFIX "/home/asdfr-33/ASDfR---Assignment3_ros_ws/install/relbot_msgs")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

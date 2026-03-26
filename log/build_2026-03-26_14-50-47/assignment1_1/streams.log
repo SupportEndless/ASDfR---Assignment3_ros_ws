@@ -1,0 +1,20 @@
+[0.059s] Invoking command in '/home/asdfr-33/ASDfR---Assignment3_ros_ws/build/assignment1_1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/asdfr-33/ASDfR---Assignment3_ros_ws/build/assignment1_1 -- -j3 -l3
+[0.354s] [35m[1mConsolidate compiler generated dependencies of target brightness_receiver[0m
+[0.477s] [ 16%] [32mBuilding CXX object CMakeFiles/image_brightness.dir/src/image_brightness.cpp.o[0m
+[0.619s] [ 33%] [32mBuilding CXX object CMakeFiles/object_position_indicator.dir/src/object_position_indicator.cpp.o[0m
+[1.226s] [01m[K/home/asdfr-33/ASDfR---Assignment3_ros_ws/src/assignment1_1/src/object_position_indicator.cpp:4:10:[m[K [01;31m[Kfatal error: [m[Kcv_bridge/cv_bridge.hpp: No such file or directory
+[1.227s]     4 | #include [01;31m[K<cv_bridge/cv_bridge.hpp>[m[K
+[1.229s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.230s] compilation terminated.
+[1.244s] gmake[2]: *** [CMakeFiles/object_position_indicator.dir/build.make:76: CMakeFiles/object_position_indicator.dir/src/object_position_indicator.cpp.o] Error 1
+[1.245s] gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/object_position_indicator.dir/all] Error 2
+[1.246s] gmake[1]: *** Waiting for unfinished jobs....
+[1.247s] [01m[K/home/asdfr-33/ASDfR---Assignment3_ros_ws/src/assignment1_1/src/image_brightness.cpp:5:10:[m[K [01;31m[Kfatal error: [m[Kcv_bridge/cv_bridge.hpp: No such file or directory
+[1.266s]     5 | #include [01;31m[K<cv_bridge/cv_bridge.hpp>[m[K
+[1.267s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.288s] compilation terminated.
+[1.290s] gmake[2]: *** [CMakeFiles/image_brightness.dir/build.make:76: CMakeFiles/image_brightness.dir/src/image_brightness.cpp.o] Error 1
+[1.291s] gmake[1]: *** [CMakeFiles/Makefile2:141: CMakeFiles/image_brightness.dir/all] Error 2
+[1.785s] [ 66%] Built target brightness_receiver
+[1.795s] gmake: *** [Makefile:146: all] Error 2
+[1.817s] Invoked command in '/home/asdfr-33/ASDfR---Assignment3_ros_ws/build/assignment1_1' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/asdfr-33/ASDfR---Assignment3_ros_ws/build/assignment1_1 -- -j3 -l3

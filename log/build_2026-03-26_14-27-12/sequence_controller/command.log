@@ -1,2 +1,0 @@
-Invoking command in '/home/ubuntu/Robotics/ros2_ws/build/sequence_controller': /usr/bin/cmake /home/ubuntu/Robotics/ros2_ws/src/sequence_controller -DCMAKE_INSTALL_PREFIX=/home/ubuntu/Robotics/ros2_ws/install/sequence_controller
-Invoked command in '/home/ubuntu/Robotics/ros2_ws/build/sequence_controller' returned '1': /usr/bin/cmake /home/ubuntu/Robotics/ros2_ws/src/sequence_controller -DCMAKE_INSTALL_PREFIX=/home/ubuntu/Robotics/ros2_ws/install/sequence_controller

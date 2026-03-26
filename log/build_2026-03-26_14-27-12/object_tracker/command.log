@@ -1,2 +1,0 @@
-Invoking command in '/home/ubuntu/Robotics/ros2_ws/build/object_tracker': /usr/bin/cmake /home/ubuntu/Robotics/ros2_ws/src/object_tracker -DCMAKE_INSTALL_PREFIX=/home/ubuntu/Robotics/ros2_ws/install/object_tracker
-Invoked command in '/home/ubuntu/Robotics/ros2_ws/build/object_tracker' returned '1': /usr/bin/cmake /home/ubuntu/Robotics/ros2_ws/src/object_tracker -DCMAKE_INSTALL_PREFIX=/home/ubuntu/Robotics/ros2_ws/install/object_tracker

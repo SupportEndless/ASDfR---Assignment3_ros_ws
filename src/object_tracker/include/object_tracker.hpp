@@ -3,7 +3,7 @@
 #define OBJECT_TRACKER_HPP
 
 // Normal packages
-#include <cv_bridge/cv_bridge.hpp>
+#include <cv_bridge/cv_bridge.h>
 #include <fstream>
 
 // ROS2 specific packages

@@ -2,9 +2,6 @@
 // with input from relbot_msgs:msg/RelbotMotors.idl
 // generated code does not contain a copyright notice
 
-// IWYU pragma: private, include "relbot_msgs/msg/relbot_motors.h"
-
-
 #ifndef RELBOT_MSGS__MSG__DETAIL__RELBOT_MOTORS__TYPE_SUPPORT_H_
 #define RELBOT_MSGS__MSG__DETAIL__RELBOT_MOTORS__TYPE_SUPPORT_H_
 
@@ -27,7 +24,7 @@ ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(
   relbot_msgs,
   msg,
   RelbotMotors
-)(void);
+)();
 
 #ifdef __cplusplus
 }

@@ -93,7 +93,7 @@ relbot_msgs__msg__RelbotMotorsStamped__copy(
 }
 
 relbot_msgs__msg__RelbotMotorsStamped *
-relbot_msgs__msg__RelbotMotorsStamped__create(void)
+relbot_msgs__msg__RelbotMotorsStamped__create()
 {
   rcutils_allocator_t allocator = rcutils_get_default_allocator();
   relbot_msgs__msg__RelbotMotorsStamped * msg = (relbot_msgs__msg__RelbotMotorsStamped *)allocator.allocate(sizeof(relbot_msgs__msg__RelbotMotorsStamped), allocator.state);

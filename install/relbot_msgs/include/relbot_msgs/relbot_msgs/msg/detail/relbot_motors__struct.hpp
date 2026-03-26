@@ -2,15 +2,11 @@
 // with input from relbot_msgs:msg/RelbotMotors.idl
 // generated code does not contain a copyright notice
 
-// IWYU pragma: private, include "relbot_msgs/msg/relbot_motors.hpp"
-
-
 #ifndef RELBOT_MSGS__MSG__DETAIL__RELBOT_MOTORS__STRUCT_HPP_
 #define RELBOT_MSGS__MSG__DETAIL__RELBOT_MOTORS__STRUCT_HPP_
 
 #include <algorithm>
 #include <array>
-#include <cstdint>
 #include <memory>
 #include <string>
 #include <vector>
