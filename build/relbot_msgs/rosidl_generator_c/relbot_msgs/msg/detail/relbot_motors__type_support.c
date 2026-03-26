@@ -4,10 +4,10 @@
 
 #include <string.h>
 
-#include "relbot_msgs/msg/detail/relbot_motors__struct.h"
 #include "relbot_msgs/msg/detail/relbot_motors__functions.h"
-#include "relbot_msgs/msg/detail/relbot_motors__type_support.h"
 #include "rosidl_typesupport_interface/macros.h"
+#include "relbot_msgs/msg/detail/relbot_motors__type_support.h"
+#include "relbot_msgs/msg/detail/relbot_motors__struct.h"
 
 #ifdef __cplusplus
 extern "C"

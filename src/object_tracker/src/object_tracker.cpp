@@ -80,14 +80,13 @@ int main(int argc, char * argv[])
   rclcpp::shutdown();
 
   std::ofstream file("x_output.txt");
-  for (int i = 0; i < trackedCoGs.size(); i++) {
+  for (size_t i = 0; i < trackedCoGs.size(); i++) {
     file << trackedCoGs[i];
     
     // Checking if this is the last entry, then skip the comma
-    if(i == trackedCoGs.size()-1) return;
+    if(i == trackedCoGs.size()-1) continue;
     file << ",";
 
   }
-
   return 0;
 }

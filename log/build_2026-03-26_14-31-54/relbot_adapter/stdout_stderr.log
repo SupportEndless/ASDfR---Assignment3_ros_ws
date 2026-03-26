@@ -1,0 +1,19 @@
+[100%] Built target relbot_adapter
+-- Install configuration: ""
+-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_adapter/lib/relbot_adapter/relbot_adapter
+-- Set non-toolchain portion of runtime path of "/home/ubuntu/Robotics/ros2_ws/install/relbot_adapter/lib/relbot_adapter/relbot_adapter" to ""
+-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_adapter/share/ament_index/resource_index/package_run_dependencies/relbot_adapter
+-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_adapter/share/ament_index/resource_index/parent_prefix_path/relbot_adapter
+-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_adapter/share/relbot_adapter/environment/ament_prefix_path.sh
+-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_adapter/share/relbot_adapter/environment/ament_prefix_path.dsv
+-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_adapter/share/relbot_adapter/environment/path.sh
+-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_adapter/share/relbot_adapter/environment/path.dsv
+-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_adapter/share/relbot_adapter/local_setup.bash
+-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_adapter/share/relbot_adapter/local_setup.sh
+-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_adapter/share/relbot_adapter/local_setup.zsh
+-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_adapter/share/relbot_adapter/local_setup.dsv
+-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_adapter/share/relbot_adapter/package.dsv
+-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_adapter/share/ament_index/resource_index/packages/relbot_adapter
+-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_adapter/share/relbot_adapter/cmake/relbot_adapterConfig.cmake
+-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_adapter/share/relbot_adapter/cmake/relbot_adapterConfig-version.cmake
+-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_adapter/share/relbot_adapter/package.xml

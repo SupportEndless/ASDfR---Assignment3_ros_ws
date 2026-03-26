@@ -1,0 +1,34 @@
+[0.289s] Invoking command in '/home/ubuntu/Robotics/ros2_ws/build/relbot_adapter': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/ubuntu/Robotics/ros2_ws/src/relbot_adapter -DCMAKE_INSTALL_PREFIX=/home/ubuntu/Robotics/ros2_ws/install/relbot_adapter
+[2.043s] -- Found ament_cmake: 2.5.5 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[2.533s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[3.253s] -- Found rclcpp: 28.1.16 (/opt/ros/jazzy/share/rclcpp/cmake)
+[4.026s] -- Found rosidl_generator_c: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[4.068s] -- Found rosidl_generator_cpp: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[4.180s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[4.210s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[4.615s] -- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[4.634s] -- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[5.099s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[5.393s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[5.564s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[6.054s] -- Found example_interfaces: 0.12.0 (/opt/ros/jazzy/share/example_interfaces/cmake)
+[6.318s] -- Found geometry_msgs: 5.3.6 (/opt/ros/jazzy/share/geometry_msgs/cmake)
+[8.973s] [31mCMake Error at CMakeLists.txt:13 (find_package):
+[8.973s]   By not providing "Findrelbot_msgs.cmake" in CMAKE_MODULE_PATH this project
+[8.973s]   has asked CMake to find a package configuration file provided by
+[8.973s]   "relbot_msgs", but CMake did not find one.
+[8.973s] 
+[8.974s]   Could not find a package configuration file provided by "relbot_msgs" with
+[8.974s]   any of the following names:
+[8.974s] 
+[8.974s]     relbot_msgsConfig.cmake
+[8.974s]     relbot_msgs-config.cmake
+[8.974s] 
+[8.974s]   Add the installation prefix of "relbot_msgs" to CMAKE_PREFIX_PATH or set
+[8.974s]   "relbot_msgs_DIR" to a directory containing one of the above files.  If
+[8.974s]   "relbot_msgs" provides a separate development package or SDK, be sure it
+[8.974s]   has been installed.
+[8.974s] 
+[8.974s] [0m
+[8.975s] -- Configuring incomplete, errors occurred!
+[8.983s] Invoked command in '/home/ubuntu/Robotics/ros2_ws/build/relbot_adapter' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/ubuntu/Robotics/ros2_ws/src/relbot_adapter -DCMAKE_INSTALL_PREFIX=/home/ubuntu/Robotics/ros2_ws/install/relbot_adapter

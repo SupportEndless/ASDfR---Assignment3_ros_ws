@@ -1,0 +1,35 @@
+[ 40%] Built target cam2image
+[100%] Built target image_tools
+-- Install configuration: ""
+-- Installing: /home/ubuntu/Robotics/ros2_ws/install/image_tools/lib/image_tools/cam2image
+-- Set non-toolchain portion of runtime path of "/home/ubuntu/Robotics/ros2_ws/install/image_tools/lib/image_tools/cam2image" to ""
+-- Installing: /home/ubuntu/Robotics/ros2_ws/install/image_tools/lib/libimage_tools.so
+-- Set non-toolchain portion of runtime path of "/home/ubuntu/Robotics/ros2_ws/install/image_tools/lib/libimage_tools.so" to ""
+-- Installing: /home/ubuntu/Robotics/ros2_ws/install/image_tools/include/image_tools
+-- Installing: /home/ubuntu/Robotics/ros2_ws/install/image_tools/include/image_tools/visibility_control.h
+-- Installing: /home/ubuntu/Robotics/ros2_ws/install/image_tools/include/image_tools/remote_capture.hpp
+-- Installing: /home/ubuntu/Robotics/ros2_ws/install/image_tools/include/image_tools/base64.hpp
+-- Installing: /home/ubuntu/Robotics/ros2_ws/install/image_tools/include/image_tools/cam2image.hpp
+-- Installing: /home/ubuntu/Robotics/ros2_ws/install/image_tools/share/image_tools/environment/library_path.sh
+-- Installing: /home/ubuntu/Robotics/ros2_ws/install/image_tools/share/image_tools/environment/library_path.dsv
+-- Installing: /home/ubuntu/Robotics/ros2_ws/install/image_tools/share/ament_index/resource_index/package_run_dependencies/image_tools
+-- Installing: /home/ubuntu/Robotics/ros2_ws/install/image_tools/share/ament_index/resource_index/parent_prefix_path/image_tools
+-- Installing: /home/ubuntu/Robotics/ros2_ws/install/image_tools/share/image_tools/environment/ament_prefix_path.sh
+-- Installing: /home/ubuntu/Robotics/ros2_ws/install/image_tools/share/image_tools/environment/ament_prefix_path.dsv
+-- Installing: /home/ubuntu/Robotics/ros2_ws/install/image_tools/share/image_tools/environment/path.sh
+-- Installing: /home/ubuntu/Robotics/ros2_ws/install/image_tools/share/image_tools/environment/path.dsv
+-- Installing: /home/ubuntu/Robotics/ros2_ws/install/image_tools/share/image_tools/local_setup.bash
+-- Installing: /home/ubuntu/Robotics/ros2_ws/install/image_tools/share/image_tools/local_setup.sh
+-- Installing: /home/ubuntu/Robotics/ros2_ws/install/image_tools/share/image_tools/local_setup.zsh
+-- Installing: /home/ubuntu/Robotics/ros2_ws/install/image_tools/share/image_tools/local_setup.dsv
+-- Installing: /home/ubuntu/Robotics/ros2_ws/install/image_tools/share/image_tools/package.dsv
+-- Installing: /home/ubuntu/Robotics/ros2_ws/install/image_tools/share/ament_index/resource_index/packages/image_tools
+-- Installing: /home/ubuntu/Robotics/ros2_ws/install/image_tools/share/ament_index/resource_index/rclcpp_components/image_tools
+-- Installing: /home/ubuntu/Robotics/ros2_ws/install/image_tools/share/image_tools/cmake/image_toolsExport.cmake
+-- Installing: /home/ubuntu/Robotics/ros2_ws/install/image_tools/share/image_tools/cmake/image_toolsExport-noconfig.cmake
+-- Installing: /home/ubuntu/Robotics/ros2_ws/install/image_tools/share/image_tools/cmake/ament_cmake_export_libraries-extras.cmake
+-- Installing: /home/ubuntu/Robotics/ros2_ws/install/image_tools/share/image_tools/cmake/ament_cmake_export_targets-extras.cmake
+-- Installing: /home/ubuntu/Robotics/ros2_ws/install/image_tools/share/image_tools/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Installing: /home/ubuntu/Robotics/ros2_ws/install/image_tools/share/image_tools/cmake/image_toolsConfig.cmake
+-- Installing: /home/ubuntu/Robotics/ros2_ws/install/image_tools/share/image_tools/cmake/image_toolsConfig-version.cmake
+-- Installing: /home/ubuntu/Robotics/ros2_ws/install/image_tools/share/image_tools/package.xml

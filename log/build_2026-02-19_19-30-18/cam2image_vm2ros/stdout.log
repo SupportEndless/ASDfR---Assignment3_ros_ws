@@ -1,5 +1,0 @@
-[  9%] [32mBuilding CXX object CMakeFiles/object_position_indicator.dir/src/object_position_indicator.cpp.o[0m
-[ 27%] Built target cam2image
-[ 45%] Built target brightness_receiver
-[ 63%] Built target image_brightness
-[ 90%] Built target cam2image_vm2ros

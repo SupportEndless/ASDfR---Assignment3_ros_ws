@@ -1,0 +1,2 @@
+Invoking command in '/home/ubuntu/Robotics/ros2_ws/build/object_tracker': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/Robotics/ros2_ws/build/object_tracker -- -j12 -l12
+Invoked command in '/home/ubuntu/Robotics/ros2_ws/build/object_tracker' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/Robotics/ros2_ws/build/object_tracker -- -j12 -l12

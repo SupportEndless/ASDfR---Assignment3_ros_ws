@@ -1,1 +1,0 @@
-Invoking command in '/home/ubuntu/Robotics/ros2_ws/build/assignment1_1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/Robotics/ros2_ws/build/assignment1_1 -- -j12 -l12

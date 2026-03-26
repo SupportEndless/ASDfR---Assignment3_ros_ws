@@ -5,9 +5,9 @@
 #include <string.h>
 
 #include "relbot_msgs/msg/detail/relbot_motors_stamped__type_support.h"
-#include "relbot_msgs/msg/detail/relbot_motors_stamped__functions.h"
 #include "relbot_msgs/msg/detail/relbot_motors_stamped__struct.h"
 #include "rosidl_typesupport_interface/macros.h"
+#include "relbot_msgs/msg/detail/relbot_motors_stamped__functions.h"
 
 #ifdef __cplusplus
 extern "C"

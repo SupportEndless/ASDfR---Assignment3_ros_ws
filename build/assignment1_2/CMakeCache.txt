@@ -379,14 +379,8 @@ assignment1_2_SOURCE_DIR:STATIC=/home/ubuntu/Robotics/ros2_ws/src/assignment1_2
 //The directory containing a CMake configuration file for builtin_interfaces.
 builtin_interfaces_DIR:PATH=/opt/ros/jazzy/share/builtin_interfaces/cmake
 
-//The directory containing a CMake configuration file for chrono.
-chrono_DIR:PATH=chrono_DIR-NOTFOUND
-
 //The directory containing a CMake configuration file for example_interfaces.
 example_interfaces_DIR:PATH=/opt/ros/jazzy/share/example_interfaces/cmake
-
-//The directory containing a CMake configuration file for example_msgs.
-example_msgs_DIR:PATH=example_msgs_DIR-NOTFOUND
 
 //The directory containing a CMake configuration file for fastcdr.
 fastcdr_DIR:PATH=/opt/ros/jazzy/lib/cmake/fastcdr
@@ -501,15 +495,6 @@ rosidl_typesupport_introspection_cpp_DIR:PATH=/opt/ros/jazzy/share/rosidl_typesu
 
 //The directory containing a CMake configuration file for service_msgs.
 service_msgs_DIR:PATH=/opt/ros/jazzy/share/service_msgs/cmake
-
-//Value Computed by CMake
-setpoint_generator_BINARY_DIR:STATIC=/home/ubuntu/Robotics/ros2_ws/build/assignment1_2
-
-//Value Computed by CMake
-setpoint_generator_IS_TOP_LEVEL:STATIC=ON
-
-//Value Computed by CMake
-setpoint_generator_SOURCE_DIR:STATIC=/home/ubuntu/Robotics/ros2_ws/src/assignment1_2
 
 //The directory containing a CMake configuration file for statistics_msgs.
 statistics_msgs_DIR:PATH=/opt/ros/jazzy/share/statistics_msgs/cmake

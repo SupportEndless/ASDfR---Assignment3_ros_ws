@@ -1,0 +1,786 @@
+[0.263s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.263s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=12, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x71d60b681040>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x71d60b6809e0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x71d60b6809e0>>, mixin_verb=('build',))
+[0.300s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.300s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.300s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.300s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.300s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.300s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.300s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/ubuntu/Robotics/ros2_ws'
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extensions ['ignore', 'ignore_ament_install']
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'ignore'
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'ignore_ament_install'
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extensions ['colcon_pkg']
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'colcon_pkg'
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extensions ['colcon_meta']
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'colcon_meta'
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extensions ['ros']
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'ros'
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extensions ['cmake', 'python']
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'cmake'
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'python'
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extensions ['python_setup_py']
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'python_setup_py'
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(launch/__pycache__) by extensions ['ignore', 'ignore_ament_install']
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(launch/__pycache__) by extension 'ignore'
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(launch/__pycache__) by extension 'ignore_ament_install'
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(launch/__pycache__) by extensions ['colcon_pkg']
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(launch/__pycache__) by extension 'colcon_pkg'
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(launch/__pycache__) by extensions ['colcon_meta']
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(launch/__pycache__) by extension 'colcon_meta'
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(launch/__pycache__) by extensions ['ros']
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(launch/__pycache__) by extension 'ros'
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(launch/__pycache__) by extensions ['cmake', 'python']
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(launch/__pycache__) by extension 'cmake'
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(launch/__pycache__) by extension 'python'
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(launch/__pycache__) by extensions ['python_setup_py']
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(launch/__pycache__) by extension 'python_setup_py'
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(src/assignment1_1) by extensions ['ignore', 'ignore_ament_install']
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(src/assignment1_1) by extension 'ignore'
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(src/assignment1_1) by extension 'ignore_ament_install'
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(src/assignment1_1) by extensions ['colcon_pkg']
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(src/assignment1_1) by extension 'colcon_pkg'
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(src/assignment1_1) by extensions ['colcon_meta']
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(src/assignment1_1) by extension 'colcon_meta'
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(src/assignment1_1) by extensions ['ros']
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(src/assignment1_1) by extension 'ros'
+[0.329s] DEBUG:colcon.colcon_core.package_identification:Package 'src/assignment1_1' with type 'ros.ament_cmake' and name 'assignment1_1'
+[0.329s] Level 1:colcon.colcon_core.package_identification:_identify(src/assignment1_2) by extensions ['ignore', 'ignore_ament_install']
+[0.329s] Level 1:colcon.colcon_core.package_identification:_identify(src/assignment1_2) by extension 'ignore'
+[0.329s] Level 1:colcon.colcon_core.package_identification:_identify(src/assignment1_2) by extension 'ignore_ament_install'
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(src/assignment1_2) by extensions ['colcon_pkg']
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(src/assignment1_2) by extension 'colcon_pkg'
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(src/assignment1_2) by extensions ['colcon_meta']
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(src/assignment1_2) by extension 'colcon_meta'
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(src/assignment1_2) by extensions ['ros']
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(src/assignment1_2) by extension 'ros'
+[0.330s] DEBUG:colcon.colcon_core.package_identification:Package 'src/assignment1_2' with type 'ros.ament_cmake' and name 'assignment1_2'
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(src/assignment3_1) by extensions ['ignore', 'ignore_ament_install']
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(src/assignment3_1) by extension 'ignore'
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(src/assignment3_1) by extension 'ignore_ament_install'
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(src/assignment3_1) by extensions ['colcon_pkg']
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(src/assignment3_1) by extension 'colcon_pkg'
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(src/assignment3_1) by extensions ['colcon_meta']
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(src/assignment3_1) by extension 'colcon_meta'
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(src/assignment3_1) by extensions ['ros']
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(src/assignment3_1) by extension 'ros'
+[0.331s] DEBUG:colcon.colcon_core.package_identification:Package 'src/assignment3_1' with type 'ros.ament_cmake' and name 'assignment3_1'
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(src/cam2image_vm2ros) by extensions ['ignore', 'ignore_ament_install']
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(src/cam2image_vm2ros) by extension 'ignore'
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(src/cam2image_vm2ros) by extension 'ignore_ament_install'
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(src/cam2image_vm2ros) by extensions ['colcon_pkg']
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(src/cam2image_vm2ros) by extension 'colcon_pkg'
+[0.332s] Level 1:colcon.colcon_core.package_identification:_identify(src/cam2image_vm2ros) by extensions ['colcon_meta']
+[0.332s] Level 1:colcon.colcon_core.package_identification:_identify(src/cam2image_vm2ros) by extension 'colcon_meta'
+[0.332s] Level 1:colcon.colcon_core.package_identification:_identify(src/cam2image_vm2ros) by extensions ['ros']
+[0.332s] Level 1:colcon.colcon_core.package_identification:_identify(src/cam2image_vm2ros) by extension 'ros'
+[0.332s] DEBUG:colcon.colcon_core.package_identification:Package 'src/cam2image_vm2ros' with type 'ros.ament_cmake' and name 'cam2image_vm2ros'
+[0.332s] Level 1:colcon.colcon_core.package_identification:_identify(src/image_tools) by extensions ['ignore', 'ignore_ament_install']
+[0.332s] Level 1:colcon.colcon_core.package_identification:_identify(src/image_tools) by extension 'ignore'
+[0.332s] Level 1:colcon.colcon_core.package_identification:_identify(src/image_tools) by extension 'ignore_ament_install'
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(src/image_tools) by extensions ['colcon_pkg']
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(src/image_tools) by extension 'colcon_pkg'
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(src/image_tools) by extensions ['colcon_meta']
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(src/image_tools) by extension 'colcon_meta'
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(src/image_tools) by extensions ['ros']
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(src/image_tools) by extension 'ros'
+[0.333s] DEBUG:colcon.colcon_core.package_identification:Package 'src/image_tools' with type 'ros.ament_cmake' and name 'image_tools'
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(src/object_tracker) by extensions ['ignore', 'ignore_ament_install']
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(src/object_tracker) by extension 'ignore'
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(src/object_tracker) by extension 'ignore_ament_install'
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(src/object_tracker) by extensions ['colcon_pkg']
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(src/object_tracker) by extension 'colcon_pkg'
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(src/object_tracker) by extensions ['colcon_meta']
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(src/object_tracker) by extension 'colcon_meta'
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(src/object_tracker) by extensions ['ros']
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(src/object_tracker) by extension 'ros'
+[0.334s] DEBUG:colcon.colcon_core.package_identification:Package 'src/object_tracker' with type 'ros.ament_cmake' and name 'object_tracker'
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(src/relbot_adapter) by extensions ['ignore', 'ignore_ament_install']
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(src/relbot_adapter) by extension 'ignore'
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(src/relbot_adapter) by extension 'ignore_ament_install'
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(src/relbot_adapter) by extensions ['colcon_pkg']
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(src/relbot_adapter) by extension 'colcon_pkg'
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(src/relbot_adapter) by extensions ['colcon_meta']
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(src/relbot_adapter) by extension 'colcon_meta'
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(src/relbot_adapter) by extensions ['ros']
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(src/relbot_adapter) by extension 'ros'
+[0.335s] DEBUG:colcon.colcon_core.package_identification:Package 'src/relbot_adapter' with type 'ros.ament_cmake' and name 'relbot_adapter'
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(src/relbot_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(src/relbot_msgs) by extension 'ignore'
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(src/relbot_msgs) by extension 'ignore_ament_install'
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(src/relbot_msgs) by extensions ['colcon_pkg']
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(src/relbot_msgs) by extension 'colcon_pkg'
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(src/relbot_msgs) by extensions ['colcon_meta']
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(src/relbot_msgs) by extension 'colcon_meta'
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(src/relbot_msgs) by extensions ['ros']
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(src/relbot_msgs) by extension 'ros'
+[0.336s] DEBUG:colcon.colcon_core.package_identification:Package 'src/relbot_msgs' with type 'ros.ament_cmake' and name 'relbot_msgs'
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(src/relbot_simulator) by extensions ['ignore', 'ignore_ament_install']
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(src/relbot_simulator) by extension 'ignore'
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(src/relbot_simulator) by extension 'ignore_ament_install'
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(src/relbot_simulator) by extensions ['colcon_pkg']
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(src/relbot_simulator) by extension 'colcon_pkg'
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(src/relbot_simulator) by extensions ['colcon_meta']
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(src/relbot_simulator) by extension 'colcon_meta'
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(src/relbot_simulator) by extensions ['ros']
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(src/relbot_simulator) by extension 'ros'
+[0.337s] DEBUG:colcon.colcon_core.package_identification:Package 'src/relbot_simulator' with type 'ros.ament_cmake' and name 'relbot_simulator'
+[0.337s] Level 1:colcon.colcon_core.package_identification:_identify(src/sequence_controller) by extensions ['ignore', 'ignore_ament_install']
+[0.337s] Level 1:colcon.colcon_core.package_identification:_identify(src/sequence_controller) by extension 'ignore'
+[0.337s] Level 1:colcon.colcon_core.package_identification:_identify(src/sequence_controller) by extension 'ignore_ament_install'
+[0.337s] Level 1:colcon.colcon_core.package_identification:_identify(src/sequence_controller) by extensions ['colcon_pkg']
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(src/sequence_controller) by extension 'colcon_pkg'
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(src/sequence_controller) by extensions ['colcon_meta']
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(src/sequence_controller) by extension 'colcon_meta'
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(src/sequence_controller) by extensions ['ros']
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(src/sequence_controller) by extension 'ros'
+[0.338s] DEBUG:colcon.colcon_core.package_identification:Package 'src/sequence_controller' with type 'ros.ament_cmake' and name 'sequence_controller'
+[0.338s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.338s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.338s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.338s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.338s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.356s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.356s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.358s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 9 installed packages in /home/ubuntu/Robotics/ros2_ws/install
+[0.359s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 286 installed packages in /opt/ros/jazzy
+[0.360s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.399s] WARNING:colcon.colcon_core.package_selection:Some selected packages are already built in one or more underlay workspaces:
+	'image_tools' is in: /home/ubuntu/Robotics/ros2_ws/install/image_tools, /opt/ros/jazzy
+If a package in a merged underlay workspace is overridden and it installs headers, then all packages in the overlay must sort their include directories by workspace order. Failure to do so may result in build failures or undefined behavior at run time.
+If the overridden package is used by another package in any underlay, then the overriding package in the overlay must be API and ABI compatible or undefined behavior at run time may occur.
+
+If you understand the risks and want to override a package anyways, add the following to the command line:
+	--allow-overriding image_tools
+
+This may be promoted to an error in a future release of colcon-override-check.
+[0.400s] Level 5:colcon.colcon_core.verb:set package 'assignment1_1' build argument 'cmake_args' from command line to 'None'
+[0.400s] Level 5:colcon.colcon_core.verb:set package 'assignment1_1' build argument 'cmake_target' from command line to 'None'
+[0.400s] Level 5:colcon.colcon_core.verb:set package 'assignment1_1' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.400s] Level 5:colcon.colcon_core.verb:set package 'assignment1_1' build argument 'cmake_clean_cache' from command line to 'False'
+[0.400s] Level 5:colcon.colcon_core.verb:set package 'assignment1_1' build argument 'cmake_clean_first' from command line to 'False'
+[0.400s] Level 5:colcon.colcon_core.verb:set package 'assignment1_1' build argument 'cmake_force_configure' from command line to 'False'
+[0.400s] Level 5:colcon.colcon_core.verb:set package 'assignment1_1' build argument 'ament_cmake_args' from command line to 'None'
+[0.400s] Level 5:colcon.colcon_core.verb:set package 'assignment1_1' build argument 'catkin_cmake_args' from command line to 'None'
+[0.400s] Level 5:colcon.colcon_core.verb:set package 'assignment1_1' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.400s] DEBUG:colcon.colcon_core.verb:Building package 'assignment1_1' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu/Robotics/ros2_ws/build/assignment1_1', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu/Robotics/ros2_ws/install/assignment1_1', 'merge_install': False, 'path': '/home/ubuntu/Robotics/ros2_ws/src/assignment1_1', 'symlink_install': False, 'test_result_base': None}
+[0.401s] Level 5:colcon.colcon_core.verb:set package 'assignment1_2' build argument 'cmake_args' from command line to 'None'
+[0.401s] Level 5:colcon.colcon_core.verb:set package 'assignment1_2' build argument 'cmake_target' from command line to 'None'
+[0.401s] Level 5:colcon.colcon_core.verb:set package 'assignment1_2' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.401s] Level 5:colcon.colcon_core.verb:set package 'assignment1_2' build argument 'cmake_clean_cache' from command line to 'False'
+[0.401s] Level 5:colcon.colcon_core.verb:set package 'assignment1_2' build argument 'cmake_clean_first' from command line to 'False'
+[0.401s] Level 5:colcon.colcon_core.verb:set package 'assignment1_2' build argument 'cmake_force_configure' from command line to 'False'
+[0.401s] Level 5:colcon.colcon_core.verb:set package 'assignment1_2' build argument 'ament_cmake_args' from command line to 'None'
+[0.401s] Level 5:colcon.colcon_core.verb:set package 'assignment1_2' build argument 'catkin_cmake_args' from command line to 'None'
+[0.401s] Level 5:colcon.colcon_core.verb:set package 'assignment1_2' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.401s] DEBUG:colcon.colcon_core.verb:Building package 'assignment1_2' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu/Robotics/ros2_ws/build/assignment1_2', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu/Robotics/ros2_ws/install/assignment1_2', 'merge_install': False, 'path': '/home/ubuntu/Robotics/ros2_ws/src/assignment1_2', 'symlink_install': False, 'test_result_base': None}
+[0.401s] Level 5:colcon.colcon_core.verb:set package 'assignment3_1' build argument 'cmake_args' from command line to 'None'
+[0.401s] Level 5:colcon.colcon_core.verb:set package 'assignment3_1' build argument 'cmake_target' from command line to 'None'
+[0.401s] Level 5:colcon.colcon_core.verb:set package 'assignment3_1' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.401s] Level 5:colcon.colcon_core.verb:set package 'assignment3_1' build argument 'cmake_clean_cache' from command line to 'False'
+[0.401s] Level 5:colcon.colcon_core.verb:set package 'assignment3_1' build argument 'cmake_clean_first' from command line to 'False'
+[0.401s] Level 5:colcon.colcon_core.verb:set package 'assignment3_1' build argument 'cmake_force_configure' from command line to 'False'
+[0.401s] Level 5:colcon.colcon_core.verb:set package 'assignment3_1' build argument 'ament_cmake_args' from command line to 'None'
+[0.401s] Level 5:colcon.colcon_core.verb:set package 'assignment3_1' build argument 'catkin_cmake_args' from command line to 'None'
+[0.401s] Level 5:colcon.colcon_core.verb:set package 'assignment3_1' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.401s] DEBUG:colcon.colcon_core.verb:Building package 'assignment3_1' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu/Robotics/ros2_ws/build/assignment3_1', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu/Robotics/ros2_ws/install/assignment3_1', 'merge_install': False, 'path': '/home/ubuntu/Robotics/ros2_ws/src/assignment3_1', 'symlink_install': False, 'test_result_base': None}
+[0.401s] Level 5:colcon.colcon_core.verb:set package 'cam2image_vm2ros' build argument 'cmake_args' from command line to 'None'
+[0.402s] Level 5:colcon.colcon_core.verb:set package 'cam2image_vm2ros' build argument 'cmake_target' from command line to 'None'
+[0.402s] Level 5:colcon.colcon_core.verb:set package 'cam2image_vm2ros' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.402s] Level 5:colcon.colcon_core.verb:set package 'cam2image_vm2ros' build argument 'cmake_clean_cache' from command line to 'False'
+[0.402s] Level 5:colcon.colcon_core.verb:set package 'cam2image_vm2ros' build argument 'cmake_clean_first' from command line to 'False'
+[0.402s] Level 5:colcon.colcon_core.verb:set package 'cam2image_vm2ros' build argument 'cmake_force_configure' from command line to 'False'
+[0.402s] Level 5:colcon.colcon_core.verb:set package 'cam2image_vm2ros' build argument 'ament_cmake_args' from command line to 'None'
+[0.402s] Level 5:colcon.colcon_core.verb:set package 'cam2image_vm2ros' build argument 'catkin_cmake_args' from command line to 'None'
+[0.402s] Level 5:colcon.colcon_core.verb:set package 'cam2image_vm2ros' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.402s] DEBUG:colcon.colcon_core.verb:Building package 'cam2image_vm2ros' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu/Robotics/ros2_ws/build/cam2image_vm2ros', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu/Robotics/ros2_ws/install/cam2image_vm2ros', 'merge_install': False, 'path': '/home/ubuntu/Robotics/ros2_ws/src/cam2image_vm2ros', 'symlink_install': False, 'test_result_base': None}
+[0.402s] Level 5:colcon.colcon_core.verb:set package 'image_tools' build argument 'cmake_args' from command line to 'None'
+[0.402s] Level 5:colcon.colcon_core.verb:set package 'image_tools' build argument 'cmake_target' from command line to 'None'
+[0.402s] Level 5:colcon.colcon_core.verb:set package 'image_tools' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.402s] Level 5:colcon.colcon_core.verb:set package 'image_tools' build argument 'cmake_clean_cache' from command line to 'False'
+[0.402s] Level 5:colcon.colcon_core.verb:set package 'image_tools' build argument 'cmake_clean_first' from command line to 'False'
+[0.402s] Level 5:colcon.colcon_core.verb:set package 'image_tools' build argument 'cmake_force_configure' from command line to 'False'
+[0.402s] Level 5:colcon.colcon_core.verb:set package 'image_tools' build argument 'ament_cmake_args' from command line to 'None'
+[0.402s] Level 5:colcon.colcon_core.verb:set package 'image_tools' build argument 'catkin_cmake_args' from command line to 'None'
+[0.402s] Level 5:colcon.colcon_core.verb:set package 'image_tools' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.402s] DEBUG:colcon.colcon_core.verb:Building package 'image_tools' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu/Robotics/ros2_ws/build/image_tools', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu/Robotics/ros2_ws/install/image_tools', 'merge_install': False, 'path': '/home/ubuntu/Robotics/ros2_ws/src/image_tools', 'symlink_install': False, 'test_result_base': None}
+[0.402s] Level 5:colcon.colcon_core.verb:set package 'object_tracker' build argument 'cmake_args' from command line to 'None'
+[0.402s] Level 5:colcon.colcon_core.verb:set package 'object_tracker' build argument 'cmake_target' from command line to 'None'
+[0.402s] Level 5:colcon.colcon_core.verb:set package 'object_tracker' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.402s] Level 5:colcon.colcon_core.verb:set package 'object_tracker' build argument 'cmake_clean_cache' from command line to 'False'
+[0.402s] Level 5:colcon.colcon_core.verb:set package 'object_tracker' build argument 'cmake_clean_first' from command line to 'False'
+[0.402s] Level 5:colcon.colcon_core.verb:set package 'object_tracker' build argument 'cmake_force_configure' from command line to 'False'
+[0.402s] Level 5:colcon.colcon_core.verb:set package 'object_tracker' build argument 'ament_cmake_args' from command line to 'None'
+[0.403s] Level 5:colcon.colcon_core.verb:set package 'object_tracker' build argument 'catkin_cmake_args' from command line to 'None'
+[0.403s] Level 5:colcon.colcon_core.verb:set package 'object_tracker' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.403s] DEBUG:colcon.colcon_core.verb:Building package 'object_tracker' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu/Robotics/ros2_ws/build/object_tracker', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu/Robotics/ros2_ws/install/object_tracker', 'merge_install': False, 'path': '/home/ubuntu/Robotics/ros2_ws/src/object_tracker', 'symlink_install': False, 'test_result_base': None}
+[0.403s] Level 5:colcon.colcon_core.verb:set package 'relbot_adapter' build argument 'cmake_args' from command line to 'None'
+[0.403s] Level 5:colcon.colcon_core.verb:set package 'relbot_adapter' build argument 'cmake_target' from command line to 'None'
+[0.403s] Level 5:colcon.colcon_core.verb:set package 'relbot_adapter' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.403s] Level 5:colcon.colcon_core.verb:set package 'relbot_adapter' build argument 'cmake_clean_cache' from command line to 'False'
+[0.403s] Level 5:colcon.colcon_core.verb:set package 'relbot_adapter' build argument 'cmake_clean_first' from command line to 'False'
+[0.403s] Level 5:colcon.colcon_core.verb:set package 'relbot_adapter' build argument 'cmake_force_configure' from command line to 'False'
+[0.403s] Level 5:colcon.colcon_core.verb:set package 'relbot_adapter' build argument 'ament_cmake_args' from command line to 'None'
+[0.403s] Level 5:colcon.colcon_core.verb:set package 'relbot_adapter' build argument 'catkin_cmake_args' from command line to 'None'
+[0.403s] Level 5:colcon.colcon_core.verb:set package 'relbot_adapter' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.403s] DEBUG:colcon.colcon_core.verb:Building package 'relbot_adapter' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu/Robotics/ros2_ws/build/relbot_adapter', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu/Robotics/ros2_ws/install/relbot_adapter', 'merge_install': False, 'path': '/home/ubuntu/Robotics/ros2_ws/src/relbot_adapter', 'symlink_install': False, 'test_result_base': None}
+[0.403s] Level 5:colcon.colcon_core.verb:set package 'relbot_msgs' build argument 'cmake_args' from command line to 'None'
+[0.403s] Level 5:colcon.colcon_core.verb:set package 'relbot_msgs' build argument 'cmake_target' from command line to 'None'
+[0.403s] Level 5:colcon.colcon_core.verb:set package 'relbot_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.403s] Level 5:colcon.colcon_core.verb:set package 'relbot_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.403s] Level 5:colcon.colcon_core.verb:set package 'relbot_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.403s] Level 5:colcon.colcon_core.verb:set package 'relbot_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.403s] Level 5:colcon.colcon_core.verb:set package 'relbot_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.403s] Level 5:colcon.colcon_core.verb:set package 'relbot_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.403s] Level 5:colcon.colcon_core.verb:set package 'relbot_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.403s] DEBUG:colcon.colcon_core.verb:Building package 'relbot_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu/Robotics/ros2_ws/build/relbot_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu/Robotics/ros2_ws/install/relbot_msgs', 'merge_install': False, 'path': '/home/ubuntu/Robotics/ros2_ws/src/relbot_msgs', 'symlink_install': False, 'test_result_base': None}
+[0.404s] Level 5:colcon.colcon_core.verb:set package 'sequence_controller' build argument 'cmake_args' from command line to 'None'
+[0.404s] Level 5:colcon.colcon_core.verb:set package 'sequence_controller' build argument 'cmake_target' from command line to 'None'
+[0.404s] Level 5:colcon.colcon_core.verb:set package 'sequence_controller' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.404s] Level 5:colcon.colcon_core.verb:set package 'sequence_controller' build argument 'cmake_clean_cache' from command line to 'False'
+[0.404s] Level 5:colcon.colcon_core.verb:set package 'sequence_controller' build argument 'cmake_clean_first' from command line to 'False'
+[0.404s] Level 5:colcon.colcon_core.verb:set package 'sequence_controller' build argument 'cmake_force_configure' from command line to 'False'
+[0.404s] Level 5:colcon.colcon_core.verb:set package 'sequence_controller' build argument 'ament_cmake_args' from command line to 'None'
+[0.404s] Level 5:colcon.colcon_core.verb:set package 'sequence_controller' build argument 'catkin_cmake_args' from command line to 'None'
+[0.404s] Level 5:colcon.colcon_core.verb:set package 'sequence_controller' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.404s] DEBUG:colcon.colcon_core.verb:Building package 'sequence_controller' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu/Robotics/ros2_ws/build/sequence_controller', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu/Robotics/ros2_ws/install/sequence_controller', 'merge_install': False, 'path': '/home/ubuntu/Robotics/ros2_ws/src/sequence_controller', 'symlink_install': False, 'test_result_base': None}
+[0.404s] Level 5:colcon.colcon_core.verb:set package 'relbot_simulator' build argument 'cmake_args' from command line to 'None'
+[0.404s] Level 5:colcon.colcon_core.verb:set package 'relbot_simulator' build argument 'cmake_target' from command line to 'None'
+[0.404s] Level 5:colcon.colcon_core.verb:set package 'relbot_simulator' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.404s] Level 5:colcon.colcon_core.verb:set package 'relbot_simulator' build argument 'cmake_clean_cache' from command line to 'False'
+[0.404s] Level 5:colcon.colcon_core.verb:set package 'relbot_simulator' build argument 'cmake_clean_first' from command line to 'False'
+[0.404s] Level 5:colcon.colcon_core.verb:set package 'relbot_simulator' build argument 'cmake_force_configure' from command line to 'False'
+[0.404s] Level 5:colcon.colcon_core.verb:set package 'relbot_simulator' build argument 'ament_cmake_args' from command line to 'None'
+[0.404s] Level 5:colcon.colcon_core.verb:set package 'relbot_simulator' build argument 'catkin_cmake_args' from command line to 'None'
+[0.404s] Level 5:colcon.colcon_core.verb:set package 'relbot_simulator' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.404s] DEBUG:colcon.colcon_core.verb:Building package 'relbot_simulator' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu/Robotics/ros2_ws/build/relbot_simulator', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu/Robotics/ros2_ws/install/relbot_simulator', 'merge_install': False, 'path': '/home/ubuntu/Robotics/ros2_ws/src/relbot_simulator', 'symlink_install': False, 'test_result_base': None}
+[0.404s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.406s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.406s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ubuntu/Robotics/ros2_ws/src/relbot_msgs' with build type 'ament_cmake'
+[0.406s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ubuntu/Robotics/ros2_ws/src/relbot_msgs'
+[0.410s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.410s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.410s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.415s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ubuntu/Robotics/ros2_ws/src/assignment1_1' with build type 'ament_cmake'
+[0.415s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ubuntu/Robotics/ros2_ws/src/assignment1_1'
+[0.416s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.416s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.422s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ubuntu/Robotics/ros2_ws/src/assignment1_2' with build type 'ament_cmake'
+[0.422s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ubuntu/Robotics/ros2_ws/src/assignment1_2'
+[0.422s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.422s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.428s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ubuntu/Robotics/ros2_ws/src/assignment3_1' with build type 'ament_cmake'
+[0.428s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ubuntu/Robotics/ros2_ws/src/assignment3_1'
+[0.428s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.428s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.432s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ubuntu/Robotics/ros2_ws/src/cam2image_vm2ros' with build type 'ament_cmake'
+[0.433s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ubuntu/Robotics/ros2_ws/src/cam2image_vm2ros'
+[0.433s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.433s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.440s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ubuntu/Robotics/ros2_ws/src/image_tools' with build type 'ament_cmake'
+[0.440s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ubuntu/Robotics/ros2_ws/src/image_tools'
+[0.441s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.441s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.445s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ubuntu/Robotics/ros2_ws/src/object_tracker' with build type 'ament_cmake'
+[0.445s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ubuntu/Robotics/ros2_ws/src/object_tracker'
+[0.445s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.445s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.451s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ubuntu/Robotics/ros2_ws/src/relbot_adapter' with build type 'ament_cmake'
+[0.451s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ubuntu/Robotics/ros2_ws/src/relbot_adapter'
+[0.451s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.451s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.457s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ubuntu/Robotics/ros2_ws/src/sequence_controller' with build type 'ament_cmake'
+[0.458s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ubuntu/Robotics/ros2_ws/src/sequence_controller'
+[0.458s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.458s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.472s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/Robotics/ros2_ws/build/relbot_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/Robotics/ros2_ws/build/relbot_msgs -- -j12 -l12
+[0.479s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/Robotics/ros2_ws/build/assignment1_1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/Robotics/ros2_ws/build/assignment1_1 -- -j12 -l12
+[0.481s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/Robotics/ros2_ws/build/assignment1_2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/Robotics/ros2_ws/build/assignment1_2 -- -j12 -l12
+[0.486s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/Robotics/ros2_ws/build/assignment3_1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/Robotics/ros2_ws/build/assignment3_1 -- -j12 -l12
+[0.490s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/Robotics/ros2_ws/build/cam2image_vm2ros': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/Robotics/ros2_ws/build/cam2image_vm2ros -- -j12 -l12
+[0.493s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/Robotics/ros2_ws/build/image_tools': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/Robotics/ros2_ws/build/image_tools -- -j12 -l12
+[0.498s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/Robotics/ros2_ws/build/object_tracker': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/Robotics/ros2_ws/build/object_tracker -- -j12 -l12
+[0.505s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/Robotics/ros2_ws/build/relbot_adapter': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/Robotics/ros2_ws/build/relbot_adapter -- -j12 -l12
+[0.516s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/Robotics/ros2_ws/build/sequence_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/Robotics/ros2_ws/build/sequence_controller -- -j12 -l12
+[0.566s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/Robotics/ros2_ws/build/assignment3_1' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/Robotics/ros2_ws/build/assignment3_1 -- -j12 -l12
+[0.594s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/Robotics/ros2_ws/build/assignment3_1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/ubuntu/Robotics/ros2_ws/build/assignment3_1
+[0.637s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(assignment3_1)
+[0.647s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/assignment3_1' for CMake module files
+[0.649s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/assignment3_1' for CMake config files
+[0.649s] Level 1:colcon.colcon_core.shell:create_environment_hook('assignment3_1', 'cmake_prefix_path')
+[0.649s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/Robotics/ros2_ws/install/assignment3_1/share/assignment3_1/hook/cmake_prefix_path.ps1'
+[0.650s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/Robotics/ros2_ws/install/assignment3_1/share/assignment3_1/hook/cmake_prefix_path.dsv'
+[0.651s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/Robotics/ros2_ws/install/assignment3_1/share/assignment3_1/hook/cmake_prefix_path.sh'
+[0.654s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/Robotics/ros2_ws/build/assignment3_1' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/ubuntu/Robotics/ros2_ws/build/assignment3_1
+[0.656s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/assignment3_1/bin'
+[0.656s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/assignment3_1/lib/pkgconfig/assignment3_1.pc'
+[0.656s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/assignment3_1/lib/python3.12/site-packages'
+[0.657s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/assignment3_1/bin'
+[0.657s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/Robotics/ros2_ws/install/assignment3_1/share/assignment3_1/package.ps1'
+[0.659s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/Robotics/ros2_ws/install/assignment3_1/share/assignment3_1/package.dsv'
+[0.660s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/Robotics/ros2_ws/install/assignment3_1/share/assignment3_1/package.sh'
+[0.661s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/Robotics/ros2_ws/install/assignment3_1/share/assignment3_1/package.bash'
+[0.663s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/Robotics/ros2_ws/install/assignment3_1/share/assignment3_1/package.zsh'
+[0.667s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/Robotics/ros2_ws/install/assignment3_1/share/colcon-core/packages/assignment3_1)
+[0.668s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(assignment3_1)
+[0.669s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/assignment3_1' for CMake module files
+[0.670s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/assignment3_1' for CMake config files
+[0.670s] Level 1:colcon.colcon_core.shell:create_environment_hook('assignment3_1', 'cmake_prefix_path')
+[0.670s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/Robotics/ros2_ws/install/assignment3_1/share/assignment3_1/hook/cmake_prefix_path.ps1'
+[0.671s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/Robotics/ros2_ws/install/assignment3_1/share/assignment3_1/hook/cmake_prefix_path.dsv'
+[0.672s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/Robotics/ros2_ws/install/assignment3_1/share/assignment3_1/hook/cmake_prefix_path.sh'
+[0.673s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/assignment3_1/bin'
+[0.673s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/assignment3_1/lib/pkgconfig/assignment3_1.pc'
+[0.673s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/assignment3_1/lib/python3.12/site-packages'
+[0.674s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/assignment3_1/bin'
+[0.675s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/Robotics/ros2_ws/install/assignment3_1/share/assignment3_1/package.ps1'
+[0.675s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/Robotics/ros2_ws/install/assignment3_1/share/assignment3_1/package.dsv'
+[0.677s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/Robotics/ros2_ws/install/assignment3_1/share/assignment3_1/package.sh'
+[0.677s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/Robotics/ros2_ws/install/assignment3_1/share/assignment3_1/package.bash'
+[0.678s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/Robotics/ros2_ws/install/assignment3_1/share/assignment3_1/package.zsh'
+[0.679s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/Robotics/ros2_ws/install/assignment3_1/share/colcon-core/packages/assignment3_1)
+[0.681s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/Robotics/ros2_ws/build/assignment1_2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/Robotics/ros2_ws/build/assignment1_2 -- -j12 -l12
+[0.684s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/Robotics/ros2_ws/build/assignment1_2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/ubuntu/Robotics/ros2_ws/build/assignment1_2
+[0.691s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/Robotics/ros2_ws/build/cam2image_vm2ros' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/Robotics/ros2_ws/build/cam2image_vm2ros -- -j12 -l12
+[0.692s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/Robotics/ros2_ws/build/cam2image_vm2ros': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/ubuntu/Robotics/ros2_ws/build/cam2image_vm2ros
+[0.693s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/Robotics/ros2_ws/build/assignment1_1' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/Robotics/ros2_ws/build/assignment1_1 -- -j12 -l12
+[0.695s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/Robotics/ros2_ws/build/assignment1_1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/ubuntu/Robotics/ros2_ws/build/assignment1_1
+[0.696s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/Robotics/ros2_ws/build/relbot_adapter' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/Robotics/ros2_ws/build/relbot_adapter -- -j12 -l12
+[0.698s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/Robotics/ros2_ws/build/relbot_adapter': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/ubuntu/Robotics/ros2_ws/build/relbot_adapter
+[0.701s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/Robotics/ros2_ws/build/sequence_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/Robotics/ros2_ws/build/sequence_controller -- -j12 -l12
+[0.704s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/Robotics/ros2_ws/build/sequence_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/ubuntu/Robotics/ros2_ws/build/sequence_controller
+[0.707s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/Robotics/ros2_ws/build/image_tools' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/Robotics/ros2_ws/build/image_tools -- -j12 -l12
+[0.709s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/Robotics/ros2_ws/build/image_tools': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/ubuntu/Robotics/ros2_ws/build/image_tools
+[0.716s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(assignment1_2)
+[0.717s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/assignment1_2' for CMake module files
+[0.731s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/assignment1_2' for CMake config files
+[0.739s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/Robotics/ros2_ws/build/assignment1_2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/ubuntu/Robotics/ros2_ws/build/assignment1_2
+[0.754s] Level 1:colcon.colcon_core.shell:create_environment_hook('assignment1_2', 'cmake_prefix_path')
+[0.756s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/Robotics/ros2_ws/install/assignment1_2/share/assignment1_2/hook/cmake_prefix_path.ps1'
+[0.767s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/Robotics/ros2_ws/install/assignment1_2/share/assignment1_2/hook/cmake_prefix_path.dsv'
+[0.770s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/Robotics/ros2_ws/install/assignment1_2/share/assignment1_2/hook/cmake_prefix_path.sh'
+[0.771s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/assignment1_2/lib'
+[0.771s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/assignment1_2/bin'
+[0.771s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/assignment1_2/lib/pkgconfig/assignment1_2.pc'
+[0.772s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/assignment1_2/lib/python3.12/site-packages'
+[0.772s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/assignment1_2/bin'
+[0.772s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/Robotics/ros2_ws/install/assignment1_2/share/assignment1_2/package.ps1'
+[0.773s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/Robotics/ros2_ws/install/assignment1_2/share/assignment1_2/package.dsv'
+[0.773s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/Robotics/ros2_ws/install/assignment1_2/share/assignment1_2/package.sh'
+[0.774s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/Robotics/ros2_ws/install/assignment1_2/share/assignment1_2/package.bash'
+[0.774s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/Robotics/ros2_ws/install/assignment1_2/share/assignment1_2/package.zsh'
+[0.774s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/Robotics/ros2_ws/install/assignment1_2/share/colcon-core/packages/assignment1_2)
+[0.775s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(assignment1_2)
+[0.775s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/assignment1_2' for CMake module files
+[0.776s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/assignment1_2' for CMake config files
+[0.776s] Level 1:colcon.colcon_core.shell:create_environment_hook('assignment1_2', 'cmake_prefix_path')
+[0.776s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/Robotics/ros2_ws/install/assignment1_2/share/assignment1_2/hook/cmake_prefix_path.ps1'
+[0.777s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/Robotics/ros2_ws/install/assignment1_2/share/assignment1_2/hook/cmake_prefix_path.dsv'
+[0.777s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/Robotics/ros2_ws/install/assignment1_2/share/assignment1_2/hook/cmake_prefix_path.sh'
+[0.778s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/assignment1_2/lib'
+[0.778s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/assignment1_2/bin'
+[0.778s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/assignment1_2/lib/pkgconfig/assignment1_2.pc'
+[0.778s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/assignment1_2/lib/python3.12/site-packages'
+[0.778s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/assignment1_2/bin'
+[0.779s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/Robotics/ros2_ws/install/assignment1_2/share/assignment1_2/package.ps1'
+[0.779s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/Robotics/ros2_ws/install/assignment1_2/share/assignment1_2/package.dsv'
+[0.780s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/Robotics/ros2_ws/install/assignment1_2/share/assignment1_2/package.sh'
+[0.780s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/Robotics/ros2_ws/install/assignment1_2/share/assignment1_2/package.bash'
+[0.780s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/Robotics/ros2_ws/install/assignment1_2/share/assignment1_2/package.zsh'
+[0.781s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/Robotics/ros2_ws/install/assignment1_2/share/colcon-core/packages/assignment1_2)
+[0.784s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(assignment1_1)
+[0.784s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/assignment1_1' for CMake module files
+[0.785s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/Robotics/ros2_ws/build/assignment1_1' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/ubuntu/Robotics/ros2_ws/build/assignment1_1
+[0.786s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/assignment1_1' for CMake config files
+[0.786s] Level 1:colcon.colcon_core.shell:create_environment_hook('assignment1_1', 'cmake_prefix_path')
+[0.787s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/Robotics/ros2_ws/install/assignment1_1/share/assignment1_1/hook/cmake_prefix_path.ps1'
+[0.787s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/Robotics/ros2_ws/install/assignment1_1/share/assignment1_1/hook/cmake_prefix_path.dsv'
+[0.787s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/Robotics/ros2_ws/install/assignment1_1/share/assignment1_1/hook/cmake_prefix_path.sh'
+[0.788s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/assignment1_1/lib'
+[0.788s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/assignment1_1/bin'
+[0.788s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/assignment1_1/lib/pkgconfig/assignment1_1.pc'
+[0.788s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/assignment1_1/lib/python3.12/site-packages'
+[0.789s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/assignment1_1/bin'
+[0.789s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/Robotics/ros2_ws/install/assignment1_1/share/assignment1_1/package.ps1'
+[0.789s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/Robotics/ros2_ws/install/assignment1_1/share/assignment1_1/package.dsv'
+[0.790s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/Robotics/ros2_ws/install/assignment1_1/share/assignment1_1/package.sh'
+[0.791s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/Robotics/ros2_ws/install/assignment1_1/share/assignment1_1/package.bash'
+[0.791s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/Robotics/ros2_ws/install/assignment1_1/share/assignment1_1/package.zsh'
+[0.792s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/Robotics/ros2_ws/install/assignment1_1/share/colcon-core/packages/assignment1_1)
+[0.793s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(assignment1_1)
+[0.793s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/assignment1_1' for CMake module files
+[0.794s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/assignment1_1' for CMake config files
+[0.794s] Level 1:colcon.colcon_core.shell:create_environment_hook('assignment1_1', 'cmake_prefix_path')
+[0.794s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/Robotics/ros2_ws/install/assignment1_1/share/assignment1_1/hook/cmake_prefix_path.ps1'
+[0.794s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/Robotics/ros2_ws/install/assignment1_1/share/assignment1_1/hook/cmake_prefix_path.dsv'
+[0.795s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/Robotics/ros2_ws/install/assignment1_1/share/assignment1_1/hook/cmake_prefix_path.sh'
+[0.796s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/assignment1_1/lib'
+[0.796s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/assignment1_1/bin'
+[0.796s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/assignment1_1/lib/pkgconfig/assignment1_1.pc'
+[0.797s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/assignment1_1/lib/python3.12/site-packages'
+[0.797s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/assignment1_1/bin'
+[0.797s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/Robotics/ros2_ws/install/assignment1_1/share/assignment1_1/package.ps1'
+[0.798s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/Robotics/ros2_ws/install/assignment1_1/share/assignment1_1/package.dsv'
+[0.799s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/Robotics/ros2_ws/install/assignment1_1/share/assignment1_1/package.sh'
+[0.799s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/Robotics/ros2_ws/install/assignment1_1/share/assignment1_1/package.bash'
+[0.799s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/Robotics/ros2_ws/install/assignment1_1/share/assignment1_1/package.zsh'
+[0.800s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/Robotics/ros2_ws/install/assignment1_1/share/colcon-core/packages/assignment1_1)
+[0.800s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(cam2image_vm2ros)
+[0.801s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/cam2image_vm2ros' for CMake module files
+[0.804s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/Robotics/ros2_ws/build/cam2image_vm2ros' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/ubuntu/Robotics/ros2_ws/build/cam2image_vm2ros
+[0.804s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/cam2image_vm2ros' for CMake config files
+[0.804s] Level 1:colcon.colcon_core.shell:create_environment_hook('cam2image_vm2ros', 'cmake_prefix_path')
+[0.805s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/Robotics/ros2_ws/install/cam2image_vm2ros/share/cam2image_vm2ros/hook/cmake_prefix_path.ps1'
+[0.805s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/Robotics/ros2_ws/install/cam2image_vm2ros/share/cam2image_vm2ros/hook/cmake_prefix_path.dsv'
+[0.805s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/Robotics/ros2_ws/install/cam2image_vm2ros/share/cam2image_vm2ros/hook/cmake_prefix_path.sh'
+[0.806s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/cam2image_vm2ros/lib'
+[0.806s] Level 1:colcon.colcon_core.shell:create_environment_hook('cam2image_vm2ros', 'ld_library_path_lib')
+[0.806s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/Robotics/ros2_ws/install/cam2image_vm2ros/share/cam2image_vm2ros/hook/ld_library_path_lib.ps1'
+[0.807s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/Robotics/ros2_ws/install/cam2image_vm2ros/share/cam2image_vm2ros/hook/ld_library_path_lib.dsv'
+[0.807s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/Robotics/ros2_ws/install/cam2image_vm2ros/share/cam2image_vm2ros/hook/ld_library_path_lib.sh'
+[0.808s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/cam2image_vm2ros/bin'
+[0.808s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/cam2image_vm2ros/lib/pkgconfig/cam2image_vm2ros.pc'
+[0.808s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/cam2image_vm2ros/lib/python3.12/site-packages'
+[0.809s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/cam2image_vm2ros/bin'
+[0.809s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/Robotics/ros2_ws/install/cam2image_vm2ros/share/cam2image_vm2ros/package.ps1'
+[0.811s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/Robotics/ros2_ws/install/cam2image_vm2ros/share/cam2image_vm2ros/package.dsv'
+[0.812s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/Robotics/ros2_ws/install/cam2image_vm2ros/share/cam2image_vm2ros/package.sh'
+[0.813s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/Robotics/ros2_ws/install/cam2image_vm2ros/share/cam2image_vm2ros/package.bash'
+[0.813s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/Robotics/ros2_ws/install/cam2image_vm2ros/share/cam2image_vm2ros/package.zsh'
+[0.814s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/Robotics/ros2_ws/install/cam2image_vm2ros/share/colcon-core/packages/cam2image_vm2ros)
+[0.815s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(cam2image_vm2ros)
+[0.815s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/cam2image_vm2ros' for CMake module files
+[0.817s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/cam2image_vm2ros' for CMake config files
+[0.817s] Level 1:colcon.colcon_core.shell:create_environment_hook('cam2image_vm2ros', 'cmake_prefix_path')
+[0.818s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/Robotics/ros2_ws/install/cam2image_vm2ros/share/cam2image_vm2ros/hook/cmake_prefix_path.ps1'
+[0.818s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/Robotics/ros2_ws/install/cam2image_vm2ros/share/cam2image_vm2ros/hook/cmake_prefix_path.dsv'
+[0.819s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/Robotics/ros2_ws/install/cam2image_vm2ros/share/cam2image_vm2ros/hook/cmake_prefix_path.sh'
+[0.821s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/cam2image_vm2ros/lib'
+[0.822s] Level 1:colcon.colcon_core.shell:create_environment_hook('cam2image_vm2ros', 'ld_library_path_lib')
+[0.822s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/Robotics/ros2_ws/install/cam2image_vm2ros/share/cam2image_vm2ros/hook/ld_library_path_lib.ps1'
+[0.823s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/Robotics/ros2_ws/install/cam2image_vm2ros/share/cam2image_vm2ros/hook/ld_library_path_lib.dsv'
+[0.824s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/Robotics/ros2_ws/install/cam2image_vm2ros/share/cam2image_vm2ros/hook/ld_library_path_lib.sh'
+[0.825s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/cam2image_vm2ros/bin'
+[0.825s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/cam2image_vm2ros/lib/pkgconfig/cam2image_vm2ros.pc'
+[0.825s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/cam2image_vm2ros/lib/python3.12/site-packages'
+[0.826s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/cam2image_vm2ros/bin'
+[0.826s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/Robotics/ros2_ws/install/cam2image_vm2ros/share/cam2image_vm2ros/package.ps1'
+[0.828s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/Robotics/ros2_ws/install/cam2image_vm2ros/share/cam2image_vm2ros/package.dsv'
+[0.829s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/Robotics/ros2_ws/install/cam2image_vm2ros/share/cam2image_vm2ros/package.sh'
+[0.831s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/Robotics/ros2_ws/install/cam2image_vm2ros/share/cam2image_vm2ros/package.bash'
+[0.832s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/Robotics/ros2_ws/install/cam2image_vm2ros/share/cam2image_vm2ros/package.zsh'
+[0.832s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/Robotics/ros2_ws/install/cam2image_vm2ros/share/colcon-core/packages/cam2image_vm2ros)
+[0.833s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(sequence_controller)
+[0.833s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/sequence_controller' for CMake module files
+[0.837s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/sequence_controller' for CMake config files
+[0.838s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/Robotics/ros2_ws/build/sequence_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/ubuntu/Robotics/ros2_ws/build/sequence_controller
+[0.838s] Level 1:colcon.colcon_core.shell:create_environment_hook('sequence_controller', 'cmake_prefix_path')
+[0.839s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/Robotics/ros2_ws/install/sequence_controller/share/sequence_controller/hook/cmake_prefix_path.ps1'
+[0.840s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/Robotics/ros2_ws/install/sequence_controller/share/sequence_controller/hook/cmake_prefix_path.dsv'
+[0.841s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/Robotics/ros2_ws/install/sequence_controller/share/sequence_controller/hook/cmake_prefix_path.sh'
+[0.842s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/sequence_controller/lib'
+[0.842s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/sequence_controller/bin'
+[0.842s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/sequence_controller/lib/pkgconfig/sequence_controller.pc'
+[0.843s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/sequence_controller/lib/python3.12/site-packages'
+[0.844s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/sequence_controller/bin'
+[0.844s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/Robotics/ros2_ws/install/sequence_controller/share/sequence_controller/package.ps1'
+[0.845s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/Robotics/ros2_ws/install/sequence_controller/share/sequence_controller/package.dsv'
+[0.846s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/Robotics/ros2_ws/install/sequence_controller/share/sequence_controller/package.sh'
+[0.847s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/Robotics/ros2_ws/install/sequence_controller/share/sequence_controller/package.bash'
+[0.848s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/Robotics/ros2_ws/install/sequence_controller/share/sequence_controller/package.zsh'
+[0.849s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/Robotics/ros2_ws/install/sequence_controller/share/colcon-core/packages/sequence_controller)
+[0.850s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(sequence_controller)
+[0.850s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/sequence_controller' for CMake module files
+[0.852s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/sequence_controller' for CMake config files
+[0.853s] Level 1:colcon.colcon_core.shell:create_environment_hook('sequence_controller', 'cmake_prefix_path')
+[0.853s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/Robotics/ros2_ws/install/sequence_controller/share/sequence_controller/hook/cmake_prefix_path.ps1'
+[0.854s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/Robotics/ros2_ws/install/sequence_controller/share/sequence_controller/hook/cmake_prefix_path.dsv'
+[0.854s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/Robotics/ros2_ws/install/sequence_controller/share/sequence_controller/hook/cmake_prefix_path.sh'
+[0.855s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/sequence_controller/lib'
+[0.855s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/sequence_controller/bin'
+[0.855s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/sequence_controller/lib/pkgconfig/sequence_controller.pc'
+[0.855s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/sequence_controller/lib/python3.12/site-packages'
+[0.856s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/sequence_controller/bin'
+[0.857s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/Robotics/ros2_ws/install/sequence_controller/share/sequence_controller/package.ps1'
+[0.858s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/Robotics/ros2_ws/install/sequence_controller/share/sequence_controller/package.dsv'
+[0.859s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/Robotics/ros2_ws/install/sequence_controller/share/sequence_controller/package.sh'
+[0.860s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/Robotics/ros2_ws/install/sequence_controller/share/sequence_controller/package.bash'
+[0.861s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/Robotics/ros2_ws/install/sequence_controller/share/sequence_controller/package.zsh'
+[0.862s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/Robotics/ros2_ws/install/sequence_controller/share/colcon-core/packages/sequence_controller)
+[0.864s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(image_tools)
+[0.865s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/image_tools' for CMake module files
+[0.869s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/image_tools' for CMake config files
+[0.870s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/Robotics/ros2_ws/build/image_tools' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/ubuntu/Robotics/ros2_ws/build/image_tools
+[0.871s] Level 1:colcon.colcon_core.shell:create_environment_hook('image_tools', 'cmake_prefix_path')
+[0.871s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/Robotics/ros2_ws/install/image_tools/share/image_tools/hook/cmake_prefix_path.ps1'
+[0.872s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/Robotics/ros2_ws/install/image_tools/share/image_tools/hook/cmake_prefix_path.dsv'
+[0.873s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/Robotics/ros2_ws/install/image_tools/share/image_tools/hook/cmake_prefix_path.sh'
+[0.874s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/image_tools/lib'
+[0.874s] Level 1:colcon.colcon_core.shell:create_environment_hook('image_tools', 'ld_library_path_lib')
+[0.874s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/Robotics/ros2_ws/install/image_tools/share/image_tools/hook/ld_library_path_lib.ps1'
+[0.875s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/Robotics/ros2_ws/install/image_tools/share/image_tools/hook/ld_library_path_lib.dsv'
+[0.875s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/Robotics/ros2_ws/install/image_tools/share/image_tools/hook/ld_library_path_lib.sh'
+[0.875s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/image_tools/bin'
+[0.875s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/image_tools/lib/pkgconfig/image_tools.pc'
+[0.876s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/image_tools/lib/python3.12/site-packages'
+[0.876s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/image_tools/bin'
+[0.877s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/Robotics/ros2_ws/install/image_tools/share/image_tools/package.ps1'
+[0.877s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/Robotics/ros2_ws/install/image_tools/share/image_tools/package.dsv'
+[0.878s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/Robotics/ros2_ws/install/image_tools/share/image_tools/package.sh'
+[0.878s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/Robotics/ros2_ws/install/image_tools/share/image_tools/package.bash'
+[0.879s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/Robotics/ros2_ws/install/image_tools/share/image_tools/package.zsh'
+[0.879s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/Robotics/ros2_ws/install/image_tools/share/colcon-core/packages/image_tools)
+[0.880s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(image_tools)
+[0.880s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/image_tools' for CMake module files
+[0.881s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/image_tools' for CMake config files
+[0.882s] Level 1:colcon.colcon_core.shell:create_environment_hook('image_tools', 'cmake_prefix_path')
+[0.882s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/Robotics/ros2_ws/install/image_tools/share/image_tools/hook/cmake_prefix_path.ps1'
+[0.883s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/Robotics/ros2_ws/install/image_tools/share/image_tools/hook/cmake_prefix_path.dsv'
+[0.884s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/Robotics/ros2_ws/install/image_tools/share/image_tools/hook/cmake_prefix_path.sh'
+[0.885s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/image_tools/lib'
+[0.885s] Level 1:colcon.colcon_core.shell:create_environment_hook('image_tools', 'ld_library_path_lib')
+[0.885s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/Robotics/ros2_ws/install/image_tools/share/image_tools/hook/ld_library_path_lib.ps1'
+[0.886s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/Robotics/ros2_ws/install/image_tools/share/image_tools/hook/ld_library_path_lib.dsv'
+[0.887s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/Robotics/ros2_ws/install/image_tools/share/image_tools/hook/ld_library_path_lib.sh'
+[0.887s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/image_tools/bin'
+[0.888s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/image_tools/lib/pkgconfig/image_tools.pc'
+[0.888s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/image_tools/lib/python3.12/site-packages'
+[0.889s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/image_tools/bin'
+[0.889s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/Robotics/ros2_ws/install/image_tools/share/image_tools/package.ps1'
+[0.890s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/Robotics/ros2_ws/install/image_tools/share/image_tools/package.dsv'
+[0.891s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/Robotics/ros2_ws/install/image_tools/share/image_tools/package.sh'
+[0.892s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/Robotics/ros2_ws/install/image_tools/share/image_tools/package.bash'
+[0.892s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/Robotics/ros2_ws/install/image_tools/share/image_tools/package.zsh'
+[0.893s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/Robotics/ros2_ws/install/image_tools/share/colcon-core/packages/image_tools)
+[0.893s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(relbot_adapter)
+[0.894s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/relbot_adapter' for CMake module files
+[0.896s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/Robotics/ros2_ws/build/relbot_adapter' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/ubuntu/Robotics/ros2_ws/build/relbot_adapter
+[0.896s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/relbot_adapter' for CMake config files
+[0.897s] Level 1:colcon.colcon_core.shell:create_environment_hook('relbot_adapter', 'cmake_prefix_path')
+[0.897s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/Robotics/ros2_ws/install/relbot_adapter/share/relbot_adapter/hook/cmake_prefix_path.ps1'
+[0.898s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/Robotics/ros2_ws/install/relbot_adapter/share/relbot_adapter/hook/cmake_prefix_path.dsv'
+[0.899s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/Robotics/ros2_ws/install/relbot_adapter/share/relbot_adapter/hook/cmake_prefix_path.sh'
+[0.900s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/relbot_adapter/lib'
+[0.900s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/relbot_adapter/bin'
+[0.900s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/relbot_adapter/lib/pkgconfig/relbot_adapter.pc'
+[0.901s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/relbot_adapter/lib/python3.12/site-packages'
+[0.902s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/relbot_adapter/bin'
+[0.902s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/Robotics/ros2_ws/install/relbot_adapter/share/relbot_adapter/package.ps1'
+[0.903s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/Robotics/ros2_ws/install/relbot_adapter/share/relbot_adapter/package.dsv'
+[0.904s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/Robotics/ros2_ws/install/relbot_adapter/share/relbot_adapter/package.sh'
+[0.905s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/Robotics/ros2_ws/install/relbot_adapter/share/relbot_adapter/package.bash'
+[0.905s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/Robotics/ros2_ws/install/relbot_adapter/share/relbot_adapter/package.zsh'
+[0.906s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/Robotics/ros2_ws/install/relbot_adapter/share/colcon-core/packages/relbot_adapter)
+[0.907s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(relbot_adapter)
+[0.907s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/relbot_adapter' for CMake module files
+[0.908s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/relbot_adapter' for CMake config files
+[0.908s] Level 1:colcon.colcon_core.shell:create_environment_hook('relbot_adapter', 'cmake_prefix_path')
+[0.908s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/Robotics/ros2_ws/install/relbot_adapter/share/relbot_adapter/hook/cmake_prefix_path.ps1'
+[0.909s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/Robotics/ros2_ws/install/relbot_adapter/share/relbot_adapter/hook/cmake_prefix_path.dsv'
+[0.910s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/Robotics/ros2_ws/install/relbot_adapter/share/relbot_adapter/hook/cmake_prefix_path.sh'
+[0.911s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/relbot_adapter/lib'
+[0.911s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/relbot_adapter/bin'
+[0.911s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/relbot_adapter/lib/pkgconfig/relbot_adapter.pc'
+[0.912s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/relbot_adapter/lib/python3.12/site-packages'
+[0.912s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/relbot_adapter/bin'
+[0.913s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/Robotics/ros2_ws/install/relbot_adapter/share/relbot_adapter/package.ps1'
+[0.913s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/Robotics/ros2_ws/install/relbot_adapter/share/relbot_adapter/package.dsv'
+[0.914s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/Robotics/ros2_ws/install/relbot_adapter/share/relbot_adapter/package.sh'
+[0.915s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/Robotics/ros2_ws/install/relbot_adapter/share/relbot_adapter/package.bash'
+[0.915s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/Robotics/ros2_ws/install/relbot_adapter/share/relbot_adapter/package.zsh'
+[0.916s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/Robotics/ros2_ws/install/relbot_adapter/share/colcon-core/packages/relbot_adapter)
+[1.166s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/Robotics/ros2_ws/build/relbot_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/Robotics/ros2_ws/build/relbot_msgs -- -j12 -l12
+[1.168s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/Robotics/ros2_ws/build/relbot_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/ubuntu/Robotics/ros2_ws/build/relbot_msgs
+[1.243s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(relbot_msgs)
+[1.243s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/Robotics/ros2_ws/build/relbot_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/ubuntu/Robotics/ros2_ws/build/relbot_msgs
+[1.243s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/relbot_msgs' for CMake module files
+[1.244s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/relbot_msgs' for CMake config files
+[1.245s] Level 1:colcon.colcon_core.shell:create_environment_hook('relbot_msgs', 'cmake_prefix_path')
+[1.245s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/share/relbot_msgs/hook/cmake_prefix_path.ps1'
+[1.246s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/share/relbot_msgs/hook/cmake_prefix_path.dsv'
+[1.246s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/share/relbot_msgs/hook/cmake_prefix_path.sh'
+[1.246s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/lib'
+[1.247s] Level 1:colcon.colcon_core.shell:create_environment_hook('relbot_msgs', 'ld_library_path_lib')
+[1.247s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/share/relbot_msgs/hook/ld_library_path_lib.ps1'
+[1.247s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/share/relbot_msgs/hook/ld_library_path_lib.dsv'
+[1.247s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/share/relbot_msgs/hook/ld_library_path_lib.sh'
+[1.248s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/bin'
+[1.248s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/lib/pkgconfig/relbot_msgs.pc'
+[1.248s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/lib/python3.12/site-packages'
+[1.248s] Level 1:colcon.colcon_core.shell:create_environment_hook('relbot_msgs', 'pythonpath')
+[1.249s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/share/relbot_msgs/hook/pythonpath.ps1'
+[1.249s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/share/relbot_msgs/hook/pythonpath.dsv'
+[1.249s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/share/relbot_msgs/hook/pythonpath.sh'
+[1.250s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/bin'
+[1.250s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/share/relbot_msgs/package.ps1'
+[1.251s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/share/relbot_msgs/package.dsv'
+[1.251s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/share/relbot_msgs/package.sh'
+[1.252s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/share/relbot_msgs/package.bash'
+[1.252s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/share/relbot_msgs/package.zsh'
+[1.253s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/share/colcon-core/packages/relbot_msgs)
+[1.253s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(relbot_msgs)
+[1.254s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/relbot_msgs' for CMake module files
+[1.254s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/relbot_msgs' for CMake config files
+[1.255s] Level 1:colcon.colcon_core.shell:create_environment_hook('relbot_msgs', 'cmake_prefix_path')
+[1.255s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/share/relbot_msgs/hook/cmake_prefix_path.ps1'
+[1.255s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/share/relbot_msgs/hook/cmake_prefix_path.dsv'
+[1.256s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/share/relbot_msgs/hook/cmake_prefix_path.sh'
+[1.256s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/lib'
+[1.256s] Level 1:colcon.colcon_core.shell:create_environment_hook('relbot_msgs', 'ld_library_path_lib')
+[1.257s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/share/relbot_msgs/hook/ld_library_path_lib.ps1'
+[1.257s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/share/relbot_msgs/hook/ld_library_path_lib.dsv'
+[1.257s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/share/relbot_msgs/hook/ld_library_path_lib.sh'
+[1.258s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/bin'
+[1.258s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/lib/pkgconfig/relbot_msgs.pc'
+[1.258s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/lib/python3.12/site-packages'
+[1.258s] Level 1:colcon.colcon_core.shell:create_environment_hook('relbot_msgs', 'pythonpath')
+[1.258s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/share/relbot_msgs/hook/pythonpath.ps1'
+[1.259s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/share/relbot_msgs/hook/pythonpath.dsv'
+[1.259s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/share/relbot_msgs/hook/pythonpath.sh'
+[1.260s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/bin'
+[1.260s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/share/relbot_msgs/package.ps1'
+[1.261s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/share/relbot_msgs/package.dsv'
+[1.262s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/share/relbot_msgs/package.sh'
+[1.262s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/share/relbot_msgs/package.bash'
+[1.263s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/share/relbot_msgs/package.zsh'
+[1.263s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/share/colcon-core/packages/relbot_msgs)
+[1.264s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ubuntu/Robotics/ros2_ws/src/relbot_simulator' with build type 'ament_cmake'
+[1.264s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ubuntu/Robotics/ros2_ws/src/relbot_simulator'
+[1.264s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.264s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.439s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/Robotics/ros2_ws/build/relbot_simulator': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/Robotics/ros2_ws/build/relbot_simulator -- -j12 -l12
+[13.674s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/Robotics/ros2_ws/build/object_tracker' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/Robotics/ros2_ws/build/object_tracker -- -j12 -l12
+[13.676s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/Robotics/ros2_ws/build/object_tracker': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/ubuntu/Robotics/ros2_ws/build/object_tracker
+[13.701s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(object_tracker)
+[13.701s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/object_tracker' for CMake module files
+[13.702s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/Robotics/ros2_ws/build/object_tracker' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/ubuntu/Robotics/ros2_ws/build/object_tracker
+[13.703s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/object_tracker' for CMake config files
+[13.703s] Level 1:colcon.colcon_core.shell:create_environment_hook('object_tracker', 'cmake_prefix_path')
+[13.703s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/Robotics/ros2_ws/install/object_tracker/share/object_tracker/hook/cmake_prefix_path.ps1'
+[13.704s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/Robotics/ros2_ws/install/object_tracker/share/object_tracker/hook/cmake_prefix_path.dsv'
+[13.704s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/Robotics/ros2_ws/install/object_tracker/share/object_tracker/hook/cmake_prefix_path.sh'
+[13.705s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/object_tracker/lib'
+[13.705s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/object_tracker/bin'
+[13.705s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/object_tracker/lib/pkgconfig/object_tracker.pc'
+[13.705s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/object_tracker/lib/python3.12/site-packages'
+[13.706s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/object_tracker/bin'
+[13.706s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/Robotics/ros2_ws/install/object_tracker/share/object_tracker/package.ps1'
+[13.706s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/Robotics/ros2_ws/install/object_tracker/share/object_tracker/package.dsv'
+[13.707s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/Robotics/ros2_ws/install/object_tracker/share/object_tracker/package.sh'
+[13.707s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/Robotics/ros2_ws/install/object_tracker/share/object_tracker/package.bash'
+[13.708s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/Robotics/ros2_ws/install/object_tracker/share/object_tracker/package.zsh'
+[13.708s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/Robotics/ros2_ws/install/object_tracker/share/colcon-core/packages/object_tracker)
+[13.709s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(object_tracker)
+[13.709s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/object_tracker' for CMake module files
+[13.709s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/object_tracker' for CMake config files
+[13.710s] Level 1:colcon.colcon_core.shell:create_environment_hook('object_tracker', 'cmake_prefix_path')
+[13.710s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/Robotics/ros2_ws/install/object_tracker/share/object_tracker/hook/cmake_prefix_path.ps1'
+[13.710s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/Robotics/ros2_ws/install/object_tracker/share/object_tracker/hook/cmake_prefix_path.dsv'
+[13.711s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/Robotics/ros2_ws/install/object_tracker/share/object_tracker/hook/cmake_prefix_path.sh'
+[13.711s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/object_tracker/lib'
+[13.711s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/object_tracker/bin'
+[13.712s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/object_tracker/lib/pkgconfig/object_tracker.pc'
+[13.712s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/object_tracker/lib/python3.12/site-packages'
+[13.712s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/object_tracker/bin'
+[13.712s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/Robotics/ros2_ws/install/object_tracker/share/object_tracker/package.ps1'
+[13.713s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/Robotics/ros2_ws/install/object_tracker/share/object_tracker/package.dsv'
+[13.714s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/Robotics/ros2_ws/install/object_tracker/share/object_tracker/package.sh'
+[13.714s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/Robotics/ros2_ws/install/object_tracker/share/object_tracker/package.bash'
+[13.714s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/Robotics/ros2_ws/install/object_tracker/share/object_tracker/package.zsh'
+[13.715s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/Robotics/ros2_ws/install/object_tracker/share/colcon-core/packages/object_tracker)
+[20.146s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/Robotics/ros2_ws/build/relbot_simulator' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/Robotics/ros2_ws/build/relbot_simulator -- -j12 -l12
+[20.148s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/Robotics/ros2_ws/build/relbot_simulator': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/ubuntu/Robotics/ros2_ws/build/relbot_simulator
+[20.503s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(relbot_simulator)
+[20.504s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/relbot_simulator' for CMake module files
+[20.504s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/Robotics/ros2_ws/build/relbot_simulator' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/ubuntu/Robotics/ros2_ws/build/relbot_simulator
+[20.505s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/relbot_simulator' for CMake config files
+[20.505s] Level 1:colcon.colcon_core.shell:create_environment_hook('relbot_simulator', 'cmake_prefix_path')
+[20.505s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/Robotics/ros2_ws/install/relbot_simulator/share/relbot_simulator/hook/cmake_prefix_path.ps1'
+[20.506s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/Robotics/ros2_ws/install/relbot_simulator/share/relbot_simulator/hook/cmake_prefix_path.dsv'
+[20.507s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/Robotics/ros2_ws/install/relbot_simulator/share/relbot_simulator/hook/cmake_prefix_path.sh'
+[20.507s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/relbot_simulator/lib'
+[20.507s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/relbot_simulator/bin'
+[20.507s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/relbot_simulator/lib/pkgconfig/relbot_simulator.pc'
+[20.507s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/relbot_simulator/lib/python3.12/site-packages'
+[20.508s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/relbot_simulator/bin'
+[20.508s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/Robotics/ros2_ws/install/relbot_simulator/share/relbot_simulator/package.ps1'
+[20.508s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/Robotics/ros2_ws/install/relbot_simulator/share/relbot_simulator/package.dsv'
+[20.509s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/Robotics/ros2_ws/install/relbot_simulator/share/relbot_simulator/package.sh'
+[20.509s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/Robotics/ros2_ws/install/relbot_simulator/share/relbot_simulator/package.bash'
+[20.510s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/Robotics/ros2_ws/install/relbot_simulator/share/relbot_simulator/package.zsh'
+[20.510s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/Robotics/ros2_ws/install/relbot_simulator/share/colcon-core/packages/relbot_simulator)
+[20.511s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(relbot_simulator)
+[20.511s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/relbot_simulator' for CMake module files
+[20.511s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/relbot_simulator' for CMake config files
+[20.512s] Level 1:colcon.colcon_core.shell:create_environment_hook('relbot_simulator', 'cmake_prefix_path')
+[20.512s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/Robotics/ros2_ws/install/relbot_simulator/share/relbot_simulator/hook/cmake_prefix_path.ps1'
+[20.512s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/Robotics/ros2_ws/install/relbot_simulator/share/relbot_simulator/hook/cmake_prefix_path.dsv'
+[20.513s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/Robotics/ros2_ws/install/relbot_simulator/share/relbot_simulator/hook/cmake_prefix_path.sh'
+[20.513s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/relbot_simulator/lib'
+[20.513s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/relbot_simulator/bin'
+[20.514s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/relbot_simulator/lib/pkgconfig/relbot_simulator.pc'
+[20.514s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/relbot_simulator/lib/python3.12/site-packages'
+[20.514s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Robotics/ros2_ws/install/relbot_simulator/bin'
+[20.514s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/Robotics/ros2_ws/install/relbot_simulator/share/relbot_simulator/package.ps1'
+[20.515s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/Robotics/ros2_ws/install/relbot_simulator/share/relbot_simulator/package.dsv'
+[20.515s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/Robotics/ros2_ws/install/relbot_simulator/share/relbot_simulator/package.sh'
+[20.516s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/Robotics/ros2_ws/install/relbot_simulator/share/relbot_simulator/package.bash'
+[20.516s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/Robotics/ros2_ws/install/relbot_simulator/share/relbot_simulator/package.zsh'
+[20.516s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/Robotics/ros2_ws/install/relbot_simulator/share/colcon-core/packages/relbot_simulator)
+[20.517s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[20.518s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[20.518s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[20.518s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[20.587s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[20.587s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[20.587s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[20.588s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[20.589s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Notifications was not provided by any .service files
+[20.589s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[20.589s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ubuntu/Robotics/ros2_ws/install/local_setup.ps1'
+[20.590s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ubuntu/Robotics/ros2_ws/install/_local_setup_util_ps1.py'
+[20.591s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ubuntu/Robotics/ros2_ws/install/setup.ps1'
+[20.592s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ubuntu/Robotics/ros2_ws/install/local_setup.sh'
+[20.593s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ubuntu/Robotics/ros2_ws/install/_local_setup_util_sh.py'
+[20.594s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ubuntu/Robotics/ros2_ws/install/setup.sh'
+[20.595s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ubuntu/Robotics/ros2_ws/install/local_setup.bash'
+[20.595s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ubuntu/Robotics/ros2_ws/install/setup.bash'
+[20.596s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ubuntu/Robotics/ros2_ws/install/local_setup.zsh'
+[20.597s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ubuntu/Robotics/ros2_ws/install/setup.zsh'

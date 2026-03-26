@@ -346,9 +346,6 @@ cam2image_vm2ros_LIB_DEPENDS:STATIC=general;rclcpp::rclcpp;general;sensor_msgs::
 //Value Computed by CMake
 cam2image_vm2ros_SOURCE_DIR:STATIC=/home/ubuntu/Robotics/ros2_ws/src/cam2image_vm2ros
 
-//The directory containing a CMake configuration file for chrono.
-chrono_DIR:PATH=chrono_DIR-NOTFOUND
-
 //The directory containing a CMake configuration file for class_loader.
 class_loader_DIR:PATH=/opt/ros/jazzy/share/class_loader/cmake
 

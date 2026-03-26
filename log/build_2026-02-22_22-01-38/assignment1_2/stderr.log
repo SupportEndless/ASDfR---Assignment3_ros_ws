@@ -1,8 +1,0 @@
-[01m[K/home/ubuntu/Robotics/ros2_ws/src/assignment1_2/src/setpoint_generator.cpp:[m[K In constructor ‘[01m[KSetpointGenerator::[01;32m[KSetpointGenerator[m[K()[m[K’:
-[01m[K/home/ubuntu/Robotics/ros2_ws/src/assignment1_2/src/setpoint_generator.cpp:14:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass SetpointGenerator[m[K’ has no member named ‘[01m[Kleft_wheel_offset_[m[K’; did you mean ‘[01m[Kleft_wheel_publisher_[m[K’?
-   14 |     this->[01;31m[Kleft_wheel_offset_[m[K = 0.2;     // radians
-      |           [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
-      |           [32m[Kleft_wheel_publisher_[m[K
-gmake[2]: *** [CMakeFiles/setpoint_generator.dir/build.make:76: CMakeFiles/setpoint_generator.dir/src/setpoint_generator.cpp.o] Error 1
-gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/setpoint_generator.dir/all] Error 2
-gmake: *** [Makefile:146: all] Error 2

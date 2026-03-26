@@ -1,3 +1,0 @@
-[ 28%] Built target cam2image
-[ 42%] [32mBuilding CXX object CMakeFiles/talker_listener_node.dir/src/image_brightness.cpp.o[0m
-[ 85%] Built target cam2image_vm2ros

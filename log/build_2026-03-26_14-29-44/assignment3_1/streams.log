@@ -1,0 +1,30 @@
+[0.282s] Invoking command in '/home/ubuntu/Robotics/ros2_ws/build/assignment3_1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/ubuntu/Robotics/ros2_ws/src/assignment3_1 -DCMAKE_INSTALL_PREFIX=/home/ubuntu/Robotics/ros2_ws/install/assignment3_1
+[2.061s] -- Found ament_cmake: 2.5.5 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[2.555s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[3.212s] -- Found ament_lint_auto: 0.17.4 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[3.456s] -- Added test 'lint_cmake' to check CMake code style
+[3.464s] -- Added test 'xmllint' to check XML markup files
+[3.473s] -- Configuring done (2.0s)
+[3.537s] -- Generating done (0.0s)
+[3.540s] -- Build files have been written to: /home/ubuntu/Robotics/ros2_ws/build/assignment3_1
+[3.748s] Invoked command in '/home/ubuntu/Robotics/ros2_ws/build/assignment3_1' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/ubuntu/Robotics/ros2_ws/src/assignment3_1 -DCMAKE_INSTALL_PREFIX=/home/ubuntu/Robotics/ros2_ws/install/assignment3_1
+[3.748s] Invoking command in '/home/ubuntu/Robotics/ros2_ws/build/assignment3_1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/Robotics/ros2_ws/build/assignment3_1 -- -j12 -l12
+[6.375s] Invoked command in '/home/ubuntu/Robotics/ros2_ws/build/assignment3_1' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/Robotics/ros2_ws/build/assignment3_1 -- -j12 -l12
+[6.394s] Invoking command in '/home/ubuntu/Robotics/ros2_ws/build/assignment3_1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/ubuntu/Robotics/ros2_ws/build/assignment3_1
+[6.408s] -- Install configuration: ""
+[6.410s] -- Installing: /home/ubuntu/Robotics/ros2_ws/install/assignment3_1/share/ament_index/resource_index/package_run_dependencies/assignment3_1
+[6.411s] -- Installing: /home/ubuntu/Robotics/ros2_ws/install/assignment3_1/share/ament_index/resource_index/parent_prefix_path/assignment3_1
+[6.412s] -- Installing: /home/ubuntu/Robotics/ros2_ws/install/assignment3_1/share/assignment3_1/environment/ament_prefix_path.sh
+[6.412s] -- Installing: /home/ubuntu/Robotics/ros2_ws/install/assignment3_1/share/assignment3_1/environment/ament_prefix_path.dsv
+[6.412s] -- Installing: /home/ubuntu/Robotics/ros2_ws/install/assignment3_1/share/assignment3_1/environment/path.sh
+[6.413s] -- Installing: /home/ubuntu/Robotics/ros2_ws/install/assignment3_1/share/assignment3_1/environment/path.dsv
+[6.413s] -- Installing: /home/ubuntu/Robotics/ros2_ws/install/assignment3_1/share/assignment3_1/local_setup.bash
+[6.414s] -- Installing: /home/ubuntu/Robotics/ros2_ws/install/assignment3_1/share/assignment3_1/local_setup.sh
+[6.414s] -- Installing: /home/ubuntu/Robotics/ros2_ws/install/assignment3_1/share/assignment3_1/local_setup.zsh
+[6.414s] -- Installing: /home/ubuntu/Robotics/ros2_ws/install/assignment3_1/share/assignment3_1/local_setup.dsv
+[6.415s] -- Installing: /home/ubuntu/Robotics/ros2_ws/install/assignment3_1/share/assignment3_1/package.dsv
+[6.416s] -- Installing: /home/ubuntu/Robotics/ros2_ws/install/assignment3_1/share/ament_index/resource_index/packages/assignment3_1
+[6.417s] -- Installing: /home/ubuntu/Robotics/ros2_ws/install/assignment3_1/share/assignment3_1/cmake/assignment3_1Config.cmake
+[6.417s] -- Installing: /home/ubuntu/Robotics/ros2_ws/install/assignment3_1/share/assignment3_1/cmake/assignment3_1Config-version.cmake
+[6.417s] -- Installing: /home/ubuntu/Robotics/ros2_ws/install/assignment3_1/share/assignment3_1/package.xml
+[6.423s] Invoked command in '/home/ubuntu/Robotics/ros2_ws/build/assignment3_1' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/ubuntu/Robotics/ros2_ws/build/assignment3_1

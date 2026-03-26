@@ -4,6 +4,7 @@
 
 // Normal packages
 #include <cv_bridge/cv_bridge.hpp>
+#include <fstream>
 
 // ROS2 specific packages
 #include <geometry_msgs/msg/point.hpp>
@@ -12,6 +13,9 @@
 #include "rclcpp/rclcpp.hpp"
 
 using std::placeholders::_1;
+
+// For output monitoring for this specific assignment
+std::vector<int> trackedCoGs; 
 
 class ObjectTracker : public rclcpp::Node
 {

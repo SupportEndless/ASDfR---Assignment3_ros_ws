@@ -1,0 +1,26 @@
+[0.063s] Invoking command in '/home/ubuntu/Robotics/ros2_ws/build/assignment1_1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/Robotics/ros2_ws/build/assignment1_1 -- -j12 -l12
+[0.194s] [ 33%] Built target image_brightness
+[0.197s] [ 66%] Built target brightness_receiver
+[0.208s] [100%] Built target object_position_indicator
+[0.277s] Invoked command in '/home/ubuntu/Robotics/ros2_ws/build/assignment1_1' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/Robotics/ros2_ws/build/assignment1_1 -- -j12 -l12
+[0.279s] Invoking command in '/home/ubuntu/Robotics/ros2_ws/build/assignment1_1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/ubuntu/Robotics/ros2_ws/build/assignment1_1
+[0.311s] -- Install configuration: ""
+[0.315s] -- Up-to-date: /home/ubuntu/Robotics/ros2_ws/install/assignment1_1/lib/assignment1_1/image_brightness
+[0.317s] -- Up-to-date: /home/ubuntu/Robotics/ros2_ws/install/assignment1_1/lib/assignment1_1/brightness_receiver
+[0.318s] -- Up-to-date: /home/ubuntu/Robotics/ros2_ws/install/assignment1_1/lib/assignment1_1/object_position_indicator
+[0.318s] -- Up-to-date: /home/ubuntu/Robotics/ros2_ws/install/assignment1_1/share/ament_index/resource_index/package_run_dependencies/assignment1_1
+[0.319s] -- Up-to-date: /home/ubuntu/Robotics/ros2_ws/install/assignment1_1/share/ament_index/resource_index/parent_prefix_path/assignment1_1
+[0.319s] -- Up-to-date: /home/ubuntu/Robotics/ros2_ws/install/assignment1_1/share/assignment1_1/environment/ament_prefix_path.sh
+[0.320s] -- Up-to-date: /home/ubuntu/Robotics/ros2_ws/install/assignment1_1/share/assignment1_1/environment/ament_prefix_path.dsv
+[0.320s] -- Up-to-date: /home/ubuntu/Robotics/ros2_ws/install/assignment1_1/share/assignment1_1/environment/path.sh
+[0.320s] -- Up-to-date: /home/ubuntu/Robotics/ros2_ws/install/assignment1_1/share/assignment1_1/environment/path.dsv
+[0.321s] -- Up-to-date: /home/ubuntu/Robotics/ros2_ws/install/assignment1_1/share/assignment1_1/local_setup.bash
+[0.321s] -- Up-to-date: /home/ubuntu/Robotics/ros2_ws/install/assignment1_1/share/assignment1_1/local_setup.sh
+[0.321s] -- Up-to-date: /home/ubuntu/Robotics/ros2_ws/install/assignment1_1/share/assignment1_1/local_setup.zsh
+[0.322s] -- Up-to-date: /home/ubuntu/Robotics/ros2_ws/install/assignment1_1/share/assignment1_1/local_setup.dsv
+[0.323s] -- Installing: /home/ubuntu/Robotics/ros2_ws/install/assignment1_1/share/assignment1_1/package.dsv
+[0.324s] -- Up-to-date: /home/ubuntu/Robotics/ros2_ws/install/assignment1_1/share/ament_index/resource_index/packages/assignment1_1
+[0.324s] -- Up-to-date: /home/ubuntu/Robotics/ros2_ws/install/assignment1_1/share/assignment1_1/cmake/assignment1_1Config.cmake
+[0.325s] -- Up-to-date: /home/ubuntu/Robotics/ros2_ws/install/assignment1_1/share/assignment1_1/cmake/assignment1_1Config-version.cmake
+[0.325s] -- Up-to-date: /home/ubuntu/Robotics/ros2_ws/install/assignment1_1/share/assignment1_1/package.xml
+[0.370s] Invoked command in '/home/ubuntu/Robotics/ros2_ws/build/assignment1_1' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/ubuntu/Robotics/ros2_ws/build/assignment1_1

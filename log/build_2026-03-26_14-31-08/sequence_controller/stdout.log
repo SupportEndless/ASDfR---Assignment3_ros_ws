@@ -1,0 +1,23 @@
+[100%] Built target sequence_controller
+-- Install configuration: ""
+-- Installing: /home/ubuntu/Robotics/ros2_ws/install/sequence_controller/lib/sequence_controller/sequence_controller
+-- Set non-toolchain portion of runtime path of "/home/ubuntu/Robotics/ros2_ws/install/sequence_controller/lib/sequence_controller/sequence_controller" to ""
+-- Installing: /home/ubuntu/Robotics/ros2_ws/install/sequence_controller/share/ament_index/resource_index/package_run_dependencies/sequence_controller
+-- Installing: /home/ubuntu/Robotics/ros2_ws/install/sequence_controller/share/ament_index/resource_index/parent_prefix_path/sequence_controller
+-- Installing: /home/ubuntu/Robotics/ros2_ws/install/sequence_controller/share/sequence_controller/environment/ament_prefix_path.sh
+-- Installing: /home/ubuntu/Robotics/ros2_ws/install/sequence_controller/share/sequence_controller/environment/ament_prefix_path.dsv
+-- Installing: /home/ubuntu/Robotics/ros2_ws/install/sequence_controller/share/sequence_controller/environment/path.sh
+-- Installing: /home/ubuntu/Robotics/ros2_ws/install/sequence_controller/share/sequence_controller/environment/path.dsv
+-- Installing: /home/ubuntu/Robotics/ros2_ws/install/sequence_controller/share/sequence_controller/local_setup.bash
+-- Installing: /home/ubuntu/Robotics/ros2_ws/install/sequence_controller/share/sequence_controller/local_setup.sh
+-- Installing: /home/ubuntu/Robotics/ros2_ws/install/sequence_controller/share/sequence_controller/local_setup.zsh
+-- Installing: /home/ubuntu/Robotics/ros2_ws/install/sequence_controller/share/sequence_controller/local_setup.dsv
+-- Installing: /home/ubuntu/Robotics/ros2_ws/install/sequence_controller/share/sequence_controller/package.dsv
+-- Installing: /home/ubuntu/Robotics/ros2_ws/install/sequence_controller/share/ament_index/resource_index/packages/sequence_controller
+-- Installing: /home/ubuntu/Robotics/ros2_ws/install/sequence_controller/share/sequence_controller/cmake/sequence_controllerConfig.cmake
+-- Installing: /home/ubuntu/Robotics/ros2_ws/install/sequence_controller/share/sequence_controller/cmake/sequence_controllerConfig-version.cmake
+-- Installing: /home/ubuntu/Robotics/ros2_ws/install/sequence_controller/share/sequence_controller/package.xml
+-- Installing: /home/ubuntu/Robotics/ros2_ws/install/sequence_controller/share/sequence_controller//launch
+-- Installing: /home/ubuntu/Robotics/ros2_ws/install/sequence_controller/share/sequence_controller//launch/__pycache__
+-- Installing: /home/ubuntu/Robotics/ros2_ws/install/sequence_controller/share/sequence_controller//launch/__pycache__/sequence_controller.launch.cpython-312.pyc
+-- Installing: /home/ubuntu/Robotics/ros2_ws/install/sequence_controller/share/sequence_controller//launch/sequence_controller.launch.py

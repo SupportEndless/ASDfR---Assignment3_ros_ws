@@ -1,0 +1,31 @@
+[0.039s] Invoking command in '/home/ubuntu/Robotics/ros2_ws/build/cam2image_vm2ros': /usr/bin/cmake /home/ubuntu/Robotics/ros2_ws/src/cam2image_vm2ros -DCMAKE_INSTALL_PREFIX=/home/ubuntu/Robotics/ros2_ws/install/cam2image_vm2ros
+[1.224s] -- The C compiler identification is GNU 13.3.0
+[3.203s] -- The CXX compiler identification is GNU 13.3.0
+[4.721s] -- Detecting C compiler ABI info
+[5.258s] -- Detecting C compiler ABI info - done
+[5.275s] -- Check for working C compiler: /usr/bin/cc - skipped
+[5.275s] -- Detecting C compile features
+[5.276s] -- Detecting C compile features - done
+[5.463s] -- Detecting CXX compiler ABI info
+[5.983s] -- Detecting CXX compiler ABI info - done
+[6.000s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[6.000s] -- Detecting CXX compile features
+[6.001s] -- Detecting CXX compile features - done
+[8.278s] [31mCMake Error at CMakeLists.txt:14 (find_package):
+[8.278s]   By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project
+[8.278s]   has asked CMake to find a package configuration file provided by
+[8.278s]   "ament_cmake", but CMake did not find one.
+[8.278s] 
+[8.278s]   Could not find a package configuration file provided by "ament_cmake" with
+[8.278s]   any of the following names:
+[8.278s] 
+[8.279s]     ament_cmakeConfig.cmake
+[8.279s]     ament_cmake-config.cmake
+[8.279s] 
+[8.279s]   Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set
+[8.279s]   "ament_cmake_DIR" to a directory containing one of the above files.  If
+[8.279s]   "ament_cmake" provides a separate development package or SDK, be sure it
+[8.279s]   has been installed.
+[8.279s] 
+[8.279s] [0m
+[8.279s] -- Configuring incomplete, errors occurred!
