@@ -19,6 +19,7 @@ class ObjectTracker : public rclcpp::Node
         ObjectTracker();
 
     private:
+
         // Private veriables
         double brightness_threshold_;
         

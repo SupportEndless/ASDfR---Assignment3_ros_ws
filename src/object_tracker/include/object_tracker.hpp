@@ -4,6 +4,7 @@
 
 // Normal packages
 #include <cv_bridge/cv_bridge.hpp>
+#include <fstream>
 
 // ROS2 specific packages
 #include <geometry_msgs/msg/point.hpp>
@@ -13,6 +14,9 @@
 
 using std::placeholders::_1;
 
+// For output monitoring for this specific assignment
+std::vector<int> trackedCoGs; 
+
 class ObjectTracker : public rclcpp::Node
 {
     public:
@@ -20,15 +24,8 @@ class ObjectTracker : public rclcpp::Node
 
     private:
 
-        // Struct for tracking
-        typedef struct{
-            int x;
-            int y;
-        }CogElement;
-
         // Private veriables
         double brightness_threshold_;
-        std::vector<CogElement> trackedCoGs;
         
         // Setting up publisher and subscriber
         rclcpp::Subscription<sensor_msgs::msg::Image>::SharedPtr image_subscriber_;

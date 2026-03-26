@@ -59,7 +59,7 @@ geometry_msgs::msg::Point ObjectTracker::calculate_CoG(sensor_msgs::msg::Image::
     out.y = y_total/num_pixels;
 
     // Put in tracker var
-    trackedCoGs.pushback({out.x, out.y});
+    trackedCoGs.push_back(out.x);
 
     return out;
 }
@@ -79,9 +79,14 @@ int main(int argc, char * argv[])
   rclcpp::spin(std::make_shared<ObjectTracker>());
   rclcpp::shutdown();
 
-  std::cout << "Tracked CoG output:" << std::endl;
-  for(uint64_t i = 0; i < trackedCoGs.size(); i++){
-    std::cout << trackedCoGs[i] << ",";
+  std::ofstream file("x_output.txt");
+  for (int i = 0; i < trackedCoGs.size(); i++) {
+    file << trackedCoGs[i];
+    
+    // Checking if this is the last entry, then skip the comma
+    if(i == trackedCoGs.size()-1) return;
+    file << ",";
+
   }
 
   return 0;
