@@ -32,7 +32,6 @@ void ObjectTracker::initialize_ros_parameters() {
 geometry_msgs::msg::Point ObjectTracker::calculate_CoG(sensor_msgs::msg::Image::SharedPtr img) {
     // Turning the image into a greyscale version
     cv_bridge::CvImagePtr greyscale_ptr = cv_bridge::toCvCopy(img, "mono8");
-    cv_bridge
 
     // Publish image_greyscale
     this->image_grayscale_publisher_->publish(*greyscale_ptr->toImageMsg());

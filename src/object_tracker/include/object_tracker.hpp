@@ -30,6 +30,7 @@ class ObjectTracker : public rclcpp::Node
         // Setting up publisher and subscriber
         rclcpp::Subscription<sensor_msgs::msg::Image>::SharedPtr image_subscriber_;
         rclcpp::Publisher<geometry_msgs::msg::Point>::SharedPtr brightness_publisher_;
+        rclcpp::Publisher<sensor_msgs::msg::Image>::SharedPtr image_grayscale_publisher_;
 
         // Functions
         void initialize_ros_parameters();                                                   // Sets ROS parrameters
