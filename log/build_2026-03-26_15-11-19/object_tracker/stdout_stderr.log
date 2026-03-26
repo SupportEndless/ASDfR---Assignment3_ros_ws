@@ -1,0 +1,13 @@
+[35m[1mConsolidate compiler generated dependencies of target object_tracker[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/object_tracker.dir/src/object_tracker.cpp.o[0m
+[01m[K/home/asdfr-33/ASDfR---Assignment3_ros_ws/src/object_tracker/src/object_tracker.cpp:[m[K In constructor ‘[01m[KObjectTracker::ObjectTracker()[m[K’:
+[01m[K/home/asdfr-33/ASDfR---Assignment3_ros_ws/src/object_tracker/src/object_tracker.cpp:20:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kimage_grayscale_publisher_[m[K’ was not declared in this scope
+   20 |     [01;31m[Kimage_grayscale_publisher_[m[K = this->create_publisher<sensor_msgs::msg::Image>(
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/asdfr-33/ASDfR---Assignment3_ros_ws/src/object_tracker/src/object_tracker.cpp:[m[K In member function ‘[01m[Kgeometry_msgs::msg::Point ObjectTracker::calculate_CoG(sensor_msgs::msg::Image_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/asdfr-33/ASDfR---Assignment3_ros_ws/src/object_tracker/src/object_tracker.cpp:38:5:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kthis[m[K’
+   38 |     [01;31m[Kthis[m[K->image_grayscale_publisher_->publish(*greyscale_ptr->toImageMsg());
+      |     [01;31m[K^~~~[m[K
+gmake[2]: *** [CMakeFiles/object_tracker.dir/build.make:76: CMakeFiles/object_tracker.dir/src/object_tracker.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/object_tracker.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,427 @@
+[0.000000] (-) TimerEvent: {}
+[0.001672] (-) JobUnselected: {'identifier': 'assignment1_1'}
+[0.002293] (-) JobUnselected: {'identifier': 'assignment1_2'}
+[0.002873] (-) JobUnselected: {'identifier': 'assignment3_1'}
+[0.003210] (-) JobUnselected: {'identifier': 'cam2image_vm2ros'}
+[0.003663] (-) JobUnselected: {'identifier': 'image_tools'}
+[0.004086] (-) JobUnselected: {'identifier': 'relbot_adapter'}
+[0.004509] (-) JobUnselected: {'identifier': 'relbot_msgs'}
+[0.004768] (-) JobUnselected: {'identifier': 'relbot_simulator'}
+[0.005202] (-) JobUnselected: {'identifier': 'sequence_controller'}
+[0.005827] (object_tracker) JobQueued: {'identifier': 'object_tracker', 'dependencies': OrderedDict()}
+[0.006112] (object_tracker) JobStarted: {'identifier': 'object_tracker'}
+[0.033165] (object_tracker) JobProgress: {'identifier': 'object_tracker', 'progress': 'cmake'}
+[0.035873] (object_tracker) JobProgress: {'identifier': 'object_tracker', 'progress': 'build'}
+[0.038202] (object_tracker) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/asdfr-33/ASDfR---Assignment3_ros_ws/build/object_tracker', '--', '-j3', '-l3'], 'cwd': '/home/asdfr-33/ASDfR---Assignment3_ros_ws/build/object_tracker', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'asdfr-33'), ('SSH_CLIENT', '10.0.100.237 61513 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/asdfr-33/.vscode-server/cli/servers/Stable-07ff9d6178ede9a1bd12ad3399074d726ebe6e43/server/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/asdfr-33/ASDfR---Assignment3_ros_ws/install/relbot_msgs/lib:/home/asdfr-33/ASDfR---Assignment3_ros_ws/install/image_tools/lib:/home/asdfr-33/ASDfR---Assignment3_ros_ws/install/cam2image_vm2ros/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/asdfr-33/.vscode-server/cli/servers/Stable-07ff9d6178ede9a1bd12ad3399074d726ebe6e43/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/asdfr-33'), ('OLDPWD', '/home/asdfr-33'), ('TERM_PROGRAM_VERSION', '1.112.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1033/vscode-ipc-a09bb36f-f377-4e59-a00c-2f3c2b320258.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/asdfr-33/.vscode-server/cli/servers/Stable-07ff9d6178ede9a1bd12ad3399074d726ebe6e43/server/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/asdfr-33/.vscode-server/cli/servers/Stable-07ff9d6178ede9a1bd12ad3399074d726ebe6e43/server/node'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1033/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/asdfr-33/ASDfR---Assignment3_ros_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'asdfr-33'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '7'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/home/asdfr-33/.vscode-server/cli/servers/Stable-07ff9d6178ede9a1bd12ad3399074d726ebe6e43/server/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/evl/bin:/opt/relbot-software/bin:/usr/evl/bin:/opt/relbot-software/bin'), ('XDG_RUNTIME_DIR', '/run/user/1033'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1033/vscode-git-d55da88ee9.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/asdfr-33/ASDfR---Assignment3_ros_ws/install/sequence_controller:/home/asdfr-33/ASDfR---Assignment3_ros_ws/install/relbot_simulator:/home/asdfr-33/ASDfR---Assignment3_ros_ws/install/relbot_msgs:/home/asdfr-33/ASDfR---Assignment3_ros_ws/install/relbot_adapter:/home/asdfr-33/ASDfR---Assignment3_ros_ws/install/object_tracker:/home/asdfr-33/ASDfR---Assignment3_ros_ws/install/image_tools:/home/asdfr-33/ASDfR---Assignment3_ros_ws/install/cam2image_vm2ros:/home/asdfr-33/ASDfR---Assignment3_ros_ws/install/assignment3_1:/home/asdfr-33/ASDfR---Assignment3_ros_ws/install/assignment1_2:/home/asdfr-33/ASDfR---Assignment3_ros_ws/install/assignment1_1:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/asdfr-33/ASDfR---Assignment3_ros_ws/build/object_tracker'), ('SSH_CONNECTION', '10.0.100.237 61513 10.0.28.108 22'), ('PYTHONPATH', '/home/asdfr-33/ASDfR---Assignment3_ros_ws/install/relbot_msgs/lib/python3.12/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/asdfr-33/ASDfR---Assignment3_ros_ws/install/sequence_controller:/home/asdfr-33/ASDfR---Assignment3_ros_ws/install/relbot_simulator:/home/asdfr-33/ASDfR---Assignment3_ros_ws/install/relbot_msgs:/home/asdfr-33/ASDfR---Assignment3_ros_ws/install/relbot_adapter:/home/asdfr-33/ASDfR---Assignment3_ros_ws/install/object_tracker:/home/asdfr-33/ASDfR---Assignment3_ros_ws/install/image_tools:/home/asdfr-33/ASDfR---Assignment3_ros_ws/install/cam2image_vm2ros:/home/asdfr-33/ASDfR---Assignment3_ros_ws/install/assignment3_1:/home/asdfr-33/ASDfR---Assignment3_ros_ws/install/assignment1_2:/home/asdfr-33/ASDfR---Assignment3_ros_ws/install/assignment1_1:/opt/ros/humble')]), 'shell': False}
+[0.099193] (-) TimerEvent: {}
+[0.152978] (object_tracker) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target object_tracker\x1b[0m\n'}
+[0.199346] (-) TimerEvent: {}
+[0.300558] (-) TimerEvent: {}
+[0.401786] (-) TimerEvent: {}
+[0.502645] (-) TimerEvent: {}
+[0.554625] (object_tracker) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/object_tracker.dir/src/object_tracker.cpp.o\x1b[0m\n'}
+[0.602833] (-) TimerEvent: {}
+[0.703743] (-) TimerEvent: {}
+[0.804635] (-) TimerEvent: {}
+[0.905638] (-) TimerEvent: {}
+[1.006611] (-) TimerEvent: {}
+[1.107522] (-) TimerEvent: {}
+[1.208479] (-) TimerEvent: {}
+[1.309461] (-) TimerEvent: {}
+[1.410402] (-) TimerEvent: {}
+[1.511399] (-) TimerEvent: {}
+[1.612340] (-) TimerEvent: {}
+[1.713348] (-) TimerEvent: {}
+[1.814307] (-) TimerEvent: {}
+[1.915293] (-) TimerEvent: {}
+[2.016311] (-) TimerEvent: {}
+[2.117259] (-) TimerEvent: {}
+[2.218285] (-) TimerEvent: {}
+[2.319273] (-) TimerEvent: {}
+[2.420305] (-) TimerEvent: {}
+[2.521217] (-) TimerEvent: {}
+[2.622228] (-) TimerEvent: {}
+[2.723291] (-) TimerEvent: {}
+[2.824207] (-) TimerEvent: {}
+[2.925246] (-) TimerEvent: {}
+[3.026232] (-) TimerEvent: {}
+[3.127369] (-) TimerEvent: {}
+[3.228316] (-) TimerEvent: {}
+[3.329278] (-) TimerEvent: {}
+[3.430253] (-) TimerEvent: {}
+[3.531242] (-) TimerEvent: {}
+[3.632209] (-) TimerEvent: {}
+[3.733193] (-) TimerEvent: {}
+[3.834387] (-) TimerEvent: {}
+[3.935370] (-) TimerEvent: {}
+[4.036429] (-) TimerEvent: {}
+[4.137382] (-) TimerEvent: {}
+[4.238334] (-) TimerEvent: {}
+[4.339337] (-) TimerEvent: {}
+[4.440274] (-) TimerEvent: {}
+[4.541241] (-) TimerEvent: {}
+[4.642259] (-) TimerEvent: {}
+[4.743324] (-) TimerEvent: {}
+[4.844247] (-) TimerEvent: {}
+[4.945211] (-) TimerEvent: {}
+[5.046225] (-) TimerEvent: {}
+[5.147273] (-) TimerEvent: {}
+[5.248275] (-) TimerEvent: {}
+[5.349329] (-) TimerEvent: {}
+[5.450277] (-) TimerEvent: {}
+[5.551289] (-) TimerEvent: {}
+[5.652283] (-) TimerEvent: {}
+[5.753240] (-) TimerEvent: {}
+[5.854187] (-) TimerEvent: {}
+[5.955295] (-) TimerEvent: {}
+[6.056219] (-) TimerEvent: {}
+[6.157160] (-) TimerEvent: {}
+[6.258147] (-) TimerEvent: {}
+[6.359119] (-) TimerEvent: {}
+[6.460047] (-) TimerEvent: {}
+[6.561029] (-) TimerEvent: {}
+[6.661988] (-) TimerEvent: {}
+[6.762955] (-) TimerEvent: {}
+[6.863909] (-) TimerEvent: {}
+[6.964856] (-) TimerEvent: {}
+[7.065792] (-) TimerEvent: {}
+[7.166750] (-) TimerEvent: {}
+[7.267682] (-) TimerEvent: {}
+[7.368672] (-) TimerEvent: {}
+[7.469682] (-) TimerEvent: {}
+[7.570691] (-) TimerEvent: {}
+[7.671626] (-) TimerEvent: {}
+[7.772580] (-) TimerEvent: {}
+[7.873562] (-) TimerEvent: {}
+[7.974524] (-) TimerEvent: {}
+[8.075518] (-) TimerEvent: {}
+[8.176493] (-) TimerEvent: {}
+[8.277495] (-) TimerEvent: {}
+[8.378470] (-) TimerEvent: {}
+[8.479454] (-) TimerEvent: {}
+[8.580425] (-) TimerEvent: {}
+[8.681402] (-) TimerEvent: {}
+[8.782557] (-) TimerEvent: {}
+[8.883536] (-) TimerEvent: {}
+[8.984478] (-) TimerEvent: {}
+[9.085469] (-) TimerEvent: {}
+[9.186541] (-) TimerEvent: {}
+[9.287561] (-) TimerEvent: {}
+[9.388561] (-) TimerEvent: {}
+[9.489493] (-) TimerEvent: {}
+[9.590473] (-) TimerEvent: {}
+[9.691491] (-) TimerEvent: {}
+[9.792424] (-) TimerEvent: {}
+[9.893370] (-) TimerEvent: {}
+[9.994304] (-) TimerEvent: {}
+[10.095290] (-) TimerEvent: {}
+[10.196237] (-) TimerEvent: {}
+[10.297168] (-) TimerEvent: {}
+[10.398135] (-) TimerEvent: {}
+[10.499137] (-) TimerEvent: {}
+[10.600096] (-) TimerEvent: {}
+[10.701052] (-) TimerEvent: {}
+[10.802008] (-) TimerEvent: {}
+[10.902993] (-) TimerEvent: {}
+[11.003943] (-) TimerEvent: {}
+[11.104940] (-) TimerEvent: {}
+[11.205929] (-) TimerEvent: {}
+[11.306923] (-) TimerEvent: {}
+[11.408019] (-) TimerEvent: {}
+[11.509283] (-) TimerEvent: {}
+[11.610256] (-) TimerEvent: {}
+[11.711254] (-) TimerEvent: {}
+[11.812217] (-) TimerEvent: {}
+[11.913162] (-) TimerEvent: {}
+[12.014093] (-) TimerEvent: {}
+[12.115079] (-) TimerEvent: {}
+[12.216111] (-) TimerEvent: {}
+[12.317089] (-) TimerEvent: {}
+[12.418099] (-) TimerEvent: {}
+[12.519115] (-) TimerEvent: {}
+[12.620103] (-) TimerEvent: {}
+[12.721088] (-) TimerEvent: {}
+[12.822099] (-) TimerEvent: {}
+[12.923114] (-) TimerEvent: {}
+[13.024071] (-) TimerEvent: {}
+[13.125171] (-) TimerEvent: {}
+[13.226140] (-) TimerEvent: {}
+[13.327158] (-) TimerEvent: {}
+[13.428323] (-) TimerEvent: {}
+[13.529284] (-) TimerEvent: {}
+[13.630234] (-) TimerEvent: {}
+[13.731223] (-) TimerEvent: {}
+[13.832172] (-) TimerEvent: {}
+[13.933131] (-) TimerEvent: {}
+[14.034081] (-) TimerEvent: {}
+[14.135074] (-) TimerEvent: {}
+[14.236054] (-) TimerEvent: {}
+[14.337085] (-) TimerEvent: {}
+[14.438031] (-) TimerEvent: {}
+[14.539003] (-) TimerEvent: {}
+[14.639941] (-) TimerEvent: {}
+[14.740885] (-) TimerEvent: {}
+[14.841847] (-) TimerEvent: {}
+[14.942812] (-) TimerEvent: {}
+[15.043769] (-) TimerEvent: {}
+[15.144720] (-) TimerEvent: {}
+[15.245676] (-) TimerEvent: {}
+[15.346693] (-) TimerEvent: {}
+[15.447619] (-) TimerEvent: {}
+[15.548545] (-) TimerEvent: {}
+[15.649532] (-) TimerEvent: {}
+[15.750492] (-) TimerEvent: {}
+[15.851511] (-) TimerEvent: {}
+[15.952455] (-) TimerEvent: {}
+[16.053409] (-) TimerEvent: {}
+[16.154374] (-) TimerEvent: {}
+[16.255717] (-) TimerEvent: {}
+[16.356628] (-) TimerEvent: {}
+[16.457559] (-) TimerEvent: {}
+[16.558520] (-) TimerEvent: {}
+[16.659498] (-) TimerEvent: {}
+[16.760436] (-) TimerEvent: {}
+[16.861445] (-) TimerEvent: {}
+[16.962452] (-) TimerEvent: {}
+[17.063437] (-) TimerEvent: {}
+[17.164405] (-) TimerEvent: {}
+[17.265317] (-) TimerEvent: {}
+[17.366481] (-) TimerEvent: {}
+[17.467460] (-) TimerEvent: {}
+[17.568412] (-) TimerEvent: {}
+[17.669339] (-) TimerEvent: {}
+[17.770348] (-) TimerEvent: {}
+[17.871354] (-) TimerEvent: {}
+[17.972312] (-) TimerEvent: {}
+[18.073267] (-) TimerEvent: {}
+[18.174224] (-) TimerEvent: {}
+[18.275201] (-) TimerEvent: {}
+[18.376114] (-) TimerEvent: {}
+[18.476967] (-) TimerEvent: {}
+[18.577820] (-) TimerEvent: {}
+[18.678726] (-) TimerEvent: {}
+[18.779599] (-) TimerEvent: {}
+[18.880538] (-) TimerEvent: {}
+[18.981538] (-) TimerEvent: {}
+[19.090863] (-) TimerEvent: {}
+[19.191834] (-) TimerEvent: {}
+[19.292820] (-) TimerEvent: {}
+[19.393817] (-) TimerEvent: {}
+[19.494912] (-) TimerEvent: {}
+[19.596456] (-) TimerEvent: {}
+[19.698052] (-) TimerEvent: {}
+[19.799113] (-) TimerEvent: {}
+[19.900100] (-) TimerEvent: {}
+[20.001073] (-) TimerEvent: {}
+[20.102001] (-) TimerEvent: {}
+[20.202970] (-) TimerEvent: {}
+[20.304028] (-) TimerEvent: {}
+[20.405332] (-) TimerEvent: {}
+[20.506453] (-) TimerEvent: {}
+[20.607499] (-) TimerEvent: {}
+[20.708549] (-) TimerEvent: {}
+[20.809731] (-) TimerEvent: {}
+[20.910737] (-) TimerEvent: {}
+[21.011684] (-) TimerEvent: {}
+[21.112622] (-) TimerEvent: {}
+[21.213588] (-) TimerEvent: {}
+[21.314547] (-) TimerEvent: {}
+[21.415556] (-) TimerEvent: {}
+[21.516494] (-) TimerEvent: {}
+[21.617448] (-) TimerEvent: {}
+[21.718434] (-) TimerEvent: {}
+[21.819395] (-) TimerEvent: {}
+[21.920407] (-) TimerEvent: {}
+[22.021444] (-) TimerEvent: {}
+[22.122479] (-) TimerEvent: {}
+[22.223520] (-) TimerEvent: {}
+[22.324520] (-) TimerEvent: {}
+[22.425515] (-) TimerEvent: {}
+[22.526476] (-) TimerEvent: {}
+[22.627511] (-) TimerEvent: {}
+[22.728542] (-) TimerEvent: {}
+[22.829547] (-) TimerEvent: {}
+[22.930553] (-) TimerEvent: {}
+[23.031619] (-) TimerEvent: {}
+[23.132626] (-) TimerEvent: {}
+[23.233606] (-) TimerEvent: {}
+[23.334562] (-) TimerEvent: {}
+[23.435623] (-) TimerEvent: {}
+[23.536697] (-) TimerEvent: {}
+[23.637670] (-) TimerEvent: {}
+[23.738678] (-) TimerEvent: {}
+[23.839691] (-) TimerEvent: {}
+[23.940640] (-) TimerEvent: {}
+[24.041655] (-) TimerEvent: {}
+[24.142615] (-) TimerEvent: {}
+[24.243627] (-) TimerEvent: {}
+[24.344576] (-) TimerEvent: {}
+[24.445522] (-) TimerEvent: {}
+[24.546471] (-) TimerEvent: {}
+[24.647483] (-) TimerEvent: {}
+[24.748431] (-) TimerEvent: {}
+[24.849375] (-) TimerEvent: {}
+[24.950340] (-) TimerEvent: {}
+[25.051320] (-) TimerEvent: {}
+[25.152238] (-) TimerEvent: {}
+[25.253172] (-) TimerEvent: {}
+[25.354115] (-) TimerEvent: {}
+[25.455189] (-) TimerEvent: {}
+[25.556403] (-) TimerEvent: {}
+[25.657352] (-) TimerEvent: {}
+[25.758301] (-) TimerEvent: {}
+[25.859281] (-) TimerEvent: {}
+[25.960214] (-) TimerEvent: {}
+[26.061166] (-) TimerEvent: {}
+[26.162120] (-) TimerEvent: {}
+[26.263129] (-) TimerEvent: {}
+[26.364064] (-) TimerEvent: {}
+[26.465011] (-) TimerEvent: {}
+[26.565959] (-) TimerEvent: {}
+[26.666908] (-) TimerEvent: {}
+[26.767835] (-) TimerEvent: {}
+[26.868757] (-) TimerEvent: {}
+[26.969696] (-) TimerEvent: {}
+[27.070699] (-) TimerEvent: {}
+[27.171632] (-) TimerEvent: {}
+[27.272615] (-) TimerEvent: {}
+[27.373553] (-) TimerEvent: {}
+[27.474502] (-) TimerEvent: {}
+[27.575466] (-) TimerEvent: {}
+[27.676408] (-) TimerEvent: {}
+[27.777344] (-) TimerEvent: {}
+[27.878295] (-) TimerEvent: {}
+[27.979299] (-) TimerEvent: {}
+[28.080431] (-) TimerEvent: {}
+[28.181357] (-) TimerEvent: {}
+[28.282276] (-) TimerEvent: {}
+[28.383251] (-) TimerEvent: {}
+[28.484197] (-) TimerEvent: {}
+[28.585112] (-) TimerEvent: {}
+[28.686090] (-) TimerEvent: {}
+[28.787084] (-) TimerEvent: {}
+[28.888052] (-) TimerEvent: {}
+[28.989011] (-) TimerEvent: {}
+[29.089999] (-) TimerEvent: {}
+[29.191020] (-) TimerEvent: {}
+[29.291979] (-) TimerEvent: {}
+[29.392925] (-) TimerEvent: {}
+[29.493870] (-) TimerEvent: {}
+[29.594833] (-) TimerEvent: {}
+[29.695763] (-) TimerEvent: {}
+[29.796707] (-) TimerEvent: {}
+[29.897678] (-) TimerEvent: {}
+[29.998674] (-) TimerEvent: {}
+[30.099616] (-) TimerEvent: {}
+[30.200537] (-) TimerEvent: {}
+[30.301484] (-) TimerEvent: {}
+[30.402455] (-) TimerEvent: {}
+[30.503444] (-) TimerEvent: {}
+[30.604440] (-) TimerEvent: {}
+[30.705590] (-) TimerEvent: {}
+[30.806577] (-) TimerEvent: {}
+[30.907602] (-) TimerEvent: {}
+[31.008564] (-) TimerEvent: {}
+[31.109491] (-) TimerEvent: {}
+[31.210419] (-) TimerEvent: {}
+[31.311417] (-) TimerEvent: {}
+[31.412338] (-) TimerEvent: {}
+[31.513266] (-) TimerEvent: {}
+[31.614219] (-) TimerEvent: {}
+[31.715188] (-) TimerEvent: {}
+[31.816097] (-) TimerEvent: {}
+[31.917100] (-) TimerEvent: {}
+[32.018061] (-) TimerEvent: {}
+[32.119051] (-) TimerEvent: {}
+[32.219987] (-) TimerEvent: {}
+[32.321054] (-) TimerEvent: {}
+[32.422140] (-) TimerEvent: {}
+[32.523146] (-) TimerEvent: {}
+[32.625076] (-) TimerEvent: {}
+[32.726151] (-) TimerEvent: {}
+[32.827085] (-) TimerEvent: {}
+[32.928064] (-) TimerEvent: {}
+[33.029021] (-) TimerEvent: {}
+[33.130104] (-) TimerEvent: {}
+[33.231099] (-) TimerEvent: {}
+[33.332029] (-) TimerEvent: {}
+[33.432959] (-) TimerEvent: {}
+[33.533908] (-) TimerEvent: {}
+[33.634882] (-) TimerEvent: {}
+[33.735817] (-) TimerEvent: {}
+[33.836762] (-) TimerEvent: {}
+[33.937704] (-) TimerEvent: {}
+[34.038687] (-) TimerEvent: {}
+[34.139655] (-) TimerEvent: {}
+[34.241060] (-) TimerEvent: {}
+[34.343189] (-) TimerEvent: {}
+[34.444561] (-) TimerEvent: {}
+[34.545582] (-) TimerEvent: {}
+[34.646903] (-) TimerEvent: {}
+[34.748570] (-) TimerEvent: {}
+[34.849391] (-) TimerEvent: {}
+[34.950162] (-) TimerEvent: {}
+[35.050947] (-) TimerEvent: {}
+[35.151701] (-) TimerEvent: {}
+[35.252510] (-) TimerEvent: {}
+[35.353310] (-) TimerEvent: {}
+[35.435597] (object_tracker) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable object_tracker\x1b[0m\n'}
+[35.453547] (-) TimerEvent: {}
+[35.554853] (-) TimerEvent: {}
+[35.656918] (-) TimerEvent: {}
+[35.758381] (-) TimerEvent: {}
+[35.859751] (-) TimerEvent: {}
+[35.960801] (-) TimerEvent: {}
+[36.062184] (-) TimerEvent: {}
+[36.163836] (-) TimerEvent: {}
+[36.265521] (-) TimerEvent: {}
+[36.367119] (-) TimerEvent: {}
+[36.468221] (-) TimerEvent: {}
+[36.569242] (-) TimerEvent: {}
+[36.670316] (-) TimerEvent: {}
+[36.771385] (-) TimerEvent: {}
+[36.872344] (-) TimerEvent: {}
+[36.973191] (-) TimerEvent: {}
+[37.074003] (-) TimerEvent: {}
+[37.174871] (-) TimerEvent: {}
+[37.275908] (-) TimerEvent: {}
+[37.377077] (-) TimerEvent: {}
+[37.478137] (-) TimerEvent: {}
+[37.579187] (-) TimerEvent: {}
+[37.680145] (-) TimerEvent: {}
+[37.780906] (-) TimerEvent: {}
+[37.881670] (-) TimerEvent: {}
+[37.982491] (-) TimerEvent: {}
+[38.083500] (-) TimerEvent: {}
+[38.184276] (-) TimerEvent: {}
+[38.234224] (object_tracker) StdoutLine: {'line': b'[100%] Built target object_tracker\n'}
+[38.267586] (object_tracker) CommandEnded: {'returncode': 0}
+[38.271293] (object_tracker) JobProgress: {'identifier': 'object_tracker', 'progress': 'install'}
+[38.284454] (-) TimerEvent: {}
+[38.298922] (object_tracker) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/asdfr-33/ASDfR---Assignment3_ros_ws/build/object_tracker'], 'cwd': '/home/asdfr-33/ASDfR---Assignment3_ros_ws/build/object_tracker', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'asdfr-33'), ('SSH_CLIENT', '10.0.100.237 61513 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/asdfr-33/.vscode-server/cli/servers/Stable-07ff9d6178ede9a1bd12ad3399074d726ebe6e43/server/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/asdfr-33/ASDfR---Assignment3_ros_ws/install/relbot_msgs/lib:/home/asdfr-33/ASDfR---Assignment3_ros_ws/install/image_tools/lib:/home/asdfr-33/ASDfR---Assignment3_ros_ws/install/cam2image_vm2ros/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/asdfr-33/.vscode-server/cli/servers/Stable-07ff9d6178ede9a1bd12ad3399074d726ebe6e43/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/asdfr-33'), ('OLDPWD', '/home/asdfr-33'), ('TERM_PROGRAM_VERSION', '1.112.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1033/vscode-ipc-a09bb36f-f377-4e59-a00c-2f3c2b320258.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/asdfr-33/.vscode-server/cli/servers/Stable-07ff9d6178ede9a1bd12ad3399074d726ebe6e43/server/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/asdfr-33/.vscode-server/cli/servers/Stable-07ff9d6178ede9a1bd12ad3399074d726ebe6e43/server/node'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1033/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/asdfr-33/ASDfR---Assignment3_ros_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'asdfr-33'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '7'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/home/asdfr-33/.vscode-server/cli/servers/Stable-07ff9d6178ede9a1bd12ad3399074d726ebe6e43/server/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/evl/bin:/opt/relbot-software/bin:/usr/evl/bin:/opt/relbot-software/bin'), ('XDG_RUNTIME_DIR', '/run/user/1033'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1033/vscode-git-d55da88ee9.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/asdfr-33/ASDfR---Assignment3_ros_ws/install/sequence_controller:/home/asdfr-33/ASDfR---Assignment3_ros_ws/install/relbot_simulator:/home/asdfr-33/ASDfR---Assignment3_ros_ws/install/relbot_msgs:/home/asdfr-33/ASDfR---Assignment3_ros_ws/install/relbot_adapter:/home/asdfr-33/ASDfR---Assignment3_ros_ws/install/object_tracker:/home/asdfr-33/ASDfR---Assignment3_ros_ws/install/image_tools:/home/asdfr-33/ASDfR---Assignment3_ros_ws/install/cam2image_vm2ros:/home/asdfr-33/ASDfR---Assignment3_ros_ws/install/assignment3_1:/home/asdfr-33/ASDfR---Assignment3_ros_ws/install/assignment1_2:/home/asdfr-33/ASDfR---Assignment3_ros_ws/install/assignment1_1:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/asdfr-33/ASDfR---Assignment3_ros_ws/build/object_tracker'), ('SSH_CONNECTION', '10.0.100.237 61513 10.0.28.108 22'), ('PYTHONPATH', '/home/asdfr-33/ASDfR---Assignment3_ros_ws/install/relbot_msgs/lib/python3.12/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/asdfr-33/ASDfR---Assignment3_ros_ws/install/sequence_controller:/home/asdfr-33/ASDfR---Assignment3_ros_ws/install/relbot_simulator:/home/asdfr-33/ASDfR---Assignment3_ros_ws/install/relbot_msgs:/home/asdfr-33/ASDfR---Assignment3_ros_ws/install/relbot_adapter:/home/asdfr-33/ASDfR---Assignment3_ros_ws/install/object_tracker:/home/asdfr-33/ASDfR---Assignment3_ros_ws/install/image_tools:/home/asdfr-33/ASDfR---Assignment3_ros_ws/install/cam2image_vm2ros:/home/asdfr-33/ASDfR---Assignment3_ros_ws/install/assignment3_1:/home/asdfr-33/ASDfR---Assignment3_ros_ws/install/assignment1_2:/home/asdfr-33/ASDfR---Assignment3_ros_ws/install/assignment1_1:/opt/ros/humble')]), 'shell': False}
+[38.325844] (object_tracker) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[38.327746] (object_tracker) StdoutLine: {'line': b'-- Installing: /home/asdfr-33/ASDfR---Assignment3_ros_ws/install/object_tracker/lib/object_tracker/object_tracker\n'}
+[38.384638] (-) TimerEvent: {}
+[38.479506] (object_tracker) StdoutLine: {'line': b'-- Set runtime path of "/home/asdfr-33/ASDfR---Assignment3_ros_ws/install/object_tracker/lib/object_tracker/object_tracker" to ""\n'}
+[38.481017] (object_tracker) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-33/ASDfR---Assignment3_ros_ws/install/object_tracker/include/\n'}
+[38.482894] (object_tracker) StdoutLine: {'line': b'-- Installing: /home/asdfr-33/ASDfR---Assignment3_ros_ws/install/object_tracker/include//object_tracker.hpp\n'}
+[38.484465] (object_tracker) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-33/ASDfR---Assignment3_ros_ws/install/object_tracker/share/ament_index/resource_index/package_run_dependencies/object_tracker\n'}
+[38.485624] (-) TimerEvent: {}
+[38.488726] (object_tracker) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-33/ASDfR---Assignment3_ros_ws/install/object_tracker/share/ament_index/resource_index/parent_prefix_path/object_tracker\n'}
+[38.490251] (object_tracker) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-33/ASDfR---Assignment3_ros_ws/install/object_tracker/share/object_tracker/environment/ament_prefix_path.sh\n'}
+[38.491942] (object_tracker) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-33/ASDfR---Assignment3_ros_ws/install/object_tracker/share/object_tracker/environment/ament_prefix_path.dsv\n'}
+[38.498679] (object_tracker) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-33/ASDfR---Assignment3_ros_ws/install/object_tracker/share/object_tracker/environment/path.sh\n'}
+[38.501362] (object_tracker) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-33/ASDfR---Assignment3_ros_ws/install/object_tracker/share/object_tracker/environment/path.dsv\n'}
+[38.502420] (object_tracker) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-33/ASDfR---Assignment3_ros_ws/install/object_tracker/share/object_tracker/local_setup.bash\n'}
+[38.503413] (object_tracker) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-33/ASDfR---Assignment3_ros_ws/install/object_tracker/share/object_tracker/local_setup.sh\n'}
+[38.504297] (object_tracker) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-33/ASDfR---Assignment3_ros_ws/install/object_tracker/share/object_tracker/local_setup.zsh\n'}
+[38.505168] (object_tracker) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-33/ASDfR---Assignment3_ros_ws/install/object_tracker/share/object_tracker/local_setup.dsv\n'}
+[38.506020] (object_tracker) StdoutLine: {'line': b'-- Installing: /home/asdfr-33/ASDfR---Assignment3_ros_ws/install/object_tracker/share/object_tracker/package.dsv\n'}
+[38.506966] (object_tracker) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-33/ASDfR---Assignment3_ros_ws/install/object_tracker/share/ament_index/resource_index/packages/object_tracker\n'}
+[38.507879] (object_tracker) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-33/ASDfR---Assignment3_ros_ws/install/object_tracker/share/object_tracker/cmake/object_trackerConfig.cmake\n'}
+[38.508743] (object_tracker) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-33/ASDfR---Assignment3_ros_ws/install/object_tracker/share/object_tracker/cmake/object_trackerConfig-version.cmake\n'}
+[38.509602] (object_tracker) StdoutLine: {'line': b'-- Up-to-date: /home/asdfr-33/ASDfR---Assignment3_ros_ws/install/object_tracker/share/object_tracker/package.xml\n'}
+[38.510459] (object_tracker) CommandEnded: {'returncode': 0}
+[38.585867] (-) TimerEvent: {}
+[38.606345] (object_tracker) JobEnded: {'identifier': 'object_tracker', 'rc': 0}
+[38.609217] (-) EventReactorShutdown: {}

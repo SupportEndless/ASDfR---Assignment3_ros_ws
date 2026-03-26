@@ -5,15 +5,15 @@ def generate_launch_description():
     return LaunchDescription([
         # First up, load camera
         Node(
-            package='image_tools',
-            executable='cam2image',
-            ros_arguments=['--params-file', 'src/image_tools/config/cam2image.yaml']
+            package='cam2image_vm2ros',
+            executable='cam2image'
+            # ros_arguments=['--params-file', 'src/cam2image_vm2ros/config/cam2image_relbot.yaml']
         # Then load the simulator and adapter
         ),
-        Node(
-            package='relbot_simulator',
-            executable='relbot_simulator'
-        ),
+        # Node(
+        #     package='relbot_simulator',
+        #     executable='relbot_simulator'
+        # ),
         Node(
             package='relbot_adapter',
             executable='relbot_adapter',

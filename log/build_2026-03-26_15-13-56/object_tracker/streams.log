@@ -1,0 +1,28 @@
+[0.039s] Invoking command in '/home/asdfr-33/ASDfR---Assignment3_ros_ws/build/object_tracker': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/asdfr-33/ASDfR---Assignment3_ros_ws/build/object_tracker -- -j3 -l3
+[0.147s] [35m[1mConsolidate compiler generated dependencies of target object_tracker[0m
+[0.549s] [ 50%] [32mBuilding CXX object CMakeFiles/object_tracker.dir/src/object_tracker.cpp.o[0m
+[35.430s] [100%] [32m[1mLinking CXX executable object_tracker[0m
+[38.229s] [100%] Built target object_tracker
+[38.262s] Invoked command in '/home/asdfr-33/ASDfR---Assignment3_ros_ws/build/object_tracker' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/asdfr-33/ASDfR---Assignment3_ros_ws/build/object_tracker -- -j3 -l3
+[38.296s] Invoking command in '/home/asdfr-33/ASDfR---Assignment3_ros_ws/build/object_tracker': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/asdfr-33/ASDfR---Assignment3_ros_ws/build/object_tracker
+[38.321s] -- Install configuration: ""
+[38.322s] -- Installing: /home/asdfr-33/ASDfR---Assignment3_ros_ws/install/object_tracker/lib/object_tracker/object_tracker
+[38.474s] -- Set runtime path of "/home/asdfr-33/ASDfR---Assignment3_ros_ws/install/object_tracker/lib/object_tracker/object_tracker" to ""
+[38.476s] -- Up-to-date: /home/asdfr-33/ASDfR---Assignment3_ros_ws/install/object_tracker/include/
+[38.477s] -- Installing: /home/asdfr-33/ASDfR---Assignment3_ros_ws/install/object_tracker/include//object_tracker.hpp
+[38.478s] -- Up-to-date: /home/asdfr-33/ASDfR---Assignment3_ros_ws/install/object_tracker/share/ament_index/resource_index/package_run_dependencies/object_tracker
+[38.483s] -- Up-to-date: /home/asdfr-33/ASDfR---Assignment3_ros_ws/install/object_tracker/share/ament_index/resource_index/parent_prefix_path/object_tracker
+[38.484s] -- Up-to-date: /home/asdfr-33/ASDfR---Assignment3_ros_ws/install/object_tracker/share/object_tracker/environment/ament_prefix_path.sh
+[38.491s] -- Up-to-date: /home/asdfr-33/ASDfR---Assignment3_ros_ws/install/object_tracker/share/object_tracker/environment/ament_prefix_path.dsv
+[38.494s] -- Up-to-date: /home/asdfr-33/ASDfR---Assignment3_ros_ws/install/object_tracker/share/object_tracker/environment/path.sh
+[38.495s] -- Up-to-date: /home/asdfr-33/ASDfR---Assignment3_ros_ws/install/object_tracker/share/object_tracker/environment/path.dsv
+[38.496s] -- Up-to-date: /home/asdfr-33/ASDfR---Assignment3_ros_ws/install/object_tracker/share/object_tracker/local_setup.bash
+[38.497s] -- Up-to-date: /home/asdfr-33/ASDfR---Assignment3_ros_ws/install/object_tracker/share/object_tracker/local_setup.sh
+[38.498s] -- Up-to-date: /home/asdfr-33/ASDfR---Assignment3_ros_ws/install/object_tracker/share/object_tracker/local_setup.zsh
+[38.499s] -- Up-to-date: /home/asdfr-33/ASDfR---Assignment3_ros_ws/install/object_tracker/share/object_tracker/local_setup.dsv
+[38.500s] -- Installing: /home/asdfr-33/ASDfR---Assignment3_ros_ws/install/object_tracker/share/object_tracker/package.dsv
+[38.501s] -- Up-to-date: /home/asdfr-33/ASDfR---Assignment3_ros_ws/install/object_tracker/share/ament_index/resource_index/packages/object_tracker
+[38.502s] -- Up-to-date: /home/asdfr-33/ASDfR---Assignment3_ros_ws/install/object_tracker/share/object_tracker/cmake/object_trackerConfig.cmake
+[38.503s] -- Up-to-date: /home/asdfr-33/ASDfR---Assignment3_ros_ws/install/object_tracker/share/object_tracker/cmake/object_trackerConfig-version.cmake
+[38.503s] -- Up-to-date: /home/asdfr-33/ASDfR---Assignment3_ros_ws/install/object_tracker/share/object_tracker/package.xml
+[38.504s] Invoked command in '/home/asdfr-33/ASDfR---Assignment3_ros_ws/build/object_tracker' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/asdfr-33/ASDfR---Assignment3_ros_ws/build/object_tracker
