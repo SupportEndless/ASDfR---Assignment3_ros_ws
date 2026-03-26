@@ -6,8 +6,8 @@ def generate_launch_description():
         # First up, load camera
         Node(
             package='cam2image_vm2ros',
-            executable='cam2image'
-            # ros_arguments=['--params-file', 'src/cam2image_vm2ros/config/cam2image_relbot.yaml']
+            executable='cam2image',
+            ros_arguments=['--params-file', 'src/cam2image_vm2ros/config/cam2image_relbot.yaml']
         # Then load the simulator and adapter
         ),
         # Node(
