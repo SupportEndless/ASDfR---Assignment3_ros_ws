@@ -17,6 +17,7 @@ class ObjectPositionIndicator : public rclcpp::Node
     {
         // Setting up publisher with Pose built-in
         publisher_ = this->create_publisher<geometry_msgs::msg::Pose>("CoG", 10);
+        
 
         // Setting up subscriber
         subscription_ = this->create_subscription<sensor_msgs::msg::Image>(
