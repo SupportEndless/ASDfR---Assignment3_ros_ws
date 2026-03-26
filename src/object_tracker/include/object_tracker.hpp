@@ -19,8 +19,16 @@ class ObjectTracker : public rclcpp::Node
         ObjectTracker();
 
     private:
+
+        // Struct for tracking
+        typedef struct{
+            int x;
+            int y;
+        }CogElement;
+
         // Private veriables
         double brightness_threshold_;
+        std::vector<CogElement> trackedCoGs;
         
         // Setting up publisher and subscriber
         rclcpp::Subscription<sensor_msgs::msg::Image>::SharedPtr image_subscriber_;
