@@ -1,7 +1,0 @@
-{
-  "package_name": "relbot_msgs",
-  "non_idl_tuples": [
-    "/home/ubuntu/Robotics/ros2_ws/src/relbot_msgs:msg/RelbotMotors.msg",
-    "/home/ubuntu/Robotics/ros2_ws/src/relbot_msgs:msg/RelbotMotorsStamped.msg"
-  ]
-}

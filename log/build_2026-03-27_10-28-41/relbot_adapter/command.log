@@ -1,1 +1,0 @@
-Invoking command in '/home/ubuntu/Robotics/ros2_ws/build/relbot_adapter': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/ubuntu/Robotics/ros2_ws/src/relbot_adapter -DCMAKE_INSTALL_PREFIX=/home/ubuntu/Robotics/ros2_ws/install/relbot_adapter
