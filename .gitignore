@@ -1,0 +1,4 @@
+# Build artifacts ignored, so that we always build locally
+build/
+instal/
+log/
