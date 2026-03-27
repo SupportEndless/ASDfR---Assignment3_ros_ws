@@ -10,6 +10,7 @@ file(REMOVE_RECURSE
   "rosidl_generator_cpp/relbot_msgs/msg/detail/relbot_motors_stamped__type_support.hpp"
   "rosidl_generator_cpp/relbot_msgs/msg/relbot_motors.hpp"
   "rosidl_generator_cpp/relbot_msgs/msg/relbot_motors_stamped.hpp"
+  "rosidl_generator_cpp/relbot_msgs/msg/rosidl_generator_cpp__visibility_control.hpp"
 )
 
 # Per-language clean rules from dependency scanning.

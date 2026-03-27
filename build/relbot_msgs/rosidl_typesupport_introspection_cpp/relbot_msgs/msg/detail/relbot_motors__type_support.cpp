@@ -9,6 +9,7 @@
 #include "rosidl_runtime_c/message_type_support_struct.h"
 #include "rosidl_typesupport_cpp/message_type_support.hpp"
 #include "rosidl_typesupport_interface/macros.h"
+#include "relbot_msgs/msg/detail/relbot_motors__functions.h"
 #include "relbot_msgs/msg/detail/relbot_motors__struct.hpp"
 #include "rosidl_typesupport_introspection_cpp/field_types.hpp"
 #include "rosidl_typesupport_introspection_cpp/identifier.hpp"
@@ -43,6 +44,7 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember RelbotMotors_
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_DOUBLE,  // type
     0,  // upper bound of string
     nullptr,  // members of sub message
+    false,  // is key
     false,  // is array
     0,  // array size
     false,  // is upper bound
@@ -60,6 +62,7 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember RelbotMotors_
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_DOUBLE,  // type
     0,  // upper bound of string
     nullptr,  // members of sub message
+    false,  // is key
     false,  // is array
     0,  // array size
     false,  // is upper bound
@@ -79,6 +82,7 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMembers RelbotMotors
   "RelbotMotors",  // message name
   2,  // number of fields
   sizeof(relbot_msgs::msg::RelbotMotors),
+  false,  // has_any_key_member_
   RelbotMotors_message_member_array,  // message members
   RelbotMotors_init_function,  // function to initialize message memory (memory has to be allocated)
   RelbotMotors_fini_function  // function to terminate message instance (will not free memory)
@@ -88,6 +92,9 @@ static const rosidl_message_type_support_t RelbotMotors_message_type_support_han
   ::rosidl_typesupport_introspection_cpp::typesupport_identifier,
   &RelbotMotors_message_members,
   get_message_typesupport_handle_function,
+  &relbot_msgs__msg__RelbotMotors__get_type_hash,
+  &relbot_msgs__msg__RelbotMotors__get_type_description,
+  &relbot_msgs__msg__RelbotMotors__get_type_description_sources,
 };
 
 }  // namespace rosidl_typesupport_introspection_cpp

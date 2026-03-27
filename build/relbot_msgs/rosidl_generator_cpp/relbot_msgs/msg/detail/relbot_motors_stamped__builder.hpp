@@ -2,6 +2,9 @@
 // with input from relbot_msgs:msg/RelbotMotorsStamped.idl
 // generated code does not contain a copyright notice
 
+// IWYU pragma: private, include "relbot_msgs/msg/relbot_motors_stamped.hpp"
+
+
 #ifndef RELBOT_MSGS__MSG__DETAIL__RELBOT_MOTORS_STAMPED__BUILDER_HPP_
 #define RELBOT_MSGS__MSG__DETAIL__RELBOT_MOTORS_STAMPED__BUILDER_HPP_
 

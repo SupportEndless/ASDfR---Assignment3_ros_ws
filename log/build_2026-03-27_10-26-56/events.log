@@ -1,0 +1,498 @@
+[0.000000] (-) TimerEvent: {}
+[0.000223] (-) JobUnselected: {'identifier': 'assignment1_1'}
+[0.000268] (-) JobUnselected: {'identifier': 'assignment1_2'}
+[0.000293] (-) JobUnselected: {'identifier': 'assignment3_1'}
+[0.000314] (-) JobUnselected: {'identifier': 'cam2image_vm2ros'}
+[0.000333] (-) JobUnselected: {'identifier': 'image_tools'}
+[0.000351] (-) JobUnselected: {'identifier': 'object_tracker'}
+[0.000367] (-) JobUnselected: {'identifier': 'relbot_adapter'}
+[0.000384] (-) JobUnselected: {'identifier': 'relbot_simulator'}
+[0.000400] (-) JobUnselected: {'identifier': 'sequence_controller'}
+[0.000420] (relbot_msgs) JobQueued: {'identifier': 'relbot_msgs', 'dependencies': OrderedDict()}
+[0.000443] (relbot_msgs) JobStarted: {'identifier': 'relbot_msgs'}
+[0.022912] (relbot_msgs) JobProgress: {'identifier': 'relbot_msgs', 'progress': 'cmake'}
+[0.025639] (relbot_msgs) Command: {'cmd': ['/usr/bin/cmake', '/home/ubuntu/Robotics/ros2_ws/src/relbot_msgs', '-DCMAKE_INSTALL_PREFIX=/home/ubuntu/Robotics/ros2_ws/install/relbot_msgs'], 'cwd': '/home/ubuntu/Robotics/ros2_ws/build/relbot_msgs', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ubuntu', 'GIT_ASKPASS': '/home/ubuntu/.vscode-server/bin/07ff9d6178ede9a1bd12ad3399074d726ebe6e43/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/ubuntu', 'TERM_PROGRAM_VERSION': '1.112.0', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-a09fb72c-1c08-45f9-bf78-d0dc89aac9ac.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/ubuntu/.vscode-server/bin/07ff9d6178ede9a1bd12ad3399074d726ebe6e43/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/ubuntu/.vscode-server/bin/07ff9d6178ede9a1bd12ad3399074d726ebe6e43/node', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'WSL_DISTRO_NAME': 'Ubuntu-24.04', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ubuntu', 'NAME': 'Laptop-Rogier', 'WSL_INTEROP': '/run/WSL/699_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/opt/ros/jazzy/bin:/home/ubuntu/.vscode-server/bin/07ff9d6178ede9a1bd12ad3399074d726ebe6e43/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Users/rogie/AppData/Local/Programs/Microsoft VS Code:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/java8path:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/110/Tools/Binn/:/mnt/c/Program Files (x86)/Microsoft SQL Server/120/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/120/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/120/DTS/Binn/:/mnt/c/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/MATLAB/R2025b/bin:/mnt/c/Program Files (x86)/IVI Foundation/VISA/WinNT/Bin/:/mnt/c/Program Files/IVI Foundation/VISA/Win64/Bin/:/mnt/c/Program Files (x86)/IVI Foundation/VISA/WinNT/Bin:/mnt/d/PuTTy/:/mnt/d/Program Files/Git/cmd:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Program Files/NVIDIA Corporation/Nsight Compute 2024.3.2/:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR:/mnt/c/Users/rogie/AppData/Local/Programs/Python/Python39/:/mnt/c/Users/rogie/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/rogie/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/rogie/AppData/Local/GitHubDesktop/bin:/mnt/c/Users/rogie/AppData/Local/Muse Hub/lib:/mnt/c/Users/rogie/AppData/Local/Programs/Python/protoc/bin:/mnt/c/Users/rogie/AppData/Local/Programs/Python/Python39/Scripts:/mnt/c/msys64/ucrt64/bin:/mnt/c/xampp/php:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-d9b97315e9.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/ubuntu/Robotics/ros2_ws/build/relbot_msgs', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy', 'WSLENV': 'VSCODE_WSL_EXT_LOCATION/up'}), 'shell': False}
+[0.098674] (-) TimerEvent: {}
+[0.199560] (-) TimerEvent: {}
+[0.299946] (-) TimerEvent: {}
+[0.400340] (-) TimerEvent: {}
+[0.500752] (-) TimerEvent: {}
+[0.601090] (-) TimerEvent: {}
+[0.701470] (-) TimerEvent: {}
+[0.801789] (-) TimerEvent: {}
+[0.902320] (-) TimerEvent: {}
+[1.002687] (-) TimerEvent: {}
+[1.103203] (-) TimerEvent: {}
+[1.203816] (-) TimerEvent: {}
+[1.289352] (relbot_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[1.303992] (-) TimerEvent: {}
+[1.404307] (-) TimerEvent: {}
+[1.504725] (-) TimerEvent: {}
+[1.605098] (-) TimerEvent: {}
+[1.705439] (-) TimerEvent: {}
+[1.805761] (-) TimerEvent: {}
+[1.906583] (-) TimerEvent: {}
+[2.007460] (-) TimerEvent: {}
+[2.108366] (-) TimerEvent: {}
+[2.806913] (-) TimerEvent: {}
+[2.907215] (-) TimerEvent: {}
+[3.007790] (-) TimerEvent: {}
+[3.108144] (-) TimerEvent: {}
+[3.208516] (-) TimerEvent: {}
+[3.308954] (-) TimerEvent: {}
+[3.409275] (-) TimerEvent: {}
+[3.509899] (-) TimerEvent: {}
+[3.610315] (-) TimerEvent: {}
+[3.710808] (-) TimerEvent: {}
+[3.811299] (-) TimerEvent: {}
+[3.911824] (-) TimerEvent: {}
+[4.012319] (-) TimerEvent: {}
+[4.112694] (-) TimerEvent: {}
+[4.213084] (-) TimerEvent: {}
+[4.288069] (relbot_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[4.313259] (-) TimerEvent: {}
+[4.413610] (-) TimerEvent: {}
+[4.513953] (-) TimerEvent: {}
+[4.614266] (-) TimerEvent: {}
+[4.714583] (-) TimerEvent: {}
+[4.814975] (-) TimerEvent: {}
+[4.915322] (-) TimerEvent: {}
+[5.015696] (-) TimerEvent: {}
+[5.116069] (-) TimerEvent: {}
+[5.216434] (-) TimerEvent: {}
+[5.316894] (-) TimerEvent: {}
+[5.417228] (-) TimerEvent: {}
+[5.518270] (-) TimerEvent: {}
+[5.618616] (-) TimerEvent: {}
+[5.718982] (-) TimerEvent: {}
+[5.798197] (relbot_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[5.819105] (-) TimerEvent: {}
+[5.919414] (-) TimerEvent: {}
+[6.019796] (-) TimerEvent: {}
+[6.120550] (-) TimerEvent: {}
+[6.220972] (-) TimerEvent: {}
+[6.321568] (-) TimerEvent: {}
+[6.393861] (relbot_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[6.403577] (relbot_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[6.404710] (relbot_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[6.406960] (relbot_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[6.421752] (-) TimerEvent: {}
+[6.522101] (-) TimerEvent: {}
+[6.622457] (-) TimerEvent: {}
+[6.651304] (relbot_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[6.722632] (-) TimerEvent: {}
+[6.823054] (-) TimerEvent: {}
+[6.923482] (-) TimerEvent: {}
+[7.024014] (-) TimerEvent: {}
+[7.124402] (-) TimerEvent: {}
+[7.211252] (relbot_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[7.224316] (relbot_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[7.224562] (-) TimerEvent: {}
+[7.224940] (relbot_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[7.225386] (relbot_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[7.325529] (-) TimerEvent: {}
+[7.426427] (-) TimerEvent: {}
+[7.526867] (-) TimerEvent: {}
+[7.542163] (relbot_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.5 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[7.627084] (-) TimerEvent: {}
+[7.727424] (-) TimerEvent: {}
+[7.774435] (relbot_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[7.827635] (-) TimerEvent: {}
+[7.928179] (-) TimerEvent: {}
+[8.028556] (-) TimerEvent: {}
+[8.078734] (relbot_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)\n'}
+[8.128712] (-) TimerEvent: {}
+[8.138223] (relbot_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[8.228866] (-) TimerEvent: {}
+[8.329257] (-) TimerEvent: {}
+[8.429648] (-) TimerEvent: {}
+[8.530013] (-) TimerEvent: {}
+[8.630355] (-) TimerEvent: {}
+[8.730849] (-) TimerEvent: {}
+[8.831471] (-) TimerEvent: {}
+[8.931856] (-) TimerEvent: {}
+[9.032223] (-) TimerEvent: {}
+[9.132775] (-) TimerEvent: {}
+[9.195921] (relbot_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[9.232831] (-) TimerEvent: {}
+[9.333171] (-) TimerEvent: {}
+[9.388900] (relbot_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 4.6.7 (/opt/ros/jazzy/share/rosidl_adapter/cmake)\n'}
+[9.414699] (relbot_msgs) StdoutLine: {'line': b'-- Found std_msgs: 5.3.6 (/opt/ros/jazzy/share/std_msgs/cmake)\n'}
+[9.433345] (-) TimerEvent: {}
+[9.533750] (-) TimerEvent: {}
+[9.634242] (-) TimerEvent: {}
+[9.734577] (-) TimerEvent: {}
+[9.835044] (-) TimerEvent: {}
+[9.935434] (-) TimerEvent: {}
+[10.035795] (-) TimerEvent: {}
+[10.136213] (-) TimerEvent: {}
+[10.236542] (-) TimerEvent: {}
+[10.336961] (-) TimerEvent: {}
+[10.437385] (-) TimerEvent: {}
+[10.447061] (relbot_msgs) StdoutLine: {'line': b'-- Found ament_cmake_cppcheck: 0.17.4 (/opt/ros/jazzy/share/ament_cmake_cppcheck/cmake)\n'}
+[10.459614] (relbot_msgs) StdoutLine: {'line': b'-- Found ament_cmake_cpplint: 0.17.4 (/opt/ros/jazzy/share/ament_cmake_cpplint/cmake)\n'}
+[10.476341] (relbot_msgs) StdoutLine: {'line': b'-- Found ament_cmake_uncrustify: 0.17.4 (/opt/ros/jazzy/share/ament_cmake_uncrustify/cmake)\n'}
+[10.493023] (relbot_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.12.0 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)\n'}
+[10.538001] (-) TimerEvent: {}
+[10.638399] (-) TimerEvent: {}
+[10.738902] (-) TimerEvent: {}
+[10.839467] (-) TimerEvent: {}
+[10.939990] (-) TimerEvent: {}
+[11.040297] (-) TimerEvent: {}
+[11.140714] (-) TimerEvent: {}
+[11.221316] (relbot_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[11.240828] (-) TimerEvent: {}
+[11.341256] (-) TimerEvent: {}
+[11.442260] (-) TimerEvent: {}
+[11.542645] (-) TimerEvent: {}
+[11.643098] (-) TimerEvent: {}
+[11.743483] (-) TimerEvent: {}
+[11.844042] (-) TimerEvent: {}
+[11.944422] (-) TimerEvent: {}
+[12.019256] (relbot_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[12.044667] (-) TimerEvent: {}
+[12.046040] (relbot_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)\n'}
+[12.144859] (-) TimerEvent: {}
+[12.245275] (-) TimerEvent: {}
+[12.252881] (relbot_msgs) StdoutLine: {'line': b'-- Found PythonExtra: /usr/bin/python3  \n'}
+[12.345496] (-) TimerEvent: {}
+[12.446031] (-) TimerEvent: {}
+[12.546465] (-) TimerEvent: {}
+[12.647390] (-) TimerEvent: {}
+[12.747842] (-) TimerEvent: {}
+[12.848218] (-) TimerEvent: {}
+[12.948624] (-) TimerEvent: {}
+[13.049026] (-) TimerEvent: {}
+[13.149439] (-) TimerEvent: {}
+[13.249885] (-) TimerEvent: {}
+[13.350291] (-) TimerEvent: {}
+[13.450917] (-) TimerEvent: {}
+[13.551342] (-) TimerEvent: {}
+[13.651794] (-) TimerEvent: {}
+[13.752171] (-) TimerEvent: {}
+[13.853042] (-) TimerEvent: {}
+[13.953454] (-) TimerEvent: {}
+[14.054369] (-) TimerEvent: {}
+[14.155015] (-) TimerEvent: {}
+[14.255392] (-) TimerEvent: {}
+[14.355778] (-) TimerEvent: {}
+[14.424866] (relbot_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed \n'}
+[14.455954] (-) TimerEvent: {}
+[14.516340] (relbot_msgs) StdoutLine: {'line': b'-- Found ament_cmake_flake8: 0.17.4 (/opt/ros/jazzy/share/ament_cmake_flake8/cmake)\n'}
+[14.526365] (relbot_msgs) StdoutLine: {'line': b'-- Found ament_cmake_pep257: 0.17.4 (/opt/ros/jazzy/share/ament_cmake_pep257/cmake)\n'}
+[14.545571] (relbot_msgs) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.17.4 (/opt/ros/jazzy/share/ament_lint_auto/cmake)\n'}
+[14.556093] (-) TimerEvent: {}
+[14.656737] (-) TimerEvent: {}
+[14.665809] (relbot_msgs) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[14.668254] (relbot_msgs) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[14.676561] (relbot_msgs) StdoutLine: {'line': b'-- Configuring done (14.6s)\n'}
+[14.756972] (-) TimerEvent: {}
+[14.807456] (relbot_msgs) StdoutLine: {'line': b'-- Generating done (0.1s)\n'}
+[14.829855] (relbot_msgs) StdoutLine: {'line': b'-- Build files have been written to: /home/ubuntu/Robotics/ros2_ws/build/relbot_msgs\n'}
+[14.847995] (relbot_msgs) CommandEnded: {'returncode': 0}
+[14.848709] (relbot_msgs) JobProgress: {'identifier': 'relbot_msgs', 'progress': 'build'}
+[14.849745] (relbot_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ubuntu/Robotics/ros2_ws/build/relbot_msgs', '--', '-j12', '-l12'], 'cwd': '/home/ubuntu/Robotics/ros2_ws/build/relbot_msgs', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ubuntu', 'GIT_ASKPASS': '/home/ubuntu/.vscode-server/bin/07ff9d6178ede9a1bd12ad3399074d726ebe6e43/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/ubuntu', 'TERM_PROGRAM_VERSION': '1.112.0', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-a09fb72c-1c08-45f9-bf78-d0dc89aac9ac.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/ubuntu/.vscode-server/bin/07ff9d6178ede9a1bd12ad3399074d726ebe6e43/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/ubuntu/.vscode-server/bin/07ff9d6178ede9a1bd12ad3399074d726ebe6e43/node', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'WSL_DISTRO_NAME': 'Ubuntu-24.04', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ubuntu', 'NAME': 'Laptop-Rogier', 'WSL_INTEROP': '/run/WSL/699_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/opt/ros/jazzy/bin:/home/ubuntu/.vscode-server/bin/07ff9d6178ede9a1bd12ad3399074d726ebe6e43/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Users/rogie/AppData/Local/Programs/Microsoft VS Code:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/java8path:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/110/Tools/Binn/:/mnt/c/Program Files (x86)/Microsoft SQL Server/120/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/120/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/120/DTS/Binn/:/mnt/c/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/MATLAB/R2025b/bin:/mnt/c/Program Files (x86)/IVI Foundation/VISA/WinNT/Bin/:/mnt/c/Program Files/IVI Foundation/VISA/Win64/Bin/:/mnt/c/Program Files (x86)/IVI Foundation/VISA/WinNT/Bin:/mnt/d/PuTTy/:/mnt/d/Program Files/Git/cmd:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Program Files/NVIDIA Corporation/Nsight Compute 2024.3.2/:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR:/mnt/c/Users/rogie/AppData/Local/Programs/Python/Python39/:/mnt/c/Users/rogie/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/rogie/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/rogie/AppData/Local/GitHubDesktop/bin:/mnt/c/Users/rogie/AppData/Local/Muse Hub/lib:/mnt/c/Users/rogie/AppData/Local/Programs/Python/protoc/bin:/mnt/c/Users/rogie/AppData/Local/Programs/Python/Python39/Scripts:/mnt/c/msys64/ucrt64/bin:/mnt/c/xampp/php:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-d9b97315e9.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/ubuntu/Robotics/ros2_ws/build/relbot_msgs', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy', 'WSLENV': 'VSCODE_WSL_EXT_LOCATION/up'}), 'shell': False}
+[14.857105] (-) TimerEvent: {}
+[14.920168] (relbot_msgs) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating type hashes for ROS interfaces\x1b[0m\n'}
+[14.933041] (relbot_msgs) StdoutLine: {'line': b'[  2%] Built target ament_cmake_python_copy_relbot_msgs\n'}
+[14.957275] (-) TimerEvent: {}
+[15.057758] (-) TimerEvent: {}
+[15.158132] (-) TimerEvent: {}
+[15.258543] (-) TimerEvent: {}
+[15.313803] (relbot_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[15.314798] (relbot_msgs) StdoutLine: {'line': b'creating relbot_msgs.egg-info\n'}
+[15.340853] (relbot_msgs) StdoutLine: {'line': b'writing relbot_msgs.egg-info/PKG-INFO\n'}
+[15.341280] (relbot_msgs) StdoutLine: {'line': b'writing dependency_links to relbot_msgs.egg-info/dependency_links.txt\n'}
+[15.341557] (relbot_msgs) StdoutLine: {'line': b'writing top-level names to relbot_msgs.egg-info/top_level.txt\n'}
+[15.341731] (relbot_msgs) StdoutLine: {'line': b"writing manifest file 'relbot_msgs.egg-info/SOURCES.txt'\n"}
+[15.358795] (-) TimerEvent: {}
+[15.369427] (relbot_msgs) StdoutLine: {'line': b'[  2%] Built target relbot_msgs__rosidl_generator_type_description\n'}
+[15.386465] (relbot_msgs) StdoutLine: {'line': b'[  4%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[15.401277] (relbot_msgs) StdoutLine: {'line': b'[  6%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[15.436733] (relbot_msgs) StdoutLine: {'line': b"reading manifest file 'relbot_msgs.egg-info/SOURCES.txt'\n"}
+[15.438209] (relbot_msgs) StdoutLine: {'line': b"writing manifest file 'relbot_msgs.egg-info/SOURCES.txt'\n"}
+[15.458992] (-) TimerEvent: {}
+[15.488773] (relbot_msgs) StdoutLine: {'line': b'[  6%] Built target ament_cmake_python_build_relbot_msgs_egg\n'}
+[15.559139] (-) TimerEvent: {}
+[15.659584] (-) TimerEvent: {}
+[15.760051] (-) TimerEvent: {}
+[15.860465] (-) TimerEvent: {}
+[15.872908] (relbot_msgs) StdoutLine: {'line': b'[  6%] Built target relbot_msgs__cpp\n'}
+[15.929905] (relbot_msgs) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/relbot_msgs__rosidl_generator_c.dir/rosidl_generator_c/relbot_msgs/msg/detail/relbot_motors__functions.c.o\x1b[0m\n'}
+[15.931018] (relbot_msgs) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/relbot_msgs__rosidl_generator_c.dir/rosidl_generator_c/relbot_msgs/msg/detail/relbot_motors_stamped__functions.c.o\x1b[0m\n'}
+[15.932338] (relbot_msgs) StdoutLine: {'line': b'[ 13%] \x1b[32mBuilding C object CMakeFiles/relbot_msgs__rosidl_generator_c.dir/rosidl_generator_c/relbot_msgs/msg/detail/relbot_motors__description.c.o\x1b[0m\n'}
+[15.933184] (relbot_msgs) StdoutLine: {'line': b'[ 15%] \x1b[32mBuilding C object CMakeFiles/relbot_msgs__rosidl_generator_c.dir/rosidl_generator_c/relbot_msgs/msg/detail/relbot_motors__type_support.c.o\x1b[0m\n'}
+[15.934112] (relbot_msgs) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding C object CMakeFiles/relbot_msgs__rosidl_generator_c.dir/rosidl_generator_c/relbot_msgs/msg/detail/relbot_motors_stamped__description.c.o\x1b[0m\n'}
+[15.936965] (relbot_msgs) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding C object CMakeFiles/relbot_msgs__rosidl_generator_c.dir/rosidl_generator_c/relbot_msgs/msg/detail/relbot_motors_stamped__type_support.c.o\x1b[0m\n'}
+[15.960811] (-) TimerEvent: {}
+[16.061306] (-) TimerEvent: {}
+[16.161716] (-) TimerEvent: {}
+[16.262190] (-) TimerEvent: {}
+[16.362565] (-) TimerEvent: {}
+[16.366407] (relbot_msgs) StdoutLine: {'line': b'[ 22%] \x1b[32m\x1b[1mLinking C shared library librelbot_msgs__rosidl_generator_c.so\x1b[0m\n'}
+[16.462708] (-) TimerEvent: {}
+[16.563108] (-) TimerEvent: {}
+[16.663445] (-) TimerEvent: {}
+[16.664052] (relbot_msgs) StdoutLine: {'line': b'[ 22%] Built target relbot_msgs__rosidl_generator_c\n'}
+[16.685766] (relbot_msgs) StdoutLine: {'line': b'[ 27%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[16.686346] (relbot_msgs) StdoutLine: {'line': b'[ 27%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[16.686726] (relbot_msgs) StdoutLine: {'line': b'[ 29%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[16.687248] (relbot_msgs) StdoutLine: {'line': b'[ 31%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[16.687807] (relbot_msgs) StdoutLine: {'line': b'[ 34%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[16.688307] (relbot_msgs) StdoutLine: {'line': b'[ 36%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[16.763634] (-) TimerEvent: {}
+[16.864153] (-) TimerEvent: {}
+[16.964704] (-) TimerEvent: {}
+[17.065294] (-) TimerEvent: {}
+[17.166070] (-) TimerEvent: {}
+[17.266551] (-) TimerEvent: {}
+[17.366968] (-) TimerEvent: {}
+[17.468014] (-) TimerEvent: {}
+[17.568397] (-) TimerEvent: {}
+[17.638142] (relbot_msgs) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/relbot_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/relbot_msgs/msg/relbot_motors_stamped__type_support.cpp.o\x1b[0m\n'}
+[17.640425] (relbot_msgs) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/relbot_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/relbot_msgs/msg/relbot_motors_stamped__type_support.cpp.o\x1b[0m\n'}
+[17.641016] (relbot_msgs) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object CMakeFiles/relbot_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/relbot_msgs/msg/relbot_motors__type_support.cpp.o\x1b[0m\n'}
+[17.641882] (relbot_msgs) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object CMakeFiles/relbot_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/relbot_msgs/msg/relbot_motors__type_support.cpp.o\x1b[0m\n'}
+[17.668582] (-) TimerEvent: {}
+[17.746509] (relbot_msgs) StdoutLine: {'line': b'[ 47%] \x1b[32mBuilding C object CMakeFiles/relbot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/relbot_msgs/msg/detail/relbot_motors__type_support.c.o\x1b[0m\n'}
+[17.748877] (relbot_msgs) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding C object CMakeFiles/relbot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/relbot_msgs/msg/detail/relbot_motors_stamped__type_support.c.o\x1b[0m\n'}
+[17.768811] (-) TimerEvent: {}
+[17.780874] (relbot_msgs) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding CXX object CMakeFiles/relbot_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/relbot_msgs/msg/detail/relbot_motors_stamped__type_support.cpp.o\x1b[0m\n'}
+[17.781361] (relbot_msgs) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding CXX object CMakeFiles/relbot_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/relbot_msgs/msg/detail/relbot_motors__type_support.cpp.o\x1b[0m\n'}
+[17.836358] (relbot_msgs) StdoutLine: {'line': b'[ 56%] \x1b[32mBuilding CXX object CMakeFiles/relbot_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/relbot_msgs/msg/detail/relbot_motors__type_support_c.cpp.o\x1b[0m\n'}
+[17.837133] (relbot_msgs) StdoutLine: {'line': b'[ 59%] \x1b[32mBuilding CXX object CMakeFiles/relbot_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/relbot_msgs/msg/detail/relbot_motors_stamped__type_support_c.cpp.o\x1b[0m\n'}
+[17.851961] (relbot_msgs) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding CXX object CMakeFiles/relbot_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/relbot_msgs/msg/detail/dds_fastrtps/relbot_motors_stamped__type_support.cpp.o\x1b[0m\n'}
+[17.852207] (relbot_msgs) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding CXX object CMakeFiles/relbot_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/relbot_msgs/msg/detail/dds_fastrtps/relbot_motors__type_support.cpp.o\x1b[0m\n'}
+[17.868538] (relbot_msgs) StdoutLine: {'line': b'[ 65%] \x1b[32m\x1b[1mLinking C shared library librelbot_msgs__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[17.868923] (-) TimerEvent: {}
+[17.935183] (relbot_msgs) StdoutLine: {'line': b'[ 68%] \x1b[32m\x1b[1mLinking CXX shared library librelbot_msgs__rosidl_typesupport_c.so\x1b[0m\n'}
+[17.969056] (-) TimerEvent: {}
+[18.069680] (-) TimerEvent: {}
+[18.170405] (-) TimerEvent: {}
+[18.272449] (-) TimerEvent: {}
+[18.278535] (relbot_msgs) StdoutLine: {'line': b'[ 68%] Built target relbot_msgs__rosidl_typesupport_introspection_c\n'}
+[18.363132] (relbot_msgs) StdoutLine: {'line': b'[ 68%] Built target relbot_msgs__rosidl_typesupport_c\n'}
+[18.372611] (-) TimerEvent: {}
+[18.473146] (-) TimerEvent: {}
+[18.573584] (-) TimerEvent: {}
+[18.674112] (-) TimerEvent: {}
+[18.774656] (-) TimerEvent: {}
+[18.875205] (-) TimerEvent: {}
+[18.970455] (relbot_msgs) StdoutLine: {'line': b'[ 70%] \x1b[32m\x1b[1mLinking CXX shared library librelbot_msgs__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[18.975410] (-) TimerEvent: {}
+[19.022781] (relbot_msgs) StdoutLine: {'line': b'[ 72%] \x1b[32m\x1b[1mLinking CXX shared library librelbot_msgs__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[19.075581] (-) TimerEvent: {}
+[19.176106] (-) TimerEvent: {}
+[19.276607] (-) TimerEvent: {}
+[19.346070] (relbot_msgs) StdoutLine: {'line': b'[ 72%] Built target relbot_msgs__rosidl_typesupport_cpp\n'}
+[19.376793] (-) TimerEvent: {}
+[19.426869] (relbot_msgs) StdoutLine: {'line': b'[ 75%] \x1b[32m\x1b[1mLinking CXX shared library librelbot_msgs__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[19.433589] (relbot_msgs) StdoutLine: {'line': b'[ 77%] \x1b[32m\x1b[1mLinking CXX shared library librelbot_msgs__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[19.442748] (relbot_msgs) StdoutLine: {'line': b'[ 77%] Built target relbot_msgs__rosidl_typesupport_introspection_cpp\n'}
+[19.476922] (-) TimerEvent: {}
+[19.577309] (-) TimerEvent: {}
+[19.677733] (-) TimerEvent: {}
+[19.708002] (relbot_msgs) StdoutLine: {'line': b'[ 77%] Built target relbot_msgs__rosidl_typesupport_fastrtps_c\n'}
+[19.708560] (relbot_msgs) StdoutLine: {'line': b'[ 77%] Built target relbot_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[19.738873] (relbot_msgs) StdoutLine: {'line': b'[ 77%] Built target relbot_msgs\n'}
+[19.770879] (relbot_msgs) StdoutLine: {'line': b'[ 79%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[19.777853] (-) TimerEvent: {}
+[19.878187] (-) TimerEvent: {}
+[19.978563] (-) TimerEvent: {}
+[20.079032] (-) TimerEvent: {}
+[20.179474] (-) TimerEvent: {}
+[20.225486] (relbot_msgs) StdoutLine: {'line': b'[ 79%] Built target relbot_msgs__py\n'}
+[20.255706] (relbot_msgs) StdoutLine: {'line': b'[ 81%] \x1b[32mBuilding C object CMakeFiles/relbot_msgs__rosidl_generator_py.dir/rosidl_generator_py/relbot_msgs/msg/_relbot_motors_s.c.o\x1b[0m\n'}
+[20.256234] (relbot_msgs) StdoutLine: {'line': b'[ 84%] \x1b[32mBuilding C object CMakeFiles/relbot_msgs__rosidl_generator_py.dir/rosidl_generator_py/relbot_msgs/msg/_relbot_motors_stamped_s.c.o\x1b[0m\n'}
+[20.279597] (-) TimerEvent: {}
+[20.379927] (-) TimerEvent: {}
+[20.480370] (-) TimerEvent: {}
+[20.580794] (-) TimerEvent: {}
+[20.681148] (-) TimerEvent: {}
+[20.759518] (relbot_msgs) StdoutLine: {'line': b'[ 86%] \x1b[32m\x1b[1mLinking C shared library librelbot_msgs__rosidl_generator_py.so\x1b[0m\n'}
+[20.781360] (-) TimerEvent: {}
+[20.881735] (-) TimerEvent: {}
+[20.982181] (-) TimerEvent: {}
+[21.058593] (relbot_msgs) StdoutLine: {'line': b'[ 86%] Built target relbot_msgs__rosidl_generator_py\n'}
+[21.082355] (-) TimerEvent: {}
+[21.088858] (relbot_msgs) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding C object CMakeFiles/relbot_msgs_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/relbot_msgs/_relbot_msgs_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[21.089403] (relbot_msgs) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/relbot_msgs_s__rosidl_typesupport_c.dir/rosidl_generator_py/relbot_msgs/_relbot_msgs_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[21.089980] (relbot_msgs) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding C object CMakeFiles/relbot_msgs_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/relbot_msgs/_relbot_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[21.182540] (-) TimerEvent: {}
+[21.283014] (-) TimerEvent: {}
+[21.289660] (relbot_msgs) StdoutLine: {'line': b'[ 95%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/relbot_msgs/relbot_msgs_s__rosidl_typesupport_c.so\x1b[0m\n'}
+[21.303096] (relbot_msgs) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/relbot_msgs/relbot_msgs_s__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[21.322541] (relbot_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/relbot_msgs/relbot_msgs_s__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[21.383186] (-) TimerEvent: {}
+[21.483559] (-) TimerEvent: {}
+[21.494305] (relbot_msgs) StdoutLine: {'line': b'[100%] Built target relbot_msgs_s__rosidl_typesupport_c\n'}
+[21.495821] (relbot_msgs) StdoutLine: {'line': b'[100%] Built target relbot_msgs_s__rosidl_typesupport_introspection_c\n'}
+[21.568782] (relbot_msgs) StdoutLine: {'line': b'[100%] Built target relbot_msgs_s__rosidl_typesupport_fastrtps_c\n'}
+[21.583754] (-) TimerEvent: {}
+[21.585162] (relbot_msgs) CommandEnded: {'returncode': 0}
+[21.586388] (relbot_msgs) JobProgress: {'identifier': 'relbot_msgs', 'progress': 'install'}
+[21.601078] (relbot_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ubuntu/Robotics/ros2_ws/build/relbot_msgs'], 'cwd': '/home/ubuntu/Robotics/ros2_ws/build/relbot_msgs', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ubuntu', 'GIT_ASKPASS': '/home/ubuntu/.vscode-server/bin/07ff9d6178ede9a1bd12ad3399074d726ebe6e43/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/ubuntu', 'TERM_PROGRAM_VERSION': '1.112.0', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-a09fb72c-1c08-45f9-bf78-d0dc89aac9ac.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/ubuntu/.vscode-server/bin/07ff9d6178ede9a1bd12ad3399074d726ebe6e43/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/ubuntu/.vscode-server/bin/07ff9d6178ede9a1bd12ad3399074d726ebe6e43/node', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'WSL_DISTRO_NAME': 'Ubuntu-24.04', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ubuntu', 'NAME': 'Laptop-Rogier', 'WSL_INTEROP': '/run/WSL/699_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/opt/ros/jazzy/bin:/home/ubuntu/.vscode-server/bin/07ff9d6178ede9a1bd12ad3399074d726ebe6e43/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Users/rogie/AppData/Local/Programs/Microsoft VS Code:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/java8path:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/110/Tools/Binn/:/mnt/c/Program Files (x86)/Microsoft SQL Server/120/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/120/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/120/DTS/Binn/:/mnt/c/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/MATLAB/R2025b/bin:/mnt/c/Program Files (x86)/IVI Foundation/VISA/WinNT/Bin/:/mnt/c/Program Files/IVI Foundation/VISA/Win64/Bin/:/mnt/c/Program Files (x86)/IVI Foundation/VISA/WinNT/Bin:/mnt/d/PuTTy/:/mnt/d/Program Files/Git/cmd:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Program Files/NVIDIA Corporation/Nsight Compute 2024.3.2/:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR:/mnt/c/Users/rogie/AppData/Local/Programs/Python/Python39/:/mnt/c/Users/rogie/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/rogie/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/rogie/AppData/Local/GitHubDesktop/bin:/mnt/c/Users/rogie/AppData/Local/Muse Hub/lib:/mnt/c/Users/rogie/AppData/Local/Programs/Python/protoc/bin:/mnt/c/Users/rogie/AppData/Local/Programs/Python/Python39/Scripts:/mnt/c/msys64/ucrt64/bin:/mnt/c/xampp/php:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-d9b97315e9.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/ubuntu/Robotics/ros2_ws/build/relbot_msgs', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy', 'WSLENV': 'VSCODE_WSL_EXT_LOCATION/up'}), 'shell': False}
+[21.612883] (relbot_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[21.614649] (relbot_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/share/ament_index/resource_index/rosidl_interfaces/relbot_msgs\n'}
+[21.615546] (relbot_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/share/relbot_msgs/msg/RelbotMotors.json\n'}
+[21.615892] (relbot_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/share/relbot_msgs/msg/RelbotMotorsStamped.json\n'}
+[21.616019] (relbot_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/include/relbot_msgs/relbot_msgs\n'}
+[21.616932] (relbot_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/include/relbot_msgs/relbot_msgs/msg\n'}
+[21.617341] (relbot_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/include/relbot_msgs/relbot_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[21.617673] (relbot_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/include/relbot_msgs/relbot_msgs/msg/relbot_motors.h\n'}
+[21.617841] (relbot_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/include/relbot_msgs/relbot_msgs/msg/relbot_motors_stamped.h\n'}
+[21.618187] (relbot_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/include/relbot_msgs/relbot_msgs/msg/detail\n'}
+[21.618315] (relbot_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/include/relbot_msgs/relbot_msgs/msg/detail/relbot_motors_stamped__struct.h\n'}
+[21.618596] (relbot_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/include/relbot_msgs/relbot_msgs/msg/detail/relbot_motors_stamped__type_support.h\n'}
+[21.618723] (relbot_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/include/relbot_msgs/relbot_msgs/msg/detail/relbot_motors__type_support.c\n'}
+[21.619093] (relbot_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/include/relbot_msgs/relbot_msgs/msg/detail/relbot_motors_stamped__type_support.c\n'}
+[21.619294] (relbot_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/include/relbot_msgs/relbot_msgs/msg/detail/relbot_motors__functions.c\n'}
+[21.619665] (relbot_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/include/relbot_msgs/relbot_msgs/msg/detail/relbot_motors_stamped__functions.c\n'}
+[21.619878] (relbot_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/include/relbot_msgs/relbot_msgs/msg/detail/relbot_motors_stamped__functions.h\n'}
+[21.620104] (relbot_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/include/relbot_msgs/relbot_msgs/msg/detail/relbot_motors__struct.h\n'}
+[21.620529] (relbot_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/include/relbot_msgs/relbot_msgs/msg/detail/relbot_motors_stamped__description.c\n'}
+[21.620656] (relbot_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/include/relbot_msgs/relbot_msgs/msg/detail/relbot_motors__type_support.h\n'}
+[21.620820] (relbot_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/include/relbot_msgs/relbot_msgs/msg/detail/relbot_motors__description.c\n'}
+[21.621094] (relbot_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/include/relbot_msgs/relbot_msgs/msg/detail/relbot_motors__functions.h\n'}
+[21.621202] (relbot_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/share/relbot_msgs/environment/library_path.sh\n'}
+[21.621331] (relbot_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/share/relbot_msgs/environment/library_path.dsv\n'}
+[21.621684] (relbot_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/lib/librelbot_msgs__rosidl_generator_c.so\n'}
+[21.622225] (relbot_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/lib/librelbot_msgs__rosidl_generator_c.so" to ""\n'}
+[21.622396] (relbot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/include/relbot_msgs/relbot_msgs\n'}
+[21.622745] (relbot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/include/relbot_msgs/relbot_msgs/msg\n'}
+[21.622872] (relbot_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/include/relbot_msgs/relbot_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[21.623052] (relbot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/include/relbot_msgs/relbot_msgs/msg/detail\n'}
+[21.623488] (relbot_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/include/relbot_msgs/relbot_msgs/msg/detail/relbot_motors__rosidl_typesupport_fastrtps_c.h\n'}
+[21.623926] (relbot_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/include/relbot_msgs/relbot_msgs/msg/detail/relbot_motors_stamped__rosidl_typesupport_fastrtps_c.h\n'}
+[21.625057] (relbot_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/lib/librelbot_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[21.625703] (relbot_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/lib/librelbot_msgs__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[21.626350] (relbot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/include/relbot_msgs/relbot_msgs\n'}
+[21.626674] (relbot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/include/relbot_msgs/relbot_msgs/msg\n'}
+[21.626827] (relbot_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/include/relbot_msgs/relbot_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[21.626986] (relbot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/include/relbot_msgs/relbot_msgs/msg/detail\n'}
+[21.627154] (relbot_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/include/relbot_msgs/relbot_msgs/msg/detail/relbot_motors__type_support.c\n'}
+[21.627251] (relbot_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/include/relbot_msgs/relbot_msgs/msg/detail/relbot_motors_stamped__type_support.c\n'}
+[21.627336] (relbot_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/include/relbot_msgs/relbot_msgs/msg/detail/relbot_motors__rosidl_typesupport_introspection_c.h\n'}
+[21.627473] (relbot_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/include/relbot_msgs/relbot_msgs/msg/detail/relbot_motors_stamped__rosidl_typesupport_introspection_c.h\n'}
+[21.627641] (relbot_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/lib/librelbot_msgs__rosidl_typesupport_introspection_c.so\n'}
+[21.627958] (relbot_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/lib/librelbot_msgs__rosidl_typesupport_introspection_c.so" to ""\n'}
+[21.628115] (relbot_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/lib/librelbot_msgs__rosidl_typesupport_c.so\n'}
+[21.628418] (relbot_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/lib/librelbot_msgs__rosidl_typesupport_c.so" to ""\n'}
+[21.628739] (relbot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/include/relbot_msgs/relbot_msgs\n'}
+[21.629023] (relbot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/include/relbot_msgs/relbot_msgs/msg\n'}
+[21.629180] (relbot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/include/relbot_msgs/relbot_msgs/msg/detail\n'}
+[21.629382] (relbot_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/include/relbot_msgs/relbot_msgs/msg/detail/relbot_motors__builder.hpp\n'}
+[21.629557] (relbot_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/include/relbot_msgs/relbot_msgs/msg/detail/relbot_motors_stamped__struct.hpp\n'}
+[21.629923] (relbot_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/include/relbot_msgs/relbot_msgs/msg/detail/relbot_motors__type_support.hpp\n'}
+[21.630313] (relbot_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/include/relbot_msgs/relbot_msgs/msg/detail/relbot_motors__traits.hpp\n'}
+[21.630844] (relbot_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/include/relbot_msgs/relbot_msgs/msg/detail/relbot_motors_stamped__builder.hpp\n'}
+[21.631195] (relbot_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/include/relbot_msgs/relbot_msgs/msg/detail/relbot_motors_stamped__traits.hpp\n'}
+[21.631486] (relbot_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/include/relbot_msgs/relbot_msgs/msg/detail/relbot_motors__struct.hpp\n'}
+[21.631709] (relbot_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/include/relbot_msgs/relbot_msgs/msg/detail/relbot_motors_stamped__type_support.hpp\n'}
+[21.631912] (relbot_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/include/relbot_msgs/relbot_msgs/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[21.632181] (relbot_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/include/relbot_msgs/relbot_msgs/msg/relbot_motors.hpp\n'}
+[21.632451] (relbot_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/include/relbot_msgs/relbot_msgs/msg/relbot_motors_stamped.hpp\n'}
+[21.632773] (relbot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/include/relbot_msgs/relbot_msgs\n'}
+[21.633060] (relbot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/include/relbot_msgs/relbot_msgs/msg\n'}
+[21.633523] (relbot_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/include/relbot_msgs/relbot_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[21.633646] (relbot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/include/relbot_msgs/relbot_msgs/msg/detail\n'}
+[21.633766] (relbot_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/include/relbot_msgs/relbot_msgs/msg/detail/dds_fastrtps\n'}
+[21.633871] (relbot_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/include/relbot_msgs/relbot_msgs/msg/detail/relbot_motors_stamped__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[21.633973] (relbot_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/include/relbot_msgs/relbot_msgs/msg/detail/relbot_motors__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[21.634153] (relbot_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/lib/librelbot_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[21.634462] (relbot_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/lib/librelbot_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[21.634618] (relbot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/include/relbot_msgs/relbot_msgs\n'}
+[21.634921] (relbot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/include/relbot_msgs/relbot_msgs/msg\n'}
+[21.635250] (relbot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/include/relbot_msgs/relbot_msgs/msg/detail\n'}
+[21.635405] (relbot_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/include/relbot_msgs/relbot_msgs/msg/detail/relbot_motors__rosidl_typesupport_introspection_cpp.hpp\n'}
+[21.635516] (relbot_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/include/relbot_msgs/relbot_msgs/msg/detail/relbot_motors_stamped__rosidl_typesupport_introspection_cpp.hpp\n'}
+[21.635839] (relbot_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/include/relbot_msgs/relbot_msgs/msg/detail/relbot_motors_stamped__type_support.cpp\n'}
+[21.635995] (relbot_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/include/relbot_msgs/relbot_msgs/msg/detail/relbot_motors__type_support.cpp\n'}
+[21.636107] (relbot_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/lib/librelbot_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[21.636356] (relbot_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/lib/librelbot_msgs__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[21.636518] (relbot_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/lib/librelbot_msgs__rosidl_typesupport_cpp.so\n'}
+[21.637246] (relbot_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/lib/librelbot_msgs__rosidl_typesupport_cpp.so" to ""\n'}
+[21.637593] (relbot_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/share/relbot_msgs/environment/pythonpath.sh\n'}
+[21.638137] (relbot_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/share/relbot_msgs/environment/pythonpath.dsv\n'}
+[21.638312] (relbot_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/lib/python3.12/site-packages/relbot_msgs-2025.2.0-py3.12.egg-info\n'}
+[21.639513] (relbot_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/lib/python3.12/site-packages/relbot_msgs-2025.2.0-py3.12.egg-info/top_level.txt\n'}
+[21.639856] (relbot_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/lib/python3.12/site-packages/relbot_msgs-2025.2.0-py3.12.egg-info/dependency_links.txt\n'}
+[21.640186] (relbot_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/lib/python3.12/site-packages/relbot_msgs-2025.2.0-py3.12.egg-info/SOURCES.txt\n'}
+[21.640310] (relbot_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/lib/python3.12/site-packages/relbot_msgs-2025.2.0-py3.12.egg-info/PKG-INFO\n'}
+[21.640578] (relbot_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/lib/python3.12/site-packages/relbot_msgs\n'}
+[21.641096] (relbot_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/lib/python3.12/site-packages/relbot_msgs/_relbot_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[21.641511] (relbot_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/lib/python3.12/site-packages/relbot_msgs/msg\n'}
+[21.641994] (relbot_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/lib/python3.12/site-packages/relbot_msgs/msg/_relbot_motors.py\n'}
+[21.642306] (relbot_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/lib/python3.12/site-packages/relbot_msgs/msg/__init__.py\n'}
+[21.642667] (relbot_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/lib/python3.12/site-packages/relbot_msgs/msg/_relbot_motors_stamped.py\n'}
+[21.643063] (relbot_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/lib/python3.12/site-packages/relbot_msgs/msg/_relbot_motors_s.c\n'}
+[21.643443] (relbot_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/lib/python3.12/site-packages/relbot_msgs/msg/_relbot_motors_stamped_s.c\n'}
+[21.643644] (relbot_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/lib/python3.12/site-packages/relbot_msgs/__init__.py\n'}
+[21.644105] (relbot_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/lib/python3.12/site-packages/relbot_msgs/_relbot_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[21.644542] (relbot_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/lib/python3.12/site-packages/relbot_msgs/relbot_msgs_s__rosidl_typesupport_c.so\n'}
+[21.645052] (relbot_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/lib/python3.12/site-packages/relbot_msgs/_relbot_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[21.645545] (relbot_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/lib/python3.12/site-packages/relbot_msgs/relbot_msgs_s__rosidl_typesupport_fastrtps_c.so\n'}
+[21.645797] (relbot_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/lib/python3.12/site-packages/relbot_msgs/relbot_msgs_s__rosidl_typesupport_introspection_c.so\n'}
+[21.683911] (-) TimerEvent: {}
+[21.742322] (relbot_msgs) StdoutLine: {'line': b"Listing '/home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/lib/python3.12/site-packages/relbot_msgs'...\n"}
+[21.742738] (relbot_msgs) StdoutLine: {'line': b"Compiling '/home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/lib/python3.12/site-packages/relbot_msgs/__init__.py'...\n"}
+[21.742901] (relbot_msgs) StdoutLine: {'line': b"Listing '/home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/lib/python3.12/site-packages/relbot_msgs/msg'...\n"}
+[21.743036] (relbot_msgs) StdoutLine: {'line': b"Compiling '/home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/lib/python3.12/site-packages/relbot_msgs/msg/__init__.py'...\n"}
+[21.743124] (relbot_msgs) StdoutLine: {'line': b"Compiling '/home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/lib/python3.12/site-packages/relbot_msgs/msg/_relbot_motors.py'...\n"}
+[21.743197] (relbot_msgs) StdoutLine: {'line': b"Compiling '/home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/lib/python3.12/site-packages/relbot_msgs/msg/_relbot_motors_stamped.py'...\n"}
+[21.749395] (relbot_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/lib/python3.12/site-packages/relbot_msgs/relbot_msgs_s__rosidl_typesupport_fastrtps_c.so\n'}
+[21.749762] (relbot_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/lib/python3.12/site-packages/relbot_msgs/relbot_msgs_s__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[21.750047] (relbot_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/lib/python3.12/site-packages/relbot_msgs/relbot_msgs_s__rosidl_typesupport_introspection_c.so\n'}
+[21.750461] (relbot_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/lib/python3.12/site-packages/relbot_msgs/relbot_msgs_s__rosidl_typesupport_introspection_c.so" to ""\n'}
+[21.750977] (relbot_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/lib/python3.12/site-packages/relbot_msgs/relbot_msgs_s__rosidl_typesupport_c.so\n'}
+[21.751274] (relbot_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/lib/python3.12/site-packages/relbot_msgs/relbot_msgs_s__rosidl_typesupport_c.so" to ""\n'}
+[21.751380] (relbot_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/lib/librelbot_msgs__rosidl_generator_py.so\n'}
+[21.751875] (relbot_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/lib/librelbot_msgs__rosidl_generator_py.so" to ""\n'}
+[21.752145] (relbot_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/share/relbot_msgs/msg/RelbotMotors.idl\n'}
+[21.752403] (relbot_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/share/relbot_msgs/msg/RelbotMotorsStamped.idl\n'}
+[21.752481] (relbot_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/share/relbot_msgs/msg/RelbotMotors.msg\n'}
+[21.753218] (relbot_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/share/relbot_msgs/msg/RelbotMotorsStamped.msg\n'}
+[21.753337] (relbot_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/share/ament_index/resource_index/package_run_dependencies/relbot_msgs\n'}
+[21.753624] (relbot_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/share/ament_index/resource_index/parent_prefix_path/relbot_msgs\n'}
+[21.753870] (relbot_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/share/relbot_msgs/environment/ament_prefix_path.sh\n'}
+[21.753979] (relbot_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/share/relbot_msgs/environment/ament_prefix_path.dsv\n'}
+[21.754217] (relbot_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/share/relbot_msgs/environment/path.sh\n'}
+[21.754615] (relbot_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/share/relbot_msgs/environment/path.dsv\n'}
+[21.754910] (relbot_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/share/relbot_msgs/local_setup.bash\n'}
+[21.755193] (relbot_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/share/relbot_msgs/local_setup.sh\n'}
+[21.755431] (relbot_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/share/relbot_msgs/local_setup.zsh\n'}
+[21.756085] (relbot_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/share/relbot_msgs/local_setup.dsv\n'}
+[21.756275] (relbot_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/share/relbot_msgs/package.dsv\n'}
+[21.757412] (relbot_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/share/ament_index/resource_index/packages/relbot_msgs\n'}
+[21.758178] (relbot_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/share/relbot_msgs/cmake/export_relbot_msgs__rosidl_generator_cExport.cmake\n'}
+[21.758419] (relbot_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/share/relbot_msgs/cmake/export_relbot_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[21.758724] (relbot_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/share/relbot_msgs/cmake/export_relbot_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[21.759108] (relbot_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/share/relbot_msgs/cmake/export_relbot_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[21.759229] (relbot_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/share/relbot_msgs/cmake/relbot_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[21.759516] (relbot_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/share/relbot_msgs/cmake/relbot_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[21.759635] (relbot_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/share/relbot_msgs/cmake/relbot_msgs__rosidl_typesupport_cExport.cmake\n'}
+[21.759957] (relbot_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/share/relbot_msgs/cmake/relbot_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[21.760080] (relbot_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/share/relbot_msgs/cmake/export_relbot_msgs__rosidl_generator_cppExport.cmake\n'}
+[21.760333] (relbot_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/share/relbot_msgs/cmake/export_relbot_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[21.760638] (relbot_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/share/relbot_msgs/cmake/export_relbot_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[21.760781] (relbot_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/share/relbot_msgs/cmake/relbot_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[21.761051] (relbot_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/share/relbot_msgs/cmake/relbot_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[21.761366] (relbot_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/share/relbot_msgs/cmake/relbot_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[21.761500] (relbot_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/share/relbot_msgs/cmake/relbot_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[21.761844] (relbot_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/share/relbot_msgs/cmake/export_relbot_msgs__rosidl_generator_pyExport.cmake\n'}
+[21.762183] (relbot_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/share/relbot_msgs/cmake/export_relbot_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[21.762278] (relbot_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/share/relbot_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[21.762542] (relbot_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/share/relbot_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[21.762713] (relbot_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/share/relbot_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[21.763095] (relbot_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/share/relbot_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[21.763219] (relbot_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/share/relbot_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[21.763509] (relbot_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/share/relbot_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[21.763641] (relbot_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/share/relbot_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[21.764034] (relbot_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/share/relbot_msgs/cmake/relbot_msgsConfig.cmake\n'}
+[21.764227] (relbot_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/share/relbot_msgs/cmake/relbot_msgsConfig-version.cmake\n'}
+[21.764488] (relbot_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Robotics/ros2_ws/install/relbot_msgs/share/relbot_msgs/package.xml\n'}
+[21.767620] (relbot_msgs) CommandEnded: {'returncode': 0}
+[21.784111] (-) TimerEvent: {}
+[21.884539] (-) TimerEvent: {}
+[21.916823] (relbot_msgs) JobEnded: {'identifier': 'relbot_msgs', 'rc': 0}
+[21.918652] (-) EventReactorShutdown: {}

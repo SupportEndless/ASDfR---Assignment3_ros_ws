@@ -9,11 +9,23 @@
 #include "rosidl_runtime_c/message_type_support_struct.h"
 #include "rosidl_typesupport_interface/macros.h"
 #include "relbot_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h"
+#include "relbot_msgs/msg/detail/relbot_motors_stamped__struct.h"
+#include "fastcdr/Cdr.h"
 
 #ifdef __cplusplus
 extern "C"
 {
 #endif
+
+ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_relbot_msgs
+bool cdr_serialize_relbot_msgs__msg__RelbotMotorsStamped(
+  const relbot_msgs__msg__RelbotMotorsStamped * ros_message,
+  eprosima::fastcdr::Cdr & cdr);
+
+ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_relbot_msgs
+bool cdr_deserialize_relbot_msgs__msg__RelbotMotorsStamped(
+  eprosima::fastcdr::Cdr &,
+  relbot_msgs__msg__RelbotMotorsStamped * ros_message);
 
 ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_relbot_msgs
 size_t get_serialized_size_relbot_msgs__msg__RelbotMotorsStamped(
@@ -22,6 +34,22 @@ size_t get_serialized_size_relbot_msgs__msg__RelbotMotorsStamped(
 
 ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_relbot_msgs
 size_t max_serialized_size_relbot_msgs__msg__RelbotMotorsStamped(
+  bool & full_bounded,
+  bool & is_plain,
+  size_t current_alignment);
+
+ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_relbot_msgs
+bool cdr_serialize_key_relbot_msgs__msg__RelbotMotorsStamped(
+  const relbot_msgs__msg__RelbotMotorsStamped * ros_message,
+  eprosima::fastcdr::Cdr & cdr);
+
+ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_relbot_msgs
+size_t get_serialized_size_key_relbot_msgs__msg__RelbotMotorsStamped(
+  const void * untyped_ros_message,
+  size_t current_alignment);
+
+ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_relbot_msgs
+size_t max_serialized_size_key_relbot_msgs__msg__RelbotMotorsStamped(
   bool & full_bounded,
   bool & is_plain,
   size_t current_alignment);

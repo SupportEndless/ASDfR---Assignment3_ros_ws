@@ -2,6 +2,9 @@
 // with input from relbot_msgs:msg/RelbotMotorsStamped.idl
 // generated code does not contain a copyright notice
 
+// IWYU pragma: private, include "relbot_msgs/msg/relbot_motors_stamped.h"
+
+
 #ifndef RELBOT_MSGS__MSG__DETAIL__RELBOT_MOTORS_STAMPED__STRUCT_H_
 #define RELBOT_MSGS__MSG__DETAIL__RELBOT_MOTORS_STAMPED__STRUCT_H_
 
@@ -13,7 +16,6 @@ extern "C"
 #include <stdbool.h>
 #include <stddef.h>
 #include <stdint.h>
-
 
 // Constants defined in the message
 

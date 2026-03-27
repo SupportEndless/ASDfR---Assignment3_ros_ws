@@ -2,6 +2,9 @@
 // with input from relbot_msgs:msg/RelbotMotors.idl
 // generated code does not contain a copyright notice
 
+// IWYU pragma: private, include "relbot_msgs/msg/relbot_motors.hpp"
+
+
 #ifndef RELBOT_MSGS__MSG__DETAIL__RELBOT_MOTORS__TRAITS_HPP_
 #define RELBOT_MSGS__MSG__DETAIL__RELBOT_MOTORS__TRAITS_HPP_
 

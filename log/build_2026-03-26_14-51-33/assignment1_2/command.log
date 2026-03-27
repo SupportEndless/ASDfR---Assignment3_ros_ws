@@ -1,4 +1,0 @@
-Invoking command in '/home/asdfr-33/ASDfR---Assignment3_ros_ws/build/assignment1_2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/asdfr-33/ASDfR---Assignment3_ros_ws/build/assignment1_2 -- -j3 -l3
-Invoked command in '/home/asdfr-33/ASDfR---Assignment3_ros_ws/build/assignment1_2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/asdfr-33/ASDfR---Assignment3_ros_ws/build/assignment1_2 -- -j3 -l3
-Invoking command in '/home/asdfr-33/ASDfR---Assignment3_ros_ws/build/assignment1_2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/asdfr-33/ASDfR---Assignment3_ros_ws/build/assignment1_2
-Invoked command in '/home/asdfr-33/ASDfR---Assignment3_ros_ws/build/assignment1_2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/asdfr-33/ASDfR---Assignment3_ros_ws/build/assignment1_2

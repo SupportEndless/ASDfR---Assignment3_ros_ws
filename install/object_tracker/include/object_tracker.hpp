@@ -3,8 +3,14 @@
 #define OBJECT_TRACKER_HPP
 
 // Normal packages
-#include <cv_bridge/cv_bridge.h>
 #include <fstream>
+
+// Version specific cv_bridge, either .h or .hpp based on ROS2 version
+#if __has_include(<cv_bridge/cv_bridge.hpp>)
+    #include <cv_bridge/cv_bridge.hpp>
+#else
+    #include <cv_bridge/cv_bridge.h>
+#endif
 
 // ROS2 specific packages
 #include <geometry_msgs/msg/point.hpp>

@@ -1,4 +1,0 @@
-[35m[1mConsolidate compiler generated dependencies of target brightness_receiver[0m
-[ 16%] [32mBuilding CXX object CMakeFiles/image_brightness.dir/src/image_brightness.cpp.o[0m
-[ 33%] [32mBuilding CXX object CMakeFiles/object_position_indicator.dir/src/object_position_indicator.cpp.o[0m
-[ 66%] Built target brightness_receiver

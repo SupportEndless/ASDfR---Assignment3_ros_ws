@@ -1,0 +1,27 @@
+[0.026s] Invoking command in '/home/ubuntu/Robotics/ros2_ws/build/object_tracker': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/Robotics/ros2_ws/build/object_tracker -- -j12 -l12
+[0.104s] [ 50%] [32mBuilding CXX object CMakeFiles/object_tracker.dir/src/object_tracker.cpp.o[0m
+[16.230s] [100%] [32m[1mLinking CXX executable object_tracker[0m
+[19.383s] [100%] Built target object_tracker
+[19.399s] Invoked command in '/home/ubuntu/Robotics/ros2_ws/build/object_tracker' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/Robotics/ros2_ws/build/object_tracker -- -j12 -l12
+[19.400s] Invoking command in '/home/ubuntu/Robotics/ros2_ws/build/object_tracker': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/ubuntu/Robotics/ros2_ws/build/object_tracker
+[19.411s] -- Install configuration: ""
+[19.412s] -- Installing: /home/ubuntu/Robotics/ros2_ws/install/object_tracker/lib/object_tracker/object_tracker
+[19.423s] -- Set non-toolchain portion of runtime path of "/home/ubuntu/Robotics/ros2_ws/install/object_tracker/lib/object_tracker/object_tracker" to ""
+[19.423s] -- Installing: /home/ubuntu/Robotics/ros2_ws/install/object_tracker/include/
+[19.424s] -- Installing: /home/ubuntu/Robotics/ros2_ws/install/object_tracker/include//object_tracker.hpp
+[19.425s] -- Installing: /home/ubuntu/Robotics/ros2_ws/install/object_tracker/share/ament_index/resource_index/package_run_dependencies/object_tracker
+[19.425s] -- Installing: /home/ubuntu/Robotics/ros2_ws/install/object_tracker/share/ament_index/resource_index/parent_prefix_path/object_tracker
+[19.426s] -- Installing: /home/ubuntu/Robotics/ros2_ws/install/object_tracker/share/object_tracker/environment/ament_prefix_path.sh
+[19.426s] -- Installing: /home/ubuntu/Robotics/ros2_ws/install/object_tracker/share/object_tracker/environment/ament_prefix_path.dsv
+[19.426s] -- Installing: /home/ubuntu/Robotics/ros2_ws/install/object_tracker/share/object_tracker/environment/path.sh
+[19.427s] -- Installing: /home/ubuntu/Robotics/ros2_ws/install/object_tracker/share/object_tracker/environment/path.dsv
+[19.427s] -- Installing: /home/ubuntu/Robotics/ros2_ws/install/object_tracker/share/object_tracker/local_setup.bash
+[19.427s] -- Installing: /home/ubuntu/Robotics/ros2_ws/install/object_tracker/share/object_tracker/local_setup.sh
+[19.428s] -- Installing: /home/ubuntu/Robotics/ros2_ws/install/object_tracker/share/object_tracker/local_setup.zsh
+[19.428s] -- Installing: /home/ubuntu/Robotics/ros2_ws/install/object_tracker/share/object_tracker/local_setup.dsv
+[19.428s] -- Up-to-date: /home/ubuntu/Robotics/ros2_ws/install/object_tracker/share/object_tracker/package.dsv
+[19.428s] -- Installing: /home/ubuntu/Robotics/ros2_ws/install/object_tracker/share/ament_index/resource_index/packages/object_tracker
+[19.429s] -- Installing: /home/ubuntu/Robotics/ros2_ws/install/object_tracker/share/object_tracker/cmake/object_trackerConfig.cmake
+[19.429s] -- Installing: /home/ubuntu/Robotics/ros2_ws/install/object_tracker/share/object_tracker/cmake/object_trackerConfig-version.cmake
+[19.429s] -- Installing: /home/ubuntu/Robotics/ros2_ws/install/object_tracker/share/object_tracker/package.xml
+[19.431s] Invoked command in '/home/ubuntu/Robotics/ros2_ws/build/object_tracker' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/ubuntu/Robotics/ros2_ws/build/object_tracker

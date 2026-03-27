@@ -5,9 +5,11 @@
 
 
 #include <cassert>
+#include <cstddef>
 #include <limits>
 #include <string>
 #include "rosidl_typesupport_fastrtps_c/identifier.h"
+#include "rosidl_typesupport_fastrtps_c/serialization_helpers.hpp"
 #include "rosidl_typesupport_fastrtps_c/wstring_conversion.hpp"
 #include "rosidl_typesupport_fastrtps_cpp/message_type_support.h"
 #include "relbot_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h"
@@ -40,15 +42,12 @@ extern "C"
 
 using _RelbotMotors__ros_msg_type = relbot_msgs__msg__RelbotMotors;
 
-static bool _RelbotMotors__cdr_serialize(
-  const void * untyped_ros_message,
+
+ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_relbot_msgs
+bool cdr_serialize_relbot_msgs__msg__RelbotMotors(
+  const relbot_msgs__msg__RelbotMotors * ros_message,
   eprosima::fastcdr::Cdr & cdr)
 {
-  if (!untyped_ros_message) {
-    fprintf(stderr, "ros message handle is null\n");
-    return false;
-  }
-  const _RelbotMotors__ros_msg_type * ros_message = static_cast<const _RelbotMotors__ros_msg_type *>(untyped_ros_message);
   // Field name: left_wheel_vel
   {
     cdr << ros_message->left_wheel_vel;
@@ -62,15 +61,11 @@ static bool _RelbotMotors__cdr_serialize(
   return true;
 }
 
-static bool _RelbotMotors__cdr_deserialize(
+ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_relbot_msgs
+bool cdr_deserialize_relbot_msgs__msg__RelbotMotors(
   eprosima::fastcdr::Cdr & cdr,
-  void * untyped_ros_message)
+  relbot_msgs__msg__RelbotMotors * ros_message)
 {
-  if (!untyped_ros_message) {
-    fprintf(stderr, "ros message handle is null\n");
-    return false;
-  }
-  _RelbotMotors__ros_msg_type * ros_message = static_cast<_RelbotMotors__ros_msg_type *>(untyped_ros_message);
   // Field name: left_wheel_vel
   {
     cdr >> ros_message->left_wheel_vel;
@@ -83,6 +78,7 @@ static bool _RelbotMotors__cdr_deserialize(
 
   return true;
 }  // NOLINT(readability/fn_size)
+
 
 ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_relbot_msgs
 size_t get_serialized_size_relbot_msgs__msg__RelbotMotors(
@@ -98,13 +94,14 @@ size_t get_serialized_size_relbot_msgs__msg__RelbotMotors(
   (void)padding;
   (void)wchar_size;
 
-  // field.name left_wheel_vel
+  // Field name: left_wheel_vel
   {
     size_t item_size = sizeof(ros_message->left_wheel_vel);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-  // field.name right_wheel_vel
+
+  // Field name: right_wheel_vel
   {
     size_t item_size = sizeof(ros_message->right_wheel_vel);
     current_alignment += item_size +
@@ -114,12 +111,6 @@ size_t get_serialized_size_relbot_msgs__msg__RelbotMotors(
   return current_alignment - initial_alignment;
 }
 
-static uint32_t _RelbotMotors__get_serialized_size(const void * untyped_ros_message)
-{
-  return static_cast<uint32_t>(
-    get_serialized_size_relbot_msgs__msg__RelbotMotors(
-      untyped_ros_message, 0));
-}
 
 ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_relbot_msgs
 size_t max_serialized_size_relbot_msgs__msg__RelbotMotors(
@@ -139,18 +130,116 @@ size_t max_serialized_size_relbot_msgs__msg__RelbotMotors(
   full_bounded = true;
   is_plain = true;
 
-  // member: left_wheel_vel
+  // Field name: left_wheel_vel
   {
     size_t array_size = 1;
-
     last_member_size = array_size * sizeof(uint64_t);
     current_alignment += array_size * sizeof(uint64_t) +
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
   }
-  // member: right_wheel_vel
+
+  // Field name: right_wheel_vel
   {
     size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint64_t);
+    current_alignment += array_size * sizeof(uint64_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
+  }
 
+
+  size_t ret_val = current_alignment - initial_alignment;
+  if (is_plain) {
+    // All members are plain, and type is not empty.
+    // We still need to check that the in-memory alignment
+    // is the same as the CDR mandated alignment.
+    using DataType = relbot_msgs__msg__RelbotMotors;
+    is_plain =
+      (
+      offsetof(DataType, right_wheel_vel) +
+      last_member_size
+      ) == ret_val;
+  }
+  return ret_val;
+}
+
+ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_relbot_msgs
+bool cdr_serialize_key_relbot_msgs__msg__RelbotMotors(
+  const relbot_msgs__msg__RelbotMotors * ros_message,
+  eprosima::fastcdr::Cdr & cdr)
+{
+  // Field name: left_wheel_vel
+  {
+    cdr << ros_message->left_wheel_vel;
+  }
+
+  // Field name: right_wheel_vel
+  {
+    cdr << ros_message->right_wheel_vel;
+  }
+
+  return true;
+}
+
+ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_relbot_msgs
+size_t get_serialized_size_key_relbot_msgs__msg__RelbotMotors(
+  const void * untyped_ros_message,
+  size_t current_alignment)
+{
+  const _RelbotMotors__ros_msg_type * ros_message = static_cast<const _RelbotMotors__ros_msg_type *>(untyped_ros_message);
+  (void)ros_message;
+
+  size_t initial_alignment = current_alignment;
+
+  const size_t padding = 4;
+  const size_t wchar_size = 4;
+  (void)padding;
+  (void)wchar_size;
+
+  // Field name: left_wheel_vel
+  {
+    size_t item_size = sizeof(ros_message->left_wheel_vel);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Field name: right_wheel_vel
+  {
+    size_t item_size = sizeof(ros_message->right_wheel_vel);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  return current_alignment - initial_alignment;
+}
+
+ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_relbot_msgs
+size_t max_serialized_size_key_relbot_msgs__msg__RelbotMotors(
+  bool & full_bounded,
+  bool & is_plain,
+  size_t current_alignment)
+{
+  size_t initial_alignment = current_alignment;
+
+  const size_t padding = 4;
+  const size_t wchar_size = 4;
+  size_t last_member_size = 0;
+  (void)last_member_size;
+  (void)padding;
+  (void)wchar_size;
+
+  full_bounded = true;
+  is_plain = true;
+  // Field name: left_wheel_vel
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint64_t);
+    current_alignment += array_size * sizeof(uint64_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
+  }
+
+  // Field name: right_wheel_vel
+  {
+    size_t array_size = 1;
     last_member_size = array_size * sizeof(uint64_t);
     current_alignment += array_size * sizeof(uint64_t) +
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
@@ -168,8 +257,41 @@ size_t max_serialized_size_relbot_msgs__msg__RelbotMotors(
       last_member_size
       ) == ret_val;
   }
-
   return ret_val;
+}
+
+
+static bool _RelbotMotors__cdr_serialize(
+  const void * untyped_ros_message,
+  eprosima::fastcdr::Cdr & cdr)
+{
+  if (!untyped_ros_message) {
+    fprintf(stderr, "ros message handle is null\n");
+    return false;
+  }
+  const relbot_msgs__msg__RelbotMotors * ros_message = static_cast<const relbot_msgs__msg__RelbotMotors *>(untyped_ros_message);
+  (void)ros_message;
+  return cdr_serialize_relbot_msgs__msg__RelbotMotors(ros_message, cdr);
+}
+
+static bool _RelbotMotors__cdr_deserialize(
+  eprosima::fastcdr::Cdr & cdr,
+  void * untyped_ros_message)
+{
+  if (!untyped_ros_message) {
+    fprintf(stderr, "ros message handle is null\n");
+    return false;
+  }
+  relbot_msgs__msg__RelbotMotors * ros_message = static_cast<relbot_msgs__msg__RelbotMotors *>(untyped_ros_message);
+  (void)ros_message;
+  return cdr_deserialize_relbot_msgs__msg__RelbotMotors(cdr, ros_message);
+}
+
+static uint32_t _RelbotMotors__get_serialized_size(const void * untyped_ros_message)
+{
+  return static_cast<uint32_t>(
+    get_serialized_size_relbot_msgs__msg__RelbotMotors(
+      untyped_ros_message, 0));
 }
 
 static size_t _RelbotMotors__max_serialized_size(char & bounds_info)
@@ -194,13 +316,17 @@ static message_type_support_callbacks_t __callbacks_RelbotMotors = {
   _RelbotMotors__cdr_serialize,
   _RelbotMotors__cdr_deserialize,
   _RelbotMotors__get_serialized_size,
-  _RelbotMotors__max_serialized_size
+  _RelbotMotors__max_serialized_size,
+  nullptr
 };
 
 static rosidl_message_type_support_t _RelbotMotors__type_support = {
   rosidl_typesupport_fastrtps_c__identifier,
   &__callbacks_RelbotMotors,
   get_message_typesupport_handle_function,
+  &relbot_msgs__msg__RelbotMotors__get_type_hash,
+  &relbot_msgs__msg__RelbotMotors__get_type_description,
+  &relbot_msgs__msg__RelbotMotors__get_type_description_sources,
 };
 
 const rosidl_message_type_support_t *
