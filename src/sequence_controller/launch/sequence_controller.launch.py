@@ -11,7 +11,7 @@ def generate_launch_description():
                 arguments=["--ros-args", "--log-level", "WARN"],
             ),
             Node(
-                package="image_tools",
+                package="cam2image_vm2ros",
                 executable="cam2image",
                 arguments=["--ros-args", "--log-level", "WARN", '--params-file', 'src/cam2image_vm2ros/config/cam2image.yaml'],
             ),
