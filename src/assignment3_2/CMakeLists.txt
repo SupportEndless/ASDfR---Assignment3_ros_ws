@@ -29,15 +29,15 @@ set(XENO  ${locationXenoSrc}FullStateMachine.cpp
           ${locationXenoSrc}XenoRosDataBridge.cpp
           ${locationXenoSrc}XenoSpiControllerHandler.cpp
 )
-add_executable( template_base main.cpp 
+add_executable( XRF2_FRT_test main.cpp 
                 ${XENO}
                 ${SRC}
                 )
 
-ament_target_dependencies(template_base PUBLIC rclcpp xrf2_msgs std_msgs)
+ament_target_dependencies(XRF2_FRT_test PUBLIC rclcpp xrf2_msgs std_msgs)
 
 # Specify paths to header files
-target_include_directories( template_base BEFORE PUBLIC 
+target_include_directories( XRF2_FRT_test BEFORE PUBLIC 
                             /usr/evl/include 
                             include/ 
                             ${locationXenoInclude}
@@ -45,6 +45,6 @@ target_include_directories( template_base BEFORE PUBLIC
                             )
 
 # Specify paths to library files
-target_link_directories(template_base PUBLIC /usr/evl/lib)
+target_link_directories(XRF2_FRT_test PUBLIC /usr/evl/lib)
 
-target_link_libraries(template_base PRIVATE evl)
+target_link_libraries(XRF2_FRT_test PRIVATE evl)
