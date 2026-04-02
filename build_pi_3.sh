@@ -12,9 +12,11 @@ colcon build --packages-select \
     xrf2_msgs
 
 if [ -f install/setup.bash ]; then
+    echo "Local setup.bash file found, sourcing..."
     source install/setup.bash
 fi
 
+echo "Building other packages..."
 colcon build --packages-select \
     cam2image_vm2ros \
     relbot_adapter \
