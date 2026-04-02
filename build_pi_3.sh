@@ -5,6 +5,11 @@ DETECTED_DISTRO=$(ls /opt/ros/ 2>/dev/null | head -n 1)
 
 source /opt/ros/$DETECTED_DISTRO/setup.bash
 
+if [ -z "$DETECTED_DISTRO" ]; then
+    echo "ERROR: No ROS 2 distribution found in /opt/ros/"
+    exit 1
+fi
+
 # Starting by building all dependencies
 echo "Building message packages first"
 colcon build --packages-select \
@@ -22,6 +27,5 @@ colcon build --packages-select \
     relbot_adapter \
     relbot_simulator \
     assignment3_1 \
-    assignment3_2 \
     object_tracker \
     sequence_controller
