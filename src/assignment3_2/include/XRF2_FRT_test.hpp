@@ -9,10 +9,10 @@
 struct HRT_log
 {
     // Put logger data here
-    int channel1
-    int channel2
-    int channel3
-    int channel4
+    int channel1;
+    int channel2;
+    int channel3;
+    int channel4;
 };
 
 #pragma pack(0)

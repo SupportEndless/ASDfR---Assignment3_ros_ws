@@ -5,17 +5,29 @@ project(assignment3_2)
 
 add_compile_options(-Wno-pointer-arith)
 
-set(locationFramework "~/Robotics/ros2_ws/src/XRF2/XenoRosFramework/")
+set(locationFramework "../XRF2/XenoRosFramework/")
 
 set(locationXenoSrc "${locationFramework}Xenomai/src/")
 set(locationXenoInclude "${locationFramework}Xenomai/include")
 set(locationCommonInclude "${locationFramework}Common/include")
+
+# Path to the XML file
+set(XML_FILE_PATH "${CMAKE_SOURCE_DIR}/controller/LoopController_tokens.xml")
+
+# Run the Python script to extract TIME_STEP_SIZE, passing the XML file path
+execute_process(
+    COMMAND python3 ${CMAKE_SOURCE_DIR}/${locationFramework}Common/python_script/extracte_token_time_step.py ${XML_FILE_PATH}
+    OUTPUT_VARIABLE TIME_STEP_SIZE_VALUE
+    OUTPUT_STRIP_TRAILING_WHITESPACE
+)
+message("TIME_STEP_SIZE_VALUE = " ${TIME_STEP_SIZE_VALUE})
 
 # Find dependencies
 find_package(Threads REQUIRED)
 find_package(xrf2_msgs REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(std_msgs REQUIRED)
+file(GLOB CONTROLLER_SRC "controller/common/*.cpp")
 file(GLOB SRC "src/*.cpp")
 set(XENO  ${locationXenoSrc}FullStateMachine.cpp
           ${locationXenoSrc}IcoIo.cpp
@@ -28,23 +40,42 @@ set(XENO  ${locationXenoSrc}FullStateMachine.cpp
           ${locationXenoSrc}XenoRosCommandBridge.cpp
           ${locationXenoSrc}XenoRosDataBridge.cpp
           ${locationXenoSrc}XenoSpiControllerHandler.cpp
+          ${locationXenoSrc}XenoFrt20Sim.cpp
 )
-add_executable( XRF2_FRT_test main.cpp 
+add_executable( assignment3_2 main.cpp 
                 ${XENO}
                 ${SRC}
+                controller/LoopController.cpp
+                ${CONTROLLER_SRC} 
                 )
 
-ament_target_dependencies(XRF2_FRT_test PUBLIC rclcpp xrf2_msgs std_msgs)
+# Add the constant TIME_STEP_SIZE to definitions
+target_compile_definitions(assignment3_2 PRIVATE TIME_STEP_SIZE=${TIME_STEP_SIZE_VALUE})
+
+ament_target_dependencies(assignment3_2 PUBLIC rclcpp xrf2_msgs std_msgs)
 
 # Specify paths to header files
-target_include_directories( XRF2_FRT_test BEFORE PUBLIC 
+target_include_directories( assignment3_2 BEFORE PUBLIC 
                             /usr/evl/include 
                             include/ 
                             ${locationXenoInclude}
                             ${locationCommonInclude}
+                            controller/
+                            controller/common/
                             )
 
 # Specify paths to library files
-target_link_directories(XRF2_FRT_test PUBLIC /usr/evl/lib)
+target_link_directories(assignment3_2 PUBLIC /usr/evl/lib)
 
-target_link_libraries(XRF2_FRT_test PRIVATE evl)
+target_link_libraries(assignment3_2 PRIVATE evl)
+
+# EXTRA ENTRIES FOR FIXING TEMPLATE!
+install(TARGETS
+    assignment3_2
+    DESTINATION lib/${PROJECT_NAME})
+
+install(DIRECTORY include/
+  DESTINATION include/
+)
+
+ament_package()

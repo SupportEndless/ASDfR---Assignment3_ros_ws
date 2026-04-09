@@ -33,15 +33,14 @@ fi
 
 echo "Building other packages..."
 colcon build --executor sequential --parallel-workers 1 --symlink-install --packages-select \
-    cam2image_vm2ros \
     relbot_adapter \
-    relbot_simulator \
-    assignment3_2
+    assignment3_2 \
+    ros_xeno_bridge
 
 # Sourcing new compiled version
 if [ -f install/setup.bash ]; then
     echo "------------------------------------------------------------"
-    echo "Local setup.bash file found, build complete."
+    echo "Local setup.bash file found"
     echo "Don't forget to source!"
     echo "------------------------------------------------------------"
 else

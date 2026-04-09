@@ -8,10 +8,10 @@ XRF2_FRT_test::XRF2_FRT_test(uint write_decimator_freq, uint monitor_freq) :
     printf("%s: Constructing rampio\n", __FUNCTION__);
 
     // Add variables to logger to be logged, has to be done before you can log data
-    logger.addVariable("channel1", id_int);
-    logger.addVariable("channel2", id_int);
-    logger.addVariable("channel3", id_int);
-    logger.addVariable("channel4", id_int);
+    logger.addVariable("channel1", integer);
+    logger.addVariable("channel2", integer);
+    logger.addVariable("channel3", integer);
+    logger.addVariable("channel4", integer);
     
     // To infinite run the controller, uncomment line below
     controller.SetFinishTime(0.0);
@@ -67,8 +67,6 @@ int XRF2_FRT_test::run()
     data_to_be_logged.channel2 = sample_data.channel2;
     data_to_be_logged.channel3 = sample_data.channel3;
     data_to_be_logged.channel4 = sample_data.channel4;
-
-    
 
     return 0;
 }
