@@ -1,0 +1,11 @@
+frt_testbed_node:
+  ros__parameters:
+    pattern: "sine"
+    amplitude_left: 1.0
+    amplitude_right: 1.0
+    frequency_hz: 0.5
+    duration_s: 10.0
+    publish_rate_hz: 100.0
+    max_abs_setpoint: 5.0
+    autostart: true
+    log_path: "/tmp/frt_testbed_sine.csv"

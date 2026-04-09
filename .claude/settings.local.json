@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(grep -n \"Template\\\\|example_rt\\\\|Template\\(\" /home/stijn/ASDfR---Assignment3_ros_ws/src/XRF2/Template/Template-20sim/main.cpp /home/stijn/ASDfR---Assignment3_ros_ws/src/XRF2/Template/Template-20sim/include/*.hpp)"
+    ]
+  }
+}

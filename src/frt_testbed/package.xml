@@ -1,10 +1,14 @@
 <?xml version="1.0"?>
 <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
-  <name>assignment3_2</name>
+  <name>frt_testbed</name>
   <version>0.0.0</version>
-  <description>Assignment 3.2: XRF2 FRT pass-through on the RELbot. Wires SRT Ros2Xeno setpoints and HRT encoder samples through an empty 20-sim-generated loop controller, used as a testbed for the XRF2 architecture.</description>
-  <maintainer email="rogiermeijerman@gmail.com">ubuntu</maintainer>
+  <description>
+    SRT test bed for the XRF2 FRT pass-through (Assignment 3.2). Publishes
+    parameter-selectable test patterns on Ros2Xeno, drives the XRF2 state
+    machine over XenoCmd, and records Xeno2Ros / XenoState feedback to a CSV.
+  </description>
+  <maintainer email="ubuntu@todo.todo">ubuntu</maintainer>
   <license>Apache-2.0</license>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
@@ -12,6 +16,8 @@
   <depend>rclcpp</depend>
   <depend>std_msgs</depend>
   <depend>xrf2_msgs</depend>
+
+  <exec_depend>ros2launch</exec_depend>
 
   <test_depend>ament_lint_auto</test_depend>
   <test_depend>ament_lint_common</test_depend>
