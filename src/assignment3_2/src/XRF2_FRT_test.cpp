@@ -7,11 +7,7 @@ XRF2_FRT_test::XRF2_FRT_test(uint write_decimator_freq, uint monitor_freq) :
 {
      printf("%s: Constructing rampio\n", __FUNCTION__);
     // Add variables to logger to be logged, has to be done before you can log data
-    logger.addVariable("this_is_a_int", integer);
-    logger.addVariable("this_is_a_double", double_);
-    logger.addVariable("this_is_a_float", float_);
-    logger.addVariable("this_is_a_char", character);
-    logger.addVariable("this_is_a_bool", boolean);
+
     
     // To infinite run the controller, uncomment line below
     controller.SetFinishTime(0.0);
@@ -55,22 +51,16 @@ int XRF2_FRT_test::run()
     // Start logger
     logger.start();                             
     monitor.printf("Hello from run\n");  
-    //  Change some data for logger            
-    data_to_be_logged.this_is_a_bool = !data_to_be_logged.this_is_a_bool;
-    data_to_be_logged.this_is_a_int++;
-    if(data_to_be_logged.this_is_a_char == 'R')
-        data_to_be_logged.this_is_a_char = 'A';
-    else if (data_to_be_logged.this_is_a_char == 'A')
-        data_to_be_logged.this_is_a_char = 'M';
-    else
-        data_to_be_logged.this_is_a_char = 'R';
-    data_to_be_logged.this_is_a_float = data_to_be_logged.this_is_a_float/2;
-    data_to_be_logged.this_is_a_double = data_to_be_logged.this_is_a_double/4; 
+    
+    // Setting encoder data
+    data_to_be_logged.channel1 = sample_data.channel1;
+    data_to_be_logged.channel2 = sample_data.channel2;
+    data_to_be_logged.channel3 = sample_data.channel3;
+    data_to_be_logged.channel4 = sample_data.channel4;
 
     controller.Calculate(u, y);
     if(controller.IsFinished())
         return 1;
-
 
     return 0;
 }

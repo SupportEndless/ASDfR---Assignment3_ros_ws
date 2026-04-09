@@ -1,2 +1,4 @@
-float64 example_c
-float64 example_d
+int channel1
+int channel2
+int channel3
+int channel4

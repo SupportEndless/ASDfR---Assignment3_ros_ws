@@ -1,17 +1,18 @@
-#ifndef TEMPLATE20SIM_HPP
-#define TEMPLATE20SIM_HPP
+#ifndef XRF2_HRT_test_HPP
+#define XRF2_HRT_test_HPP
 
 #include "XenoFrt20Sim.hpp"
 #include "LoopController.h"
 
+//      
 #pragma pack (1)    //https://carlosvin.github.io/langs/en/posts/cpp-pragma-pack/#_performance_test
-struct ThisIsAStruct
+struct HRT_log
 {
-    int this_is_a_int = 0;
-    double this_is_a_double = 100.0;
-    float this_is_a_float = 10.0;
-    char this_is_a_char = 'R';
-    bool this_is_a_bool = false;
+    // Put logger data here
+    int channel1
+    int channel2
+    int channel3
+    int channel4
 };
 
 #pragma pack(0)
@@ -23,7 +24,7 @@ public:
     ~XRF2_FRT_test();
 private:
     XenoFileHandler file;
-    struct ThisIsAStruct data_to_be_logged;
+    struct HRT_log data_to_be_logged;
     LoopController controller;
 
     double u[4];
