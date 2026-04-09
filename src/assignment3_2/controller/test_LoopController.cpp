@@ -5,10 +5,10 @@
  *  subm:  LoopController
  *  model: RELbotSimple
  *  expmt: RELbotSimple
- *  date:  April 2, 2026
- *  time:  9:03:39 PM
- *  user:  20-sim 5.1 Professional
- *  from:  Demo/Viewer License
+ *  date:  April 9, 2026
+ *  time:  1:30:42 PM
+ *  user:  Universiteit Twente
+ *  from:  -
  *  build: 5.1.6.14106
  **********************************************************/
 
@@ -29,17 +29,11 @@
 /* the main function */
 int main()
 {
-	XXDouble u [4 + 1];
-	XXDouble y [2 + 1];
+	XXDouble u [0 + 1];
+	XXDouble y [0 + 1];
 
 	/* initialize the inputs and outputs with correct initial values */
-	u[0] = 0.0;		/* PosLeft */
-	u[1] = 0.0;		/* PosRight */
-	u[2] = 0.0;		/* SetVelLeft */
-	u[3] = 0.0;		/* SetVelRight */
 
-	y[0] = 0.0;		/* SteerLeft */
-	y[1] = 0.0;		/* SteerRight */
 
 
 	LoopController my20simSubmodel;

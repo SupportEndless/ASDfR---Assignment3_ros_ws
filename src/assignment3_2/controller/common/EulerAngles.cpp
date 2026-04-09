@@ -4,10 +4,10 @@
  *  file:  common\EulerAngles.cpp
  *  model: RELbotSimple
  *  expmt: RELbotSimple
- *  date:  April 2, 2026
- *  time:  9:03:39 PM
- *  user:  20-sim 5.1 Professional
- *  from:  Demo/Viewer License
+ *  date:  April 9, 2026
+ *  time:  1:30:42 PM
+ *  user:  Universiteit Twente
+ *  from:  -
  *  build: 5.1.6.14106
  **********************************************************/
 
