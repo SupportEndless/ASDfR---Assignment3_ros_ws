@@ -68,6 +68,9 @@ int XRF2_FRT_test::run()
     data_to_be_logged.channel3 = sample_data.channel3;
     data_to_be_logged.channel4 = sample_data.channel4;
 
+    xeno_msg.channel1 = sample_data.channel1;
+    xeno_msg.channel2 = sample_data.channel2;
+
     return 0;
 }
 
