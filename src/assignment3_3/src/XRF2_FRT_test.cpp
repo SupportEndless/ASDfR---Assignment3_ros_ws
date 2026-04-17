@@ -1,6 +1,13 @@
 #include "XRF2_FRT_test.hpp"
 #include <cmath>
 
+/**
+ * @brief Constructor for the XRF2_FRT_test class.
+ * 
+ *  Sets up the XRF2_FRT_test node and initializes logger and
+ *  controller. Sets controller to have no end time.
+ *
+ */
 XRF2_FRT_test::XRF2_FRT_test(uint write_decimator_freq, uint monitor_freq) :
     XenoFrt20Sim(write_decimator_freq, monitor_freq, file, &data_to_be_logged),
     file(1,"./xrf2_logging/assignment3_2","bin"), // change template to your project name
@@ -8,21 +15,34 @@ XRF2_FRT_test::XRF2_FRT_test(uint write_decimator_freq, uint monitor_freq) :
 {
     printf("%s: Constructing rampio\n", __FUNCTION__);
 
-    // Add variables to logger to be logged, has to be done before you can log data
+    // Add variables to logger to be logged
     logger.addVariable("channel1", integer);
     logger.addVariable("channel2", integer);
     logger.addVariable("rotation1", integer);
     logger.addVariable("rotation2", integer);
     
-    // To infinite run the controller, uncomment line below
+    // To infinite run the controller
     controller.SetFinishTime(0.0);
 }
 
+/**
+ * @brief Destructor. No functionality.
+ * 
+ * No functionality implemented.
+ *
+ */
 XRF2_FRT_test::~XRF2_FRT_test()
 {
     
 }
 
+/**
+ * @brief Function to unwrap encoder values
+ * 
+ *  Calculates true encoder values from received data.
+ *  Needed to overcome the jumps between 0 and 2^16 when
+ *  doing a full rotation.
+ */
 int XRF2_FRT_test::unwrap(int data, int previous) 
 {
     int delta = data - previous;
@@ -37,6 +57,15 @@ int XRF2_FRT_test::unwrap(int data, int previous)
     return delta;
 }   
 
+/**
+ * @brief Initializes the FRT system
+ * 
+ *  Initializes logger and ico.io. Also enables
+ *  PWM ports on the FPGA through actuate_data.
+ *  Tracks the current channel data from the encoder
+ *  To establish baselin first reading. 
+ *
+ */
 int XRF2_FRT_test::initialising()
 {
     // Set physical and cyber system up for use in a 
@@ -61,6 +90,11 @@ int XRF2_FRT_test::initialising()
     return 1;
 }
 
+/**
+ * @brief Initialized state in FSM.
+ * 
+ *  Currently has no functionality.
+ */
 int XRF2_FRT_test::initialised()
 {
     // Keep the physical syste in a state to be used in the run state
@@ -71,6 +105,14 @@ int XRF2_FRT_test::initialised()
     return 0;
 }
 
+/**
+ * @brief Main loop in the FSM. Updates current wheel angle and applies control
+ * 
+ *  Starts logger, logs encoders and total rotation of the wheels.
+ *  Unwraps encoder data, integrates this data into wheel angle and applies control.
+ *  Then sends out control to FRT through actuator_data. 
+ *
+ */
 int XRF2_FRT_test::run()
 {
     // Do what you need to do
@@ -82,7 +124,6 @@ int XRF2_FRT_test::run()
 
     // Left wheel  = channel2, forward = positive
     // Right wheel = channel1, forward = negative 
-
     int delta_left = this->unwrap(sample_data.channel1, sample_previous[0]);
     int delta_right = this->unwrap(-sample_data.channel2, -sample_previous[1]);
 
@@ -92,30 +133,37 @@ int XRF2_FRT_test::run()
     sample_previous[0] = sample_data.channel1;
     sample_previous[1] = sample_data.channel2;
 
-    u[0] = total_rotation[0] * this->counts_to_rad;   // PosLeft
-    u[1] = total_rotation[1] * this->counts_to_rad;  // PosRight
-    u[2] = ros_msg.left_wheel_vel;               // SetVelLeft  [rad/s]
-    u[3] = ros_msg.right_wheel_vel;              // SetVelRight [rad/s]
+    u[0] = total_rotation[0] * this->counts_to_rad;     // PosLeft
+    u[1] = total_rotation[1] * this->counts_to_rad;     // PosRight
+    u[2] = ros_msg.left_wheel_vel;                      // SetVelLeft  [rad/s]
+    u[3] = ros_msg.right_wheel_vel;                     // SetVelRight [rad/s]
 
+    // Running controller
     controller.Calculate(u, y);
  
-    // NOTE: CHECK IF PWM NUMBERS AND MOTORS MATCH, COULD BE DIFFERENT FROM ENCODERS
+    // Updating PWM values
     actuate_data.pwm1 = -static_cast<int>(y[1]);   // right motor (channel1)
     actuate_data.pwm2 = static_cast<int>(y[0]);   // left  motor (channel2)
     actuate_data.val1 = true;
     actuate_data.val2 = true;
 
-    // Setting encoder data
+    // Adding encoder data and wheel angles to logger, and logging
     data_to_be_logged.channel1 = sample_data.channel1;
     data_to_be_logged.channel2 = sample_data.channel2;
     data_to_be_logged.rotation1 = total_rotation[0];
     data_to_be_logged.rotation2 = total_rotation[1];
-
     logger.log();
 
     return 0;
 }
 
+/**
+ * @brief Stops the FSM safely
+ * 
+ *  Updates all wheel values to 0, so nothing is moving anymore
+ *  and stops the logger. 
+ * 
+ */
 int XRF2_FRT_test::stopping()
 {
     // Bring the physical system to a stop and set it in a state that the system can be deactivated
@@ -137,6 +185,12 @@ int XRF2_FRT_test::stopping()
     return 1;
 }
 
+/**
+ * @brief Stopped state in FSM. No functionality
+ * 
+ * No functionality implemented.
+ *
+ */
 int XRF2_FRT_test::stopped()
 {
     // A steady state in which the system can be deactivated whitout harming the physical system
@@ -146,6 +200,12 @@ int XRF2_FRT_test::stopped()
     return 0;
 }
 
+/**
+ * @brief Pausing state in FSM. No functionality
+ * 
+ * No functionality implemented.
+ *
+ */
 int XRF2_FRT_test::pausing()
 {
     // Bring the physical system to a stop as fast as possible without causing harm to the physical system
@@ -154,6 +214,12 @@ int XRF2_FRT_test::pausing()
     return 1 ;
 }
 
+/**
+ * @brief Paused state in FSM. No functionality
+ * 
+ * No functionality implemented.
+ *
+ */
 int XRF2_FRT_test::paused()
 {
     // Keep the physical system in the current physical state
@@ -162,6 +228,12 @@ int XRF2_FRT_test::paused()
     return 0;
 }
 
+/**
+ * @brief Error state in FSM. No functionality
+ * 
+ * No functionality implemented.
+ *
+ */
 int XRF2_FRT_test::error()
 {
     // Error detected in the system 

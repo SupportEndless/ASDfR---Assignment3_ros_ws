@@ -1,5 +1,10 @@
 #include "XRF2_FRT_test.hpp"
 
+/**
+ * @brief XRF2_FRT_test constructor
+ * 
+ *  Initializes logger variables and controller.
+ */
 XRF2_FRT_test::XRF2_FRT_test(uint write_decimator_freq, uint monitor_freq) :
     XenoFrt20Sim(write_decimator_freq, monitor_freq, file, &data_to_be_logged),
     file(1,"./xrf2_logging/assignment3_2","bin"), // change template to your project name
@@ -22,6 +27,13 @@ XRF2_FRT_test::~XRF2_FRT_test()
     
 }
 
+/**
+ * @brief Initializes logger and actuator_data
+ * 
+ *  Initializes logger and ico.io. Updates actuator
+ *  data values to true to start PWM control.
+ * 
+ */
 int XRF2_FRT_test::initialising()
 {
     // Set physical and cyber system up for use in a 
@@ -43,6 +55,10 @@ int XRF2_FRT_test::initialising()
     return 1;
 }
 
+/**
+ * @brief Initialized FSM state. No functionality
+ * 
+ */
 int XRF2_FRT_test::initialised()
 {
     // Keep the physical syste in a state to be used in the run state
@@ -53,6 +69,12 @@ int XRF2_FRT_test::initialised()
     return 0;
 }
 
+/**
+ * @brief Starts logger, tracks channels and updates PWM to wheels
+ * 
+ *  Starts the logger and adds channels 1-4 into logger data.
+ *  Actuates PWM signals from ros_msg from SRT part.
+ */
 int XRF2_FRT_test::run()
 {
     // Do what you need to do
@@ -80,6 +102,13 @@ int XRF2_FRT_test::run()
     return 0;
 }
 
+/**
+ * @brief Stops FSM safely.
+ * 
+ *  Stops the logger, sets all actuator values to 0, and 
+ *  continues into stopped state. 
+ *
+ */
 int XRF2_FRT_test::stopping()
 {
     // Bring the physical system to a stop and set it in a state that the system can be deactivated
@@ -101,6 +130,10 @@ int XRF2_FRT_test::stopping()
     return 1;
 }
 
+/**
+ * @brief No functionlity.
+ * 
+ */
 int XRF2_FRT_test::stopped()
 {
     // A steady state in which the system can be deactivated whitout harming the physical system
@@ -110,6 +143,10 @@ int XRF2_FRT_test::stopped()
     return 0;
 }
 
+/**
+ * @brief No functionlity.
+ * 
+ */
 int XRF2_FRT_test::pausing()
 {
     // Bring the physical system to a stop as fast as possible without causing harm to the physical system
@@ -118,6 +155,10 @@ int XRF2_FRT_test::pausing()
     return 1 ;
 }
 
+/**
+ * @brief No functionlity.
+ * 
+ */
 int XRF2_FRT_test::paused()
 {
     // Keep the physical system in the current physical state
@@ -126,6 +167,10 @@ int XRF2_FRT_test::paused()
     return 0;
 }
 
+/**
+ * @brief No functionlity.
+ * 
+ */
 int XRF2_FRT_test::error()
 {
     // Error detected in the system 

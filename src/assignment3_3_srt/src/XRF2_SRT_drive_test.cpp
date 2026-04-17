@@ -1,5 +1,12 @@
 #include "XRF2_SRT_drive_test.hpp"
 
+/**
+ * @brief Constructor for the XRF2_SRT_drive_test class.
+ * 
+ *  Initializes publishers for left and right wheel. Calls
+ *  intialize() to intialize the remainder of functionality. 
+ *
+ */
 XRF2_SRT_drive_test::XRF2_SRT_drive_test()
     : rclcpp::Node("xrf2_srt_drive_test")
 {
@@ -11,6 +18,13 @@ XRF2_SRT_drive_test::XRF2_SRT_drive_test()
     initialize_();
 }
 
+/**
+ * @brief Initializes wall timer for timer_callback()
+ * 
+ *  Initializes wall timer for the callback function. Shows the 
+ *  current settings in terminal. Also intializes zero_time to current time
+ *  for later use in timer_callback().
+ */
 void XRF2_SRT_drive_test::initialize_()
 {
     zero_time_ = this->get_clock()->now().seconds();
@@ -27,6 +41,12 @@ void XRF2_SRT_drive_test::initialize_()
                 TURN_ANGLE_RAD * 180.0 / PI, TURN_SPEED);
 }
 
+/**
+ * @brief Sends out wheel velocities to FRT part based on current time.
+ * 
+ *  Checks current time to update the wheel velocities based on a simple
+ *  straight line into 90 turn algorithm. Publishes velocities.
+ */
 void XRF2_SRT_drive_test::timer_callback_()
 {
     const double t = this->get_clock()->now().seconds() - zero_time_;
@@ -56,6 +76,15 @@ void XRF2_SRT_drive_test::timer_callback_()
     publish_setpoints_(left, right);
 }
 
+/**
+ * @brief Publishes left and right wheel velocities.
+ * 
+ *  Publishes the calculated setpoints to the topics
+ *  set_vel_left and set_vel_right in example_interfaces::msg::Float64
+ *  format for relbot_adapter to receive.
+ *  @param left left wheel motor input
+ *  @param right right wheel motor input
+ */
 void XRF2_SRT_drive_test::publish_setpoints_(double left, double right)
 {
     example_interfaces::msg::Float64 left_msg = example_interfaces::msg::Float64();

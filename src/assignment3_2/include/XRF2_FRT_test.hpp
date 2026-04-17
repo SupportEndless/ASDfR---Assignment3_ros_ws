@@ -4,7 +4,7 @@
 #include "XenoFrt20Sim.hpp"
 #include "LoopController.h"
 
-//      
+// Logger struct keeping track of all channels    
 #pragma pack (1)    //https://carlosvin.github.io/langs/en/posts/cpp-pragma-pack/#_performance_test
 struct HRT_log
 {
@@ -17,6 +17,14 @@ struct HRT_log
 
 #pragma pack(0)
 
+/**
+ * @class XRF2_FRT_test
+ * @brief A ROS2 node for testing FRT FSM
+ * 
+ *  Node runs in FRT part. Fills out FSM and
+ *  logs channels into output file. Publishes
+ *  data from channel1 and 2.
+ */
 class XRF2_FRT_test : public XenoFrt20Sim
 {
 public:
@@ -27,6 +35,7 @@ private:
     struct HRT_log data_to_be_logged;
     LoopController controller;
 
+    // Controller variables
     double u[4];
     double y[2];
 protected:

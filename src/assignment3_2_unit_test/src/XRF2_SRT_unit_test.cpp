@@ -1,9 +1,20 @@
 #include "XRF2_SRT_unit_test.hpp"
 
+/**
+ * @brief Constructor for the XRF2_SRT_unit_test class.
+ * 
+ *  See initialize() function.
+ */
 XRF2_SRT_unit_test::XRF2_SRT_unit_test() : Node("XRF2_SRT_unit_test") {
     this->initialize_();
 }
 
+/**
+ * @brief Runs main intialization for publishers and timers
+ * 
+ *  Intializes zero time, wall timer and publishers.
+ *  Also sets up parameters through set_params().
+ */
 void XRF2_SRT_unit_test::initialize_() {
     this-> zero_time_ = this->get_clock()->now().seconds();
 
@@ -21,6 +32,12 @@ void XRF2_SRT_unit_test::initialize_() {
     this->set_params_();
 }
 
+/**
+ * @brief Sets unit test settings from command line.
+ * 
+ *  Declares parameters for unit tests, and sets them to
+ *  class variables. 
+ */
 void XRF2_SRT_unit_test::set_params_() {
     this->declare_parameter("setting", static_cast<std::string>("sine"));
     this->declare_parameter("amp", static_cast<double>(2.0));
@@ -31,6 +48,12 @@ void XRF2_SRT_unit_test::set_params_() {
     this->publish_rate_ = this->get_parameter("publish_rate").as_double();
 }
 
+/**
+ * @brief Gets motor inputs and publishes them.
+ * 
+ *  Gets current time, updates motor input from this time,
+ *  and publishes new motor setpoints based on chosen unit test.
+ */
 void XRF2_SRT_unit_test::timer_callback_() {
     // Getting current time and motor inputs
     double now = this->get_clock()->now().seconds();
@@ -47,12 +70,21 @@ void XRF2_SRT_unit_test::timer_callback_() {
     this->left_message_publisher_->publish(left_message);
 }
 
-// Looks at test setting, and returns corresponding motor input for said test
+/**
+ * @brief Selects unit test, and gets motor inputs.
+ * 
+ *  Checks type of unit test that is selected, and runs
+ *  the necessary function to calculate new motor input
+ *  based on current time. 
+ *  Throws error in terminal if no test is selected.
+ * 
+ * @param now Current time
+ */
 double XRF2_SRT_unit_test::get_motor_inputs_(double now) {
     if (this->setting_ == "sine"){ 
         return this->sine_wave_(now - this->zero_time_);
     } else if (this->setting_ == "step") {
-        return this->step_(now);
+        return this->step_(now - this->zero_time_);
     } else if (this->setting_ == "constant") {
         return this->constant_input_();
     }
@@ -62,19 +94,32 @@ double XRF2_SRT_unit_test::get_motor_inputs_(double now) {
     return 0.0;
 }
 
-// Sine function, simply uses amp and frequency to generate setpoints
+/**
+ * @brief Simple sine function.
+ * 
+ *  @param time Current time from node intialization.
+ */
 double XRF2_SRT_unit_test::sine_wave_(double time) {
     return this->amp_ * std::sin(this->sine_freq_ * time);
 }
 
-// Simple step function, returning amp_ after 3 seconds
-double XRF2_SRT_unit_test::step_(double now) {
-    if (now + 3.0 < this->get_clock()->now().seconds()) {
+/**
+ * @brief Step function.
+ * 
+ *  Waits 3 seconds, then updates motor setpoint to amp_
+ *  @param time Current time from node intialization.
+ */
+double XRF2_SRT_unit_test::step_(double time) {
+    if (time + 3.0 < this->get_clock()->now().seconds()) {
         return 0.0;
     }
     return this->amp_;
 }
 
+/**
+ * @brief Constant function.
+ * 
+ */
 double XRF2_SRT_unit_test::constant_input_() {
     return this->amp_;
 }

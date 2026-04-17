@@ -7,7 +7,13 @@
 #include <std_msgs/msg/float64.hpp>
 #include "example_interfaces/msg/float64.hpp"
 
-
+/**
+ * @class XRF2_SRT_drive_test
+ * @brief A ROS2 node for generating driving setpoints for assignment 3.3
+ * 
+ * This node sends out signals to the FRT node to drive in a straight line,
+ * and then turn 90 degrees. 
+ */
 class XRF2_SRT_drive_test : public rclcpp::Node
 {
 public:

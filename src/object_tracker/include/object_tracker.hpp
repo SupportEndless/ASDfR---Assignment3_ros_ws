@@ -44,4 +44,4 @@ class ObjectTracker : public rclcpp::Node
         void object_tracking_callback(sensor_msgs::msg::Image::SharedPtr img);                                                    // Callback on imagae stream
 };
 
-#endif
+#endif // OBJECT_TRACKER_HPP
