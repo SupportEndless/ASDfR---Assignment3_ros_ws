@@ -17,6 +17,15 @@ Simply build through colcon using
 `colcon build --packages-select assignment3_3_srt`
 Note that the XRF2 message packages must be correctly configured and installed.
 
+There is also a shell script provided that builds the package and all dependencies.
+This is done through setting the shell to an executable, and then running it.
+The shell script must be placed in the base workspace, and must NOT be given sudo access.
+Run the following from the ros2_ws:
+`chmod +X build_pi_3_3.sh`
+`./build_pi_3_3.sh`
+You may need to set permisson for the file, so use
+`chmod 777 build_pi_3_3.sh`, or something similar.
+
 ### Run
 Before running this node, make sure the bridge and adapter nodes are active, as well
 as the FRT part given in the package assignment3_3.

@@ -19,7 +19,7 @@ def generate_launch_description():
         ),
         Node(
             package='assignment1_1',
-            executable='object_position_indicator'
+            executable='object_position_indicator',
             ros_arguments=['-p', 'brightness_threshold:=200']
         ),
         Node(

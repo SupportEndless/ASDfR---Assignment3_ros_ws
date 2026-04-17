@@ -21,6 +21,16 @@ Node does not have any inputs.
 Simply build through colcon using
 `colcon build --packages-select assignment3_2_unit_test`
 
+There is also a shell script provided that builds the package and all dependencies.
+This is done through setting the shell to an executable, and then running it.
+The shell script must be placed in the base workspace, and must NOT be given sudo access.
+Run the following from the ros2_ws:
+`chmod +X build_pi_3_2.sh`
+`./build_pi_3_2.sh`
+You may need to set permisson for the file, so use
+`chmod 777 build_pi_3_2.sh`, or something similar.
+
+Note that you still have to source `install/setup.bash` after this shell script.
 ### Run
 Before running this node, make sure to always run the assignment3_2 FRT part first.
 This can be done (after compiling) through:

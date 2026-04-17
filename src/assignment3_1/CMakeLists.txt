@@ -7,9 +7,47 @@ endif()
 
 # find dependencies
 find_package(ament_cmake REQUIRED)
+find_package(geometry_msgs REQUIRED)
+find_package(example_interfaces REQUIRED)
+find_package(rclcpp REQUIRED)
+find_package(cv_bridge REQUIRED)
+find_package(sensor_msgs REQUIRED)
 # uncomment the following section in order to fill in
 # further dependencies manually.
 # find_package(<dependency> REQUIRED)
+
+add_executable(setpoint_generator src/setpoint_generator.cpp)
+ament_target_dependencies(setpoint_generator
+  rclcpp
+  geometry_msgs
+  example_interfaces
+)
+
+target_include_directories(setpoint_generator BEFORE PUBLIC
+  include/
+)
+
+add_executable(object_tracker src/object_tracker.cpp)
+ament_target_dependencies(object_tracker
+    rclcpp
+    geometry_msgs
+    sensor_msgs
+    cv_bridge
+)
+
+target_include_directories(object_tracker BEFORE PUBLIC
+  include/
+)
+
+install(TARGETS
+  setpoint_generator
+  object_tracker
+  DESTINATION lib/${PROJECT_NAME}
+)
+install(DIRECTORY include/
+  DESTINATION include/
+)
+
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)

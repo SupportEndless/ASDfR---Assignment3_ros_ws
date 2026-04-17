@@ -3,12 +3,10 @@ from launch_ros.actions import Node
 
 def generate_launch_description():
     return LaunchDescription([
-        # First up, load camera
         Node(
             package='cam2image_vm2ros',
             executable='cam2image',
             ros_arguments=['--params-file', 'src/cam2image_vm2ros/config/cam2image.yaml']
-        # Then load the simulator and adapter
         ),
         Node(
             package='relbot_simulator',
@@ -17,13 +15,16 @@ def generate_launch_description():
         Node(
             package='relbot_adapter',
             executable='relbot_adapter',
-            remappings=[("/output/motor_cmd", "/input/motor_cmd")]
+            ros_arguments=['-r', '/output/motor_cmd:=/input/motor_cmd']
         ),
-        # Finally, load the object tracker, so we have output
         Node(
-            package='object_tracker',
+            package='assignment3_1',
             executable='object_tracker',
-            ros_arguments=['-p', 'brightness_threshold:=125.0'],
-            remappings=[("input/image", "image")]
+            ros_arguments=['-p', 'brightness_threshold:=100']
+        ),
+        Node(
+            package='assignment3_1',
+            executable='setpoint_generator',
+            ros_arguments=['-p', 'do_brightness_tracking:=true', '-p', 'proportional_gain:=1']
         )
     ])
