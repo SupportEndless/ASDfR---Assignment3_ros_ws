@@ -27,6 +27,7 @@ find_package(Threads REQUIRED)
 find_package(xrf2_msgs REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(std_msgs REQUIRED)
+find_package(example_interfaces REQUIRED)
 file(GLOB CONTROLLER_SRC "controller/common/*.cpp")
 file(GLOB SRC "src/*.cpp")
 set(XENO  ${locationXenoSrc}FullStateMachine.cpp
@@ -52,7 +53,7 @@ add_executable( assignment3_2 main.cpp
 # Add the constant TIME_STEP_SIZE to definitions
 target_compile_definitions(assignment3_2 PRIVATE TIME_STEP_SIZE=${TIME_STEP_SIZE_VALUE})
 
-ament_target_dependencies(assignment3_2 PUBLIC rclcpp xrf2_msgs std_msgs)
+ament_target_dependencies(assignment3_2 PUBLIC rclcpp xrf2_msgs std_msgs example_interfaces)
 
 # Specify paths to header files
 target_include_directories( assignment3_2 BEFORE PUBLIC 

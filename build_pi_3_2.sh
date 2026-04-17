@@ -19,7 +19,7 @@ source /opt/ros/$DETECTED_DISTRO/setup.bash
 
 # Starting by building all dependencies
 echo "Building message packages first"
-colcon build --executor sequential --parallel-workers 1 --symlink-install --packages-select \
+colcon build --executor sequential --parallel-workers 2 --symlink-install --packages-select \
     relbot_msgs \
     xrf2_msgs
 
@@ -32,9 +32,10 @@ else
 fi
 
 echo "Building other packages..."
-colcon build --executor sequential --parallel-workers 1 --symlink-install --packages-select \
+colcon build --executor sequential --parallel-workers 2 --symlink-install --packages-select \
     relbot_adapter \
     assignment3_2 \
+    assignment3_2_unit_test \
     ros_xeno_bridge
 
 # Sourcing new compiled version

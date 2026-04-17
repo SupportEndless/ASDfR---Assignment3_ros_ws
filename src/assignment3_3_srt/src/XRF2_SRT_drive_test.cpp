@@ -4,9 +4,9 @@ XRF2_SRT_drive_test::XRF2_SRT_drive_test()
     : rclcpp::Node("xrf2_srt_drive_test")
 {
     left_message_publisher_ =
-        this->create_publisher<std_msgs::msg::Float64>("set_vel_left", 10);
+        this->create_publisher<example_interfaces::msg::Float64>("set_vel_left", 10);
     right_message_publisher_ =
-        this->create_publisher<std_msgs::msg::Float64>("set_vel_right", 10);
+        this->create_publisher<example_interfaces::msg::Float64>("set_vel_right", 10);
 
     initialize_();
 }
@@ -58,8 +58,8 @@ void XRF2_SRT_drive_test::timer_callback_()
 
 void XRF2_SRT_drive_test::publish_setpoints_(double left, double right)
 {
-    std_msgs::msg::Float64 left_msg;
-    std_msgs::msg::Float64 right_msg;
+    example_interfaces::msg::Float64 left_msg = example_interfaces::msg::Float64();
+    example_interfaces::msg::Float64 right_msg = example_interfaces::msg::Float64();
 
     left_msg.data  = left;
     right_msg.data = right;

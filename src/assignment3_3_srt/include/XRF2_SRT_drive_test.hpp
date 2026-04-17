@@ -5,6 +5,7 @@
 #include <cmath>
 #include "rclcpp/rclcpp.hpp"
 #include <std_msgs/msg/float64.hpp>
+#include "example_interfaces/msg/float64.hpp"
 
 
 class XRF2_SRT_drive_test : public rclcpp::Node
@@ -30,7 +31,7 @@ private:
     static constexpr double TURN_ANGLE_RAD = PI / 2.0;   // 90 deg
 
     // Phase durations [s]
-    static constexpr double T_SETTLE = 1.0;
+    static constexpr double T_SETTLE = 5.0;
     static constexpr double T_DRIVE  = 3.0;
 
     // Derived turn duration: t = theta * L / (omega * d)
@@ -43,8 +44,8 @@ private:
     static constexpr double T_TURN_END   = T_DRIVE_END  + T_TURN;
 
     // ROS members
-    rclcpp::Publisher<std_msgs::msg::Float64>::SharedPtr left_message_publisher_;
-    rclcpp::Publisher<std_msgs::msg::Float64>::SharedPtr right_message_publisher_;
+    rclcpp::Publisher<example_interfaces::msg::Float64>::SharedPtr left_message_publisher_;
+    rclcpp::Publisher<example_interfaces::msg::Float64>::SharedPtr right_message_publisher_;
     rclcpp::TimerBase::SharedPtr timer_;
 
     double zero_time_ = 0.0;

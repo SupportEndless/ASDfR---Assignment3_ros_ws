@@ -69,24 +69,9 @@ target_link_directories(XRF_test PUBLIC /usr/evl/lib)
 
 target_link_libraries(XRF_test PRIVATE evl)
 
-# For the unit test and drive test
-add_executable(unit_test src/XRF2_SRT_unit_test.cpp)
-ament_target_dependencies(unit_test
-rclcpp
-std_msgs    
-)
-
-add_executable(drive_test src/XRF2_SRT_drive_test.cpp)
-ament_target_dependencies(drive_test
-rclcpp
-std_msgs
-)
-
 # EXTRA ENTRIES FOR FIXING TEMPLATE!
 install(TARGETS
     XRF_test
-    unit_test
-    drive_test
     DESTINATION lib/${PROJECT_NAME})
 
 install(DIRECTORY include/
