@@ -12,7 +12,7 @@ def generate_launch_description():
             ],
             parameters=[{
                 'amp': 2.0,
-                'setting' : 'constant'
+                'setting' : 'sine'
             }]
         )
     ])

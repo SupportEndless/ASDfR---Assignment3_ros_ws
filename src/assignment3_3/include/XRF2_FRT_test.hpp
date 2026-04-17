@@ -26,7 +26,7 @@ private:
     int MAX_COUNT = 4096 * 16;
     int HALF_MAX = MAX_COUNT/2;
     double M_PI = 3.151528;
-    int counts_to_rad = 2*M_PI/MAX_COUNT;
+    int counts_to_rad = 1/(2*M_PI*MAX_COUNT);
     double PWM_range = 2047.0;
 
     XenoFileHandler file;

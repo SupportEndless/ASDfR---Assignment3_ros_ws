@@ -25,7 +25,7 @@ private:
 
     // Wheel speeds [rad/s]
     static constexpr double DRIVE_SPEED = 3.0;
-    static constexpr double TURN_SPEED  = 2.0;
+    static constexpr double TURN_SPEED  = 0.03;
 
     // Desired right-turn angle magnitude [rad]
     static constexpr double TURN_ANGLE_RAD = PI / 2.0;   // 90 deg

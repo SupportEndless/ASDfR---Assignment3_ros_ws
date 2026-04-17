@@ -55,6 +55,9 @@ int XRF2_FRT_test::initialising()
     actuate_data.val3 = true;
     actuate_data.val4 = true;
 
+    sample_previous[0] = sample_data.channel1;
+    sample_previous[1] = sample_data.channel2;
+
     return 1;
 }
 
@@ -81,7 +84,7 @@ int XRF2_FRT_test::run()
     // Right wheel = channel1, forward = negative 
 
     int delta_left = this->unwrap(sample_data.channel1, sample_previous[0]);
-    int delta_right = this->unwrap(sample_data.channel2, sample_previous[1]);
+    int delta_right = this->unwrap(-sample_data.channel2, -sample_previous[1]);
 
     this->total_rotation[0] += delta_left;
     this->total_rotation[1] += delta_right;
@@ -90,7 +93,7 @@ int XRF2_FRT_test::run()
     sample_previous[1] = sample_data.channel2;
 
     u[0] = total_rotation[0] * this->counts_to_rad;   // PosLeft
-    u[1] = -total_rotation[1] * this->counts_to_rad;  // PosRight
+    u[1] = total_rotation[1] * this->counts_to_rad;  // PosRight
     u[2] = ros_msg.left_wheel_vel;               // SetVelLeft  [rad/s]
     u[3] = ros_msg.right_wheel_vel;              // SetVelRight [rad/s]
 
