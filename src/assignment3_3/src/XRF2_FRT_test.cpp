@@ -11,8 +11,8 @@ XRF2_FRT_test::XRF2_FRT_test(uint write_decimator_freq, uint monitor_freq) :
     // Add variables to logger to be logged, has to be done before you can log data
     logger.addVariable("channel1", integer);
     logger.addVariable("channel2", integer);
-    logger.addVariable("channel3", integer);
-    logger.addVariable("channel4", integer);
+    logger.addVariable("rotation1", integer);
+    logger.addVariable("rotation2", integer);
     
     // To infinite run the controller, uncomment line below
     controller.SetFinishTime(0.0);
@@ -22,6 +22,20 @@ XRF2_FRT_test::~XRF2_FRT_test()
 {
     
 }
+
+int XRF2_FRT_test::unwrap(int data, int previous) 
+{
+    int delta = data - previous;
+
+    if (delta > HALF_MAX) {
+        // Positive flip
+        delta = previous + (MAX_COUNT - data);
+    } else if (delta < -HALF_MAX) {
+        // Negative flip
+        delta = -(data + (MAX_COUNT - previous));
+    }
+    return delta;
+}   
 
 int XRF2_FRT_test::initialising()
 {
@@ -40,9 +54,6 @@ int XRF2_FRT_test::initialising()
     actuate_data.val2 = true;
     actuate_data.val3 = true;
     actuate_data.val4 = true;
-
-    u_previous[0] = sample_data.channel1;
-    u_previous[1] = sample_data.channel2;
 
     return 1;
 }
@@ -69,38 +80,35 @@ int XRF2_FRT_test::run()
     // Left wheel  = channel2, forward = positive
     // Right wheel = channel1, forward = negative 
 
-    // Doing the wraparound logic
-    int delta_left = sample_data.channel1 - u_previous[0];
-    int delta_right = sample_data.channel2 - u_previous[1];
+    int delta_left = this->unwrap(sample_data.channel1, sample_previous[0]);
+    int delta_right = this->unwrap(sample_data.channel2, sample_previous[1]);
 
-    // This handles forward, backward, and wrapping in 1 line
-    total_rotation[0] += (int16_t)(sample_data.channel1 - (uint16_t)u_previous[0]);
-    total_rotation[1] += (int16_t)(sample_data.channel2 - (uint16_t)u_previous[1]);
+    this->total_rotation[0] += delta_left;
+    this->total_rotation[1] += delta_right;
 
-    u_previous[0] = sample_data.channel1;
-    u_previous[1] = sample_data.channel2;
+    sample_previous[0] = sample_data.channel1;
+    sample_previous[1] = sample_data.channel2;
 
     u[0] = total_rotation[0] * this->counts_to_rad;   // PosLeft
-    u[1] = total_rotation[1] * this->counts_to_rad;  // PosRight
+    u[1] = -total_rotation[1] * this->counts_to_rad;  // PosRight
     u[2] = ros_msg.left_wheel_vel;               // SetVelLeft  [rad/s]
     u[3] = ros_msg.right_wheel_vel;              // SetVelRight [rad/s]
 
     controller.Calculate(u, y);
  
     // NOTE: CHECK IF PWM NUMBERS AND MOTORS MATCH, COULD BE DIFFERENT FROM ENCODERS
-    actuate_data.pwm1 = static_cast<int>(-y[1] * this->PWM_range);   // right motor (channel1)
-    actuate_data.pwm2 = static_cast<int>( y[0] * this->PWM_range);   // left  motor (channel2)
+    actuate_data.pwm1 = -static_cast<int>(y[1]);   // right motor (channel1)
+    actuate_data.pwm2 = static_cast<int>(y[0]);   // left  motor (channel2)
     actuate_data.val1 = true;
     actuate_data.val2 = true;
 
     // Setting encoder data
     data_to_be_logged.channel1 = sample_data.channel1;
     data_to_be_logged.channel2 = sample_data.channel2;
-    data_to_be_logged.channel3 = sample_data.channel3;
-    data_to_be_logged.channel4 = sample_data.channel4;
+    data_to_be_logged.rotation1 = total_rotation[0];
+    data_to_be_logged.rotation2 = total_rotation[1];
 
-    xeno_msg.channel1 = sample_data.channel1;
-    xeno_msg.channel2 = sample_data.channel2;
+    logger.log();
 
     return 0;
 }

@@ -72,7 +72,7 @@ int XRF2_FRT_test::run()
     xeno_msg.channel2 = sample_data.channel2;
 
     // Passing the commands to the RELbot directly, using conversion to PWM in range of -5 to 5
-    actuate_data.pwm1 = (2047.0/5.0) * ros_msg.right_wheel_vel;
+    actuate_data.pwm1 = -(2047.0/5.0) * ros_msg.right_wheel_vel;
     actuate_data.pwm2 = (2047.0/5.0) * ros_msg.left_wheel_vel;
     actuate_data.val1 = true;
     actuate_data.val2 = true;
