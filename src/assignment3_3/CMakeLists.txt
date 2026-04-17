@@ -42,7 +42,7 @@ set(XENO  ${locationXenoSrc}FullStateMachine.cpp
           ${locationXenoSrc}XenoSpiControllerHandler.cpp
           ${locationXenoSrc}XenoFrt20Sim.cpp
 )
-add_executable( assignment3_3 main.cpp 
+add_executable( XRF_test main.cpp 
                 ${XENO}
                 ${SRC}
                 controller/LoopController.cpp
@@ -50,12 +50,12 @@ add_executable( assignment3_3 main.cpp
                 )
 
 # Add the constant TIME_STEP_SIZE to definitions
-target_compile_definitions(assignment3_3 PRIVATE TIME_STEP_SIZE=${TIME_STEP_SIZE_VALUE})
+target_compile_definitions(XRF_test PRIVATE TIME_STEP_SIZE=${TIME_STEP_SIZE_VALUE})
 
-ament_target_dependencies(assignment3_3 PUBLIC rclcpp xrf2_msgs std_msgs)
+ament_target_dependencies(XRF_test PUBLIC rclcpp xrf2_msgs std_msgs)
 
 # Specify paths to header files
-target_include_directories( assignment3_3 BEFORE PUBLIC 
+target_include_directories( XRF_test BEFORE PUBLIC 
                             /usr/evl/include 
                             include/ 
                             ${locationXenoInclude}
@@ -65,17 +65,31 @@ target_include_directories( assignment3_3 BEFORE PUBLIC
                             )
 
 # Specify paths to library files
-target_link_directories(assignment3_3 PUBLIC /usr/evl/lib)
+target_link_directories(XRF_test PUBLIC /usr/evl/lib)
 
-target_link_libraries(assignment3_3 PRIVATE evl)
+target_link_libraries(XRF_test PRIVATE evl)
+
+# For the unit test and drive test
+add_executable(unit_test src/XRF2_SRT_unit_test.cpp)
+ament_target_dependencies(unit_test
+rclcpp
+std_msgs    
+)
+
+add_executable(drive_test src/XRF2_SRT_drive_test.cpp)
+ament_target_dependencies(drive_test
+rclcpp
+std_msgs
+)
 
 # EXTRA ENTRIES FOR FIXING TEMPLATE!
 install(TARGETS
-    assignment3_3
+    XRF_test
+    unit_test
+    drive_test
     DESTINATION lib/${PROJECT_NAME})
 
 install(DIRECTORY include/
   DESTINATION include/
 )
-
 ament_package()

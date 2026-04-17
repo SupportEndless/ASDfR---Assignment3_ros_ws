@@ -9,7 +9,7 @@
 #include "rclcpp/rclcpp.hpp"
 #include <std_msgs/msg/float64.hpp>
 
-class XRF2_SRT_unit_test : rclcpp.Node()
+class XRF2_SRT_unit_test : public rclcpp::Node
 {
     public:
     
@@ -21,14 +21,19 @@ class XRF2_SRT_unit_test : rclcpp.Node()
         double pusblish_rate_;
         double sine_freq_ = 0.2;
         double zero_time_;
-        double sine_amp_ = 2;
+        std::string setting_;
+        double amp_;
 
         // Functions
         void initialize_();
+        void set_params_();
         void timer_callback_();
+        const void get_motor_inputs_(double);
+        
+        // Unit test functions
         const void constant_input_();
         const double sine_wave_(double);
-        const void step_();
+        const double step_();
 };
 
 #endif

@@ -19,7 +19,7 @@ source /opt/ros/$DETECTED_DISTRO/setup.bash
 
 # Starting by building all dependencies
 echo "Building message packages first"
-colcon build --executor sequential --parallel-workers 1 --symlink-install --packages-select \
+colcon build --executor sequential --parallel-workers 2 --symlink-install --packages-select \
     relbot_msgs \
     xrf2_msgs
 
@@ -32,18 +32,15 @@ else
 fi
 
 echo "Building other packages..."
-colcon build --executor sequential --parallel-workers 1 --symlink-install --packages-select \
-    cam2image_vm2ros \
+colcon build --executor sequential --parallel-workers 2 --symlink-install --packages-select \
     relbot_adapter \
-    relbot_simulator \
-    assignment3_1 \
-    object_tracker \
-    sequence_controller
+    assignment3_3 \
+    ros_xeno_bridge
 
 # Sourcing new compiled version
 if [ -f install/setup.bash ]; then
     echo "------------------------------------------------------------"
-    echo "Local setup.bash file found, build complete."
+    echo "Local setup.bash file found"
     echo "Don't forget to source!"
     echo "------------------------------------------------------------"
 else
