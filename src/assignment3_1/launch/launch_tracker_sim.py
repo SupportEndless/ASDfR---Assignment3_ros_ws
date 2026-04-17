@@ -20,11 +20,11 @@ def generate_launch_description():
         Node(
             package='assignment3_1',
             executable='object_tracker',
-            ros_arguments=['-p', 'brightness_threshold:=100']
+            ros_arguments=['-p', 'brightness_threshold:=100.0']
         ),
         Node(
             package='assignment3_1',
             executable='setpoint_generator',
-            ros_arguments=['-p', 'do_brightness_tracking:=true', '-p', 'proportional_gain:=1']
+            ros_arguments=['-p', 'do_brightness_tracking:=true', '-p', 'proportional_gain:=1.0']
         )
     ])
